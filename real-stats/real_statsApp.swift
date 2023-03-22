@@ -11,7 +11,7 @@ import SwiftUI
 struct real_statsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Home()
         }
     }
 }
