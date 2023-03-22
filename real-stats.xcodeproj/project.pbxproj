@@ -23,6 +23,8 @@
 		79711F2229C9055E002EBA6F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79711F2129C9055E002EBA6F /* Home.swift */; };
 		79711F2429C91360002EBA6F /* ideal.json in Resources */ = {isa = PBXBuildFile; fileRef = 79711F2329C91360002EBA6F /* ideal.json */; };
 		79711F2629CBAC67002EBA6F /* stationData.py in Resources */ = {isa = PBXBuildFile; fileRef = 79711F2529CBAC67002EBA6F /* stationData.py */; };
+		79711F2829CBAE49002EBA6F /* test.py in Resources */ = {isa = PBXBuildFile; fileRef = 79711F2729CBAE49002EBA6F /* test.py */; };
+		79711F2A29CBAE51002EBA6F /* key.py in Resources */ = {isa = PBXBuildFile; fileRef = 79711F2929CBAE51002EBA6F /* key.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		79711F2129C9055E002EBA6F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		79711F2329C91360002EBA6F /* ideal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ideal.json; sourceTree = "<group>"; };
 		79711F2529CBAC67002EBA6F /* stationData.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = stationData.py; sourceTree = "<group>"; };
+		79711F2729CBAE49002EBA6F /* test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test.py; sourceTree = "<group>"; };
+		79711F2929CBAE51002EBA6F /* key.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = key.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				795419B529BED87C003FF58F /* main.py */,
 				79711F2329C91360002EBA6F /* ideal.json */,
 				79711F2529CBAC67002EBA6F /* stationData.py */,
+				79711F2729CBAE49002EBA6F /* test.py */,
+				79711F2929CBAE51002EBA6F /* key.py */,
 			);
 			path = gtfs;
 			sourceTree = "<group>";
@@ -195,7 +201,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79711F2829CBAE49002EBA6F /* test.py in Resources */,
 				795419B629BED87C003FF58F /* main.py in Resources */,
+				79711F2A29CBAE51002EBA6F /* key.py in Resources */,
 				79711F2629CBAC67002EBA6F /* stationData.py in Resources */,
 				79711F2429C91360002EBA6F /* ideal.json in Resources */,
 				793EACCE29944973002D7332 /* Preview Assets.xcassets in Resources */,
