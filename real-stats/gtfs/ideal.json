@@ -1,0 +1,105 @@
+[
+{
+    "__COMMENT": "this is for the main station view",
+    "station": {
+        "id": 4208,
+        "northbound": [
+            {
+                "line": "A",
+                "shortenedTimes": [1679412265,1679412265,1679412265,1679412265,1679412265],
+                "times": [
+                    {
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "timeToCurrentStation": 1679412265,
+                        "delays": []
+                    },
+                    {
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "410N",
+                        "timeToCurrentStation": 1679412265,
+                        "delays": []
+                    },
+                    {
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "409N",
+                        "timeToCurrentStation": 1679412265,
+                        "delays": []
+                    },
+                    {
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "400N",
+                        "timeToCurrentStation": 1679412265,
+                        "delays": []
+                    },
+                    {
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "timeToCurrentStation": 1679412265,
+                        "delays": []
+                    }
+                ]
+            },
+            {
+                "line": "C",
+                "times": [
+                    {
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "timeToCurrentStation": 1679412265,
+                        "delays": []
+                    }
+                ]
+            },
+            {
+                "line": "E",
+                "times": [
+                    {
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "timeToCurrentStation": 1679412265,
+                        "delays": []
+                    }
+                ]
+            }
+        ]
+    }
+},
+{
+    "__COMMENT": "this is for the widget",
+    "station": {
+        "id": 203,
+        "stationName": "96 St",
+        "notes": "Skipped Stations",
+        "notes_expanded": "There is no service between 42 St-PABT & 50th St",
+        "northbound": [
+            {
+                "line": "A",
+                "times": [120,200,300,400]
+            },
+            {
+                "line": "C",
+                "times": [120,200,300,400]
+            },
+            {
+                "line": "E",
+                "times": [120,200,300,400]
+            }
+        ],
+        "southbound": [
+            {
+                "line": "A",
+                "times": [120,200,300,400]
+            },
+            {
+                "line": "C",
+                "times": [120,200,300,400]
+            },
+            {
+                "line": "E",
+                "times": [120,200,300,400]
+            }
+        ]
+    }
+}
+]
