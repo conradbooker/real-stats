@@ -1,5 +1,5 @@
 def stations():
-    return [
+  returnedThing = [
   {
     "ID": 1,
     "GTFSID": "R01",
@@ -6945,3 +6945,4 @@ def stations():
     "ADA": 1
   }
 ]
+  return returnedThing
