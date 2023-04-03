@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		791754BA29D88185007B8F6A /* LineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791754B929D88185007B8F6A /* LineRow.swift */; };
+		791754BC29D89738007B8F6A /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791754BB29D89738007B8F6A /* TimeModel.swift */; };
+		791754BF29D898CA007B8F6A /* Python-iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 791754BE29D898CA007B8F6A /* Python-iOS */; };
+		791754C229D898DE007B8F6A /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 791754C129D898DE007B8F6A /* PythonKit */; };
+		791754C529D89AFC007B8F6A /* PythonSwiftFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791754C429D89AFC007B8F6A /* PythonSwiftFunctions.swift */; };
 		793EACC629944973002D7332 /* real_statsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EACC529944973002D7332 /* real_statsApp.swift */; };
 		793EACC829944973002D7332 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EACC729944973002D7332 /* ContentView.swift */; };
 		793EACCA29944973002D7332 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793EACC929944973002D7332 /* Assets.xcassets */; };
@@ -17,17 +22,29 @@
 		795419AB29BED7E8003FF58F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795419AA29BED7E8003FF58F /* MapView.swift */; };
 		795419AE29BED81B003FF58F /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795419AD29BED81B003FF58F /* Delay.swift */; };
 		795419B029BED82A003FF58F /* TimeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795419AF29BED82A003FF58F /* TimeRow.swift */; };
-		795419B229BED836003FF58F /* StationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795419B129BED836003FF58F /* StationRow.swift */; };
 		795419B429BED842003FF58F /* FavoriteBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795419B329BED842003FF58F /* FavoriteBox.swift */; };
 		795419B629BED87C003FF58F /* main.py in Resources */ = {isa = PBXBuildFile; fileRef = 795419B529BED87C003FF58F /* main.py */; };
 		79711F2229C9055E002EBA6F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79711F2129C9055E002EBA6F /* Home.swift */; };
 		79711F2429C91360002EBA6F /* ideal.json in Resources */ = {isa = PBXBuildFile; fileRef = 79711F2329C91360002EBA6F /* ideal.json */; };
-		79711F2629CBAC67002EBA6F /* stationData.py in Resources */ = {isa = PBXBuildFile; fileRef = 79711F2529CBAC67002EBA6F /* stationData.py */; };
-		79711F2829CBAE49002EBA6F /* test.py in Resources */ = {isa = PBXBuildFile; fileRef = 79711F2729CBAE49002EBA6F /* test.py */; };
+		79711F2829CBAE49002EBA6F /* stationData.py in Resources */ = {isa = PBXBuildFile; fileRef = 79711F2729CBAE49002EBA6F /* stationData.py */; };
 		79711F2A29CBAE51002EBA6F /* key.py in Resources */ = {isa = PBXBuildFile; fileRef = 79711F2929CBAE51002EBA6F /* key.py */; };
+		7973944C29D766F700D0DDDD /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7973944B29D766F700D0DDDD /* ButtonStyles.swift */; };
+		7975C45D29DB3ACE00A4AA1E /* FavoritesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7975C45B29DB3ACE00A4AA1E /* FavoritesModel.xcdatamodeld */; };
+		7975C45F29DB3B3100A4AA1E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975C45E29DB3B3100A4AA1E /* CoreDataManager.swift */; };
+		79BCE8AD29D6343A00042F1F /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCE8AC29D6343A00042F1F /* Station.swift */; };
+		79BCE8AF29D636AE00042F1F /* stationDataDict.py in Resources */ = {isa = PBXBuildFile; fileRef = 79BCE8AE29D636AE00042F1F /* stationDataDict.py */; };
+		79BCE8B129D6386900042F1F /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCE8B029D6386900042F1F /* ModelData.swift */; };
+		79BCE8B429D6531B00042F1F /* extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCE8B329D6531B00042F1F /* extentions.swift */; };
+		79BCE8B629D6538800042F1F /* LineLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCE8B529D6538800042F1F /* LineLogo.swift */; };
+		79BCE8B829D761CB00042F1F /* stationData.json in Resources */ = {isa = PBXBuildFile; fileRef = 79BCE8B729D761CB00042F1F /* stationData.json */; };
+		79F7E78229DA58C6000006C4 /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 79F7E78129DA58C6000006C4 /* WrappingHStack */; };
+		79F7E78429DA7D59000006C4 /* StationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F7E78329DA7D59000006C4 /* StationRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		791754B929D88185007B8F6A /* LineRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineRow.swift; sourceTree = "<group>"; };
+		791754BB29D89738007B8F6A /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
+		791754C429D89AFC007B8F6A /* PythonSwiftFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonSwiftFunctions.swift; sourceTree = "<group>"; };
 		793EACC229944973002D7332 /* real-stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "real-stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		793EACC529944973002D7332 /* real_statsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = real_statsApp.swift; sourceTree = "<group>"; };
 		793EACC729944973002D7332 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,14 +57,22 @@
 		795419AA29BED7E8003FF58F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		795419AD29BED81B003FF58F /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		795419AF29BED82A003FF58F /* TimeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRow.swift; sourceTree = "<group>"; };
-		795419B129BED836003FF58F /* StationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationRow.swift; sourceTree = "<group>"; };
 		795419B329BED842003FF58F /* FavoriteBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBox.swift; sourceTree = "<group>"; };
 		795419B529BED87C003FF58F /* main.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
 		79711F2129C9055E002EBA6F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		79711F2329C91360002EBA6F /* ideal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ideal.json; sourceTree = "<group>"; };
-		79711F2529CBAC67002EBA6F /* stationData.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = stationData.py; sourceTree = "<group>"; };
-		79711F2729CBAE49002EBA6F /* test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test.py; sourceTree = "<group>"; };
+		79711F2729CBAE49002EBA6F /* stationData.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = stationData.py; sourceTree = "<group>"; };
 		79711F2929CBAE51002EBA6F /* key.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = key.py; sourceTree = "<group>"; };
+		7973944B29D766F700D0DDDD /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		7975C45C29DB3ACE00A4AA1E /* Favorites.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Favorites.xcdatamodel; sourceTree = "<group>"; };
+		7975C45E29DB3B3100A4AA1E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		79BCE8AC29D6343A00042F1F /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		79BCE8AE29D636AE00042F1F /* stationDataDict.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = stationDataDict.py; sourceTree = "<group>"; };
+		79BCE8B029D6386900042F1F /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		79BCE8B329D6531B00042F1F /* extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extentions.swift; sourceTree = "<group>"; };
+		79BCE8B529D6538800042F1F /* LineLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineLogo.swift; sourceTree = "<group>"; };
+		79BCE8B729D761CB00042F1F /* stationData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = stationData.json; path = "real-stats/gtfs/stationData.json"; sourceTree = SOURCE_ROOT; };
+		79F7E78329DA7D59000006C4 /* StationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +80,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791754BF29D898CA007B8F6A /* Python-iOS in Frameworks */,
+				79F7E78229DA58C6000006C4 /* WrappingHStack in Frameworks */,
+				791754C229D898DE007B8F6A /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		791754B829D8815D007B8F6A /* station */ = {
+			isa = PBXGroup;
+			children = (
+				795419A629BED7CF003FF58F /* StationView.swift */,
+				791754B929D88185007B8F6A /* LineRow.swift */,
+				79F7E78329DA7D59000006C4 /* StationRow.swift */,
+			);
+			path = station;
+			sourceTree = "<group>";
+		};
+		791754C329D89908007B8F6A /* Times */ = {
+			isa = PBXGroup;
+			children = (
+				791754BB29D89738007B8F6A /* TimeModel.swift */,
+				791754C429D89AFC007B8F6A /* PythonSwiftFunctions.swift */,
+			);
+			path = Times;
+			sourceTree = "<group>";
+		};
 		793EACB929944973002D7332 = {
 			isa = PBXGroup;
 			children = (
@@ -104,8 +151,6 @@
 			children = (
 				795419B529BED87C003FF58F /* main.py */,
 				79711F2329C91360002EBA6F /* ideal.json */,
-				79711F2529CBAC67002EBA6F /* stationData.py */,
-				79711F2729CBAE49002EBA6F /* test.py */,
 				79711F2929CBAE51002EBA6F /* key.py */,
 			);
 			path = gtfs;
@@ -114,6 +159,13 @@
 		795419A029BEC8AB003FF58F /* modeling */ = {
 			isa = PBXGroup;
 			children = (
+				7975C45A29DB3AAF00A4AA1E /* coredata */,
+				791754C329D89908007B8F6A /* Times */,
+				79711F2729CBAE49002EBA6F /* stationData.py */,
+				79BCE8B729D761CB00042F1F /* stationData.json */,
+				79BCE8AC29D6343A00042F1F /* Station.swift */,
+				79BCE8B029D6386900042F1F /* ModelData.swift */,
+				79BCE8AE29D636AE00042F1F /* stationDataDict.py */,
 			);
 			path = modeling;
 			sourceTree = "<group>";
@@ -121,11 +173,12 @@
 		795419A129BEC8CD003FF58F /* views */ = {
 			isa = PBXGroup;
 			children = (
+				79BCE8B229D6531300042F1F /* extentions */,
 				795419AC29BED80D003FF58F /* subviews */,
+				791754B829D8815D007B8F6A /* station */,
 				79711F2129C9055E002EBA6F /* Home.swift */,
 				793EACC729944973002D7332 /* ContentView.swift */,
 				795419A429BED7BB003FF58F /* Preferences.swift */,
-				795419A629BED7CF003FF58F /* StationView.swift */,
 				795419A829BED7E1003FF58F /* LineView.swift */,
 				795419AA29BED7E8003FF58F /* MapView.swift */,
 			);
@@ -137,10 +190,28 @@
 			children = (
 				795419AD29BED81B003FF58F /* Delay.swift */,
 				795419AF29BED82A003FF58F /* TimeRow.swift */,
-				795419B129BED836003FF58F /* StationRow.swift */,
 				795419B329BED842003FF58F /* FavoriteBox.swift */,
+				79BCE8B529D6538800042F1F /* LineLogo.swift */,
 			);
 			path = subviews;
+			sourceTree = "<group>";
+		};
+		7975C45A29DB3AAF00A4AA1E /* coredata */ = {
+			isa = PBXGroup;
+			children = (
+				7975C45B29DB3ACE00A4AA1E /* FavoritesModel.xcdatamodeld */,
+				7975C45E29DB3B3100A4AA1E /* CoreDataManager.swift */,
+			);
+			path = coredata;
+			sourceTree = "<group>";
+		};
+		79BCE8B229D6531300042F1F /* extentions */ = {
+			isa = PBXGroup;
+			children = (
+				79BCE8B329D6531B00042F1F /* extentions.swift */,
+				7973944B29D766F700D0DDDD /* ButtonStyles.swift */,
+			);
+			path = extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +230,11 @@
 			dependencies = (
 			);
 			name = "real-stats";
+			packageProductDependencies = (
+				791754BE29D898CA007B8F6A /* Python-iOS */,
+				791754C129D898DE007B8F6A /* PythonKit */,
+				79F7E78129DA58C6000006C4 /* WrappingHStack */,
+			);
 			productName = "real-stats";
 			productReference = 793EACC229944973002D7332 /* real-stats.app */;
 			productType = "com.apple.product-type.application";
@@ -187,6 +263,11 @@
 				Base,
 			);
 			mainGroup = 793EACB929944973002D7332;
+			packageReferences = (
+				791754BD29D898CA007B8F6A /* XCRemoteSwiftPackageReference "Python-iOS" */,
+				791754C029D898DE007B8F6A /* XCRemoteSwiftPackageReference "PythonKit" */,
+				79F7E78029DA58C6000006C4 /* XCRemoteSwiftPackageReference "WrappingHStack" */,
+			);
 			productRefGroup = 793EACC329944973002D7332 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -201,12 +282,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79711F2829CBAE49002EBA6F /* test.py in Resources */,
+				79711F2829CBAE49002EBA6F /* stationData.py in Resources */,
+				79BCE8AF29D636AE00042F1F /* stationDataDict.py in Resources */,
 				795419B629BED87C003FF58F /* main.py in Resources */,
 				79711F2A29CBAE51002EBA6F /* key.py in Resources */,
-				79711F2629CBAC67002EBA6F /* stationData.py in Resources */,
 				79711F2429C91360002EBA6F /* ideal.json in Resources */,
 				793EACCE29944973002D7332 /* Preview Assets.xcassets in Resources */,
+				79BCE8B829D761CB00042F1F /* stationData.json in Resources */,
 				793EACCA29944973002D7332 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,14 +303,24 @@
 				795419B429BED842003FF58F /* FavoriteBox.swift in Sources */,
 				795419AB29BED7E8003FF58F /* MapView.swift in Sources */,
 				793EACC829944973002D7332 /* ContentView.swift in Sources */,
+				79BCE8B129D6386900042F1F /* ModelData.swift in Sources */,
 				79711F2229C9055E002EBA6F /* Home.swift in Sources */,
+				791754C529D89AFC007B8F6A /* PythonSwiftFunctions.swift in Sources */,
 				795419B029BED82A003FF58F /* TimeRow.swift in Sources */,
 				795419A929BED7E1003FF58F /* LineView.swift in Sources */,
+				791754BC29D89738007B8F6A /* TimeModel.swift in Sources */,
 				795419A529BED7BB003FF58F /* Preferences.swift in Sources */,
 				795419AE29BED81B003FF58F /* Delay.swift in Sources */,
-				795419B229BED836003FF58F /* StationRow.swift in Sources */,
+				79BCE8B429D6531B00042F1F /* extentions.swift in Sources */,
+				7975C45F29DB3B3100A4AA1E /* CoreDataManager.swift in Sources */,
 				793EACC629944973002D7332 /* real_statsApp.swift in Sources */,
+				79BCE8AD29D6343A00042F1F /* Station.swift in Sources */,
+				7973944C29D766F700D0DDDD /* ButtonStyles.swift in Sources */,
+				79F7E78429DA7D59000006C4 /* StationRow.swift in Sources */,
+				791754BA29D88185007B8F6A /* LineRow.swift in Sources */,
+				7975C45D29DB3ACE00A4AA1E /* FavoritesModel.xcdatamodeld in Sources */,
 				795419A729BED7CF003FF58F /* StationView.swift in Sources */,
+				79BCE8B629D6538800042F1F /* LineLogo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +534,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		791754BD29D898CA007B8F6A /* XCRemoteSwiftPackageReference "Python-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kewlbear/Python-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.59932;
+			};
+		};
+		791754C029D898DE007B8F6A /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		79F7E78029DA58C6000006C4 /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dkk/WrappingHStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		791754BE29D898CA007B8F6A /* Python-iOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 791754BD29D898CA007B8F6A /* XCRemoteSwiftPackageReference "Python-iOS" */;
+			productName = "Python-iOS";
+		};
+		791754C129D898DE007B8F6A /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 791754C029D898DE007B8F6A /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+		79F7E78129DA58C6000006C4 /* WrappingHStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79F7E78029DA58C6000006C4 /* XCRemoteSwiftPackageReference "WrappingHStack" */;
+			productName = WrappingHStack;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		7975C45B29DB3ACE00A4AA1E /* FavoritesModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7975C45C29DB3ACE00A4AA1E /* Favorites.xcdatamodel */,
+			);
+			currentVersion = 7975C45C29DB3ACE00A4AA1E /* Favorites.xcdatamodel */;
+			path = FavoritesModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 793EACBA29944973002D7332 /* Project object */;
 }

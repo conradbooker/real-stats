@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct real_statsApp: App {
+    let persistentContainer = CoreDataManager.shared.persistentContainer
+    
     var body: some Scene {
         WindowGroup {
             Home()
+                .environment(\.managedObjectContext, persistentContainer.viewContext)
         }
     }
 }
+

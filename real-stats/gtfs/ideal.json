@@ -6,36 +6,47 @@
         "northbound": [
             {
                 "line": "A",
-                "shortenedTimes": [1679412265,1679412265,1679412265,1679412265,1679412265],
                 "times": [
                     {
+                        "timeToCurrentStation": 1679412265,
                         "tripID": "106950_1..S03R",
                         "currentStation": "420N",
-                        "timeToCurrentStation": 1679412265,
-                        "delays": []
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": [],
+                        "previousStations": [],
+                        "nextStations": []
                     },
                     {
-                        "tripID": "106950_1..S03R",
-                        "currentStation": "410N",
                         "timeToCurrentStation": 1679412265,
-                        "delays": []
-                    },
-                    {
-                        "tripID": "106950_1..S03R",
-                        "currentStation": "409N",
-                        "timeToCurrentStation": 1679412265,
-                        "delays": []
-                    },
-                    {
-                        "tripID": "106950_1..S03R",
-                        "currentStation": "400N",
-                        "timeToCurrentStation": 1679412265,
-                        "delays": []
-                    },
-                    {
                         "tripID": "106950_1..S03R",
                         "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
                         "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
                         "delays": []
                     }
                 ]
@@ -44,9 +55,43 @@
                 "line": "C",
                 "times": [
                     {
+                        "timeToCurrentStation": 1679412265,
                         "tripID": "106950_1..S03R",
                         "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
                         "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
                         "delays": []
                     }
                 ]
@@ -55,13 +100,186 @@
                 "line": "E",
                 "times": [
                     {
+                        "timeToCurrentStation": 1679412265,
                         "tripID": "106950_1..S03R",
                         "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
                         "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
                         "delays": []
                     }
                 ]
             }
+
+        ],
+        "southbound": [
+            {
+                "line": "A",
+                "times": [
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    }
+                ]
+            },
+            {
+                "line": "C",
+                "times": [
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    }
+                ]
+            },
+            {
+                "line": "E",
+                "times": [
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    },
+                    {
+                        "timeToCurrentStation": 1679412265,
+                        "tripID": "106950_1..S03R",
+                        "currentStation": "420N",
+                        "destination": "Far Rockaway",
+                        "destinationID": 430,
+                        "delays": []
+                    }
+                ]
+            }
+
         ]
     }
 },
@@ -101,5 +319,10 @@
             }
         ]
     }
+},
+{
+    "station": 428,
+    "lines": []
+    
 }
 ]

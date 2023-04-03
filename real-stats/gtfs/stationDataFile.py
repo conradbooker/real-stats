@@ -1,10 +1,19 @@
 def stations():
-  returnedThing = [
+  return [
   {
-    "ID": 1,
+    "id": 1,
     "GTFSID": "R01",
+    "complexName": "Astoria-Ditmars Blvd",
+    "stations": [],
     "stationID": 1,
+    "short1": "Ditmars Blvd",
+    "short2": "Astoria",
     "stopName": "Astoria-Ditmars Blvd",
+    "expectedLines": [
+      "N",
+      "Q",
+      "W"
+    ],
     "lines": [],
     "trunk": "Astoria",
     "borough": "Q",
@@ -15,10 +24,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 2,
+    "id": 2,
     "GTFSID": "R03",
+    "complexName": "Astoria Blvd",
+    "stations": [],
     "stationID": 2,
+    "short1": "Astoria Blvd",
+    "short2": "",
     "stopName": "Astoria Blvd",
+    "expectedLines": [
+      "N",
+      "Q",
+      "W"
+    ],
     "lines": [],
     "trunk": "Astoria",
     "borough": "Q",
@@ -29,10 +47,19 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 3,
+    "id": 3,
     "GTFSID": "R04",
+    "complexName": "30 Av",
+    "stations": [],
     "stationID": 3,
+    "short1": "30 Av",
+    "short2": "",
     "stopName": "30 Av",
+    "expectedLines": [
+      "N",
+      "Q",
+      "W"
+    ],
     "lines": [],
     "trunk": "Astoria",
     "borough": "Q",
@@ -43,10 +70,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 4,
+    "id": 4,
     "GTFSID": "R05",
+    "complexName": "Broadway",
+    "stations": [],
     "stationID": 4,
+    "short1": "Broadway",
+    "short2": "",
     "stopName": "Broadway",
+    "expectedLines": [
+      "N",
+      "Q",
+      "W"
+    ],
     "lines": [],
     "trunk": "Astoria",
     "borough": "Q",
@@ -57,10 +93,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 5,
+    "id": 5,
     "GTFSID": "R06",
+    "complexName": "36 Av",
+    "stations": [],
     "stationID": 5,
+    "short1": "36 Av",
+    "short2": "",
     "stopName": "36 Av",
+    "expectedLines": [
+      "N",
+      "Q",
+      "W"
+    ],
     "lines": [],
     "trunk": "Astoria",
     "borough": "Q",
@@ -71,10 +116,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 6,
+    "id": 6,
     "GTFSID": "R08",
+    "complexName": "39 Av-Dutch Kills",
+    "stations": [],
     "stationID": 6,
+    "short1": "39 Av",
+    "short2": "Dutch Kills",
     "stopName": "39 Av-Dutch Kills",
+    "expectedLines": [
+      "N",
+      "Q",
+      "W"
+    ],
     "lines": [],
     "trunk": "Astoria",
     "borough": "Q",
@@ -85,10 +139,21 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 8,
+    "id": 8,
     "GTFSID": "R13",
+    "complexName": "5 Av/59 St",
+    "stations": [],
     "stationID": 8,
+    "short1": "5 Av",
+    "short2": "59 St",
     "stopName": "5 Av/59 St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "E"
+    ],
     "lines": [],
     "trunk": "Astoria",
     "borough": "M",
@@ -99,12 +164,23 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 9,
+    "id": 9,
     "GTFSID": "R14",
+    "complexName": "57 St-7 Av",
+    "stations": [],
     "stationID": 9,
+    "short1": "57 St",
+    "short2": "7 Av",
     "stopName": "57 St-7 Av",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "E"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Broadway",
     "borough": "M",
     "lat": 40.764664,
     "long": -73.980658,
@@ -113,12 +189,23 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 10,
+    "id": 10,
     "GTFSID": "R15",
+    "complexName": "49 St",
+    "stations": [],
     "stationID": 10,
+    "short1": "49 St",
+    "short2": "",
     "stopName": "49 St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "E"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Broadway",
     "borough": "M",
     "lat": 40.759901,
     "long": -73.984139,
@@ -127,12 +214,23 @@ def stations():
     "ADA": 2
   },
   {
-    "ID": 13,
+    "id": 13,
     "GTFSID": "R18",
+    "complexName": "28 St",
+    "stations": [],
     "stationID": 13,
+    "short1": "28 St",
+    "short2": "",
     "stopName": "28 St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "E"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Broadway",
     "borough": "M",
     "lat": 40.745494,
     "long": -73.988691,
@@ -141,12 +239,23 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 14,
+    "id": 14,
     "GTFSID": "R19",
+    "complexName": "23 St",
+    "stations": [],
     "stationID": 14,
+    "short1": "23 St",
+    "short2": "",
     "stopName": "23 St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "E"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Broadway",
     "borough": "M",
     "lat": 40.741303,
     "long": -73.989344,
@@ -155,12 +264,23 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 16,
+    "id": 16,
     "GTFSID": "R21",
+    "complexName": "8 St-NYU",
+    "stations": [],
     "stationID": 16,
+    "short1": "8 St",
+    "short2": "NYU",
     "stopName": "8 St-NYU",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "E"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Broadway",
     "borough": "M",
     "lat": 40.730328,
     "long": -73.992629,
@@ -169,12 +289,23 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 17,
+    "id": 17,
     "GTFSID": "R22",
+    "complexName": "Prince St",
+    "stations": [],
     "stationID": 17,
+    "short1": "Prince St",
+    "short2": "",
     "stopName": "Prince St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "E"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Broadway",
     "borough": "M",
     "lat": 40.724329,
     "long": -73.997702,
@@ -183,10 +314,21 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 20,
+    "id": 20,
     "GTFSID": "R24",
+    "complexName": "City Hall",
+    "stations": [],
     "stationID": 20,
+    "short1": "City Hall",
+    "short2": "",
     "stopName": "City Hall",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "E"
+    ],
     "lines": [],
     "trunk": "Broadway",
     "borough": "M",
@@ -197,10 +339,21 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 22,
+    "id": 22,
     "GTFSID": "R26",
+    "complexName": "Rector St",
+    "stations": [],
     "stationID": 22,
+    "short1": "Rector St",
+    "short2": "",
     "stopName": "Rector St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "E"
+    ],
     "lines": [],
     "trunk": "Broadway",
     "borough": "M",
@@ -211,12 +364,25 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 26,
+    "id": 26,
     "GTFSID": "R30",
+    "complexName": "DeKalb Av",
+    "stations": [],
     "stationID": 26,
+    "short1": "DeKalb Av",
+    "short2": "",
     "stopName": "DeKalb Av",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D",
+      "F"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Broadway",
     "borough": "Bk",
     "lat": 40.690635,
     "long": -73.981824,
@@ -225,10 +391,22 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 28,
+    "id": 28,
     "GTFSID": "R32",
+    "complexName": "Union St",
+    "stations": [],
     "stationID": 28,
+    "short1": "Union St",
+    "short2": "",
     "stopName": "Union St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "4th Av",
     "borough": "Bk",
@@ -239,10 +417,22 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 30,
+    "id": 30,
     "GTFSID": "R34",
+    "complexName": "Prospect Av",
+    "stations": [],
     "stationID": 30,
+    "short1": "Prospect Av",
+    "short2": "",
     "stopName": "Prospect Av",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "4th Av",
     "borough": "Bk",
@@ -253,10 +443,22 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 31,
+    "id": 31,
     "GTFSID": "R35",
+    "complexName": "25 St",
+    "stations": [],
     "stationID": 31,
+    "short1": "25 St",
+    "short2": "",
     "stopName": "25 St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "4th Av",
     "borough": "Bk",
@@ -267,10 +469,22 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 32,
+    "id": 32,
     "GTFSID": "R36",
+    "complexName": "36 St",
+    "stations": [],
     "stationID": 32,
+    "short1": "36 St",
+    "short2": "",
     "stopName": "36 St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "4th Av",
     "borough": "Bk",
@@ -281,10 +495,22 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 33,
+    "id": 33,
     "GTFSID": "R39",
+    "complexName": "45 St",
+    "stations": [],
     "stationID": 33,
+    "short1": "45 St",
+    "short2": "",
     "stopName": "45 St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "4th Av",
     "borough": "Bk",
@@ -295,10 +521,22 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 34,
+    "id": 34,
     "GTFSID": "R40",
+    "complexName": "53 St",
+    "stations": [],
     "stationID": 34,
+    "short1": "53 St",
+    "short2": "",
     "stopName": "53 St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "4th Av",
     "borough": "Bk",
@@ -309,10 +547,22 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 35,
+    "id": 35,
     "GTFSID": "R41",
+    "complexName": "59 St",
+    "stations": [],
     "stationID": 35,
+    "short1": "59 St",
+    "short2": "",
     "stopName": "59 St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "4th Av",
     "borough": "Bk",
@@ -323,10 +573,22 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 36,
+    "id": 36,
     "GTFSID": "R42",
+    "complexName": "Bay Ridge Av",
+    "stations": [],
     "stationID": 36,
+    "short1": "Bay Ridge Av",
+    "short2": "",
     "stopName": "Bay Ridge Av",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "4th Av",
     "borough": "Bk",
@@ -337,10 +599,22 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 37,
+    "id": 37,
     "GTFSID": "R43",
+    "complexName": "77 St",
+    "stations": [],
     "stationID": 37,
+    "short1": "77 St",
+    "short2": "",
     "stopName": "77 St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "4th Av",
     "borough": "Bk",
@@ -351,10 +625,22 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 38,
+    "id": 38,
     "GTFSID": "R44",
+    "complexName": "86 St",
+    "stations": [],
     "stationID": 38,
+    "short1": "86 St",
+    "short2": "",
     "stopName": "86 St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "4th Av",
     "borough": "Bk",
@@ -365,10 +651,22 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 39,
+    "id": 39,
     "GTFSID": "R45",
+    "complexName": "Bay Ridge-95 St",
+    "stations": [],
     "stationID": 39,
+    "short1": "95 St",
+    "short2": "Bay Ridge",
     "stopName": "Bay Ridge-95 St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "4th Av",
     "borough": "Bk",
@@ -379,12 +677,24 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 41,
+    "id": 41,
     "GTFSID": "D25",
+    "complexName": "7 Av",
+    "stations": [],
     "stationID": 41,
+    "short1": "7 Av",
+    "short2": "",
     "stopName": "7 Av",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Brighton",
     "borough": "Bk",
     "lat": 40.67705,
     "long": -73.972367,
@@ -393,12 +703,24 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 42,
+    "id": 42,
     "GTFSID": "D26",
+    "complexName": "Prospect Park",
+    "stations": [],
     "stationID": 42,
+    "short1": "Prospect Park",
+    "short2": "",
     "stopName": "Prospect Park",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Brighton",
     "borough": "Bk",
     "lat": 40.661614,
     "long": -73.962246,
@@ -407,12 +729,24 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 43,
+    "id": 43,
     "GTFSID": "D27",
+    "complexName": "Parkside Av",
+    "stations": [],
     "stationID": 43,
+    "short1": "Parkside Av",
+    "short2": "",
     "stopName": "Parkside Av",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Brighton",
     "borough": "Bk",
     "lat": 40.655292,
     "long": -73.961495,
@@ -421,12 +755,24 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 44,
+    "id": 44,
     "GTFSID": "D28",
+    "complexName": "Church Av",
+    "stations": [],
     "stationID": 44,
+    "short1": "Church Av",
+    "short2": "",
     "stopName": "Church Av",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Brighton",
     "borough": "Bk",
     "lat": 40.650527,
     "long": -73.962982,
@@ -435,12 +781,24 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 45,
+    "id": 45,
     "GTFSID": "D29",
+    "complexName": "Beverley Rd",
+    "stations": [],
     "stationID": 45,
+    "short1": "Beverley Rd",
+    "short2": "",
     "stopName": "Beverley Rd",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Brighton",
     "borough": "Bk",
     "lat": 40.644031,
     "long": -73.964492,
@@ -449,12 +807,24 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 46,
+    "id": 46,
     "GTFSID": "D30",
+    "complexName": "Cortelyou Rd",
+    "stations": [],
     "stationID": 46,
+    "short1": "Cortelyou Rd",
+    "short2": "",
     "stopName": "Cortelyou Rd",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Brighton",
     "borough": "Bk",
     "lat": 40.640927,
     "long": -73.963891,
@@ -463,12 +833,24 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 47,
+    "id": 47,
     "GTFSID": "D31",
+    "complexName": "Newkirk Plaza",
+    "stations": [],
     "stationID": 47,
+    "short1": "Newkirk Plaza",
+    "short2": "",
     "stopName": "Newkirk Plaza",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Brighton",
     "borough": "Bk",
     "lat": 40.635082,
     "long": -73.962793,
@@ -477,12 +859,24 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 48,
+    "id": 48,
     "GTFSID": "D32",
+    "complexName": "Avenue H",
+    "stations": [],
     "stationID": 48,
+    "short1": "Avenue H",
+    "short2": "",
     "stopName": "Avenue H",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Brighton",
     "borough": "Bk",
     "lat": 40.62927,
     "long": -73.961639,
@@ -491,12 +885,24 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 49,
+    "id": 49,
     "GTFSID": "D33",
+    "complexName": "Avenue J",
+    "stations": [],
     "stationID": 49,
+    "short1": "Avenue J",
+    "short2": "",
     "stopName": "Avenue J",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Brighton",
     "borough": "Bk",
     "lat": 40.625039,
     "long": -73.960803,
@@ -505,12 +911,24 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 50,
+    "id": 50,
     "GTFSID": "D34",
+    "complexName": "Avenue M",
+    "stations": [],
     "stationID": 50,
+    "short1": "Avenue M",
+    "short2": "",
     "stopName": "Avenue M",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Brighton",
     "borough": "Bk",
     "lat": 40.617618,
     "long": -73.959399,
@@ -519,12 +937,24 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 51,
+    "id": 51,
     "GTFSID": "D35",
+    "complexName": "Kings Hwy",
+    "stations": [],
     "stationID": 51,
+    "short1": "Kings Hwy",
+    "short2": "",
     "stopName": "Kings Hwy",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Brighton",
     "borough": "Bk",
     "lat": 40.60867,
     "long": -73.957734,
@@ -533,12 +963,24 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 52,
+    "id": 52,
     "GTFSID": "D37",
+    "complexName": "Avenue U",
+    "stations": [],
     "stationID": 52,
+    "short1": "Avenue U",
+    "short2": "",
     "stopName": "Avenue U",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Brighton",
     "borough": "Bk",
     "lat": 40.5993,
     "long": -73.955929,
@@ -547,12 +989,24 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 53,
+    "id": 53,
     "GTFSID": "D38",
+    "complexName": "Neck Rd",
+    "stations": [],
     "stationID": 53,
+    "short1": "Neck Rd",
+    "short2": "",
     "stopName": "Neck Rd",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Brighton",
     "borough": "Bk",
     "lat": 40.595246,
     "long": -73.955161,
@@ -561,12 +1015,24 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 54,
+    "id": 54,
     "GTFSID": "D39",
+    "complexName": "Sheepshead Bay",
+    "stations": [],
     "stationID": 54,
+    "short1": "Sheepshead Bay",
+    "short2": "",
     "stopName": "Sheepshead Bay",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Brighton",
     "borough": "Bk",
     "lat": 40.586896,
     "long": -73.954155,
@@ -575,12 +1041,24 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 55,
+    "id": 55,
     "GTFSID": "D40",
+    "complexName": "Brighton Beach",
+    "stations": [],
     "stationID": 55,
+    "short1": "Brighton Beach",
+    "short2": "",
     "stopName": "Brighton Beach",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Brighton",
     "borough": "Bk",
     "lat": 40.577621,
     "long": -73.961376,
@@ -589,12 +1067,24 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 56,
+    "id": 56,
     "GTFSID": "D41",
+    "complexName": "Ocean Pkwy",
+    "stations": [],
     "stationID": 56,
+    "short1": "Ocean Pkwy",
+    "short2": "",
     "stopName": "Ocean Pkwy",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Brighton",
     "borough": "Bk",
     "lat": 40.576312,
     "long": -73.968501,
@@ -603,12 +1093,24 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 57,
+    "id": 57,
     "GTFSID": "D42",
+    "complexName": "W 8 St-NY Aquarium",
+    "stations": [],
     "stationID": 57,
+    "short1": "W 8 St",
+    "short2": "NY Aquarium",
     "stopName": "W 8 St-NY Aquarium",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Brighton",
     "borough": "Bk",
     "lat": 40.576127,
     "long": -73.975939,
@@ -617,10 +1119,23 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 58,
+    "id": 58,
     "GTFSID": "D43",
+    "complexName": "Coney Island-Stillwell Av",
+    "stations": [],
     "stationID": 58,
+    "short1": "Coney Island",
+    "short2": "Stillwell Av",
     "stopName": "Coney Island-Stillwell Av",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D",
+      "F"
+    ],
     "lines": [],
     "trunk": "Sea Beach / West End / Culver / Brighton",
     "borough": "Bk",
@@ -631,10 +1146,19 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 59,
+    "id": 59,
     "GTFSID": "B12",
+    "complexName": "9 Av",
+    "stations": [],
     "stationID": 59,
+    "short1": "9 Av",
+    "short2": "",
     "stopName": "9 Av",
+    "expectedLines": [
+      "D",
+      "N",
+      "F"
+    ],
     "lines": [],
     "trunk": "West End",
     "borough": "Bk",
@@ -645,10 +1169,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 60,
+    "id": 60,
     "GTFSID": "B13",
+    "complexName": "Fort Hamilton Pkwy",
+    "stations": [],
     "stationID": 60,
+    "short1": "Ft. Hamilton Pkwy",
+    "short2": "",
     "stopName": "Fort Hamilton Pkwy",
+    "expectedLines": [
+      "D",
+      "N",
+      "F"
+    ],
     "lines": [],
     "trunk": "West End",
     "borough": "Bk",
@@ -659,10 +1192,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 61,
+    "id": 61,
     "GTFSID": "B14",
+    "complexName": "50 St",
+    "stations": [],
     "stationID": 61,
+    "short1": "50 St",
+    "short2": "",
     "stopName": "50 St",
+    "expectedLines": [
+      "D",
+      "N",
+      "F"
+    ],
     "lines": [],
     "trunk": "West End",
     "borough": "Bk",
@@ -673,10 +1215,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 62,
+    "id": 62,
     "GTFSID": "B15",
+    "complexName": "55 St",
+    "stations": [],
     "stationID": 62,
+    "short1": "55 St",
+    "short2": "",
     "stopName": "55 St",
+    "expectedLines": [
+      "D",
+      "N",
+      "F"
+    ],
     "lines": [],
     "trunk": "West End",
     "borough": "Bk",
@@ -687,10 +1238,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 64,
+    "id": 64,
     "GTFSID": "B17",
+    "complexName": "71 St",
+    "stations": [],
     "stationID": 64,
+    "short1": "71 St",
+    "short2": "",
     "stopName": "71 St",
+    "expectedLines": [
+      "D",
+      "N",
+      "F"
+    ],
     "lines": [],
     "trunk": "West End",
     "borough": "Bk",
@@ -701,10 +1261,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 65,
+    "id": 65,
     "GTFSID": "B18",
+    "complexName": "79 St",
+    "stations": [],
     "stationID": 65,
+    "short1": "79 St",
+    "short2": "",
     "stopName": "79 St",
+    "expectedLines": [
+      "D",
+      "N",
+      "F"
+    ],
     "lines": [],
     "trunk": "West End",
     "borough": "Bk",
@@ -715,10 +1284,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 66,
+    "id": 66,
     "GTFSID": "B19",
+    "complexName": "18 Av",
+    "stations": [],
     "stationID": 66,
+    "short1": "18 Av",
+    "short2": "",
     "stopName": "18 Av",
+    "expectedLines": [
+      "D",
+      "N",
+      "F"
+    ],
     "lines": [],
     "trunk": "West End",
     "borough": "Bk",
@@ -729,10 +1307,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 67,
+    "id": 67,
     "GTFSID": "B20",
+    "complexName": "20 Av",
+    "stations": [],
     "stationID": 67,
+    "short1": "20 Av",
+    "short2": "",
     "stopName": "20 Av",
+    "expectedLines": [
+      "D",
+      "N",
+      "F"
+    ],
     "lines": [],
     "trunk": "West End",
     "borough": "Bk",
@@ -743,10 +1330,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 68,
+    "id": 68,
     "GTFSID": "B21",
+    "complexName": "Bay Pkwy",
+    "stations": [],
     "stationID": 68,
+    "short1": "Bay Pkwy",
+    "short2": "",
     "stopName": "Bay Pkwy",
+    "expectedLines": [
+      "D",
+      "N",
+      "F"
+    ],
     "lines": [],
     "trunk": "West End",
     "borough": "Bk",
@@ -757,10 +1353,19 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 69,
+    "id": 69,
     "GTFSID": "B22",
+    "complexName": "25 Av",
+    "stations": [],
     "stationID": 69,
+    "short1": "25 Av",
+    "short2": "",
     "stopName": "25 Av",
+    "expectedLines": [
+      "D",
+      "N",
+      "F"
+    ],
     "lines": [],
     "trunk": "West End",
     "borough": "Bk",
@@ -771,10 +1376,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 70,
+    "id": 70,
     "GTFSID": "B23",
+    "complexName": "Bay 50 St",
+    "stations": [],
     "stationID": 70,
+    "short1": "Bay 50 St",
+    "short2": "",
     "stopName": "Bay 50 St",
+    "expectedLines": [
+      "D",
+      "N",
+      "F"
+    ],
     "lines": [],
     "trunk": "West End",
     "borough": "Bk",
@@ -785,10 +1399,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 71,
+    "id": 71,
     "GTFSID": "N02",
+    "complexName": "8 Av",
+    "stations": [],
     "stationID": 71,
+    "short1": "8 Av",
+    "short2": "",
     "stopName": "8 Av",
+    "expectedLines": [
+      "D",
+      "N",
+      "F"
+    ],
     "lines": [],
     "trunk": "Sea Beach",
     "borough": "Bk",
@@ -799,10 +1422,19 @@ def stations():
     "ADA": 2
   },
   {
-    "ID": 72,
+    "id": 72,
     "GTFSID": "N03",
+    "complexName": "Fort Hamilton Pkwy",
+    "stations": [],
     "stationID": 72,
+    "short1": "Ft. Hamilton Pkwy",
+    "short2": "",
     "stopName": "Fort Hamilton Pkwy",
+    "expectedLines": [
+      "D",
+      "N",
+      "F"
+    ],
     "lines": [],
     "trunk": "Sea Beach",
     "borough": "Bk",
@@ -813,10 +1445,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 74,
+    "id": 74,
     "GTFSID": "N05",
+    "complexName": "18 Av",
+    "stations": [],
     "stationID": 74,
+    "short1": "18 Av",
+    "short2": "",
     "stopName": "18 Av",
+    "expectedLines": [
+      "D",
+      "N",
+      "F"
+    ],
     "lines": [],
     "trunk": "Sea Beach",
     "borough": "Bk",
@@ -827,10 +1468,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 75,
+    "id": 75,
     "GTFSID": "N06",
+    "complexName": "20 Av",
+    "stations": [],
     "stationID": 75,
+    "short1": "20 Av",
+    "short2": "",
     "stopName": "20 Av",
+    "expectedLines": [
+      "D",
+      "N",
+      "F"
+    ],
     "lines": [],
     "trunk": "Sea Beach",
     "borough": "Bk",
@@ -841,10 +1491,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 76,
+    "id": 76,
     "GTFSID": "N07",
+    "complexName": "Bay Pkwy",
+    "stations": [],
     "stationID": 76,
+    "short1": "Bay Pkwy",
+    "short2": "",
     "stopName": "Bay Pkwy",
+    "expectedLines": [
+      "D",
+      "N",
+      "F"
+    ],
     "lines": [],
     "trunk": "Sea Beach",
     "borough": "Bk",
@@ -855,10 +1514,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 77,
+    "id": 77,
     "GTFSID": "N08",
+    "complexName": "Kings Hwy",
+    "stations": [],
     "stationID": 77,
+    "short1": "Kings Hwy",
+    "short2": "",
     "stopName": "Kings Hwy",
+    "expectedLines": [
+      "D",
+      "N",
+      "F"
+    ],
     "lines": [],
     "trunk": "Sea Beach",
     "borough": "Bk",
@@ -869,10 +1537,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 78,
+    "id": 78,
     "GTFSID": "N09",
+    "complexName": "Avenue U",
+    "stations": [],
     "stationID": 78,
+    "short1": "Avenue U",
+    "short2": "",
     "stopName": "Avenue U",
+    "expectedLines": [
+      "D",
+      "N",
+      "F"
+    ],
     "lines": [],
     "trunk": "Sea Beach",
     "borough": "Bk",
@@ -883,10 +1560,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 79,
+    "id": 79,
     "GTFSID": "N10",
+    "complexName": "86 St",
+    "stations": [],
     "stationID": 79,
+    "short1": "86 St",
+    "short2": "",
     "stopName": "86 St",
+    "expectedLines": [
+      "D",
+      "N",
+      "F"
+    ],
     "lines": [],
     "trunk": "Sea Beach",
     "borough": "Bk",
@@ -897,10 +1583,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 80,
+    "id": 80,
     "GTFSID": "J12",
+    "complexName": "121 St",
+    "stations": [],
     "stationID": 80,
+    "short1": "121 St",
+    "short2": "",
     "stopName": "121 St",
+    "expectedLines": [
+      "J",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Q",
@@ -911,10 +1605,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 81,
+    "id": 81,
     "GTFSID": "J13",
+    "complexName": "111 St",
+    "stations": [],
     "stationID": 81,
+    "short1": "111 St",
+    "short2": "",
     "stopName": "111 St",
+    "expectedLines": [
+      "J",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Q",
@@ -925,10 +1627,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 82,
+    "id": 82,
     "GTFSID": "J14",
+    "complexName": "104 St",
+    "stations": [],
     "stationID": 82,
+    "short1": "104 St",
+    "short2": "",
     "stopName": "104 St",
+    "expectedLines": [
+      "J",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Q",
@@ -939,10 +1649,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 83,
+    "id": 83,
     "GTFSID": "J15",
+    "complexName": "Woodhaven Blvd",
+    "stations": [],
     "stationID": 83,
+    "short1": "Woodhaven Blvd",
+    "short2": "",
     "stopName": "Woodhaven Blvd",
+    "expectedLines": [
+      "J",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Q",
@@ -953,10 +1671,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 84,
+    "id": 84,
     "GTFSID": "J16",
+    "complexName": "85 St-Forest Pkwy",
+    "stations": [],
     "stationID": 84,
+    "short1": "85 St",
+    "short2": "Forest Pkwy",
     "stopName": "85 St-Forest Pkwy",
+    "expectedLines": [
+      "J",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Q",
@@ -967,10 +1693,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 85,
+    "id": 85,
     "GTFSID": "J17",
+    "complexName": "75 St-Elderts Ln",
+    "stations": [],
     "stationID": 85,
+    "short1": "75 St",
+    "short2": "Elderts Ln",
     "stopName": "75 St-Elderts Ln",
+    "expectedLines": [
+      "J",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Q",
@@ -981,10 +1715,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 86,
+    "id": 86,
     "GTFSID": "J19",
+    "complexName": "Cypress Hills",
+    "stations": [],
     "stationID": 86,
+    "short1": "Cypress Hills",
+    "short2": "",
     "stopName": "Cypress Hills",
+    "expectedLines": [
+      "J",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Bk",
@@ -995,10 +1737,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 87,
+    "id": 87,
     "GTFSID": "J20",
+    "complexName": "Crescent St",
+    "stations": [],
     "stationID": 87,
+    "short1": "Crescent St",
+    "short2": "",
     "stopName": "Crescent St",
+    "expectedLines": [
+      "J",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Bk",
@@ -1009,10 +1759,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 88,
+    "id": 88,
     "GTFSID": "J21",
+    "complexName": "Norwood Av",
+    "stations": [],
     "stationID": 88,
+    "short1": "Norwood Av",
+    "short2": "",
     "stopName": "Norwood Av",
+    "expectedLines": [
+      "J",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Bk",
@@ -1023,10 +1781,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 89,
+    "id": 89,
     "GTFSID": "J22",
+    "complexName": "Cleveland St",
+    "stations": [],
     "stationID": 89,
+    "short1": "Cleveland St",
+    "short2": "",
     "stopName": "Cleveland St",
+    "expectedLines": [
+      "J",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Bk",
@@ -1037,10 +1803,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 90,
+    "id": 90,
     "GTFSID": "J23",
+    "complexName": "Van Siclen Av",
+    "stations": [],
     "stationID": 90,
+    "short1": "Van Siclen Av",
+    "short2": "",
     "stopName": "Van Siclen Av",
+    "expectedLines": [
+      "J",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Bk",
@@ -1051,10 +1825,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 91,
+    "id": 91,
     "GTFSID": "J24",
+    "complexName": "Alabama Av",
+    "stations": [],
     "stationID": 91,
+    "short1": "Alabama Av",
+    "short2": "",
     "stopName": "Alabama Av",
+    "expectedLines": [
+      "J",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Bk",
@@ -1065,10 +1847,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 93,
+    "id": 93,
     "GTFSID": "J28",
+    "complexName": "Chauncey St",
+    "stations": [],
     "stationID": 93,
+    "short1": "Chauncey St",
+    "short2": "",
     "stopName": "Chauncey St",
+    "expectedLines": [
+      "J",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Bk",
@@ -1079,10 +1869,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 94,
+    "id": 94,
     "GTFSID": "J29",
+    "complexName": "Halsey St",
+    "stations": [],
     "stationID": 94,
+    "short1": "Halsey St",
+    "short2": "",
     "stopName": "Halsey St",
+    "expectedLines": [
+      "J",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Bk",
@@ -1093,10 +1891,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 95,
+    "id": 95,
     "GTFSID": "J30",
+    "complexName": "Gates Av",
+    "stations": [],
     "stationID": 95,
+    "short1": "Gates Av",
+    "short2": "",
     "stopName": "Gates Av",
+    "expectedLines": [
+      "J",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Bk",
@@ -1107,10 +1913,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 96,
+    "id": 96,
     "GTFSID": "J31",
+    "complexName": "Kosciuszko St",
+    "stations": [],
     "stationID": 96,
+    "short1": "Kosciuszko St",
+    "short2": "",
     "stopName": "Kosciuszko St",
+    "expectedLines": [
+      "J",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Bk",
@@ -1121,10 +1935,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 97,
+    "id": 97,
     "GTFSID": "M11",
+    "complexName": "Myrtle Av",
+    "stations": [],
     "stationID": 97,
+    "short1": "Myrtle Av",
+    "short2": "",
     "stopName": "Myrtle Av",
+    "expectedLines": [
+      "J",
+      "M",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Bk",
@@ -1135,10 +1958,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 98,
+    "id": 98,
     "GTFSID": "M12",
+    "complexName": "Flushing Av",
+    "stations": [],
     "stationID": 98,
+    "short1": "Flushing Av",
+    "short2": "",
     "stopName": "Flushing Av",
+    "expectedLines": [
+      "J",
+      "M",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Bk",
@@ -1149,10 +1981,19 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 99,
+    "id": 99,
     "GTFSID": "M13",
+    "complexName": "Lorimer St",
+    "stations": [],
     "stationID": 99,
+    "short1": "Lorimer St",
+    "short2": "",
     "stopName": "Lorimer St",
+    "expectedLines": [
+      "J",
+      "M",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Bk",
@@ -1163,10 +2004,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 100,
+    "id": 100,
     "GTFSID": "M14",
+    "complexName": "Hewes St",
+    "stations": [],
     "stationID": 100,
+    "short1": "Hewes St",
+    "short2": "",
     "stopName": "Hewes St",
+    "expectedLines": [
+      "J",
+      "M",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Bk",
@@ -1177,10 +2027,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 101,
+    "id": 101,
     "GTFSID": "M16",
+    "complexName": "Marcy Av",
+    "stations": [],
     "stationID": 101,
+    "short1": "Marcy Av",
+    "short2": "",
     "stopName": "Marcy Av",
+    "expectedLines": [
+      "J",
+      "M",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Bk",
@@ -1191,10 +2050,19 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 103,
+    "id": 103,
     "GTFSID": "M19",
+    "complexName": "Bowery",
+    "stations": [],
     "stationID": 103,
+    "short1": "Bowery",
+    "short2": "",
     "stopName": "Bowery",
+    "expectedLines": [
+      "J",
+      "M",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "M",
@@ -1205,10 +2073,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 107,
+    "id": 107,
     "GTFSID": "M23",
+    "complexName": "Broad St",
+    "stations": [],
     "stationID": 107,
+    "short1": "Broad St",
+    "short2": "",
     "stopName": "Broad St",
+    "expectedLines": [
+      "J",
+      "M",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "M",
@@ -1219,10 +2096,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 108,
+    "id": 108,
     "GTFSID": "M01",
+    "complexName": "Middle Village-Metropolitan Av",
+    "stations": [],
     "stationID": 108,
+    "short1": "Metropolitan Av",
+    "short2": "Middle Village",
     "stopName": "Middle Village-Metropolitan Av",
+    "expectedLines": [
+      "J",
+      "M",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Myrtle Av",
     "borough": "Q",
@@ -1233,10 +2119,19 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 109,
+    "id": 109,
     "GTFSID": "M04",
+    "complexName": "Fresh Pond Rd",
+    "stations": [],
     "stationID": 109,
+    "short1": "Fresh Pond Rd",
+    "short2": "",
     "stopName": "Fresh Pond Rd",
+    "expectedLines": [
+      "J",
+      "M",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Myrtle Av",
     "borough": "Q",
@@ -1247,10 +2142,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 110,
+    "id": 110,
     "GTFSID": "M05",
+    "complexName": "Forest Av",
+    "stations": [],
     "stationID": 110,
+    "short1": "Forest Av",
+    "short2": "",
     "stopName": "Forest Av",
+    "expectedLines": [
+      "J",
+      "M",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Myrtle Av",
     "borough": "Q",
@@ -1261,10 +2165,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 111,
+    "id": 111,
     "GTFSID": "M06",
+    "complexName": "Seneca Av",
+    "stations": [],
     "stationID": 111,
+    "short1": "Seneca Av",
+    "short2": "",
     "stopName": "Seneca Av",
+    "expectedLines": [
+      "J",
+      "M",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Myrtle Av",
     "borough": "Q",
@@ -1275,10 +2188,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 113,
+    "id": 113,
     "GTFSID": "M09",
+    "complexName": "Knickerbocker Av",
+    "stations": [],
     "stationID": 113,
+    "short1": "Knickerbocker Av",
+    "short2": "",
     "stopName": "Knickerbocker Av",
+    "expectedLines": [
+      "J",
+      "M",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Myrtle Av",
     "borough": "Bk",
@@ -1289,10 +2211,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 114,
+    "id": 114,
     "GTFSID": "M10",
+    "complexName": "Central Av",
+    "stations": [],
     "stationID": 114,
+    "short1": "Central Av",
+    "short2": "",
     "stopName": "Central Av",
+    "expectedLines": [
+      "J",
+      "M",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Myrtle Av",
     "borough": "Bk",
@@ -1303,10 +2234,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 118,
+    "id": 118,
     "GTFSID": "L05",
+    "complexName": "3 Av",
+    "stations": [],
     "stationID": 118,
+    "short1": "3 Av",
+    "short2": "",
     "stopName": "3 Av",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "M",
@@ -1317,10 +2255,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 119,
+    "id": 119,
     "GTFSID": "L06",
+    "complexName": "1 Av",
+    "stations": [],
     "stationID": 119,
+    "short1": "1 Av",
+    "short2": "",
     "stopName": "1 Av",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "M",
@@ -1331,10 +2276,17 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 120,
+    "id": 120,
     "GTFSID": "L08",
+    "complexName": "Bedford Av",
+    "stations": [],
     "stationID": 120,
+    "short1": "Bedford Av",
+    "short2": "",
     "stopName": "Bedford Av",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "Bk",
@@ -1345,10 +2297,17 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 122,
+    "id": 122,
     "GTFSID": "L11",
+    "complexName": "Graham Av",
+    "stations": [],
     "stationID": 122,
+    "short1": "Graham Av",
+    "short2": "",
     "stopName": "Graham Av",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "Bk",
@@ -1359,10 +2318,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 123,
+    "id": 123,
     "GTFSID": "L12",
+    "complexName": "Grand St",
+    "stations": [],
     "stationID": 123,
+    "short1": "Grand St",
+    "short2": "",
     "stopName": "Grand St",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "Bk",
@@ -1373,10 +2339,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 124,
+    "id": 124,
     "GTFSID": "L13",
+    "complexName": "Montrose Av",
+    "stations": [],
     "stationID": 124,
+    "short1": "Montrose Av",
+    "short2": "",
     "stopName": "Montrose Av",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "Bk",
@@ -1387,10 +2360,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 125,
+    "id": 125,
     "GTFSID": "L14",
+    "complexName": "Morgan Av",
+    "stations": [],
     "stationID": 125,
+    "short1": "Morgan Av",
+    "short2": "",
     "stopName": "Morgan Av",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "Bk",
@@ -1401,10 +2381,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 126,
+    "id": 126,
     "GTFSID": "L15",
+    "complexName": "Jefferson St",
+    "stations": [],
     "stationID": 126,
+    "short1": "Jefferson St",
+    "short2": "",
     "stopName": "Jefferson St",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "Bk",
@@ -1415,10 +2402,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 127,
+    "id": 127,
     "GTFSID": "L16",
+    "complexName": "DeKalb Av",
+    "stations": [],
     "stationID": 127,
+    "short1": "DeKalb Av",
+    "short2": "",
     "stopName": "DeKalb Av",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "Bk",
@@ -1429,10 +2423,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 129,
+    "id": 129,
     "GTFSID": "L19",
+    "complexName": "Halsey St",
+    "stations": [],
     "stationID": 129,
+    "short1": "Halsey St",
+    "short2": "",
     "stopName": "Halsey St",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "Q",
@@ -1443,10 +2444,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 130,
+    "id": 130,
     "GTFSID": "L20",
+    "complexName": "Wilson Av",
+    "stations": [],
     "stationID": 130,
+    "short1": "Wilson Av",
+    "short2": "",
     "stopName": "Wilson Av",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "Bk",
@@ -1457,10 +2465,17 @@ def stations():
     "ADA": 2
   },
   {
-    "ID": 131,
+    "id": 131,
     "GTFSID": "L21",
+    "complexName": "Bushwick Av-Aberdeen St",
+    "stations": [],
     "stationID": 131,
+    "short1": "Bushwick Av",
+    "short2": "Aberdeen St",
     "stopName": "Bushwick Av-Aberdeen St",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "Bk",
@@ -1471,10 +2486,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 133,
+    "id": 133,
     "GTFSID": "L24",
+    "complexName": "Atlantic Av",
+    "stations": [],
     "stationID": 133,
+    "short1": "Atlantic Av",
+    "short2": "",
     "stopName": "Atlantic Av",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "Bk",
@@ -1485,10 +2507,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 134,
+    "id": 134,
     "GTFSID": "L25",
+    "complexName": "Sutter Av",
+    "stations": [],
     "stationID": 134,
+    "short1": "Sutter Av",
+    "short2": "",
     "stopName": "Sutter Av",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "Bk",
@@ -1499,24 +2528,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 135,
-    "GTFSID": "L26",
-    "stationID": 135,
-    "stopName": "Livonia Av",
-    "lines": [],
-    "trunk": "Canarsie",
-    "borough": "Bk",
-    "lat": 40.664038,
-    "long": -73.900571,
-    "northDir": "Manhattan",
-    "southDir": "Canarsie - Rockaway Parkway",
-    "ADA": 1
-  },
-  {
-    "ID": 136,
+    "id": 136,
     "GTFSID": "L27",
+    "complexName": "New Lots Av",
+    "stations": [],
     "stationID": 136,
+    "short1": "New Lots Av",
+    "short2": "",
     "stopName": "New Lots Av",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "Bk",
@@ -1527,10 +2549,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 137,
+    "id": 137,
     "GTFSID": "L28",
+    "complexName": "East 105 St",
+    "stations": [],
     "stationID": 137,
+    "short1": "East 105 St",
+    "short2": "",
     "stopName": "East 105 St",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "Bk",
@@ -1541,10 +2570,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 138,
+    "id": 138,
     "GTFSID": "L29",
+    "complexName": "Canarsie-Rockaway Pkwy",
+    "stations": [],
     "stationID": 138,
+    "short1": "Rockaway Pkwy",
+    "short2": "Canarsie",
     "stopName": "Canarsie-Rockaway Pkwy",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "Bk",
@@ -1555,10 +2591,17 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 141,
+    "id": 141,
     "GTFSID": "S03",
+    "complexName": "Park Pl",
+    "stations": [],
     "stationID": 141,
+    "short1": "Park Pl",
+    "short2": "",
     "stopName": "Park Pl",
+    "expectedLines": [
+      "S"
+    ],
     "lines": [],
     "trunk": "Franklin Shuttle",
     "borough": "Bk",
@@ -1569,12 +2612,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 143,
+    "id": 143,
     "GTFSID": "A02",
+    "complexName": "Inwood-207 St",
+    "stations": [],
     "stationID": 143,
+    "short1": "207 St",
+    "short2": "Inwood",
     "stopName": "Inwood-207 St",
+    "expectedLines": [
+      "A",
+      "C"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.868072,
     "long": -73.919899,
@@ -1583,12 +2634,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 144,
+    "id": 144,
     "GTFSID": "A03",
+    "complexName": "Dyckman St",
+    "stations": [],
     "stationID": 144,
+    "short1": "Dyckman St",
+    "short2": "",
     "stopName": "Dyckman St",
+    "expectedLines": [
+      "A",
+      "C"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.865491,
     "long": -73.927271,
@@ -1597,12 +2656,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 145,
+    "id": 145,
     "GTFSID": "A05",
+    "complexName": "190 St",
+    "stations": [],
     "stationID": 145,
+    "short1": "190 St",
+    "short2": "",
     "stopName": "190 St",
+    "expectedLines": [
+      "A",
+      "C"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.859022,
     "long": -73.93418,
@@ -1611,12 +2678,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 146,
+    "id": 146,
     "GTFSID": "A06",
+    "complexName": "181 St",
+    "stations": [],
     "stationID": 146,
+    "short1": "181 St",
+    "short2": "",
     "stopName": "181 St",
+    "expectedLines": [
+      "A",
+      "C"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.851695,
     "long": -73.937969,
@@ -1625,12 +2700,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 147,
+    "id": 147,
     "GTFSID": "A07",
+    "complexName": "175 St",
+    "stations": [],
     "stationID": 147,
+    "short1": "175 St",
+    "short2": "",
     "stopName": "175 St",
+    "expectedLines": [
+      "A",
+      "C"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.847391,
     "long": -73.939704,
@@ -1639,12 +2722,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 149,
+    "id": 149,
     "GTFSID": "A10",
+    "complexName": "163 St-Amsterdam Av",
+    "stations": [],
     "stationID": 149,
+    "short1": "163 St",
+    "short2": "Amsterdam Av",
     "stopName": "163 St-Amsterdam Av",
+    "expectedLines": [
+      "A",
+      "C"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.836013,
     "long": -73.939892,
@@ -1653,12 +2744,21 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 150,
+    "id": 150,
     "GTFSID": "A11",
+    "complexName": "155 St",
+    "stations": [],
     "stationID": 150,
+    "short1": "155 St",
+    "short2": "",
     "stopName": "155 St",
+    "expectedLines": [
+      "D",
+      "B",
+      "C"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.830518,
     "long": -73.941514,
@@ -1667,12 +2767,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 151,
+    "id": 151,
     "GTFSID": "A12",
+    "complexName": "145 St",
+    "stations": [],
     "stationID": 151,
+    "short1": "145 St",
+    "short2": "",
     "stopName": "145 St",
+    "expectedLines": [
+      "A",
+      "C"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.824783,
     "long": -73.944216,
@@ -1681,10 +2789,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 151,
+    "id": 151,
     "GTFSID": "D13",
+    "complexName": "145 St",
+    "stations": [],
     "stationID": 151,
+    "short1": "145 St",
+    "short2": "",
     "stopName": "145 St",
+    "expectedLines": [
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "Concourse",
     "borough": "M",
@@ -1695,12 +2811,22 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 152,
+    "id": 152,
     "GTFSID": "A14",
+    "complexName": "135 St",
+    "stations": [],
     "stationID": 152,
+    "short1": "135 St",
+    "short2": "",
     "stopName": "135 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.817894,
     "long": -73.947649,
@@ -1709,12 +2835,22 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 153,
+    "id": 153,
     "GTFSID": "A15",
+    "complexName": "125 St",
+    "stations": [],
     "stationID": 153,
+    "short1": "125 St",
+    "short2": "",
     "stopName": "125 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.811109,
     "long": -73.952343,
@@ -1723,12 +2859,22 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 154,
+    "id": 154,
     "GTFSID": "A16",
+    "complexName": "116 St",
+    "stations": [],
     "stationID": 154,
+    "short1": "116 St",
+    "short2": "",
     "stopName": "116 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.805085,
     "long": -73.954882,
@@ -1737,12 +2883,22 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 155,
+    "id": 155,
     "GTFSID": "A17",
+    "complexName": "Cathedral Pkwy (110 St)",
+    "stations": [],
     "stationID": 155,
+    "short1": "Cathedral Parkway",
+    "short2": "110 St",
     "stopName": "Cathedral Pkwy (110 St)",
+    "expectedLines": [
+      "A",
+      "C",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.800603,
     "long": -73.958161,
@@ -1751,12 +2907,22 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 156,
+    "id": 156,
     "GTFSID": "A18",
+    "complexName": "103 St",
+    "stations": [],
     "stationID": 156,
+    "short1": "103 St",
+    "short2": "",
     "stopName": "103 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.796092,
     "long": -73.961454,
@@ -1765,12 +2931,22 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 157,
+    "id": 157,
     "GTFSID": "A19",
+    "complexName": "96 St",
+    "stations": [],
     "stationID": 157,
+    "short1": "96 St",
+    "short2": "",
     "stopName": "96 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.791642,
     "long": -73.964696,
@@ -1779,12 +2955,22 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 158,
+    "id": 158,
     "GTFSID": "A20",
+    "complexName": "86 St",
+    "stations": [],
     "stationID": 158,
+    "short1": "86 St",
+    "short2": "",
     "stopName": "86 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.785868,
     "long": -73.968916,
@@ -1793,12 +2979,22 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 159,
+    "id": 159,
     "GTFSID": "A21",
+    "complexName": "81 St-Museum of Natural History",
+    "stations": [],
     "stationID": 159,
+    "short1": "81 St",
+    "short2": "Museum of Natural History",
     "stopName": "81 St-Museum of Natural History",
+    "expectedLines": [
+      "A",
+      "C",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.781433,
     "long": -73.972143,
@@ -1807,12 +3003,22 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 160,
+    "id": 160,
     "GTFSID": "A22",
+    "complexName": "72 St",
+    "stations": [],
     "stationID": 160,
+    "short1": "72 St",
+    "short2": "",
     "stopName": "72 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "B",
+      "D"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.775594,
     "long": -73.97641,
@@ -1821,12 +3027,24 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 162,
+    "id": 162,
     "GTFSID": "A25",
+    "complexName": "50 St",
+    "stations": [],
     "stationID": 162,
+    "short1": "50 St",
+    "short2": "",
     "stopName": "50 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.762456,
     "long": -73.985984,
@@ -1835,12 +3053,24 @@ def stations():
     "ADA": 3
   },
   {
-    "ID": 164,
+    "id": 164,
     "GTFSID": "A28",
+    "complexName": "34 St-Penn Station",
+    "stations": [],
     "stationID": 164,
+    "short1": "34 St",
+    "short2": "Penn Station",
     "stopName": "34 St-Penn Station",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.752287,
     "long": -73.993391,
@@ -1849,12 +3079,24 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 165,
+    "id": 165,
     "GTFSID": "A30",
+    "complexName": "23 St",
+    "stations": [],
     "stationID": 165,
+    "short1": "23 St",
+    "short2": "",
     "stopName": "23 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.745906,
     "long": -73.998041,
@@ -1863,12 +3105,24 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 167,
+    "id": 167,
     "GTFSID": "A32",
+    "complexName": "W 4 St-Wash Sq",
+    "stations": [],
     "stationID": 167,
+    "short1": "W 4 St",
+    "short2": "Washington Sq",
     "stopName": "W 4 St-Wash Sq",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.732338,
     "long": -74.000495,
@@ -1877,12 +3131,24 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 167,
+    "id": 167,
     "GTFSID": "D20",
+    "complexName": "W 4 St-Wash Sq",
+    "stations": [],
     "stationID": 167,
+    "short1": "W 4 St",
+    "short2": "Washington Sq",
     "stopName": "W 4 St-Wash Sq",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "6th Av",
     "borough": "M",
     "lat": 40.732338,
     "long": -74.000495,
@@ -1891,12 +3157,24 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 168,
+    "id": 168,
     "GTFSID": "A33",
+    "complexName": "Spring St",
+    "stations": [],
     "stationID": 168,
+    "short1": "Spring St",
+    "short2": "",
     "stopName": "Spring St",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.726227,
     "long": -74.003739,
@@ -1905,12 +3183,24 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 169,
+    "id": 169,
     "GTFSID": "A34",
+    "complexName": "Canal St",
+    "stations": [],
     "stationID": 169,
+    "short1": "Canal St",
+    "short2": "",
     "stopName": "Canal St",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.720824,
     "long": -74.005229,
@@ -1919,12 +3209,23 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 173,
+    "id": 173,
     "GTFSID": "A40",
+    "complexName": "High St",
+    "stations": [],
     "stationID": 173,
+    "short1": "High St",
+    "short2": "",
     "stopName": "High St",
+    "expectedLines": [
+      "A",
+      "C",
+      "B",
+      "D",
+      "F"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "Bk",
     "lat": 40.699337,
     "long": -73.990531,
@@ -1933,12 +3234,22 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 175,
+    "id": 175,
     "GTFSID": "A42",
+    "complexName": "Hoyt-Schermerhorn Sts",
+    "stations": [],
     "stationID": 175,
+    "short1": "Hoyt St",
+    "short2": "Schermehorn St",
     "stopName": "Hoyt-Schermerhorn Sts",
+    "expectedLines": [
+      "A",
+      "C",
+      "G",
+      "F"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "Fulton St",
     "borough": "Bk",
     "lat": 40.688484,
     "long": -73.985001,
@@ -1947,12 +3258,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 176,
+    "id": 176,
     "GTFSID": "A43",
+    "complexName": "Lafayette Av",
+    "stations": [],
     "stationID": 176,
+    "short1": "Lafayette Av",
+    "short2": "",
     "stopName": "Lafayette Av",
+    "expectedLines": [
+      "A",
+      "C"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "Fulton St",
     "borough": "Bk",
     "lat": 40.686113,
     "long": -73.973946,
@@ -1961,12 +3280,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 177,
+    "id": 177,
     "GTFSID": "A44",
+    "complexName": "Clinton-Washington Avs",
+    "stations": [],
     "stationID": 177,
+    "short1": "Clinton Av",
+    "short2": "Washington Av",
     "stopName": "Clinton-Washington Avs",
+    "expectedLines": [
+      "A",
+      "C"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "Fulton St",
     "borough": "Bk",
     "lat": 40.683263,
     "long": -73.965838,
@@ -1975,12 +3302,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 179,
+    "id": 179,
     "GTFSID": "A46",
+    "complexName": "Nostrand Av",
+    "stations": [],
     "stationID": 179,
+    "short1": "Nostrand Av",
+    "short2": "",
     "stopName": "Nostrand Av",
+    "expectedLines": [
+      "A",
+      "C"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "Fulton St",
     "borough": "Bk",
     "lat": 40.680438,
     "long": -73.950426,
@@ -1989,12 +3324,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 180,
+    "id": 180,
     "GTFSID": "A47",
+    "complexName": "Kingston-Throop Avs",
+    "stations": [],
     "stationID": 180,
+    "short1": "Kingston Av",
+    "short2": "Throop Av",
     "stopName": "Kingston-Throop Avs",
+    "expectedLines": [
+      "A",
+      "C"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "Fulton St",
     "borough": "Bk",
     "lat": 40.679921,
     "long": -73.940858,
@@ -2003,12 +3346,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 181,
+    "id": 181,
     "GTFSID": "A48",
+    "complexName": "Utica Av",
+    "stations": [],
     "stationID": 181,
+    "short1": "Utica Av",
+    "short2": "",
     "stopName": "Utica Av",
+    "expectedLines": [
+      "A",
+      "C"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "Fulton St",
     "borough": "Bk",
     "lat": 40.679364,
     "long": -73.930729,
@@ -2017,12 +3368,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 182,
+    "id": 182,
     "GTFSID": "A49",
+    "complexName": "Ralph Av",
+    "stations": [],
     "stationID": 182,
+    "short1": "Ralph Av",
+    "short2": "",
     "stopName": "Ralph Av",
+    "expectedLines": [
+      "A",
+      "C"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "Fulton St",
     "borough": "Bk",
     "lat": 40.678822,
     "long": -73.920786,
@@ -2031,12 +3390,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 183,
+    "id": 183,
     "GTFSID": "A50",
+    "complexName": "Rockaway Av",
+    "stations": [],
     "stationID": 183,
+    "short1": "Rockaway Av",
+    "short2": "",
     "stopName": "Rockaway Av",
+    "expectedLines": [
+      "A",
+      "C"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "Fulton St",
     "borough": "Bk",
     "lat": 40.67834,
     "long": -73.911946,
@@ -2045,12 +3412,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 185,
+    "id": 185,
     "GTFSID": "A52",
+    "complexName": "Liberty Av",
+    "stations": [],
     "stationID": 185,
+    "short1": "Liberty Av",
+    "short2": "",
     "stopName": "Liberty Av",
+    "expectedLines": [
+      "A",
+      "C"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "Fulton St",
     "borough": "Bk",
     "lat": 40.674542,
     "long": -73.896548,
@@ -2059,12 +3434,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 186,
+    "id": 186,
     "GTFSID": "A53",
+    "complexName": "Van Siclen Av",
+    "stations": [],
     "stationID": 186,
+    "short1": "Van Siclen Av",
+    "short2": "",
     "stopName": "Van Siclen Av",
+    "expectedLines": [
+      "A",
+      "C"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "Fulton St",
     "borough": "Bk",
     "lat": 40.67271,
     "long": -73.890358,
@@ -2073,12 +3456,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 187,
+    "id": 187,
     "GTFSID": "A54",
+    "complexName": "Shepherd Av",
+    "stations": [],
     "stationID": 187,
+    "short1": "Shepherd Av",
+    "short2": "",
     "stopName": "Shepherd Av",
+    "expectedLines": [
+      "A",
+      "C"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "Fulton St",
     "borough": "Bk",
     "lat": 40.67413,
     "long": -73.88075,
@@ -2087,12 +3478,21 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 188,
+    "id": 188,
     "GTFSID": "A55",
+    "complexName": "Euclid Av",
+    "stations": [],
     "stationID": 188,
+    "short1": "Euclid Av",
+    "short2": "",
     "stopName": "Euclid Av",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "Fulton St",
     "borough": "Bk",
     "lat": 40.675377,
     "long": -73.872106,
@@ -2101,10 +3501,19 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 189,
+    "id": 189,
     "GTFSID": "A57",
+    "complexName": "Grant Av",
+    "stations": [],
     "stationID": 189,
+    "short1": "Grant Av",
+    "short2": "",
     "stopName": "Grant Av",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Liberty Av",
     "borough": "Bk",
@@ -2115,10 +3524,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 190,
+    "id": 190,
     "GTFSID": "A59",
+    "complexName": "80 St",
+    "stations": [],
     "stationID": 190,
+    "short1": "80 St",
+    "short2": "",
     "stopName": "80 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Liberty Av",
     "borough": "Q",
@@ -2129,10 +3547,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 191,
+    "id": 191,
     "GTFSID": "A60",
+    "complexName": "88 St",
+    "stations": [],
     "stationID": 191,
+    "short1": "88 St",
+    "short2": "",
     "stopName": "88 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Liberty Av",
     "borough": "Q",
@@ -2143,10 +3570,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 192,
+    "id": 192,
     "GTFSID": "A61",
+    "complexName": "Rockaway Blvd",
+    "stations": [],
     "stationID": 192,
+    "short1": "Rockaway Blvd",
+    "short2": "",
     "stopName": "Rockaway Blvd",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Liberty Av",
     "borough": "Q",
@@ -2157,10 +3593,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 193,
+    "id": 193,
     "GTFSID": "A63",
+    "complexName": "104 St",
+    "stations": [],
     "stationID": 193,
+    "short1": "104 St",
+    "short2": "",
     "stopName": "104 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Liberty Av",
     "borough": "Q",
@@ -2171,10 +3616,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 194,
+    "id": 194,
     "GTFSID": "A64",
+    "complexName": "111 St",
+    "stations": [],
     "stationID": 194,
+    "short1": "111 St",
+    "short2": "",
     "stopName": "111 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Liberty Av",
     "borough": "Q",
@@ -2185,10 +3639,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 195,
+    "id": 195,
     "GTFSID": "A65",
+    "complexName": "Ozone Park-Lefferts Blvd",
+    "stations": [],
     "stationID": 195,
+    "short1": "Lefferts Blvd",
+    "short2": "",
     "stopName": "Ozone Park-Lefferts Blvd",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Liberty Av",
     "borough": "Q",
@@ -2199,10 +3662,19 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 196,
+    "id": 196,
     "GTFSID": "H01",
+    "complexName": "Aqueduct Racetrack",
+    "stations": [],
     "stationID": 196,
+    "short1": "Aqueduct Racetrack",
+    "short2": "",
     "stopName": "Aqueduct Racetrack",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Rockaway",
     "borough": "Q",
@@ -2213,10 +3685,19 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 197,
+    "id": 197,
     "GTFSID": "H02",
+    "complexName": "Aqueduct-N Conduit Av",
+    "stations": [],
     "stationID": 197,
+    "short1": "N Conduit Av",
+    "short2": "",
     "stopName": "Aqueduct-N Conduit Av",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Rockaway",
     "borough": "Q",
@@ -2227,10 +3708,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 198,
+    "id": 198,
     "GTFSID": "H03",
+    "complexName": "Howard Beach-JFK Airport",
+    "stations": [],
     "stationID": 198,
+    "short1": "JFK Airport",
+    "short2": "Howard Beach",
     "stopName": "Howard Beach-JFK Airport",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Rockaway",
     "borough": "Q",
@@ -2241,10 +3731,19 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 199,
+    "id": 199,
     "GTFSID": "H04",
+    "complexName": "Broad Channel",
+    "stations": [],
     "stationID": 199,
+    "short1": "Broad Channel",
+    "short2": "",
     "stopName": "Broad Channel",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Rockaway",
     "borough": "Q",
@@ -2255,10 +3754,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 200,
+    "id": 200,
     "GTFSID": "H12",
+    "complexName": "Beach 90 St",
+    "stations": [],
     "stationID": 200,
+    "short1": "Beach 90 St",
+    "short2": "",
     "stopName": "Beach 90 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Rockaway",
     "borough": "Q",
@@ -2269,10 +3777,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 201,
+    "id": 201,
     "GTFSID": "H13",
+    "complexName": "Beach 98 St",
+    "stations": [],
     "stationID": 201,
+    "short1": "Beach 98 St",
+    "short2": "",
     "stopName": "Beach 98 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Rockaway",
     "borough": "Q",
@@ -2283,10 +3800,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 202,
+    "id": 202,
     "GTFSID": "H14",
+    "complexName": "Beach 105 St",
+    "stations": [],
     "stationID": 202,
+    "short1": "Beach 105 St",
+    "short2": "",
     "stopName": "Beach 105 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Rockaway",
     "borough": "Q",
@@ -2297,10 +3823,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 203,
+    "id": 203,
     "GTFSID": "H15",
+    "complexName": "Rockaway Park-Beach 116 St",
+    "stations": [],
     "stationID": 203,
+    "short1": "Rockaway Park",
+    "short2": "Beach 116 St",
     "stopName": "Rockaway Park-Beach 116 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Rockaway",
     "borough": "Q",
@@ -2311,10 +3846,19 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 204,
+    "id": 204,
     "GTFSID": "H06",
+    "complexName": "Beach 67 St",
+    "stations": [],
     "stationID": 204,
+    "short1": "Beach 67 St",
+    "short2": "",
     "stopName": "Beach 67 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Rockaway",
     "borough": "Q",
@@ -2325,10 +3869,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 205,
+    "id": 205,
     "GTFSID": "H07",
+    "complexName": "Beach 60 St",
+    "stations": [],
     "stationID": 205,
+    "short1": "Beach 60 St",
+    "short2": "",
     "stopName": "Beach 60 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Rockaway",
     "borough": "Q",
@@ -2339,10 +3892,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 206,
+    "id": 206,
     "GTFSID": "H08",
+    "complexName": "Beach 44 St",
+    "stations": [],
     "stationID": 206,
+    "short1": "Beach 44 St",
+    "short2": "",
     "stopName": "Beach 44 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Rockaway",
     "borough": "Q",
@@ -2353,10 +3915,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 207,
+    "id": 207,
     "GTFSID": "H09",
+    "complexName": "Beach 36 St",
+    "stations": [],
     "stationID": 207,
+    "short1": "Beach 36 St",
+    "short2": "",
     "stopName": "Beach 36 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Rockaway",
     "borough": "Q",
@@ -2367,10 +3938,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 208,
+    "id": 208,
     "GTFSID": "H10",
+    "complexName": "Beach 25 St",
+    "stations": [],
     "stationID": 208,
+    "short1": "Beach 25 St",
+    "short2": "",
     "stopName": "Beach 25 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Rockaway",
     "borough": "Q",
@@ -2381,10 +3961,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 209,
+    "id": 209,
     "GTFSID": "H11",
+    "complexName": "Far Rockaway-Mott Av",
+    "stations": [],
     "stationID": 209,
+    "short1": "Far Rockaway",
+    "short2": "Mott Av",
     "stopName": "Far Rockaway-Mott Av",
+    "expectedLines": [
+      "A",
+      "C",
+      "H"
+    ],
     "lines": [],
     "trunk": "Rockaway",
     "borough": "Q",
@@ -2395,10 +3984,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 210,
+    "id": 210,
     "GTFSID": "D01",
+    "complexName": "Norwood-205 St",
+    "stations": [],
     "stationID": 210,
+    "short1": "205 St",
+    "short2": "Norwood",
     "stopName": "Norwood-205 St",
+    "expectedLines": [
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "Concourse",
     "borough": "Bx",
@@ -2409,10 +4006,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 211,
+    "id": 211,
     "GTFSID": "D03",
+    "complexName": "Bedford Park Blvd",
+    "stations": [],
     "stationID": 211,
+    "short1": "Bedford Park Blvd",
+    "short2": "",
     "stopName": "Bedford Park Blvd",
+    "expectedLines": [
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "Concourse",
     "borough": "Bx",
@@ -2423,10 +4028,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 212,
+    "id": 212,
     "GTFSID": "D04",
+    "complexName": "Kingsbridge Rd",
+    "stations": [],
     "stationID": 212,
+    "short1": "Kingsbridge Rd",
+    "short2": "",
     "stopName": "Kingsbridge Rd",
+    "expectedLines": [
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "Concourse",
     "borough": "Bx",
@@ -2437,10 +4050,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 213,
+    "id": 213,
     "GTFSID": "D05",
+    "complexName": "Fordham Rd",
+    "stations": [],
     "stationID": 213,
+    "short1": "Fordham Rd",
+    "short2": "",
     "stopName": "Fordham Rd",
+    "expectedLines": [
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "Concourse",
     "borough": "Bx",
@@ -2451,10 +4072,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 214,
+    "id": 214,
     "GTFSID": "D06",
+    "complexName": "182-183 Sts",
+    "stations": [],
     "stationID": 214,
+    "short1": "182-183 Sts",
+    "short2": "",
     "stopName": "182-183 Sts",
+    "expectedLines": [
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "Concourse",
     "borough": "Bx",
@@ -2465,10 +4094,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 215,
+    "id": 215,
     "GTFSID": "D07",
+    "complexName": "Tremont Av",
+    "stations": [],
     "stationID": 215,
+    "short1": "Tremont Av",
+    "short2": "",
     "stopName": "Tremont Av",
+    "expectedLines": [
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "Concourse",
     "borough": "Bx",
@@ -2479,10 +4116,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 216,
+    "id": 216,
     "GTFSID": "D08",
+    "complexName": "174-175 Sts",
+    "stations": [],
     "stationID": 216,
+    "short1": "174-175 Sts",
+    "short2": "",
     "stopName": "174-175 Sts",
+    "expectedLines": [
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "Concourse",
     "borough": "Bx",
@@ -2493,10 +4138,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 217,
+    "id": 217,
     "GTFSID": "D09",
+    "complexName": "170 St",
+    "stations": [],
     "stationID": 217,
+    "short1": "170 St",
+    "short2": "",
     "stopName": "170 St",
+    "expectedLines": [
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "Concourse",
     "borough": "Bx",
@@ -2507,10 +4160,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 218,
+    "id": 218,
     "GTFSID": "D10",
+    "complexName": "167 St",
+    "stations": [],
     "stationID": 218,
+    "short1": "167 St",
+    "short2": "",
     "stopName": "167 St",
+    "expectedLines": [
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "Concourse",
     "borough": "Bx",
@@ -2521,10 +4182,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 220,
+    "id": 220,
     "GTFSID": "D12",
+    "complexName": "155 St",
+    "stations": [],
     "stationID": 220,
+    "short1": "155 St",
+    "short2": "",
     "stopName": "155 St",
+    "expectedLines": [
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "Concourse",
     "borough": "M",
@@ -2535,10 +4204,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 221,
+    "id": 221,
     "GTFSID": "B04",
+    "complexName": "21 St-Queensbridge",
+    "stations": [],
     "stationID": 221,
+    "short1": "21 St",
+    "short2": "Queensbridge",
     "stopName": "21 St-Queensbridge",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "63rd St",
     "borough": "Q",
@@ -2549,10 +4228,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 222,
+    "id": 222,
     "GTFSID": "B06",
+    "complexName": "Roosevelt Island",
+    "stations": [],
     "stationID": 222,
+    "short1": "Roosevelt Island",
+    "short2": "",
     "stopName": "Roosevelt Island",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "63rd St",
     "borough": "M",
@@ -2563,10 +4252,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 223,
+    "id": 223,
     "GTFSID": "B08",
+    "complexName": "Lexington Av/63 St",
+    "stations": [],
     "stationID": 223,
+    "short1": "Lexington Av",
+    "short2": "63 St",
     "stopName": "Lexington Av/63 St",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "63rd St",
     "borough": "M",
@@ -2577,12 +4276,21 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 224,
+    "id": 224,
     "GTFSID": "B10",
+    "complexName": "57 St",
+    "stations": [],
     "stationID": 224,
+    "short1": "57 St",
+    "short2": "",
     "stopName": "57 St",
+    "expectedLines": [
+      "E",
+      "F",
+      "M"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "6th Av",
     "borough": "M",
     "lat": 40.763972,
     "long": -73.97745,
@@ -2591,12 +4299,25 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 225,
+    "id": 225,
     "GTFSID": "D15",
+    "complexName": "47-50 Sts-Rockefeller Ctr",
+    "stations": [],
     "stationID": 225,
+    "short1": "47-50 Sts",
+    "short2": "Rockefeller Ctr",
     "stopName": "47-50 Sts-Rockefeller Ctr",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F",
+      "M"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "6th Av",
     "borough": "M",
     "lat": 40.758663,
     "long": -73.981329,
@@ -2605,12 +4326,25 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 228,
+    "id": 228,
     "GTFSID": "D18",
+    "complexName": "23 St",
+    "stations": [],
     "stationID": 228,
+    "short1": "23 St",
+    "short2": "",
     "stopName": "23 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F",
+      "M"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "6th Av",
     "borough": "M",
     "lat": 40.742878,
     "long": -73.992821,
@@ -2619,12 +4353,25 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 231,
+    "id": 231,
     "GTFSID": "D22",
+    "complexName": "Grand St",
+    "stations": [],
     "stationID": 231,
+    "short1": "Grand St",
+    "short2": "",
     "stopName": "Grand St",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F",
+      "M"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "6th Av",
     "borough": "M",
     "lat": 40.718267,
     "long": -73.993753,
@@ -2633,12 +4380,25 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 232,
+    "id": 232,
     "GTFSID": "F14",
+    "complexName": "2 Av",
+    "stations": [],
     "stationID": 232,
+    "short1": "2 Av",
+    "short2": "",
     "stopName": "2 Av",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F",
+      "M"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "6th Av",
     "borough": "M",
     "lat": 40.723402,
     "long": -73.989938,
@@ -2647,12 +4407,21 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 234,
+    "id": 234,
     "GTFSID": "F16",
+    "complexName": "East Broadway",
+    "stations": [],
     "stationID": 234,
+    "short1": "East Broadway",
+    "short2": "",
     "stopName": "East Broadway",
+    "expectedLines": [
+      "A",
+      "C",
+      "F"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "6th Av",
     "borough": "M",
     "lat": 40.713715,
     "long": -73.990173,
@@ -2661,12 +4430,21 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 235,
+    "id": 235,
     "GTFSID": "F18",
+    "complexName": "York St",
+    "stations": [],
     "stationID": 235,
+    "short1": "York St",
+    "short2": "",
     "stopName": "York St",
+    "expectedLines": [
+      "A",
+      "C",
+      "F"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "6th Av",
     "borough": "Bk",
     "lat": 40.701397,
     "long": -73.986751,
@@ -2675,12 +4453,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 236,
+    "id": 236,
     "GTFSID": "F20",
+    "complexName": "Bergen St",
+    "stations": [],
     "stationID": 236,
+    "short1": "Bergen St",
+    "short2": "",
     "stopName": "Bergen St",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "Culver",
     "borough": "Bk",
     "lat": 40.686145,
     "long": -73.990862,
@@ -2689,12 +4475,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 237,
+    "id": 237,
     "GTFSID": "F21",
+    "complexName": "Carroll St",
+    "stations": [],
     "stationID": 237,
+    "short1": "Carroll St",
+    "short2": "",
     "stopName": "Carroll St",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "Culver",
     "borough": "Bk",
     "lat": 40.680303,
     "long": -73.995048,
@@ -2703,12 +4497,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 238,
+    "id": 238,
     "GTFSID": "F22",
+    "complexName": "Smith-9 Sts",
+    "stations": [],
     "stationID": 238,
+    "short1": "Smith-9 Sts",
+    "short2": "",
     "stopName": "Smith-9 Sts",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "Culver",
     "borough": "Bk",
     "lat": 40.67358,
     "long": -73.995959,
@@ -2717,12 +4519,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 240,
+    "id": 240,
     "GTFSID": "F24",
+    "complexName": "7 Av",
+    "stations": [],
     "stationID": 240,
+    "short1": "7 Av",
+    "short2": "",
     "stopName": "7 Av",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "Culver",
     "borough": "Bk",
     "lat": 40.666271,
     "long": -73.980305,
@@ -2731,12 +4541,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 241,
+    "id": 241,
     "GTFSID": "F25",
+    "complexName": "15 St-Prospect Park",
+    "stations": [],
     "stationID": 241,
+    "short1": "15 St",
+    "short2": "Prospect Park",
     "stopName": "15 St-Prospect Park",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "Culver",
     "borough": "Bk",
     "lat": 40.660365,
     "long": -73.979493,
@@ -2745,12 +4563,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 242,
+    "id": 242,
     "GTFSID": "F26",
+    "complexName": "Fort Hamilton Pkwy",
+    "stations": [],
     "stationID": 242,
+    "short1": "Ft. Hamilton Pkwy",
+    "short2": "",
     "stopName": "Fort Hamilton Pkwy",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "Culver",
     "borough": "Bk",
     "lat": 40.650782,
     "long": -73.975776,
@@ -2759,12 +4585,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 243,
+    "id": 243,
     "GTFSID": "F27",
+    "complexName": "Church Av",
+    "stations": [],
     "stationID": 243,
+    "short1": "Church Av",
+    "short2": "",
     "stopName": "Church Av",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "Culver",
     "borough": "Bk",
     "lat": 40.644041,
     "long": -73.979678,
@@ -2773,12 +4607,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 244,
+    "id": 244,
     "GTFSID": "F29",
+    "complexName": "Ditmas Av",
+    "stations": [],
     "stationID": 244,
+    "short1": "Ditmas Av",
+    "short2": "",
     "stopName": "Ditmas Av",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "Culver",
     "borough": "Bk",
     "lat": 40.636119,
     "long": -73.978172,
@@ -2787,12 +4629,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 245,
+    "id": 245,
     "GTFSID": "F30",
+    "complexName": "18 Av",
+    "stations": [],
     "stationID": 245,
+    "short1": "18 Av",
+    "short2": "",
     "stopName": "18 Av",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "Culver",
     "borough": "Bk",
     "lat": 40.629755,
     "long": -73.976971,
@@ -2801,12 +4651,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 246,
+    "id": 246,
     "GTFSID": "F31",
+    "complexName": "Avenue I",
+    "stations": [],
     "stationID": 246,
+    "short1": "Avenue I",
+    "short2": "",
     "stopName": "Avenue I",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "Culver",
     "borough": "Bk",
     "lat": 40.625322,
     "long": -73.976127,
@@ -2815,12 +4673,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 247,
+    "id": 247,
     "GTFSID": "F32",
+    "complexName": "Bay Pkwy",
+    "stations": [],
     "stationID": 247,
+    "short1": "Bay Pkwy",
+    "short2": "",
     "stopName": "Bay Pkwy",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "Culver",
     "borough": "Bk",
     "lat": 40.620769,
     "long": -73.975264,
@@ -2829,12 +4695,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 248,
+    "id": 248,
     "GTFSID": "F33",
+    "complexName": "Avenue N",
+    "stations": [],
     "stationID": 248,
+    "short1": "Avenue N",
+    "short2": "",
     "stopName": "Avenue N",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "Culver",
     "borough": "Bk",
     "lat": 40.61514,
     "long": -73.974197,
@@ -2843,12 +4717,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 249,
+    "id": 249,
     "GTFSID": "F34",
+    "complexName": "Avenue P",
+    "stations": [],
     "stationID": 249,
+    "short1": "Avenue P",
+    "short2": "",
     "stopName": "Avenue P",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "Culver",
     "borough": "Bk",
     "lat": 40.608944,
     "long": -73.973022,
@@ -2857,12 +4739,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 250,
+    "id": 250,
     "GTFSID": "F35",
+    "complexName": "Kings Hwy",
+    "stations": [],
     "stationID": 250,
+    "short1": "Kings Hwy",
+    "short2": "",
     "stopName": "Kings Hwy",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "Culver",
     "borough": "Bk",
     "lat": 40.603217,
     "long": -73.972361,
@@ -2871,12 +4761,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 251,
+    "id": 251,
     "GTFSID": "F36",
+    "complexName": "Avenue U",
+    "stations": [],
     "stationID": 251,
+    "short1": "Avenue U",
+    "short2": "",
     "stopName": "Avenue U",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "Culver",
     "borough": "Bk",
     "lat": 40.596063,
     "long": -73.973357,
@@ -2885,12 +4783,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 252,
+    "id": 252,
     "GTFSID": "F38",
+    "complexName": "Avenue X",
+    "stations": [],
     "stationID": 252,
+    "short1": "Avenue X",
+    "short2": "",
     "stopName": "Avenue X",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "Culver",
     "borough": "Bk",
     "lat": 40.58962,
     "long": -73.97425,
@@ -2899,12 +4805,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 253,
+    "id": 253,
     "GTFSID": "F39",
+    "complexName": "Neptune Av",
+    "stations": [],
     "stationID": 253,
+    "short1": "Neptune Av",
+    "short2": "",
     "stopName": "Neptune Av",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "Culver",
     "borough": "Bk",
     "lat": 40.581011,
     "long": -73.974574,
@@ -2913,10 +4827,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 254,
+    "id": 254,
     "GTFSID": "F01",
+    "complexName": "Jamaica-179 St",
+    "stations": [],
     "stationID": 254,
+    "short1": "179 St",
+    "short2": "Jamaica",
     "stopName": "Jamaica-179 St",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -2927,10 +4851,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 255,
+    "id": 255,
     "GTFSID": "F02",
+    "complexName": "169 St",
+    "stations": [],
     "stationID": 255,
+    "short1": "169 St",
+    "short2": "",
     "stopName": "169 St",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -2941,10 +4875,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 256,
+    "id": 256,
     "GTFSID": "F03",
+    "complexName": "Parsons Blvd",
+    "stations": [],
     "stationID": 256,
+    "short1": "Parsons Blvd",
+    "short2": "",
     "stopName": "Parsons Blvd",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -2955,10 +4899,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 257,
+    "id": 257,
     "GTFSID": "F04",
+    "complexName": "Sutphin Blvd",
+    "stations": [],
     "stationID": 257,
+    "short1": "Sutphin Blvd",
+    "short2": "",
     "stopName": "Sutphin Blvd",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -2969,10 +4923,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 258,
+    "id": 258,
     "GTFSID": "F05",
+    "complexName": "Briarwood",
+    "stations": [],
     "stationID": 258,
+    "short1": "Briarwood",
+    "short2": "",
     "stopName": "Briarwood",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -2983,10 +4947,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 259,
+    "id": 259,
     "GTFSID": "F06",
+    "complexName": "Kew Gardens-Union Tpke",
+    "stations": [],
     "stationID": 259,
+    "short1": "Kew Gardens",
+    "short2": "Union Tpke",
     "stopName": "Kew Gardens-Union Tpke",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -2997,10 +4971,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 260,
+    "id": 260,
     "GTFSID": "F07",
+    "complexName": "75 Av",
+    "stations": [],
     "stationID": 260,
+    "short1": "75 Av",
+    "short2": "",
     "stopName": "75 Av",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -3011,10 +4995,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 261,
+    "id": 261,
     "GTFSID": "G08",
+    "complexName": "Forest Hills-71 Av",
+    "stations": [],
     "stationID": 261,
+    "short1": "Forest Hills",
+    "short2": "71 Av",
     "stopName": "Forest Hills-71 Av",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -3025,10 +5019,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 262,
+    "id": 262,
     "GTFSID": "G09",
+    "complexName": "67 Av",
+    "stations": [],
     "stationID": 262,
+    "short1": "67 Av",
+    "short2": "",
     "stopName": "67 Av",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -3039,10 +5043,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 263,
+    "id": 263,
     "GTFSID": "G10",
+    "complexName": "63 Dr-Rego Park",
+    "stations": [],
     "stationID": 263,
+    "short1": "63 Dr",
+    "short2": "Rego Park",
     "stopName": "63 Dr-Rego Park",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -3053,10 +5067,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 264,
+    "id": 264,
     "GTFSID": "G11",
+    "complexName": "Woodhaven Blvd",
+    "stations": [],
     "stationID": 264,
+    "short1": "Woodhaven Blvd",
+    "short2": "",
     "stopName": "Woodhaven Blvd",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -3067,10 +5091,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 265,
+    "id": 265,
     "GTFSID": "G12",
+    "complexName": "Grand Av-Newtown",
+    "stations": [],
     "stationID": 265,
+    "short1": "Grand Av",
+    "short2": "Newtown",
     "stopName": "Grand Av-Newtown",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -3081,10 +5115,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 266,
+    "id": 266,
     "GTFSID": "G13",
+    "complexName": "Elmhurst Av",
+    "stations": [],
     "stationID": 266,
+    "short1": "Elmhurst Av",
+    "short2": "",
     "stopName": "Elmhurst Av",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -3095,10 +5139,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 268,
+    "id": 268,
     "GTFSID": "G15",
+    "complexName": "65 St",
+    "stations": [],
     "stationID": 268,
+    "short1": "65 St",
+    "short2": "",
     "stopName": "65 St",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -3109,10 +5163,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 269,
+    "id": 269,
     "GTFSID": "G16",
+    "complexName": "Northern Blvd",
+    "stations": [],
     "stationID": 269,
+    "short1": "Northern Blvd",
+    "short2": "",
     "stopName": "Northern Blvd",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -3123,10 +5187,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 270,
+    "id": 270,
     "GTFSID": "G18",
+    "complexName": "46 St",
+    "stations": [],
     "stationID": 270,
+    "short1": "46 St",
+    "short2": "",
     "stopName": "46 St",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -3137,10 +5211,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 271,
+    "id": 271,
     "GTFSID": "G19",
+    "complexName": "Steinway St",
+    "stations": [],
     "stationID": 271,
+    "short1": "Steinway St",
+    "short2": "",
     "stopName": "Steinway St",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -3151,10 +5235,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 272,
+    "id": 272,
     "GTFSID": "G20",
+    "complexName": "36 St",
+    "stations": [],
     "stationID": 272,
+    "short1": "36 St",
+    "short2": "",
     "stopName": "36 St",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -3165,10 +5259,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 273,
+    "id": 273,
     "GTFSID": "G21",
+    "complexName": "Queens Plaza",
+    "stations": [],
     "stationID": 273,
+    "short1": "Queens Plaza",
+    "short2": "",
     "stopName": "Queens Plaza",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -3179,10 +5283,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 276,
+    "id": 276,
     "GTFSID": "F12",
+    "complexName": "5 Av/53 St",
+    "stations": [],
     "stationID": 276,
+    "short1": "5 Av",
+    "short2": "53 St",
     "stopName": "5 Av/53 St",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "M",
@@ -3193,10 +5307,22 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 277,
+    "id": 277,
     "GTFSID": "D14",
+    "complexName": "7 Av",
+    "stations": [],
     "stationID": 277,
+    "short1": "7 Av",
+    "short2": "53 St",
     "stopName": "7 Av",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "M",
@@ -3207,12 +5333,21 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 278,
+    "id": 278,
     "GTFSID": "G05",
+    "complexName": "Jamaica Center-Parsons/Archer",
+    "stations": [],
     "stationID": 278,
+    "short1": "Jamaica Center",
+    "short2": "Parsons Blvd-Archer Av",
     "stopName": "Jamaica Center-Parsons/Archer",
+    "expectedLines": [
+      "E",
+      "J",
+      "Z"
+    ],
     "lines": [],
-    "trunk": "Queens - Archer",
+    "trunk": "Archer Av",
     "borough": "Q",
     "lat": 40.702147,
     "long": -73.801109,
@@ -3221,12 +5356,21 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 279,
+    "id": 279,
     "GTFSID": "G06",
+    "complexName": "Sutphin Blvd-Archer Av-JFK Airport",
+    "stations": [],
     "stationID": 279,
+    "short1": "JFK Airport",
+    "short2": "Sutphin Blvd-Archer Av",
     "stopName": "Sutphin Blvd-Archer Av-JFK Airport",
+    "expectedLines": [
+      "E",
+      "J",
+      "Z"
+    ],
     "lines": [],
-    "trunk": "Queens - Archer",
+    "trunk": "Archer Av",
     "borough": "Q",
     "lat": 40.700486,
     "long": -73.807969,
@@ -3235,12 +5379,21 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 280,
+    "id": 280,
     "GTFSID": "G07",
+    "complexName": "Jamaica-Van Wyck",
+    "stations": [],
     "stationID": 280,
+    "short1": "Van Wyck",
+    "short2": "Jamaica",
     "stopName": "Jamaica-Van Wyck",
+    "expectedLines": [
+      "E",
+      "J",
+      "Z"
+    ],
     "lines": [],
-    "trunk": "Queens - Archer",
+    "trunk": "Archer Av",
     "borough": "Q",
     "lat": 40.702566,
     "long": -73.816859,
@@ -3249,10 +5402,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 282,
+    "id": 282,
     "GTFSID": "G24",
+    "complexName": "21 St",
+    "stations": [],
     "stationID": 282,
+    "short1": "21 St",
+    "short2": "",
     "stopName": "21 St",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Crosstown",
     "borough": "Q",
@@ -3263,10 +5426,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 283,
+    "id": 283,
     "GTFSID": "G26",
+    "complexName": "Greenpoint Av",
+    "stations": [],
     "stationID": 283,
+    "short1": "Greenpoint Av",
+    "short2": "",
     "stopName": "Greenpoint Av",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
     "trunk": "Crosstown",
     "borough": "Bk",
@@ -3277,10 +5448,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 284,
+    "id": 284,
     "GTFSID": "G28",
+    "complexName": "Nassau Av",
+    "stations": [],
     "stationID": 284,
+    "short1": "Nassau Av",
+    "short2": "",
     "stopName": "Nassau Av",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
     "trunk": "Crosstown",
     "borough": "Bk",
@@ -3291,10 +5470,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 286,
+    "id": 286,
     "GTFSID": "G30",
+    "complexName": "Broadway",
+    "stations": [],
     "stationID": 286,
+    "short1": "Broadway",
+    "short2": "",
     "stopName": "Broadway",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
     "trunk": "Crosstown",
     "borough": "Bk",
@@ -3305,10 +5492,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 287,
+    "id": 287,
     "GTFSID": "G31",
+    "complexName": "Flushing Av",
+    "stations": [],
     "stationID": 287,
+    "short1": "Flushing Av",
+    "short2": "",
     "stopName": "Flushing Av",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
     "trunk": "Crosstown",
     "borough": "Bk",
@@ -3319,13 +5514,21 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 288,
+    "id": 288,
     "GTFSID": "G32",
+    "complexName": "Myrtle-Willoughby Avs",
+    "stations": [],
     "stationID": 288,
+    "short1": "Myrtle Av",
+    "short2": "Willoughby Av",
     "stopName": "Myrtle-Willoughby Avs",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
     "trunk": "Crosstown",
-    "borough": "Bk",
+    "borough": 1,
     "lat": 40.694568,
     "long": -73.949046,
     "northDir": "Queens",
@@ -3333,10 +5536,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 289,
+    "id": 289,
     "GTFSID": "G33",
+    "complexName": "Bedford-Nostrand Avs",
+    "stations": [],
     "stationID": 289,
+    "short1": "Bedford Av",
+    "short2": "Nostrand Av",
     "stopName": "Bedford-Nostrand Avs",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
     "trunk": "Crosstown",
     "borough": "Bk",
@@ -3347,10 +5558,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 290,
+    "id": 290,
     "GTFSID": "G34",
+    "complexName": "Classon Av",
+    "stations": [],
     "stationID": 290,
+    "short1": "Classon Av",
+    "short2": "",
     "stopName": "Classon Av",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
     "trunk": "Crosstown",
     "borough": "Bk",
@@ -3361,10 +5580,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 291,
+    "id": 291,
     "GTFSID": "G35",
+    "complexName": "Clinton-Washington Avs",
+    "stations": [],
     "stationID": 291,
+    "short1": "Clinton Av",
+    "short2": "Washington Av",
     "stopName": "Clinton-Washington Avs",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
     "trunk": "Crosstown",
     "borough": "Bk",
@@ -3375,10 +5602,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 292,
+    "id": 292,
     "GTFSID": "G36",
+    "complexName": "Fulton St",
+    "stations": [],
     "stationID": 292,
+    "short1": "Fulton St",
+    "short2": "",
     "stopName": "Fulton St",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
     "trunk": "Crosstown",
     "borough": "Bk",
@@ -3389,10 +5624,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 293,
+    "id": 293,
     "GTFSID": 101,
+    "complexName": "Van Cortlandt Park-242 St",
+    "stations": [],
     "stationID": 293,
+    "short1": "242 St",
+    "short2": "Van Cortlandt Park",
     "stopName": "Van Cortlandt Park-242 St",
+    "expectedLines": [
+      1
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "Bx",
@@ -3403,10 +5645,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 294,
+    "id": 294,
     "GTFSID": 103,
+    "complexName": "238 St",
+    "stations": [],
     "stationID": 294,
+    "short1": "238 St",
+    "short2": "",
     "stopName": "238 St",
+    "expectedLines": [
+      1
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "Bx",
@@ -3417,10 +5666,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 295,
+    "id": 295,
     "GTFSID": 104,
+    "complexName": "231 St",
+    "stations": [],
     "stationID": 295,
+    "short1": "231 St",
+    "short2": "",
     "stopName": "231 St",
+    "expectedLines": [
+      1
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "Bx",
@@ -3431,10 +5687,17 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 296,
+    "id": 296,
     "GTFSID": 106,
+    "complexName": "Marble Hill-225 St",
+    "stations": [],
     "stationID": 296,
+    "short1": "225 St",
+    "short2": "Marble Hill",
     "stopName": "Marble Hill-225 St",
+    "expectedLines": [
+      1
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3445,10 +5708,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 297,
+    "id": 297,
     "GTFSID": 107,
+    "complexName": "215 St",
+    "stations": [],
     "stationID": 297,
+    "short1": "215 St",
+    "short2": "",
     "stopName": "215 St",
+    "expectedLines": [
+      1
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3459,10 +5729,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 298,
+    "id": 298,
     "GTFSID": 108,
+    "complexName": "207 St",
+    "stations": [],
     "stationID": 298,
+    "short1": "207 St",
+    "short2": "",
     "stopName": "207 St",
+    "expectedLines": [
+      1
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3473,10 +5750,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 299,
+    "id": 299,
     "GTFSID": 109,
+    "complexName": "Dyckman St",
+    "stations": [],
     "stationID": 299,
+    "short1": "Dyckman St",
+    "short2": "",
     "stopName": "Dyckman St",
+    "expectedLines": [
+      1
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3487,10 +5771,17 @@ def stations():
     "ADA": 3
   },
   {
-    "ID": 300,
+    "id": 300,
     "GTFSID": 110,
+    "complexName": "191 St",
+    "stations": [],
     "stationID": 300,
+    "short1": "191 St",
+    "short2": "",
     "stopName": "191 St",
+    "expectedLines": [
+      1
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3501,10 +5792,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 301,
+    "id": 301,
     "GTFSID": 111,
+    "complexName": "181 St",
+    "stations": [],
     "stationID": 301,
+    "short1": "181 St",
+    "short2": "",
     "stopName": "181 St",
+    "expectedLines": [
+      1
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3515,10 +5813,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 303,
+    "id": 303,
     "GTFSID": 113,
+    "complexName": "157 St",
+    "stations": [],
     "stationID": 303,
+    "short1": "157 St",
+    "short2": "",
     "stopName": "157 St",
+    "expectedLines": [
+      1
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3529,10 +5834,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 304,
+    "id": 304,
     "GTFSID": 114,
+    "complexName": "145 St",
+    "stations": [],
     "stationID": 304,
+    "short1": "145 St",
+    "short2": "",
     "stopName": "145 St",
+    "expectedLines": [
+      1
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3543,10 +5855,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 305,
+    "id": 305,
     "GTFSID": 115,
+    "complexName": "137 St-City College",
+    "stations": [],
     "stationID": 305,
+    "short1": "137 St",
+    "short2": "City College",
     "stopName": "137 St-City College",
+    "expectedLines": [
+      1,
+      2,
+      3
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3557,10 +5878,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 306,
+    "id": 306,
     "GTFSID": 116,
+    "complexName": "125 St",
+    "stations": [],
     "stationID": 306,
+    "short1": "125 St",
+    "short2": "",
     "stopName": "125 St",
+    "expectedLines": [
+      1,
+      2,
+      3
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3571,10 +5901,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 307,
+    "id": 307,
     "GTFSID": 117,
+    "complexName": "116 St-Columbia University",
+    "stations": [],
     "stationID": 307,
+    "short1": "116 St",
+    "short2": "Columbia University",
     "stopName": "116 St-Columbia University",
+    "expectedLines": [
+      1,
+      2,
+      3
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3585,10 +5924,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 308,
+    "id": 308,
     "GTFSID": 118,
+    "complexName": "Cathedral Pkwy (110 St)",
+    "stations": [],
     "stationID": 308,
+    "short1": "Cathedral Parkway",
+    "short2": "110 St",
     "stopName": "Cathedral Pkwy (110 St)",
+    "expectedLines": [
+      1,
+      2,
+      3
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3599,10 +5947,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 309,
+    "id": 309,
     "GTFSID": 119,
+    "complexName": "103 St",
+    "stations": [],
     "stationID": 309,
+    "short1": "103 St",
+    "short2": "",
     "stopName": "103 St",
+    "expectedLines": [
+      1,
+      2,
+      3
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3613,10 +5970,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 310,
+    "id": 310,
     "GTFSID": 120,
+    "complexName": "96 St",
+    "stations": [],
     "stationID": 310,
+    "short1": "96 St",
+    "short2": "",
     "stopName": "96 St",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3627,10 +5994,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 311,
+    "id": 311,
     "GTFSID": 121,
+    "complexName": "86 St",
+    "stations": [],
     "stationID": 311,
+    "short1": "86 St",
+    "short2": "",
     "stopName": "86 St",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3641,10 +6018,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 312,
+    "id": 312,
     "GTFSID": 122,
+    "complexName": "79 St",
+    "stations": [],
     "stationID": 312,
+    "short1": "79 St",
+    "short2": "",
     "stopName": "79 St",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3655,10 +6042,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 313,
+    "id": 313,
     "GTFSID": 123,
+    "complexName": "72 St",
+    "stations": [],
     "stationID": 313,
+    "short1": "72 St",
+    "short2": "",
     "stopName": "72 St",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3669,10 +6066,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 314,
+    "id": 314,
     "GTFSID": 124,
+    "complexName": "66 St-Lincoln Center",
+    "stations": [],
     "stationID": 314,
+    "short1": "66 St",
+    "short2": "Lincoln Center",
     "stopName": "66 St-Lincoln Center",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3683,10 +6090,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 316,
+    "id": 316,
     "GTFSID": 126,
+    "complexName": "50 St",
+    "stations": [],
     "stationID": 316,
+    "short1": "50 St",
+    "short2": "",
     "stopName": "50 St",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3697,10 +6114,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 318,
+    "id": 318,
     "GTFSID": 128,
+    "complexName": "34 St-Penn Station",
+    "stations": [],
     "stationID": 318,
+    "short1": "34 St",
+    "short2": "Penn Station",
     "stopName": "34 St-Penn Station",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3711,10 +6138,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 319,
+    "id": 319,
     "GTFSID": 129,
+    "complexName": "28 St",
+    "stations": [],
     "stationID": 319,
+    "short1": "28 St",
+    "short2": "",
     "stopName": "28 St",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3725,10 +6162,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 320,
+    "id": 320,
     "GTFSID": 130,
+    "complexName": "23 St",
+    "stations": [],
     "stationID": 320,
+    "short1": "23 St",
+    "short2": "",
     "stopName": "23 St",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3739,10 +6186,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 321,
+    "id": 321,
     "GTFSID": 131,
+    "complexName": "18 St",
+    "stations": [],
     "stationID": 321,
+    "short1": "18 St",
+    "short2": "",
     "stopName": "18 St",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3753,10 +6210,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 323,
+    "id": 323,
     "GTFSID": 133,
+    "complexName": "Christopher St-Sheridan Sq",
+    "stations": [],
     "stationID": 323,
+    "short1": "Christopher St",
+    "short2": "Sheridan Sq",
     "stopName": "Christopher St-Sheridan Sq",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3767,10 +6234,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 324,
+    "id": 324,
     "GTFSID": 134,
+    "complexName": "Houston St",
+    "stations": [],
     "stationID": 324,
+    "short1": "Houston St",
+    "short2": "",
     "stopName": "Houston St",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3781,10 +6258,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 325,
+    "id": 325,
     "GTFSID": 135,
+    "complexName": "Canal St",
+    "stations": [],
     "stationID": 325,
+    "short1": "Canal St",
+    "short2": "",
     "stopName": "Canal St",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3795,10 +6282,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 326,
+    "id": 326,
     "GTFSID": 136,
+    "complexName": "Franklin St",
+    "stations": [],
     "stationID": 326,
+    "short1": "Franklin St",
+    "short2": "",
     "stopName": "Franklin St",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3809,10 +6306,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 327,
+    "id": 327,
     "GTFSID": 137,
+    "complexName": "Chambers St",
+    "stations": [],
     "stationID": 327,
+    "short1": "Chambers St",
+    "short2": "",
     "stopName": "Chambers St",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3823,10 +6330,19 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 328,
+    "id": 328,
     "GTFSID": 138,
+    "complexName": "WTC Cortlandt",
+    "stations": [],
     "stationID": 328,
+    "short1": "WTC Cortlandt",
+    "short2": "",
     "stopName": "WTC Cortlandt",
+    "expectedLines": [
+      1,
+      2,
+      3
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3837,10 +6353,19 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 329,
+    "id": 329,
     "GTFSID": 139,
+    "complexName": "Rector St",
+    "stations": [],
     "stationID": 329,
+    "short1": "Rector St",
+    "short2": "",
     "stopName": "Rector St",
+    "expectedLines": [
+      1,
+      2,
+      3
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -3851,10 +6376,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 333,
+    "id": 333,
     "GTFSID": 230,
+    "complexName": "Wall St",
+    "stations": [],
     "stationID": 333,
+    "short1": "Wall St",
+    "short2": "",
     "stopName": "Wall St",
+    "expectedLines": [
+      2,
+      3
+    ],
     "lines": [],
     "trunk": "Clark St",
     "borough": "M",
@@ -3865,10 +6398,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 334,
+    "id": 334,
     "GTFSID": 231,
+    "complexName": "Clark St",
+    "stations": [],
     "stationID": 334,
+    "short1": "Clark St",
+    "short2": "",
     "stopName": "Clark St",
+    "expectedLines": [
+      2,
+      3
+    ],
     "lines": [],
     "trunk": "Clark St",
     "borough": "Bk",
@@ -3879,10 +6420,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 336,
+    "id": 336,
     "GTFSID": 233,
+    "complexName": "Hoyt St",
+    "stations": [],
     "stationID": 336,
+    "short1": "Hoyt St",
+    "short2": "",
     "stopName": "Hoyt St",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Eastern Pky",
     "borough": "Bk",
@@ -3893,10 +6444,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 337,
+    "id": 337,
     "GTFSID": 234,
+    "complexName": "Nevins St",
+    "stations": [],
     "stationID": 337,
+    "short1": "Nevins St",
+    "short2": "",
     "stopName": "Nevins St",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Eastern Pky",
     "borough": "Bk",
@@ -3907,10 +6468,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 339,
+    "id": 339,
     "GTFSID": 236,
+    "complexName": "Bergen St",
+    "stations": [],
     "stationID": 339,
+    "short1": "Bergen St",
+    "short2": "",
     "stopName": "Bergen St",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Eastern Pky",
     "borough": "Bk",
@@ -3921,10 +6492,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 340,
+    "id": 340,
     "GTFSID": 237,
+    "complexName": "Grand Army Plaza",
+    "stations": [],
     "stationID": 340,
+    "short1": "Grand Army Plaza",
+    "short2": "",
     "stopName": "Grand Army Plaza",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Eastern Pky",
     "borough": "Bk",
@@ -3935,10 +6516,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 341,
+    "id": 341,
     "GTFSID": 238,
+    "complexName": "Eastern Pkwy-Brooklyn Museum",
+    "stations": [],
     "stationID": 341,
+    "short1": "Eastern Pkwy",
+    "short2": "Brooklyn Museum",
     "stopName": "Eastern Pkwy-Brooklyn Museum",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Eastern Pky",
     "borough": "Bk",
@@ -3949,10 +6540,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 343,
+    "id": 343,
     "GTFSID": 248,
+    "complexName": "Nostrand Av",
+    "stations": [],
     "stationID": 343,
+    "short1": "Nostrand Av",
+    "short2": "",
     "stopName": "Nostrand Av",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Eastern Pky",
     "borough": "Bk",
@@ -3963,10 +6564,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 344,
+    "id": 344,
     "GTFSID": 249,
+    "complexName": "Kingston Av",
+    "stations": [],
     "stationID": 344,
+    "short1": "Kingston Av",
+    "short2": "",
     "stopName": "Kingston Av",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Eastern Pky",
     "borough": "Bk",
@@ -3977,10 +6588,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 345,
+    "id": 345,
     "GTFSID": 250,
+    "complexName": "Crown Hts-Utica Av",
+    "stations": [],
     "stationID": 345,
+    "short1": "Utica Av",
+    "short2": "Crown Hts",
     "stopName": "Crown Hts-Utica Av",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Eastern Pky",
     "borough": "Bk",
@@ -3991,10 +6612,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 346,
+    "id": 346,
     "GTFSID": 251,
+    "complexName": "Sutter Av-Rutland Rd",
+    "stations": [],
     "stationID": 346,
+    "short1": "Sutter Av",
+    "short2": "Rutland Rd",
     "stopName": "Sutter Av-Rutland Rd",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Eastern Pky",
     "borough": "Bk",
@@ -4005,10 +6636,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 347,
+    "id": 347,
     "GTFSID": 252,
+    "complexName": "Saratoga Av",
+    "stations": [],
     "stationID": 347,
+    "short1": "Saratoga Av",
+    "short2": "",
     "stopName": "Saratoga Av",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Eastern Pky",
     "borough": "Bk",
@@ -4019,10 +6660,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 348,
+    "id": 348,
     "GTFSID": 253,
+    "complexName": "Rockaway Av",
+    "stations": [],
     "stationID": 348,
+    "short1": "Rockaway Av",
+    "short2": "",
     "stopName": "Rockaway Av",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Eastern Pky",
     "borough": "Bk",
@@ -4033,10 +6684,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 349,
+    "id": 349,
     "GTFSID": 254,
+    "complexName": "Junius St",
+    "stations": [],
     "stationID": 349,
+    "short1": "Junius St",
+    "short2": "",
     "stopName": "Junius St",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Eastern Pky",
     "borough": "Bk",
@@ -4047,10 +6708,41 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 350,
+    "id": 135,
+    "GTFSID": "L26",
+    "complexName": "Livonia Av",
+    "stations": [],
+    "stationID": 135,
+    "short1": "Livonia Av",
+    "short2": "",
+    "stopName": "Livonia Av",
+    "expectedLines": [
+      "L"
+    ],
+    "lines": [],
+    "trunk": "Canarsie",
+    "borough": "Bk",
+    "lat": 40.664038,
+    "long": -73.900571,
+    "northDir": "Manhattan",
+    "southDir": "Canarsie - Rockaway Parkway",
+    "ADA": 1
+  },
+  {
+    "id": 350,
     "GTFSID": 255,
+    "complexName": "Pennsylvania Av",
+    "stations": [],
     "stationID": 350,
+    "short1": "Pennsylvania Av",
+    "short2": "",
     "stopName": "Pennsylvania Av",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Eastern Pky",
     "borough": "Bk",
@@ -4061,10 +6753,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 351,
+    "id": 351,
     "GTFSID": 256,
+    "complexName": "Van Siclen Av",
+    "stations": [],
     "stationID": 351,
+    "short1": "Van Siclen Av",
+    "short2": "",
     "stopName": "Van Siclen Av",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Eastern Pky",
     "borough": "Bk",
@@ -4075,10 +6777,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 352,
+    "id": 352,
     "GTFSID": 257,
+    "complexName": "New Lots Av",
+    "stations": [],
     "stationID": 352,
+    "short1": "New Lots Av",
+    "short2": "",
     "stopName": "New Lots Av",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Eastern Pky",
     "borough": "Bk",
@@ -4089,10 +6801,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 353,
+    "id": 353,
     "GTFSID": 241,
+    "complexName": "President Street-Medgar Evers College",
+    "stations": [],
     "stationID": 353,
+    "short1": "President Street",
+    "short2": "Medgar Evers College",
     "stopName": "President Street-Medgar Evers College",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Nostrand",
     "borough": "Bk",
@@ -4103,10 +6825,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 354,
+    "id": 354,
     "GTFSID": 242,
+    "complexName": "Sterling St",
+    "stations": [],
     "stationID": 354,
+    "short1": "Sterling St",
+    "short2": "",
     "stopName": "Sterling St",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Nostrand",
     "borough": "Bk",
@@ -4117,10 +6849,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 355,
+    "id": 355,
     "GTFSID": 243,
+    "complexName": "Winthrop St",
+    "stations": [],
     "stationID": 355,
+    "short1": "Winthrop St",
+    "short2": "",
     "stopName": "Winthrop St",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Nostrand",
     "borough": "Bk",
@@ -4131,10 +6873,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 356,
+    "id": 356,
     "GTFSID": 244,
+    "complexName": "Church Av",
+    "stations": [],
     "stationID": 356,
+    "short1": "Church Av",
+    "short2": "",
     "stopName": "Church Av",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Nostrand",
     "borough": "Bk",
@@ -4145,10 +6897,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 357,
+    "id": 357,
     "GTFSID": 245,
+    "complexName": "Beverly Rd",
+    "stations": [],
     "stationID": 357,
+    "short1": "Beverly Rd",
+    "short2": "",
     "stopName": "Beverly Rd",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Nostrand",
     "borough": "Bk",
@@ -4159,10 +6921,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 358,
+    "id": 358,
     "GTFSID": 246,
+    "complexName": "Newkirk Av - Little Haiti",
+    "stations": [],
     "stationID": 358,
+    "short1": "Newkirk Av",
+    "short2": "Little Haiti",
     "stopName": "Newkirk Av - Little Haiti",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Nostrand",
     "borough": "Bk",
@@ -4173,10 +6945,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 359,
+    "id": 359,
     "GTFSID": 247,
+    "complexName": "Flatbush Av-Brooklyn College",
+    "stations": [],
     "stationID": 359,
+    "short1": "Flatbush Av",
+    "short2": "Brooklyn College",
     "stopName": "Flatbush Av-Brooklyn College",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Nostrand",
     "borough": "Bk",
@@ -4187,10 +6969,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 360,
+    "id": 360,
     "GTFSID": 601,
+    "complexName": "Pelham Bay Park",
+    "stations": [],
     "stationID": 360,
+    "short1": "Pelham Bay Park",
+    "short2": "",
     "stopName": "Pelham Bay Park",
+    "expectedLines": [
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Pelham",
     "borough": "Bx",
@@ -4201,10 +6991,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 361,
+    "id": 361,
     "GTFSID": 602,
+    "complexName": "Buhre Av",
+    "stations": [],
     "stationID": 361,
+    "short1": "Buhre Av",
+    "short2": "",
     "stopName": "Buhre Av",
+    "expectedLines": [
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Pelham",
     "borough": "Bx",
@@ -4215,10 +7013,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 362,
+    "id": 362,
     "GTFSID": 603,
+    "complexName": "Middletown Rd",
+    "stations": [],
     "stationID": 362,
+    "short1": "Middletown Rd",
+    "short2": "",
     "stopName": "Middletown Rd",
+    "expectedLines": [
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Pelham",
     "borough": "Bx",
@@ -4229,10 +7035,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 363,
+    "id": 363,
     "GTFSID": 604,
+    "complexName": "Westchester Sq-E Tremont Av",
+    "stations": [],
     "stationID": 363,
+    "short1": "Westchester Sq",
+    "short2": "E Tremont Av",
     "stopName": "Westchester Sq-E Tremont Av",
+    "expectedLines": [
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Pelham",
     "borough": "Bx",
@@ -4243,10 +7057,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 364,
+    "id": 364,
     "GTFSID": 606,
+    "complexName": "Zerega Av",
+    "stations": [],
     "stationID": 364,
+    "short1": "Zerega Av",
+    "short2": "",
     "stopName": "Zerega Av",
+    "expectedLines": [
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Pelham",
     "borough": "Bx",
@@ -4257,10 +7079,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 365,
+    "id": 365,
     "GTFSID": 607,
+    "complexName": "Castle Hill Av",
+    "stations": [],
     "stationID": 365,
+    "short1": "Castle Hill Av",
+    "short2": "",
     "stopName": "Castle Hill Av",
+    "expectedLines": [
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Pelham",
     "borough": "Bx",
@@ -4271,10 +7101,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 366,
+    "id": 366,
     "GTFSID": 608,
+    "complexName": "Parkchester",
+    "stations": [],
     "stationID": 366,
+    "short1": "Parkchester",
+    "short2": "",
     "stopName": "Parkchester",
+    "expectedLines": [
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Pelham",
     "borough": "Bx",
@@ -4285,10 +7123,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 367,
+    "id": 367,
     "GTFSID": 609,
+    "complexName": "St Lawrence Av",
+    "stations": [],
     "stationID": 367,
+    "short1": "St Lawrence Av",
+    "short2": "",
     "stopName": "St Lawrence Av",
+    "expectedLines": [
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Pelham",
     "borough": "Bx",
@@ -4299,10 +7145,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 368,
+    "id": 368,
     "GTFSID": 610,
+    "complexName": "Morrison Av-Soundview",
+    "stations": [],
     "stationID": 368,
+    "short1": "Morrison Av",
+    "short2": "Soundview",
     "stopName": "Morrison Av-Soundview",
+    "expectedLines": [
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Pelham",
     "borough": "Bx",
@@ -4313,10 +7167,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 369,
+    "id": 369,
     "GTFSID": 611,
+    "complexName": "Elder Av",
+    "stations": [],
     "stationID": 369,
+    "short1": "Elder Av",
+    "short2": "",
     "stopName": "Elder Av",
+    "expectedLines": [
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Pelham",
     "borough": "Bx",
@@ -4327,10 +7189,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 370,
+    "id": 370,
     "GTFSID": 612,
+    "complexName": "Whitlock Av",
+    "stations": [],
     "stationID": 370,
+    "short1": "Whitlock Av",
+    "short2": "",
     "stopName": "Whitlock Av",
+    "expectedLines": [
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Pelham",
     "borough": "Bx",
@@ -4341,10 +7211,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 371,
+    "id": 371,
     "GTFSID": 613,
+    "complexName": "Hunts Point Av",
+    "stations": [],
     "stationID": 371,
+    "short1": "Hunts Point Av",
+    "short2": "",
     "stopName": "Hunts Point Av",
+    "expectedLines": [
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Pelham",
     "borough": "Bx",
@@ -4355,10 +7233,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 372,
+    "id": 372,
     "GTFSID": 614,
+    "complexName": "Longwood Av",
+    "stations": [],
     "stationID": 372,
+    "short1": "Longwood Av",
+    "short2": "",
     "stopName": "Longwood Av",
+    "expectedLines": [
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Pelham",
     "borough": "Bx",
@@ -4369,10 +7255,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 373,
+    "id": 373,
     "GTFSID": 615,
+    "complexName": "E 149 St",
+    "stations": [],
     "stationID": 373,
+    "short1": "E 149 St",
+    "short2": "",
     "stopName": "E 149 St",
+    "expectedLines": [
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Pelham",
     "borough": "Bx",
@@ -4383,10 +7277,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 374,
+    "id": 374,
     "GTFSID": 616,
+    "complexName": "E 143 St-St Mary's St",
+    "stations": [],
     "stationID": 374,
+    "short1": "E 143 St",
+    "short2": "St Mary's St",
     "stopName": "E 143 St-St Mary's St",
+    "expectedLines": [
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Pelham",
     "borough": "Bx",
@@ -4397,10 +7299,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 375,
+    "id": 375,
     "GTFSID": 617,
+    "complexName": "Cypress Av",
+    "stations": [],
     "stationID": 375,
+    "short1": "Cypress Av",
+    "short2": "",
     "stopName": "Cypress Av",
+    "expectedLines": [
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Pelham",
     "borough": "Bx",
@@ -4411,10 +7321,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 376,
+    "id": 376,
     "GTFSID": 618,
+    "complexName": "Brook Av",
+    "stations": [],
     "stationID": 376,
+    "short1": "Brook Av",
+    "short2": "",
     "stopName": "Brook Av",
+    "expectedLines": [
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Pelham",
     "borough": "Bx",
@@ -4425,10 +7343,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 377,
+    "id": 377,
     "GTFSID": 619,
+    "complexName": "3 Av-138 St",
+    "stations": [],
     "stationID": 377,
+    "short1": "3 Av-138 St",
+    "short2": "",
     "stopName": "3 Av-138 St",
+    "expectedLines": [
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Pelham",
     "borough": "Bx",
@@ -4439,10 +7365,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 378,
+    "id": 378,
     "GTFSID": 401,
+    "complexName": "Woodlawn",
+    "stations": [],
     "stationID": 378,
+    "short1": "Woodlawn",
+    "short2": "",
     "stopName": "Woodlawn",
+    "expectedLines": [
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Jerome Av",
     "borough": "Bx",
@@ -4453,10 +7387,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 379,
+    "id": 379,
     "GTFSID": 402,
+    "complexName": "Mosholu Pkwy",
+    "stations": [],
     "stationID": 379,
+    "short1": "Mosholu Pkwy",
+    "short2": "",
     "stopName": "Mosholu Pkwy",
+    "expectedLines": [
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Jerome Av",
     "borough": "Bx",
@@ -4467,10 +7409,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 380,
+    "id": 380,
     "GTFSID": 405,
+    "complexName": "Bedford Park Blvd-Lehman College",
+    "stations": [],
     "stationID": 380,
+    "short1": "Bedford Park Blvd",
+    "short2": "Lehman College",
     "stopName": "Bedford Park Blvd-Lehman College",
+    "expectedLines": [
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Jerome Av",
     "borough": "Bx",
@@ -4481,10 +7431,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 381,
+    "id": 381,
     "GTFSID": 406,
+    "complexName": "Kingsbridge Rd",
+    "stations": [],
     "stationID": 381,
+    "short1": "Kingsbridge Rd",
+    "short2": "",
     "stopName": "Kingsbridge Rd",
+    "expectedLines": [
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Jerome Av",
     "borough": "Bx",
@@ -4495,10 +7453,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 382,
+    "id": 382,
     "GTFSID": 407,
+    "complexName": "Fordham Rd",
+    "stations": [],
     "stationID": 382,
+    "short1": "Fordham Rd",
+    "short2": "",
     "stopName": "Fordham Rd",
+    "expectedLines": [
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Jerome Av",
     "borough": "Bx",
@@ -4509,10 +7475,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 383,
+    "id": 383,
     "GTFSID": 408,
+    "complexName": "183 St",
+    "stations": [],
     "stationID": 383,
+    "short1": "183 St",
+    "short2": "",
     "stopName": "183 St",
+    "expectedLines": [
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Jerome Av",
     "borough": "Bx",
@@ -4523,10 +7497,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 384,
+    "id": 384,
     "GTFSID": 409,
+    "complexName": "Burnside Av",
+    "stations": [],
     "stationID": 384,
+    "short1": "Burnside Av",
+    "short2": "",
     "stopName": "Burnside Av",
+    "expectedLines": [
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Jerome Av",
     "borough": "Bx",
@@ -4537,10 +7519,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 385,
+    "id": 385,
     "GTFSID": 410,
+    "complexName": "176 St",
+    "stations": [],
     "stationID": 385,
+    "short1": "176 St",
+    "short2": "",
     "stopName": "176 St",
+    "expectedLines": [
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Jerome Av",
     "borough": "Bx",
@@ -4551,10 +7541,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 386,
+    "id": 386,
     "GTFSID": 411,
+    "complexName": "Mt Eden Av",
+    "stations": [],
     "stationID": 386,
+    "short1": "Mt Eden Av",
+    "short2": "",
     "stopName": "Mt Eden Av",
+    "expectedLines": [
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Jerome Av",
     "borough": "Bx",
@@ -4565,10 +7563,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 387,
+    "id": 387,
     "GTFSID": 412,
+    "complexName": "170 St",
+    "stations": [],
     "stationID": 387,
+    "short1": "170 St",
+    "short2": "",
     "stopName": "170 St",
+    "expectedLines": [
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Jerome Av",
     "borough": "Bx",
@@ -4579,10 +7585,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 388,
+    "id": 388,
     "GTFSID": 413,
+    "complexName": "167 St",
+    "stations": [],
     "stationID": 388,
+    "short1": "167 St",
+    "short2": "",
     "stopName": "167 St",
+    "expectedLines": [
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Jerome Av",
     "borough": "Bx",
@@ -4593,10 +7607,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 391,
+    "id": 391,
     "GTFSID": 416,
+    "complexName": "138 St-Grand Concourse",
+    "stations": [],
     "stationID": 391,
+    "short1": "138 St",
+    "short2": "Grand Concourse",
     "stopName": "138 St-Grand Concourse",
+    "expectedLines": [
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Jerome Av",
     "borough": "Bx",
@@ -4607,10 +7629,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 392,
+    "id": 392,
     "GTFSID": 621,
+    "complexName": "125 St",
+    "stations": [],
     "stationID": 392,
+    "short1": "125 St",
+    "short2": "",
     "stopName": "125 St",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -4621,10 +7653,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 393,
+    "id": 393,
     "GTFSID": 622,
+    "complexName": "116 St",
+    "stations": [],
     "stationID": 393,
+    "short1": "116 St",
+    "short2": "",
     "stopName": "116 St",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -4635,10 +7677,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 394,
+    "id": 394,
     "GTFSID": 623,
+    "complexName": "110 St",
+    "stations": [],
     "stationID": 394,
+    "short1": "110 St",
+    "short2": "",
     "stopName": "110 St",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -4649,10 +7701,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 395,
+    "id": 395,
     "GTFSID": 624,
+    "complexName": "103 St",
+    "stations": [],
     "stationID": 395,
+    "short1": "103 St",
+    "short2": "",
     "stopName": "103 St",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -4663,10 +7725,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 396,
+    "id": 396,
     "GTFSID": 625,
+    "complexName": "96 St",
+    "stations": [],
     "stationID": 396,
+    "short1": "96 St",
+    "short2": "",
     "stopName": "96 St",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -4677,10 +7749,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 397,
+    "id": 397,
     "GTFSID": 626,
+    "complexName": "86 St",
+    "stations": [],
     "stationID": 397,
+    "short1": "86 St",
+    "short2": "",
     "stopName": "86 St",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -4691,10 +7773,20 @@ def stations():
     "ADA": 2
   },
   {
-    "ID": 398,
+    "id": 398,
     "GTFSID": 627,
+    "complexName": "77 St",
+    "stations": [],
     "stationID": 398,
+    "short1": "77 St",
+    "short2": "",
     "stopName": "77 St",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -4705,10 +7797,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 399,
+    "id": 399,
     "GTFSID": 628,
+    "complexName": "68 St-Hunter College",
+    "stations": [],
     "stationID": 399,
+    "short1": "68 St",
+    "short2": "Hunter College",
     "stopName": "68 St-Hunter College",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -4719,10 +7821,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 403,
+    "id": 403,
     "GTFSID": 632,
+    "complexName": "33 St",
+    "stations": [],
     "stationID": 403,
+    "short1": "33 St",
+    "short2": "",
     "stopName": "33 St",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -4733,10 +7845,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 404,
+    "id": 404,
     "GTFSID": 633,
+    "complexName": "28 St",
+    "stations": [],
     "stationID": 404,
+    "short1": "28 St",
+    "short2": "",
     "stopName": "28 St",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -4747,10 +7869,20 @@ def stations():
     "ADA": 3
   },
   {
-    "ID": 405,
+    "id": 405,
     "GTFSID": 634,
+    "complexName": "23 St",
+    "stations": [],
     "stationID": 405,
+    "short1": "23 St",
+    "short2": "",
     "stopName": "23 St",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -4761,10 +7893,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 407,
+    "id": 407,
     "GTFSID": 636,
+    "complexName": "Astor Pl",
+    "stations": [],
     "stationID": 407,
+    "short1": "Astor Pl",
+    "short2": "",
     "stopName": "Astor Pl",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -4775,10 +7917,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 409,
+    "id": 409,
     "GTFSID": 638,
+    "complexName": "Spring St",
+    "stations": [],
     "stationID": 409,
+    "short1": "Spring St",
+    "short2": "",
     "stopName": "Spring St",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -4789,10 +7941,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 413,
+    "id": 413,
     "GTFSID": 419,
+    "complexName": "Wall St",
+    "stations": [],
     "stationID": 413,
+    "short1": "Wall St",
+    "short2": "",
     "stopName": "Wall St",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -4803,10 +7965,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 414,
+    "id": 414,
     "GTFSID": 420,
+    "complexName": "Bowling Green",
+    "stations": [],
     "stationID": 414,
+    "short1": "Bowling Green",
+    "short2": "",
     "stopName": "Bowling Green",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -4817,10 +7989,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 416,
+    "id": 416,
     "GTFSID": 201,
+    "complexName": "Wakefield-241 St",
+    "stations": [],
     "stationID": 416,
+    "short1": "241 St",
+    "short2": "Wakefield",
     "stopName": "Wakefield-241 St",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "Bx",
@@ -4831,10 +8011,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 417,
+    "id": 417,
     "GTFSID": 204,
+    "complexName": "Nereid Av",
+    "stations": [],
     "stationID": 417,
+    "short1": "Nereid Av",
+    "short2": "",
     "stopName": "Nereid Av",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "Bx",
@@ -4845,10 +8033,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 418,
+    "id": 418,
     "GTFSID": 205,
+    "complexName": "233 St",
+    "stations": [],
     "stationID": 418,
+    "short1": "233 St",
+    "short2": "",
     "stopName": "233 St",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "Bx",
@@ -4859,10 +8055,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 419,
+    "id": 419,
     "GTFSID": 206,
+    "complexName": "225 St",
+    "stations": [],
     "stationID": 419,
+    "short1": "225 St",
+    "short2": "",
     "stopName": "225 St",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "Bx",
@@ -4873,10 +8077,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 420,
+    "id": 420,
     "GTFSID": 207,
+    "complexName": "219 St",
+    "stations": [],
     "stationID": 420,
+    "short1": "219 St",
+    "short2": "",
     "stopName": "219 St",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "Bx",
@@ -4887,10 +8099,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 421,
+    "id": 421,
     "GTFSID": 208,
+    "complexName": "Gun Hill Rd",
+    "stations": [],
     "stationID": 421,
+    "short1": "Gun Hill Rd",
+    "short2": "",
     "stopName": "Gun Hill Rd",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "Bx",
@@ -4901,10 +8121,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 422,
+    "id": 422,
     "GTFSID": 209,
+    "complexName": "Burke Av",
+    "stations": [],
     "stationID": 422,
+    "short1": "Burke Av",
+    "short2": "",
     "stopName": "Burke Av",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "Bx",
@@ -4915,10 +8143,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 423,
+    "id": 423,
     "GTFSID": 210,
+    "complexName": "Allerton Av",
+    "stations": [],
     "stationID": 423,
+    "short1": "Allerton Av",
+    "short2": "",
     "stopName": "Allerton Av",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "Bx",
@@ -4929,10 +8165,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 424,
+    "id": 424,
     "GTFSID": 211,
+    "complexName": "Pelham Pkwy",
+    "stations": [],
     "stationID": 424,
+    "short1": "Pelham Pkwy",
+    "short2": "",
     "stopName": "Pelham Pkwy",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "Bx",
@@ -4943,10 +8187,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 425,
+    "id": 425,
     "GTFSID": 212,
+    "complexName": "Bronx Park East",
+    "stations": [],
     "stationID": 425,
+    "short1": "Bronx Park East",
+    "short2": "",
     "stopName": "Bronx Park East",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "Bx",
@@ -4957,10 +8209,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 426,
+    "id": 426,
     "GTFSID": 213,
+    "complexName": "E 180 St",
+    "stations": [],
     "stationID": 426,
+    "short1": "E 180 St",
+    "short2": "",
     "stopName": "E 180 St",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "Bx",
@@ -4971,10 +8231,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 427,
+    "id": 427,
     "GTFSID": 214,
+    "complexName": "West Farms Sq-E Tremont Av",
+    "stations": [],
     "stationID": 427,
+    "short1": "West Farms Sq",
+    "short2": "E Tremont Av",
     "stopName": "West Farms Sq-E Tremont Av",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "Bx",
@@ -4985,10 +8253,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 428,
+    "id": 428,
     "GTFSID": 215,
+    "complexName": "174 St",
+    "stations": [],
     "stationID": 428,
+    "short1": "174 St",
+    "short2": "",
     "stopName": "174 St",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "Bx",
@@ -4999,10 +8275,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 429,
+    "id": 429,
     "GTFSID": 216,
+    "complexName": "Freeman St",
+    "stations": [],
     "stationID": 429,
+    "short1": "Freeman St",
+    "short2": "",
     "stopName": "Freeman St",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "Bx",
@@ -5013,10 +8297,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 430,
+    "id": 430,
     "GTFSID": 217,
+    "complexName": "Simpson St",
+    "stations": [],
     "stationID": 430,
+    "short1": "Simpson St",
+    "short2": "",
     "stopName": "Simpson St",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "Bx",
@@ -5027,10 +8319,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 431,
+    "id": 431,
     "GTFSID": 218,
+    "complexName": "Intervale Av",
+    "stations": [],
     "stationID": 431,
+    "short1": "Intervale Av",
+    "short2": "",
     "stopName": "Intervale Av",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "Bx",
@@ -5041,10 +8341,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 432,
+    "id": 432,
     "GTFSID": 219,
+    "complexName": "Prospect Av",
+    "stations": [],
     "stationID": 432,
+    "short1": "Prospect Av",
+    "short2": "",
     "stopName": "Prospect Av",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "Bx",
@@ -5055,10 +8363,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 433,
+    "id": 433,
     "GTFSID": 220,
+    "complexName": "Jackson Av",
+    "stations": [],
     "stationID": 433,
+    "short1": "Jackson Av",
+    "short2": "",
     "stopName": "Jackson Av",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "Bx",
@@ -5069,10 +8385,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 434,
+    "id": 434,
     "GTFSID": 221,
+    "complexName": "3 Av-149 St",
+    "stations": [],
     "stationID": 434,
+    "short1": "3 Av-149 St",
+    "short2": "",
     "stopName": "3 Av-149 St",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "Bx",
@@ -5083,10 +8407,19 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 436,
+    "id": 436,
     "GTFSID": 301,
+    "complexName": "Harlem-148 St",
+    "stations": [],
     "stationID": 436,
+    "short1": "148 St",
+    "short2": "Harlem",
     "stopName": "Harlem-148 St",
+    "expectedLines": [
+      1,
+      2,
+      3
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "M",
@@ -5097,10 +8430,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 437,
+    "id": 437,
     "GTFSID": 302,
+    "complexName": "145 St",
+    "stations": [],
     "stationID": 437,
+    "short1": "145 St",
+    "short2": "",
     "stopName": "145 St",
+    "expectedLines": [
+      1,
+      2,
+      3
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "M",
@@ -5111,10 +8453,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 438,
+    "id": 438,
     "GTFSID": 224,
+    "complexName": "135 St",
+    "stations": [],
     "stationID": 438,
+    "short1": "135 St",
+    "short2": "",
     "stopName": "135 St",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "M",
@@ -5125,10 +8477,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 439,
+    "id": 439,
     "GTFSID": 225,
+    "complexName": "125 St",
+    "stations": [],
     "stationID": 439,
+    "short1": "125 St",
+    "short2": "",
     "stopName": "125 St",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "M",
@@ -5139,10 +8501,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 440,
+    "id": 440,
     "GTFSID": 226,
+    "complexName": "116 St",
+    "stations": [],
     "stationID": 440,
+    "short1": "116 St",
+    "short2": "",
     "stopName": "116 St",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "M",
@@ -5153,10 +8525,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 441,
+    "id": 441,
     "GTFSID": 227,
+    "complexName": "Central Park North (110 St)",
+    "stations": [],
     "stationID": 441,
+    "short1": "Central Park North",
+    "short2": "110 St",
     "stopName": "Central Park North (110 St)",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "M",
@@ -5167,10 +8549,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 442,
+    "id": 442,
     "GTFSID": 501,
+    "complexName": "Eastchester-Dyre Av",
+    "stations": [],
     "stationID": 442,
+    "short1": "Dyre Av",
+    "short2": "Eastchester",
     "stopName": "Eastchester-Dyre Av",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Dyre Av",
     "borough": "Bx",
@@ -5181,10 +8571,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 443,
+    "id": 443,
     "GTFSID": 502,
+    "complexName": "Baychester Av",
+    "stations": [],
     "stationID": 443,
+    "short1": "Baychester Av",
+    "short2": "",
     "stopName": "Baychester Av",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Dyre Av",
     "borough": "Bx",
@@ -5195,10 +8593,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 444,
+    "id": 444,
     "GTFSID": 503,
+    "complexName": "Gun Hill Rd",
+    "stations": [],
     "stationID": 444,
+    "short1": "Gun Hill Rd",
+    "short2": "",
     "stopName": "Gun Hill Rd",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Dyre Av",
     "borough": "Bx",
@@ -5209,10 +8615,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 445,
+    "id": 445,
     "GTFSID": 504,
+    "complexName": "Pelham Pkwy",
+    "stations": [],
     "stationID": 445,
+    "short1": "Pelham Pkwy",
+    "short2": "",
     "stopName": "Pelham Pkwy",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Dyre Av",
     "borough": "Bx",
@@ -5223,10 +8637,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 446,
+    "id": 446,
     "GTFSID": 505,
+    "complexName": "Morris Park",
+    "stations": [],
     "stationID": 446,
+    "short1": "Morris Park",
+    "short2": "",
     "stopName": "Morris Park",
+    "expectedLines": [
+      2,
+      5
+    ],
     "lines": [],
     "trunk": "Dyre Av",
     "borough": "Bx",
@@ -5237,10 +8659,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 447,
+    "id": 447,
     "GTFSID": 701,
+    "complexName": "Flushing-Main St",
+    "stations": [],
     "stationID": 447,
+    "short1": "Flushing",
+    "short2": "Main St",
     "stopName": "Flushing-Main St",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "Q",
@@ -5251,10 +8681,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 448,
+    "id": 448,
     "GTFSID": 702,
+    "complexName": "Mets-Willets Point",
+    "stations": [],
     "stationID": 448,
+    "short1": "Willets Point",
+    "short2": "Mets Stadium",
     "stopName": "Mets-Willets Point",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "Q",
@@ -5265,10 +8703,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 449,
+    "id": 449,
     "GTFSID": 705,
+    "complexName": "111 St",
+    "stations": [],
     "stationID": 449,
+    "short1": "111 St",
+    "short2": "",
     "stopName": "111 St",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "Q",
@@ -5279,10 +8725,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 450,
+    "id": 450,
     "GTFSID": 706,
+    "complexName": "103 St-Corona Plaza",
+    "stations": [],
     "stationID": 450,
+    "short1": "103 St",
+    "short2": "Corona Plaza",
     "stopName": "103 St-Corona Plaza",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "Q",
@@ -5293,10 +8747,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 451,
+    "id": 451,
     "GTFSID": 707,
+    "complexName": "Junction Blvd",
+    "stations": [],
     "stationID": 451,
+    "short1": "Junction Blvd",
+    "short2": "",
     "stopName": "Junction Blvd",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "Q",
@@ -5307,10 +8769,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 452,
+    "id": 452,
     "GTFSID": 708,
+    "complexName": "90 St-Elmhurst Av",
+    "stations": [],
     "stationID": 452,
+    "short1": "90 St",
+    "short2": "Elmhurst Av",
     "stopName": "90 St-Elmhurst Av",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "Q",
@@ -5321,10 +8791,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 453,
+    "id": 453,
     "GTFSID": 709,
+    "complexName": "82 St-Jackson Hts",
+    "stations": [],
     "stationID": 453,
+    "short1": "82 St",
+    "short2": "Jackson Hts",
     "stopName": "82 St-Jackson Hts",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "Q",
@@ -5335,10 +8813,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 455,
+    "id": 455,
     "GTFSID": 711,
+    "complexName": "69 St",
+    "stations": [],
     "stationID": 455,
+    "short1": "69 St",
+    "short2": "",
     "stopName": "69 St",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "Q",
@@ -5349,10 +8835,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 456,
+    "id": 456,
     "GTFSID": 712,
+    "complexName": "Woodside-61 St",
+    "stations": [],
     "stationID": 456,
+    "short1": "61 St",
+    "short2": "Woodside",
     "stopName": "Woodside-61 St",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "Q",
@@ -5363,10 +8857,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 457,
+    "id": 457,
     "GTFSID": 713,
+    "complexName": "52 St",
+    "stations": [],
     "stationID": 457,
+    "short1": "52 St",
+    "short2": "",
     "stopName": "52 St",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "Q",
@@ -5377,10 +8879,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 458,
+    "id": 458,
     "GTFSID": 714,
+    "complexName": "46 St-Bliss St",
+    "stations": [],
     "stationID": 458,
+    "short1": "46 St",
+    "short2": "Bliss St",
     "stopName": "46 St-Bliss St",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "Q",
@@ -5391,10 +8901,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 459,
+    "id": 459,
     "GTFSID": 715,
+    "complexName": "40 St-Lowery St",
+    "stations": [],
     "stationID": 459,
+    "short1": "40 St",
+    "short2": "Lowery St",
     "stopName": "40 St-Lowery St",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "Q",
@@ -5405,10 +8923,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 460,
+    "id": 460,
     "GTFSID": 716,
+    "complexName": "33 St-Rawson St",
+    "stations": [],
     "stationID": 460,
+    "short1": "33 St",
+    "short2": "Rawson St",
     "stopName": "33 St-Rawson St",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "Q",
@@ -5419,10 +8945,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 461,
+    "id": 461,
     "GTFSID": 718,
+    "complexName": "Queensboro Plaza",
+    "stations": [],
     "stationID": 461,
+    "short1": "Queensboro Plaza",
+    "short2": "",
     "stopName": "Queensboro Plaza",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "Q",
@@ -5433,10 +8967,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 461,
+    "id": 461,
     "GTFSID": "R09",
+    "complexName": "Queensboro Plaza",
+    "stations": [],
     "stationID": 461,
+    "short1": "Queensboro Plaza",
+    "short2": "",
     "stopName": "Queensboro Plaza",
+    "expectedLines": [
+      "N",
+      "W"
+    ],
     "lines": [],
     "trunk": "Astoria",
     "borough": "Q",
@@ -5447,10 +8989,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 463,
+    "id": 463,
     "GTFSID": 720,
+    "complexName": "Hunters Point Av",
+    "stations": [],
     "stationID": 463,
+    "short1": "Hunters Point Av",
+    "short2": "",
     "stopName": "Hunters Point Av",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "Q",
@@ -5461,10 +9011,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 464,
+    "id": 464,
     "GTFSID": 721,
+    "complexName": "Vernon Blvd-Jackson Av",
+    "stations": [],
     "stationID": 464,
+    "short1": "Vernon Blvd",
+    "short2": "Jackson Av",
     "stopName": "Vernon Blvd-Jackson Av",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "Q",
@@ -5475,10 +9033,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 471,
+    "id": 471,
     "GTFSID": 726,
+    "complexName": "34 St-Hudson Yards",
+    "stations": [],
     "stationID": 471,
+    "short1": "34 St",
+    "short2": "Hudson Yards",
     "stopName": "34 St-Hudson Yards",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "M",
@@ -5489,12 +9055,24 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 475,
+    "id": 475,
     "GTFSID": "Q05",
+    "complexName": "96 St",
+    "stations": [],
     "stationID": 475,
+    "short1": "96 St",
+    "short2": "",
     "stopName": "96 St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "F",
+      "M"
+    ],
     "lines": [],
-    "trunk": "Second Av",
+    "trunk": "2nd Av",
     "borough": "M",
     "lat": 40.784318,
     "long": -73.947152,
@@ -5503,12 +9081,24 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 476,
+    "id": 476,
     "GTFSID": "Q04",
+    "complexName": "86 St",
+    "stations": [],
     "stationID": 476,
+    "short1": "86 St",
+    "short2": "",
     "stopName": "86 St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "F",
+      "M"
+    ],
     "lines": [],
-    "trunk": "Second Av",
+    "trunk": "2nd Av",
     "borough": "M",
     "lat": 40.777891,
     "long": -73.951787,
@@ -5517,12 +9107,24 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 477,
+    "id": 477,
     "GTFSID": "Q03",
+    "complexName": "72 St",
+    "stations": [],
     "stationID": 477,
+    "short1": "72 St",
+    "short2": "",
     "stopName": "72 St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "F",
+      "M"
+    ],
     "lines": [],
-    "trunk": "Second Av",
+    "trunk": "2nd Av",
     "borough": "M",
     "lat": 40.768799,
     "long": -73.958424,
@@ -5531,10 +9133,17 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 501,
+    "id": 501,
     "GTFSID": "S31",
+    "complexName": "St George",
+    "stations": [],
     "stationID": 501,
+    "short1": "St George",
+    "short2": "",
     "stopName": "St George",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5545,10 +9154,17 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 502,
+    "id": 502,
     "GTFSID": "S30",
+    "complexName": "Tompkinsville",
+    "stations": [],
     "stationID": 502,
+    "short1": "Tompkinsville",
+    "short2": "",
     "stopName": "Tompkinsville",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5559,10 +9175,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 503,
+    "id": 503,
     "GTFSID": "S29",
+    "complexName": "Stapleton",
+    "stations": [],
     "stationID": 503,
+    "short1": "Stapleton",
+    "short2": "",
     "stopName": "Stapleton",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5573,10 +9196,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 504,
+    "id": 504,
     "GTFSID": "S28",
+    "complexName": "Clifton",
+    "stations": [],
     "stationID": 504,
+    "short1": "Clifton",
+    "short2": "",
     "stopName": "Clifton",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5587,10 +9217,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 505,
+    "id": 505,
     "GTFSID": "S27",
+    "complexName": "Grasmere",
+    "stations": [],
     "stationID": 505,
+    "short1": "Grasmere",
+    "short2": "",
     "stopName": "Grasmere",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5601,10 +9238,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 506,
+    "id": 506,
     "GTFSID": "S26",
+    "complexName": "Old Town",
+    "stations": [],
     "stationID": 506,
+    "short1": "Old Town",
+    "short2": "",
     "stopName": "Old Town",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5615,10 +9259,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 507,
+    "id": 507,
     "GTFSID": "S25",
+    "complexName": "Dongan Hills",
+    "stations": [],
     "stationID": 507,
+    "short1": "Dongan Hills",
+    "short2": "",
     "stopName": "Dongan Hills",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5629,10 +9280,17 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 508,
+    "id": 508,
     "GTFSID": "S24",
+    "complexName": "Jefferson Av",
+    "stations": [],
     "stationID": 508,
+    "short1": "Jefferson Av",
+    "short2": "",
     "stopName": "Jefferson Av",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5643,10 +9301,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 509,
+    "id": 509,
     "GTFSID": "S23",
+    "complexName": "Grant City",
+    "stations": [],
     "stationID": 509,
+    "short1": "Grant City",
+    "short2": "",
     "stopName": "Grant City",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5657,10 +9322,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 510,
+    "id": 510,
     "GTFSID": "S22",
+    "complexName": "New Dorp",
+    "stations": [],
     "stationID": 510,
+    "short1": "New Dorp",
+    "short2": "",
     "stopName": "New Dorp",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5671,10 +9343,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 511,
+    "id": 511,
     "GTFSID": "S21",
+    "complexName": "Oakwood Heights",
+    "stations": [],
     "stationID": 511,
+    "short1": "Oakwood Heights",
+    "short2": "",
     "stopName": "Oakwood Heights",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5685,10 +9364,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 512,
+    "id": 512,
     "GTFSID": "S20",
+    "complexName": "Bay Terrace",
+    "stations": [],
     "stationID": 512,
+    "short1": "Bay Terrace",
+    "short2": "",
     "stopName": "Bay Terrace",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5699,10 +9385,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 513,
+    "id": 513,
     "GTFSID": "S19",
+    "complexName": "Great Kills",
+    "stations": [],
     "stationID": 513,
+    "short1": "Great Kills",
+    "short2": "",
     "stopName": "Great Kills",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5713,10 +9406,17 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 514,
+    "id": 514,
     "GTFSID": "S18",
+    "complexName": "Eltingville",
+    "stations": [],
     "stationID": 514,
+    "short1": "Eltingville",
+    "short2": "",
     "stopName": "Eltingville",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5727,10 +9427,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 515,
+    "id": 515,
     "GTFSID": "S17",
+    "complexName": "Annadale",
+    "stations": [],
     "stationID": 515,
+    "short1": "Annadale",
+    "short2": "",
     "stopName": "Annadale",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5741,10 +9448,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 516,
+    "id": 516,
     "GTFSID": "S16",
+    "complexName": "Huguenot",
+    "stations": [],
     "stationID": 516,
+    "short1": "Huguenot",
+    "short2": "",
     "stopName": "Huguenot",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5755,10 +9469,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 517,
+    "id": 517,
     "GTFSID": "S15",
+    "complexName": "Prince's Bay",
+    "stations": [],
     "stationID": 517,
+    "short1": "Prince's Bay",
+    "short2": "",
     "stopName": "Prince's Bay",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5769,10 +9490,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 518,
+    "id": 518,
     "GTFSID": "S14",
+    "complexName": "Pleasant Plains",
+    "stations": [],
     "stationID": 518,
+    "short1": "Pleasant Plains",
+    "short2": "",
     "stopName": "Pleasant Plains",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5783,10 +9511,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 519,
+    "id": 519,
     "GTFSID": "S13",
+    "complexName": "Richmond Valley",
+    "stations": [],
     "stationID": 519,
+    "short1": "Richmond Valley",
+    "short2": "",
     "stopName": "Richmond Valley",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5797,10 +9532,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 522,
+    "id": 522,
     "GTFSID": "S09",
+    "complexName": "Tottenville",
+    "stations": [],
     "stationID": 522,
+    "short1": "Tottenville",
+    "short2": "",
     "stopName": "Tottenville",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5811,10 +9553,17 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 523,
+    "id": 523,
     "GTFSID": "S11",
+    "complexName": "Arthur Kill",
+    "stations": [],
     "stationID": 523,
+    "short1": "Arthur Kill",
+    "short2": "",
     "stopName": "Arthur Kill",
+    "expectedLines": [
+      "SI"
+    ],
     "lines": [],
     "trunk": "Staten Island",
     "borough": "SI",
@@ -5825,10 +9574,17 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 601,
+    "id": 601,
     "GTFSID": "L02",
+    "complexName": "6 Av",
+    "stations": [],
     "stationID": 116,
+    "short1": "6 Av",
+    "short2": "",
     "stopName": "6 Av",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "M",
@@ -5839,12 +9595,25 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 601,
+    "id": 601,
     "GTFSID": "D19",
+    "complexName": "14 St",
+    "stations": [],
     "stationID": 229,
+    "short1": "14 St",
+    "short2": "",
     "stopName": "14 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F",
+      "M"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "6th Av",
     "borough": "M",
     "lat": 40.738228,
     "long": -73.996209,
@@ -5853,10 +9622,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 601,
+    "id": 601,
     "GTFSID": 132,
+    "complexName": "14 St",
+    "stations": [],
     "stationID": 322,
+    "short1": "14 St",
+    "short2": "",
     "stopName": "14 St",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -5867,12 +9646,23 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 602,
+    "id": 602,
     "GTFSID": "R20",
+    "complexName": "14 St-Union Sq",
+    "stations": [],
     "stationID": 15,
+    "short1": "14 St",
+    "short2": "Union Sq",
     "stopName": "14 St-Union Sq",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "E"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Broadway",
     "borough": "M",
     "lat": 40.735736,
     "long": -73.990568,
@@ -5881,10 +9671,17 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 602,
+    "id": 602,
     "GTFSID": "L03",
+    "complexName": "14 St-Union Sq.",
+    "stations": [],
     "stationID": 117,
+    "short1": "Union Sq",
+    "short2": "",
     "stopName": "14 St-Union Sq.",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "M",
@@ -5895,10 +9692,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 602,
+    "id": 602,
     "GTFSID": 635,
+    "complexName": "14 St-Union Sq",
+    "stations": [],
     "stationID": 406,
+    "short1": "14 St",
+    "short2": "Union Sq",
     "stopName": "14 St-Union Sq",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -5909,10 +9716,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 603,
+    "id": 603,
     "GTFSID": 415,
+    "complexName": "149 St-Grand Concourse",
+    "stations": [],
     "stationID": 390,
+    "short1": "149 St",
+    "short2": "Grand Concourse",
     "stopName": "149 St-Grand Concourse",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Jerome Av",
     "borough": "Bx",
@@ -5923,10 +9740,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 603,
+    "id": 603,
     "GTFSID": 222,
+    "complexName": "149 St-Grand Concourse",
+    "stations": [],
     "stationID": 435,
+    "short1": "150 St",
+    "short2": "Grand Concourse",
     "stopName": "149 St-Grand Concourse",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Lenox - White Plains Rd",
     "borough": "Bx",
@@ -5937,10 +9764,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 604,
+    "id": 604,
     "GTFSID": "D11",
+    "complexName": "161 St-Yankee Stadium",
+    "stations": [],
     "stationID": 219,
+    "short1": "161 St",
+    "short2": "Yankee Stadium",
     "stopName": "161 St-Yankee Stadium",
+    "expectedLines": [
+      "B",
+      "D",
+      "C"
+    ],
     "lines": [],
     "trunk": "Concourse",
     "borough": "Bx",
@@ -5951,10 +9787,17 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 604,
+    "id": 604,
     "GTFSID": 414,
+    "complexName": "161 St-Yankee Stadium",
+    "stations": [],
     "stationID": 389,
+    "short1": "161 St",
+    "short2": "Yankee Stadium",
     "stopName": "161 St-Yankee Stadium",
+    "expectedLines": [
+      4
+    ],
     "lines": [],
     "trunk": "Jerome Av",
     "borough": "Bx",
@@ -5965,12 +9808,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 605,
+    "id": 605,
     "GTFSID": "A09",
+    "complexName": "168 St",
+    "stations": [],
     "stationID": 148,
+    "short1": "168 St",
+    "short2": "",
     "stopName": "168 St",
+    "expectedLines": [
+      "A",
+      "C"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.840719,
     "long": -73.939561,
@@ -5979,10 +9830,17 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 605,
+    "id": 605,
     "GTFSID": 112,
+    "complexName": "168 St-Washington Hts",
+    "stations": [],
     "stationID": 302,
+    "short1": "168 St",
+    "short2": "",
     "stopName": "168 St-Washington Hts",
+    "expectedLines": [
+      1
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -5993,10 +9851,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 606,
+    "id": 606,
     "GTFSID": "F09",
+    "complexName": "Court Sq-23 St",
+    "stations": [],
     "stationID": 274,
+    "short1": "Court Sq",
+    "short2": "23 St",
     "stopName": "Court Sq-23 St",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -6007,10 +9875,17 @@ def stations():
     "ADA": 3
   },
   {
-    "ID": 606,
+    "id": 606,
     "GTFSID": "G22",
+    "complexName": "Court Sq",
+    "stations": [],
     "stationID": 281,
+    "short1": "Court Sq",
+    "short2": "",
     "stopName": "Court Sq",
+    "expectedLines": [
+      "G"
+    ],
     "lines": [],
     "trunk": "Crosstown",
     "borough": "Q",
@@ -6021,10 +9896,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 606,
+    "id": 606,
     "GTFSID": 719,
+    "complexName": "Court Sq",
+    "stations": [],
     "stationID": 462,
+    "short1": "Court Sq",
+    "short2": "",
     "stopName": "Court Sq",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "Q",
@@ -6035,12 +9918,23 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 607,
+    "id": 607,
     "GTFSID": "R17",
+    "complexName": "34 St-Herald Sq",
+    "stations": [],
     "stationID": 12,
+    "short1": "34 St-Herald Sq",
+    "short2": "",
     "stopName": "34 St-Herald Sq",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "E"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Broadway",
     "borough": "M",
     "lat": 40.749567,
     "long": -73.98795,
@@ -6049,12 +9943,25 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 607,
+    "id": 607,
     "GTFSID": "D17",
+    "complexName": "34 St-Herald Sq",
+    "stations": [],
     "stationID": 227,
+    "short1": "34 St-Herald Sq",
+    "short2": "",
     "stopName": "34 St-Herald Sq",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F",
+      "M"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "6th Av",
     "borough": "M",
     "lat": 40.749719,
     "long": -73.987823,
@@ -6063,10 +9970,22 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 608,
+    "id": 608,
     "GTFSID": "R33",
+    "complexName": "4 Av-9 St",
+    "stations": [],
     "stationID": 29,
+    "short1": "9 St",
+    "short2": "",
     "stopName": "4 Av-9 St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "4th Av",
     "borough": "Bk",
@@ -6077,12 +9996,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 608,
+    "id": 608,
     "GTFSID": "F23",
+    "complexName": "4 Av-9 St",
+    "stations": [],
     "stationID": 239,
+    "short1": "4 Av",
+    "short2": "",
     "stopName": "4 Av-9 St",
+    "expectedLines": [
+      "F",
+      "G"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "Culver",
     "borough": "Bk",
     "lat": 40.670272,
     "long": -73.989779,
@@ -6091,12 +10018,25 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 609,
+    "id": 609,
     "GTFSID": "D16",
+    "complexName": "42 St-Bryant Pk",
+    "stations": [],
     "stationID": 226,
+    "short1": "42 St",
+    "short2": "Bryant Park",
     "stopName": "42 St-Bryant Pk",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F",
+      "M"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "6th Av",
     "borough": "M",
     "lat": 40.754222,
     "long": -73.984569,
@@ -6105,10 +10045,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 609,
+    "id": 609,
     "GTFSID": 724,
+    "complexName": "5 Av",
+    "stations": [],
     "stationID": 466,
+    "short1": "5 Av",
+    "short2": "",
     "stopName": "5 Av",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "M",
@@ -6119,10 +10067,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 610,
+    "id": 610,
     "GTFSID": 631,
+    "complexName": "Grand Central-42 St",
+    "stations": [],
     "stationID": 402,
+    "short1": "42 St",
+    "short2": "Grand Central",
     "stopName": "Grand Central-42 St",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -6133,10 +10091,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 610,
+    "id": 610,
     "GTFSID": 723,
+    "complexName": "Grand Central-42 St",
+    "stations": [],
     "stationID": 465,
+    "short1": "42 St",
+    "short2": "Grand Central",
     "stopName": "Grand Central-42 St",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "M",
@@ -6147,10 +10113,17 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 610,
+    "id": 610,
     "GTFSID": 901,
+    "complexName": "Grand Central-42 St",
+    "stations": [],
     "stationID": 469,
+    "short1": "42 St",
+    "short2": "Grand Central",
     "stopName": "Grand Central-42 St",
+    "expectedLines": [
+      "GS"
+    ],
     "lines": [],
     "trunk": "Lexington - Shuttle",
     "borough": "M",
@@ -6161,38 +10134,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 611,
-    "GTFSID": "R16",
-    "stationID": 11,
-    "stopName": "Times Sq-42 St",
-    "lines": [],
-    "trunk": "Broadway - Brighton",
-    "borough": "M",
-    "lat": 40.754672,
-    "long": -73.986754,
-    "northDir": "Uptown & Queens",
-    "southDir": "Downtown & Brooklyn",
-    "ADA": 1
-  },
-  {
-    "ID": 611,
-    "GTFSID": "A27",
-    "stationID": 163,
-    "stopName": "42 St-Port Authority Bus Terminal",
-    "lines": [],
-    "trunk": "8th Av - Fulton St",
-    "borough": "M",
-    "lat": 40.757308,
-    "long": -73.989735,
-    "northDir": "Uptown - Queens",
-    "southDir": "Downtown & Brooklyn",
-    "ADA": 1
-  },
-  {
-    "ID": 611,
+    "id": 611,
     "GTFSID": 127,
+    "complexName": "Times Sq-42 St",
+    "stations": [],
     "stationID": 317,
+    "short1": "42 St",
+    "short2": "Times Sq",
     "stopName": "Times Sq-42 St",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -6203,10 +10158,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 611,
+    "id": 611,
     "GTFSID": 725,
+    "complexName": "Times Sq-42 St",
+    "stations": [],
     "stationID": 467,
+    "short1": "42 St",
+    "short2": "Times Sq",
     "stopName": "Times Sq-42 St",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "M",
@@ -6217,10 +10180,69 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 611,
-    "GTFSID": 902,
-    "stationID": 468,
+    "id": 611,
+    "GTFSID": "R16",
+    "complexName": "Times Sq-42 St",
+    "stations": [],
+    "stationID": 11,
+    "short1": "42 St",
+    "short2": "Times Sq",
     "stopName": "Times Sq-42 St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "E"
+    ],
+    "lines": [],
+    "trunk": "Broadway",
+    "borough": "M",
+    "lat": 40.754672,
+    "long": -73.986754,
+    "northDir": "Uptown & Queens",
+    "southDir": "Downtown & Brooklyn",
+    "ADA": 1
+  },
+  {
+    "id": 611,
+    "GTFSID": "A27",
+    "complexName": "42 St-Port Authority Bus Terminal",
+    "stations": [],
+    "stationID": 163,
+    "short1": "42 St",
+    "short2": "PABT",
+    "stopName": "42 St-Port Authority Bus Terminal",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F",
+      "M"
+    ],
+    "lines": [],
+    "trunk": "8th Av",
+    "borough": "M",
+    "lat": 40.757308,
+    "long": -73.989735,
+    "northDir": "Uptown - Queens",
+    "southDir": "Downtown & Brooklyn",
+    "ADA": 1
+  },
+  {
+    "id": 611,
+    "GTFSID": 902,
+    "complexName": "Times Sq-42 St",
+    "stations": [],
+    "stationID": 468,
+    "short1": "42 St",
+    "short2": "Times Sq",
+    "stopName": "Times Sq-42 St",
+    "expectedLines": [
+      "GS"
+    ],
     "lines": [],
     "trunk": "Lexington - Shuttle",
     "borough": "M",
@@ -6231,10 +10253,19 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 612,
+    "id": 612,
     "GTFSID": "F11",
+    "complexName": "Lexington Av/53 St",
+    "stations": [],
     "stationID": 275,
+    "short1": "Lexington Av",
+    "short2": "53 St",
     "stopName": "Lexington Av/53 St",
+    "expectedLines": [
+      "E",
+      "F",
+      "M"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "M",
@@ -6245,10 +10276,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 612,
+    "id": 612,
     "GTFSID": 630,
+    "complexName": "51 St",
+    "stations": [],
     "stationID": 401,
+    "short1": "51 St",
+    "short2": "",
     "stopName": "51 St",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -6259,10 +10300,21 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 613,
+    "id": 613,
     "GTFSID": "R11",
+    "complexName": "Lexington Av/59 St",
+    "stations": [],
     "stationID": 7,
+    "short1": "Lexington Av",
+    "short2": "59 St",
     "stopName": "Lexington Av/59 St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "E"
+    ],
     "lines": [],
     "trunk": "Astoria",
     "borough": "M",
@@ -6273,10 +10325,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 613,
+    "id": 613,
     "GTFSID": 629,
+    "complexName": "59 St",
+    "stations": [],
     "stationID": 400,
+    "short1": "59 St",
+    "short2": "",
     "stopName": "59 St",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -6287,12 +10349,24 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 614,
+    "id": 614,
     "GTFSID": "A24",
+    "complexName": "59 St-Columbus Circle",
+    "stations": [],
     "stationID": 161,
+    "short1": "59 St",
+    "short2": "Columbus Circle",
     "stopName": "59 St-Columbus Circle",
+    "expectedLines": [
+      "A",
+      "C",
+      "B",
+      "D",
+      "F",
+      "M"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.768296,
     "long": -73.981736,
@@ -6301,10 +10375,19 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 614,
+    "id": 614,
     "GTFSID": 125,
+    "complexName": "59 St-Columbus Circle",
+    "stations": [],
     "stationID": 315,
+    "short1": "59 St",
+    "short2": "Columbus Circle",
     "stopName": "59 St-Columbus Circle",
+    "expectedLines": [
+      1,
+      2,
+      3
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -6315,10 +10398,19 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 615,
+    "id": 615,
     "GTFSID": "B16",
+    "complexName": "62 St",
+    "stations": [],
     "stationID": 63,
+    "short1": "62 St",
+    "short2": "",
     "stopName": "62 St",
+    "expectedLines": [
+      "D",
+      "N",
+      "W"
+    ],
     "lines": [],
     "trunk": "West End",
     "borough": "Bk",
@@ -6329,10 +10421,19 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 615,
+    "id": 615,
     "GTFSID": "N04",
+    "complexName": "New Utrecht Av",
+    "stations": [],
     "stationID": 73,
+    "short1": "New Utrecht Av",
+    "short2": "",
     "stopName": "New Utrecht Av",
+    "expectedLines": [
+      "D",
+      "N",
+      "W"
+    ],
     "lines": [],
     "trunk": "Sea Beach",
     "borough": "Bk",
@@ -6343,10 +10444,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 616,
+    "id": 616,
     "GTFSID": "G14",
+    "complexName": "Jackson Hts-Roosevelt Av",
+    "stations": [],
     "stationID": 267,
+    "short1": "Roosevelt Av",
+    "short2": "Jackson Hts",
     "stopName": "Jackson Hts-Roosevelt Av",
+    "expectedLines": [
+      "E",
+      "F",
+      "M",
+      "R"
+    ],
     "lines": [],
     "trunk": "Queens Blvd",
     "borough": "Q",
@@ -6357,10 +10468,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 616,
+    "id": 616,
     "GTFSID": 710,
+    "complexName": "74 St-Broadway",
+    "stations": [],
     "stationID": 454,
+    "short1": "74 St",
+    "short2": "Broadway",
     "stopName": "74 St-Broadway",
+    "expectedLines": [
+      7,
+      "7X"
+    ],
     "lines": [],
     "trunk": "Flushing",
     "borough": "Q",
@@ -6371,10 +10490,22 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 617,
+    "id": 617,
     "GTFSID": "R31",
+    "complexName": "Atlantic Av-Barclays Ctr",
+    "stations": [],
     "stationID": 27,
+    "short1": "Atlantic Av",
+    "short2": "Barclays Center",
     "stopName": "Atlantic Av-Barclays Ctr",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W",
+      "B",
+      "D"
+    ],
     "lines": [],
     "trunk": "4th Av",
     "borough": "Bk",
@@ -6385,12 +10516,22 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 617,
+    "id": 617,
     "GTFSID": "D24",
+    "complexName": "Atlantic Av-Barclays Ctr",
+    "stations": [],
     "stationID": 40,
+    "short1": "Atlantic Av",
+    "short2": "Barclays Center",
     "stopName": "Atlantic Av-Barclays Ctr",
+    "expectedLines": [
+      "D",
+      "B",
+      "R",
+      "W"
+    ],
     "lines": [],
-    "trunk": "Broadway - Brighton",
+    "trunk": "Brighton",
     "borough": "Bk",
     "lat": 40.68446,
     "long": -73.97689,
@@ -6399,10 +10540,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 617,
+    "id": 617,
     "GTFSID": 235,
+    "complexName": "Atlantic Av-Barclays Ctr",
+    "stations": [],
     "stationID": 338,
+    "short1": "Atlantic Av",
+    "short2": "Barclays Center",
     "stopName": "Atlantic Av-Barclays Ctr",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Eastern Pky",
     "borough": "Bk",
@@ -6413,10 +10564,17 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 618,
+    "id": 618,
     "GTFSID": "L01",
+    "complexName": "8 Av",
+    "stations": [],
     "stationID": 115,
+    "short1": "8 Av",
+    "short2": "",
     "stopName": "8 Av",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "M",
@@ -6427,12 +10585,25 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 618,
+    "id": 618,
     "GTFSID": "A31",
+    "complexName": "14 St",
+    "stations": [],
     "stationID": 166,
+    "short1": "14 St",
+    "short2": "",
     "stopName": "14 St",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F",
+      "M"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.740893,
     "long": -74.00169,
@@ -6441,12 +10612,25 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 619,
+    "id": 619,
     "GTFSID": "D21",
+    "complexName": "Broadway-Lafayette St",
+    "stations": [],
     "stationID": 230,
+    "short1": "Broadway",
+    "short2": "Lafayette St",
     "stopName": "Broadway-Lafayette St",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F",
+      "M"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "6th Av",
     "borough": "M",
     "lat": 40.725297,
     "long": -73.996204,
@@ -6455,10 +10639,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 619,
+    "id": 619,
     "GTFSID": 637,
+    "complexName": "Bleecker St",
+    "stations": [],
     "stationID": 408,
+    "short1": "Bleecker St",
+    "short2": "",
     "stopName": "Bleecker St",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -6469,10 +10663,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 620,
+    "id": 620,
     "GTFSID": "R28",
+    "complexName": "Court St",
+    "stations": [],
     "stationID": 24,
+    "short1": "Court St",
+    "short2": "",
     "stopName": "Court St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W"
+    ],
     "lines": [],
     "trunk": "Broadway",
     "borough": "Bk",
@@ -6483,10 +10687,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 620,
+    "id": 620,
     "GTFSID": 232,
+    "complexName": "Borough Hall",
+    "stations": [],
     "stationID": 335,
+    "short1": "Borough Hall",
+    "short2": "",
     "stopName": "Borough Hall",
+    "expectedLines": [
+      2,
+      3
+    ],
     "lines": [],
     "trunk": "Clark St",
     "borough": "Bk",
@@ -6497,10 +10709,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 620,
+    "id": 620,
     "GTFSID": 423,
+    "complexName": "Borough Hall",
+    "stations": [],
     "stationID": 415,
+    "short1": "Borough Hall",
+    "short2": "",
     "stopName": "Borough Hall",
+    "expectedLines": [
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Eastern Pky",
     "borough": "Bk",
@@ -6511,10 +10731,18 @@ def stations():
     "ADA": 2
   },
   {
-    "ID": 621,
+    "id": 621,
     "GTFSID": "J27",
+    "complexName": "Broadway Junction",
+    "stations": [],
     "stationID": 92,
+    "short1": "Broadway Junction",
+    "short2": "",
     "stopName": "Broadway Junction",
+    "expectedLines": [
+      "J",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "Bk",
@@ -6525,10 +10753,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 621,
+    "id": 621,
     "GTFSID": "L22",
+    "complexName": "Broadway Junction",
+    "stations": [],
     "stationID": 132,
+    "short1": "Broadway Junction",
+    "short2": "",
     "stopName": "Broadway Junction",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "Bk",
@@ -6539,12 +10774,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 621,
+    "id": 621,
     "GTFSID": "A51",
+    "complexName": "Broadway Junction",
+    "stations": [],
     "stationID": 184,
+    "short1": "Broadway Junction",
+    "short2": "",
     "stopName": "Broadway Junction",
+    "expectedLines": [
+      "A",
+      "C"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "Fulton St",
     "borough": "Bk",
     "lat": 40.678334,
     "long": -73.905316,
@@ -6553,10 +10796,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 622,
+    "id": 622,
     "GTFSID": "M21",
+    "complexName": "Chambers St",
+    "stations": [],
     "stationID": 105,
+    "short1": "Chambers St",
+    "short2": "",
     "stopName": "Chambers St",
+    "expectedLines": [
+      1,
+      2,
+      3,
+      5
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "M",
@@ -6567,10 +10820,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 622,
+    "id": 622,
     "GTFSID": 640,
+    "complexName": "Brooklyn Bridge-City Hall",
+    "stations": [],
     "stationID": 411,
+    "short1": "Brooklyn Bridge",
+    "short2": "City Hall",
     "stopName": "Brooklyn Bridge-City Hall",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -6581,10 +10844,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 623,
+    "id": 623,
     "GTFSID": "R23",
+    "complexName": "Canal St",
+    "stations": [],
     "stationID": 18,
+    "short1": "Canal St",
+    "short2": "",
     "stopName": "Canal St",
+    "expectedLines": [
+      "R",
+      "W"
+    ],
     "lines": [],
     "trunk": "Broadway",
     "borough": "M",
@@ -6595,12 +10866,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 623,
+    "id": 623,
     "GTFSID": "Q01",
+    "complexName": "Canal St",
+    "stations": [],
     "stationID": 19,
+    "short1": "Canal St",
+    "short2": "",
     "stopName": "Canal St",
+    "expectedLines": [
+      "N",
+      "Q"
+    ],
     "lines": [],
-    "trunk": "Manhattan Bridge",
+    "trunk": "Broadway",
     "borough": "M",
     "lat": 40.718383,
     "long": -74.00046,
@@ -6609,10 +10888,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 623,
+    "id": 623,
     "GTFSID": "M20",
+    "complexName": "Canal St",
+    "stations": [],
     "stationID": 104,
+    "short1": "Canal St",
+    "short2": "",
     "stopName": "Canal St",
+    "expectedLines": [
+      "J",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "M",
@@ -6623,10 +10910,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 623,
+    "id": 623,
     "GTFSID": 639,
+    "complexName": "Canal St",
+    "stations": [],
     "stationID": 410,
+    "short1": "Canal St",
+    "short2": "",
     "stopName": "Canal St",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -6637,10 +10934,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 624,
+    "id": 624,
     "GTFSID": "R25",
+    "complexName": "Cortlandt St",
+    "stations": [],
     "stationID": 21,
+    "short1": "Cortlandt St",
+    "short2": "",
     "stopName": "Cortlandt St",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W"
+    ],
     "lines": [],
     "trunk": "Broadway",
     "borough": "M",
@@ -6651,12 +10958,24 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 624,
+    "id": 624,
     "GTFSID": "A36",
+    "complexName": "Chambers St",
+    "stations": [],
     "stationID": 170,
+    "short1": "Chambers St",
+    "short2": "",
     "stopName": "Chambers St",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.714111,
     "long": -74.008585,
@@ -6665,12 +10984,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 624,
+    "id": 624,
     "GTFSID": "E01",
+    "complexName": "World Trade Center",
+    "stations": [],
     "stationID": 171,
+    "short1": "World Trade Center",
+    "short2": "",
     "stopName": "World Trade Center",
+    "expectedLines": [
+      "C",
+      "E"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.712582,
     "long": -74.009781,
@@ -6679,10 +11006,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 624,
+    "id": 624,
     "GTFSID": 228,
+    "complexName": "Park Place",
+    "stations": [],
     "stationID": 331,
+    "short1": "Park Place",
+    "short2": "",
     "stopName": "Park Place",
+    "expectedLines": [
+      2,
+      3
+    ],
     "lines": [],
     "trunk": "Clark St",
     "borough": "M",
@@ -6693,10 +11028,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 625,
+    "id": 625,
     "GTFSID": "M18",
+    "complexName": "Delancey St-Essex St",
+    "stations": [],
     "stationID": 102,
+    "short1": "Delancey St",
+    "short2": "Essex St",
     "stopName": "Delancey St-Essex St",
+    "expectedLines": [
+      "J",
+      "M",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "M",
@@ -6707,12 +11051,24 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 625,
+    "id": 625,
     "GTFSID": "F15",
+    "complexName": "Delancey St-Essex St",
+    "stations": [],
     "stationID": 233,
+    "short1": "Delancey St",
+    "short2": "Essex St",
     "stopName": "Delancey St-Essex St",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F"
+    ],
     "lines": [],
-    "trunk": "6th Av - Culver",
+    "trunk": "6th Av",
     "borough": "M",
     "lat": 40.718611,
     "long": -73.988114,
@@ -6721,10 +11077,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 626,
+    "id": 626,
     "GTFSID": "S04",
+    "complexName": "Botanic Garden",
+    "stations": [],
     "stationID": 142,
+    "short1": "Botanic Garden",
+    "short2": "",
     "stopName": "Botanic Garden",
+    "expectedLines": [
+      "FS"
+    ],
     "lines": [],
     "trunk": "Franklin Shuttle",
     "borough": "Bk",
@@ -6735,10 +11098,20 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 626,
+    "id": 626,
     "GTFSID": 239,
+    "complexName": "Franklin Avenue",
+    "stations": [],
     "stationID": 342,
-    "stopName": "Franklin Avenue-Medgar Evers College",
+    "short1": "Franklin Avenue",
+    "short2": "",
+    "stopName": "Franklin Avenue",
+    "expectedLines": [
+      2,
+      3,
+      4,
+      5
+    ],
     "lines": [],
     "trunk": "Eastern Pky",
     "borough": "Bk",
@@ -6749,10 +11122,18 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 627,
+    "id": 627,
     "GTFSID": "S01",
+    "complexName": "Franklin Av",
+    "stations": [],
     "stationID": 139,
+    "short1": "Franklin Av",
+    "short2": "",
     "stopName": "Franklin Av",
+    "expectedLines": [
+      "A",
+      "C"
+    ],
     "lines": [],
     "trunk": "Franklin Shuttle",
     "borough": "Bk",
@@ -6763,12 +11144,19 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 627,
+    "id": 627,
     "GTFSID": "A45",
+    "complexName": "Franklin Av",
+    "stations": [],
     "stationID": 178,
+    "short1": "Franklin Av",
+    "short2": "",
     "stopName": "Franklin Av",
+    "expectedLines": [
+      "FS"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "Fulton St",
     "borough": "Bk",
     "lat": 40.68138,
     "long": -73.956848,
@@ -6777,10 +11165,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 628,
+    "id": 628,
     "GTFSID": "M22",
+    "complexName": "Fulton St",
+    "stations": [],
     "stationID": 106,
+    "short1": "Fulton St",
+    "short2": "",
     "stopName": "Fulton St",
+    "expectedLines": [
+      "J",
+      "Z"
+    ],
     "lines": [],
     "trunk": "Jamaica",
     "borough": "M",
@@ -6791,12 +11187,25 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 628,
+    "id": 628,
     "GTFSID": "A38",
+    "complexName": "Fulton St",
+    "stations": [],
     "stationID": 172,
+    "short1": "Fulton St",
+    "short2": "",
     "stopName": "Fulton St",
+    "expectedLines": [
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F",
+      "M"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "M",
     "lat": 40.710197,
     "long": -74.007691,
@@ -6805,10 +11214,18 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 628,
+    "id": 628,
     "GTFSID": 229,
+    "complexName": "Fulton St",
+    "stations": [],
     "stationID": 332,
+    "short1": "Fulton St",
+    "short2": "",
     "stopName": "Fulton St",
+    "expectedLines": [
+      2,
+      3
+    ],
     "lines": [],
     "trunk": "Clark St",
     "borough": "M",
@@ -6819,10 +11236,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 628,
+    "id": 628,
     "GTFSID": 418,
+    "complexName": "Fulton St",
+    "stations": [],
     "stationID": 412,
+    "short1": "Fulton St",
+    "short2": "",
     "stopName": "Fulton St",
+    "expectedLines": [
+      4,
+      5,
+      6,
+      "6X"
+    ],
     "lines": [],
     "trunk": "Lexington Av",
     "borough": "M",
@@ -6833,10 +11260,17 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 629,
+    "id": 629,
     "GTFSID": "L10",
+    "complexName": "Lorimer St",
+    "stations": [],
     "stationID": 121,
+    "short1": "Lorimer St",
+    "short2": "",
     "stopName": "Lorimer St",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "Bk",
@@ -6847,10 +11281,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 629,
+    "id": 629,
     "GTFSID": "G29",
+    "complexName": "Metropolitan Av",
+    "stations": [],
     "stationID": 285,
+    "short1": "Metropolitan Av",
+    "short2": "",
     "stopName": "Metropolitan Av",
+    "expectedLines": [
+      "G"
+    ],
     "lines": [],
     "trunk": "Crosstown",
     "borough": "Bk",
@@ -6861,10 +11302,17 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 630,
+    "id": 630,
     "GTFSID": "M08",
+    "complexName": "Myrtle-Wyckoff Avs",
+    "stations": [],
     "stationID": 112,
+    "short1": "Myrtle Av",
+    "short2": "Wyckoff Av",
     "stopName": "Myrtle-Wyckoff Avs",
+    "expectedLines": [
+      "M"
+    ],
     "lines": [],
     "trunk": "Myrtle Av",
     "borough": "Bk",
@@ -6875,10 +11323,17 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 630,
+    "id": 630,
     "GTFSID": "L17",
+    "complexName": "Myrtle-Wyckoff Avs",
+    "stations": [],
     "stationID": 128,
+    "short1": "Myrtle Av",
+    "short2": "Wyckoff Av",
     "stopName": "Myrtle-Wyckoff Avs",
+    "expectedLines": [
+      "L"
+    ],
     "lines": [],
     "trunk": "Canarsie",
     "borough": "Bk",
@@ -6889,10 +11344,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 635,
+    "id": 635,
     "GTFSID": "R27",
+    "complexName": "Whitehall St-South Ferry",
+    "stations": [],
     "stationID": 23,
+    "short1": "South Ferry",
+    "short2": "Whitehall St",
     "stopName": "Whitehall St-South Ferry",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W"
+    ],
     "lines": [],
     "trunk": "Broadway",
     "borough": "M",
@@ -6903,10 +11368,19 @@ def stations():
     "ADA": 0
   },
   {
-    "ID": 635,
+    "id": 635,
     "GTFSID": 142,
+    "complexName": "South Ferry",
+    "stations": [],
     "stationID": 330,
+    "short1": "South Ferry",
+    "short2": "",
     "stopName": "South Ferry",
+    "expectedLines": [
+      1,
+      2,
+      3
+    ],
     "lines": [],
     "trunk": "Broadway - 7Av",
     "borough": "M",
@@ -6917,10 +11391,20 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 636,
+    "id": 636,
     "GTFSID": "R29",
+    "complexName": "Jay St-MetroTech",
+    "stations": [],
     "stationID": 25,
+    "short1": "Jay St",
+    "short2": "MetroTech",
     "stopName": "Jay St-MetroTech",
+    "expectedLines": [
+      "N",
+      "Q",
+      "R",
+      "W"
+    ],
     "lines": [],
     "trunk": "Broadway",
     "borough": "Bk",
@@ -6931,12 +11415,21 @@ def stations():
     "ADA": 1
   },
   {
-    "ID": 636,
+    "id": 636,
     "GTFSID": "A41",
+    "complexName": "Jay St-MetroTech",
+    "stations": [],
     "stationID": 174,
+    "short1": "Jay St",
+    "short2": "MetroTech",
     "stopName": "Jay St-MetroTech",
+    "expectedLines": [
+      "A",
+      "C",
+      "F"
+    ],
     "lines": [],
-    "trunk": "8th Av - Fulton St",
+    "trunk": "8th Av",
     "borough": "Bk",
     "lat": 40.692338,
     "long": -73.987342,
@@ -6945,4 +11438,3 @@ def stations():
     "ADA": 1
   }
 ]
-  return returnedThing
