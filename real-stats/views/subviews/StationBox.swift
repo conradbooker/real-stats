@@ -8,7 +8,7 @@
 import SwiftUI
 import WrappingHStack
 
-struct FavoriteBox: View {
+struct StationBox: View {
     var complex: Complex
     
     private func allLines() -> [String] {
@@ -25,36 +25,38 @@ struct FavoriteBox: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            Spacer()
             HStack {
                 Text(complex.stations[0].short1)
-                    .padding(.leading, 5)
+                    .padding([.leading,.top], 5)
+                Spacer()
                 if complex.stations[0].ADA > 0 {
                     Image("ADA")
                         .resizable()
                         .frame(width: 20, height: 20)
+                        .padding([.trailing,.top], 5)
                 }
             }
             Text(complex.stations[0].short2)
                 .padding(.leading, 5)
-            Spacer()
+                .font(.caption)
             WrappingHStack(allLines(), id: \.self, spacing: .constant(2)) { line in
                 Image(line)
                     .resizable()
-                    .frame(width: 20, height: 20)
+                    .frame(width: 14, height: 14)
+                    .shadow(radius: 2)
                     .padding(.bottom, 2.0)
             }
-            .frame(width: 145,height: 44)
-            .padding(.leading,5)
+            .frame(width: 145)
+            .padding([.leading,.top],5)
             
             Spacer()
         }
     }
 }
 
-struct FavoriteBox_Previews: PreviewProvider {
+struct StationBox_Previews: PreviewProvider {
     static var previews: some View {
-        FavoriteBox(complex: complexData[429])
+        StationBox(complex: complexData[429])
             .previewLayout(.fixed(width: 150, height: 100))
     }
 }

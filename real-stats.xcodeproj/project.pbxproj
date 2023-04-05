@@ -22,7 +22,7 @@
 		795419AB29BED7E8003FF58F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795419AA29BED7E8003FF58F /* MapView.swift */; };
 		795419AE29BED81B003FF58F /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795419AD29BED81B003FF58F /* Delay.swift */; };
 		795419B029BED82A003FF58F /* TimeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795419AF29BED82A003FF58F /* TimeRow.swift */; };
-		795419B429BED842003FF58F /* FavoriteBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795419B329BED842003FF58F /* FavoriteBox.swift */; };
+		795419B429BED842003FF58F /* StationBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795419B329BED842003FF58F /* StationBox.swift */; };
 		795419B629BED87C003FF58F /* main.py in Resources */ = {isa = PBXBuildFile; fileRef = 795419B529BED87C003FF58F /* main.py */; };
 		79711F2229C9055E002EBA6F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79711F2129C9055E002EBA6F /* Home.swift */; };
 		79711F2429C91360002EBA6F /* ideal.json in Resources */ = {isa = PBXBuildFile; fileRef = 79711F2329C91360002EBA6F /* ideal.json */; };
@@ -31,6 +31,7 @@
 		7973944C29D766F700D0DDDD /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7973944B29D766F700D0DDDD /* ButtonStyles.swift */; };
 		7975C45D29DB3ACE00A4AA1E /* FavoritesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7975C45B29DB3ACE00A4AA1E /* FavoritesModel.xcdatamodeld */; };
 		7975C45F29DB3B3100A4AA1E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975C45E29DB3B3100A4AA1E /* CoreDataManager.swift */; };
+		7975C46129DC758C00A4AA1E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975C46029DC758C00A4AA1E /* Location.swift */; };
 		79BCE8AD29D6343A00042F1F /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCE8AC29D6343A00042F1F /* Station.swift */; };
 		79BCE8AF29D636AE00042F1F /* stationDataDict.py in Resources */ = {isa = PBXBuildFile; fileRef = 79BCE8AE29D636AE00042F1F /* stationDataDict.py */; };
 		79BCE8B129D6386900042F1F /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCE8B029D6386900042F1F /* ModelData.swift */; };
@@ -57,7 +58,7 @@
 		795419AA29BED7E8003FF58F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		795419AD29BED81B003FF58F /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		795419AF29BED82A003FF58F /* TimeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRow.swift; sourceTree = "<group>"; };
-		795419B329BED842003FF58F /* FavoriteBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBox.swift; sourceTree = "<group>"; };
+		795419B329BED842003FF58F /* StationBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationBox.swift; sourceTree = "<group>"; };
 		795419B529BED87C003FF58F /* main.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
 		79711F2129C9055E002EBA6F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		79711F2329C91360002EBA6F /* ideal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ideal.json; sourceTree = "<group>"; };
@@ -66,6 +67,7 @@
 		7973944B29D766F700D0DDDD /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 		7975C45C29DB3ACE00A4AA1E /* Favorites.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Favorites.xcdatamodel; sourceTree = "<group>"; };
 		7975C45E29DB3B3100A4AA1E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		7975C46029DC758C00A4AA1E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		79BCE8AC29D6343A00042F1F /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		79BCE8AE29D636AE00042F1F /* stationDataDict.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = stationDataDict.py; sourceTree = "<group>"; };
 		79BCE8B029D6386900042F1F /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -190,7 +192,7 @@
 			children = (
 				795419AD29BED81B003FF58F /* Delay.swift */,
 				795419AF29BED82A003FF58F /* TimeRow.swift */,
-				795419B329BED842003FF58F /* FavoriteBox.swift */,
+				795419B329BED842003FF58F /* StationBox.swift */,
 				79BCE8B529D6538800042F1F /* LineLogo.swift */,
 			);
 			path = subviews;
@@ -210,6 +212,7 @@
 			children = (
 				79BCE8B329D6531B00042F1F /* extentions.swift */,
 				7973944B29D766F700D0DDDD /* ButtonStyles.swift */,
+				7975C46029DC758C00A4AA1E /* Location.swift */,
 			);
 			path = extentions;
 			sourceTree = "<group>";
@@ -300,7 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				795419B429BED842003FF58F /* FavoriteBox.swift in Sources */,
+				795419B429BED842003FF58F /* StationBox.swift in Sources */,
 				795419AB29BED7E8003FF58F /* MapView.swift in Sources */,
 				793EACC829944973002D7332 /* ContentView.swift in Sources */,
 				79BCE8B129D6386900042F1F /* ModelData.swift in Sources */,
@@ -312,6 +315,7 @@
 				795419A529BED7BB003FF58F /* Preferences.swift in Sources */,
 				795419AE29BED81B003FF58F /* Delay.swift in Sources */,
 				79BCE8B429D6531B00042F1F /* extentions.swift in Sources */,
+				7975C46129DC758C00A4AA1E /* Location.swift in Sources */,
 				7975C45F29DB3B3100A4AA1E /* CoreDataManager.swift in Sources */,
 				793EACC629944973002D7332 /* real_statsApp.swift in Sources */,
 				79BCE8AD29D6343A00042F1F /* Station.swift in Sources */,
@@ -459,7 +463,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.5;
@@ -497,7 +501,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.5;

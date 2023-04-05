@@ -62,6 +62,12 @@ struct Complex: Hashable, Codable, Identifiable {
     var complexName: String
     var searchName: String
     var stations: [Station]
+    var location: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(
+            latitude: stations[0].lat,
+            longitude: stations[0].lat
+            )
+    }
 }
 
 struct Station: Hashable, Codable, Identifiable {

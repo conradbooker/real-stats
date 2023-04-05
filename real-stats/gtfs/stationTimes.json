@@ -1,0 +1,82 @@
+{
+   "north": [],
+   "south": [
+      {
+         "line": "1",
+         "times": [
+            {
+               "currentStationTime": 1680366542,
+               "tripID": "068750_1..S03R",
+               "destinationID": "142S",
+               "countdown": 138
+            },
+            {
+               "currentStationTime": 1680366674,
+               "tripID": "069550_1..S03R",
+               "destinationID": "142S",
+               "countdown": 270
+            },
+            {
+               "currentStationTime": 1680367443,
+               "tripID": "070350_1..S03R",
+               "destinationID": "142S",
+               "countdown": 1039
+            },
+            {
+               "currentStationTime": 1680367994,
+               "tripID": "071150_1..S03R",
+               "destinationID": "142S",
+               "countdown": 1590
+            },
+            {
+               "currentStationTime": 1680368338,
+               "tripID": "071950_1..S03R",
+               "destinationID": "142S",
+               "countdown": 1934
+            },
+            {
+               "currentStationTime": 1680368900,
+               "tripID": "072750_1..S03R",
+               "destinationID": "142S",
+               "countdown": 2496
+            },
+            {
+               "currentStationTime": 1680369371,
+               "tripID": "073550_1..S03R",
+               "destinationID": "142S",
+               "countdown": 2967
+            },
+            {
+               "currentStationTime": 1680369835,
+               "tripID": "074350_1..S03R",
+               "destinationID": "142S",
+               "countdown": 3431
+            },
+            {
+               "currentStationTime": 1680370320,
+               "tripID": "075150_1..S03R",
+               "destinationID": "142S",
+               "countdown": 3916
+            },
+            {
+               "currentStationTime": 1680370800,
+               "tripID": "075950_1..S03R",
+               "destinationID": "142S",
+               "countdown": 4396
+            },
+            {
+               "currentStationTime": 1680371280,
+               "tripID": "076750_1..S03R",
+               "destinationID": "142S",
+               "countdown": 4876
+            },
+            {
+               "currentStationTime": 1680371760,
+               "tripID": "077550_1..S03R",
+               "destinationID": "142S",
+               "countdown": 5356
+            }
+         ]
+      }
+   ]
+}

@@ -36,24 +36,37 @@ struct StationView: View {
     @State var short1Size = CGSize()
     @State var short2Size = CGSize()
     @State var lineSelectorSize = CGSize()
+    
+    @State var isFavorited: Bool
 
-//    init(complex: Complex, chosenStation: Int) {
-//        /*
-//         for station in fetchrequests favorites, if favorites.chosen id == complex.id, isfavorited = false
-//         */
-////        self.favoriteStations = favoriteStations
-//        self.complex = complex
-//        self.chosenStation = chosenStation
-//        self.times =
-//    }
+    /*
+     for station in fetchrequests favorites, if favorites.chosen id == complex.id, isfavorited = false
+     */
     
+    func deleteFavorite() {
+        for favoriteStation in favoriteStations {
+            if favoriteStation.complexID == complex.id && favoriteStation.chosenStationNumber == chosenStation {
+                viewContext.delete(favoriteStation)
+                do {
+                    try viewContext.save()
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        }
+    }
     
-        
-//    init(complex: Complex, chosenStation: Int) {
-//        self.complex = complex
-//        self.chosenStation = chosenStation
-//        self.times = (String(returnTimes(station: complex.stations[chosenStation].GTFSID, trunkLine: complex.stations[chosenStation].trunk, expectedLines: complex.stations[chosenStation].possibleLines)) ?? "").decodeJson([Time].self)
-//    }
+    func addFavorite() {
+        let favoriteStation = FavoriteStation(context: viewContext)
+        favoriteStation.complexID = Int16(complex.id)
+        favoriteStation.chosenStationNumber = Int16(chosenStation)
+        favoriteStation.dateCreated = Date()
+        do {
+            try viewContext.save()
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
     
     var body: some View {
         GeometryReader { geometry in
@@ -125,11 +138,23 @@ struct StationView: View {
                             Spacer()
                             // MARK: - Favorite Button
                             Button {
-                                
+                                if isFavorited {
+                                    withAnimation(.linear(duration: 0.1)) {
+                                        isFavorited = false
+                                    }
+                                    deleteFavorite()
+//                                    delete
+                                } else {
+                                    withAnimation(.linear(duration: 0.1)) {
+                                        isFavorited = true
+                                    }
+                                    addFavorite()
+//                                    add new instance of favorites
+                                }
                             } label: {
-                                Image(systemName: "star.fill")
+                                Image(systemName: isFavorited ? "star.fill" : "star")
                                     .resizable()
-                                    .foregroundColor(Color.yellow)
+                                    .foregroundColor(isFavorited ? .yellow : .black)
                                     .frame(width: 30, height: 30)
                                     .padding(.trailing)
                                     .shadow(radius: 2)
@@ -142,6 +167,22 @@ struct StationView: View {
                             Button {
                                 chosenStation = index
                                 times = (String(returnTimes(station: complex.stations[chosenStation])) ?? "").decodeJson(Time.self)
+                                if isFavorited {
+                                    for favoriteStation in favoriteStations {
+                                        if favoriteStation.complexID == complex.id {
+                                            favoriteStation.chosenStationNumber = Int16(chosenStation)
+                                            favoriteStation.dateCreated = Date()
+                                            do {
+                                                try viewContext.save()
+                                            } catch {
+                                                print(error.localizedDescription)
+                                            }
+                                            break
+                                        }
+                                    }
+                                    
+                                }
+//                                if station in favorites, favorited == true
                             } label: {
                                 VStack {
                                     ZStack {
@@ -162,7 +203,7 @@ struct StationView: View {
                                                 .shadow(radius: 2)
                                                 .overlay(
                                                     RoundedRectangle(cornerRadius: 12)
-                                                        .stroke(.white,lineWidth: 2)
+                                                        .stroke(Color("cDarkGray"),lineWidth: 2)
                                                         .frame(width: getWidth(complex.stations[index].weekdayLines.count) + 6, height: 46)
                                                 )
 
@@ -195,7 +236,7 @@ struct StationView_Previews: PreviewProvider {
     let randomInt = Int.random(in: 1..<5)
     static var previews: some View {
         let persistedContainer = CoreDataManager.shared.persistentContainer
-        StationView(complex: complexData[423], chosenStation: 0)
+        StationView(complex: complexData[423], chosenStation: 0, isFavorited: false)
             .environment(\.managedObjectContext, persistedContainer.viewContext)
     }
 }

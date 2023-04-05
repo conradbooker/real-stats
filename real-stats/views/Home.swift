@@ -26,7 +26,14 @@ struct Home: View {
     @State private var complex: Complex = complexData[0]
     @State var selectedItem: Item?
     
+    @State var fromFavorites: Bool = false
+    @State var chosenStation: Int = 0
+    
     @FetchRequest(entity: FavoriteStation.entity(), sortDescriptors: [NSSortDescriptor(key: "dateCreated", ascending: false)]) private var favoriteStations: FetchedResults<FavoriteStation>
+    
+//    private func getNearByStations(_ location: MK)
+//    for station in stations, if station.location choser than station-1, set.add
+
     
     var favorites: [Complex] = [complexData[423],complexData[rand()],complexData[rand()],complexData[rand()],complexData[rand()],complexData[rand()]]
     var stations: [Complex] = [complexData[rand()],complexData[rand()],complexData[rand()],complexData[rand()],complexData[rand()],complexData[rand()]]
@@ -34,6 +41,35 @@ struct Home: View {
     @State var searchStations: [Complex] = []
     
     @FocusState var inputIsActive: Bool
+    
+    @StateObject var locationViewModel = LocationViewModel()
+    
+    func correctComplex(_ id: Int) -> Complex {
+        for station in complexData {
+            if station.id == id {
+                return station
+            }
+        }
+        return complexData[0]
+    }
+    
+    func lookForNearbyStations() -> [Complex] {
+        var closeComplexes = [Complex]()
+        for num in 0..<6 {
+            closeComplexes.append(complexData[num])
+        }
+        closeComplexes.append(complexData[0])
+        var lowestComplex = closeComplexes[0]
+        for complex in complexData {
+            let currentLocation = locationViewModel.lastSeenLocation!.coordinate
+            let complexDistance = abs(pow(pow(abs(currentLocation.longitude-complex.location.longitude), 2) + pow(abs(currentLocation.longitude-complex.location.longitude),2),(1/2)))
+            
+            for closeComplex in closeComplexes {
+                find farthest away from currentLocation
+            }
+            if complexDistance > lowestComplexdistance, replace the two
+        }
+    }
     
     var body: some View {
         GeometryReader { geometry in
@@ -124,13 +160,23 @@ struct Home: View {
                     .padding(12.0)
                     
                     ScrollView {
-                        ForEach(searchStations, id: \.self) { station in
-                            Button {
-                                selectedItem = Item(complex: station)
-                            } label: {
-                                StationRow(complex: station)
-                                    .frame(width: geometry.size.width-12)
-                            }.buttonStyle(CButton())
+                        VStack(spacing: 0) {
+                            ForEach(searchStations, id: \.self) { station in
+                                Button {
+                                    selectedItem = Item(complex: station)
+                                    for favoriteStation in favoriteStations {
+                                        if favoriteStation.complexID == station.id {
+                                            fromFavorites = true
+                                            break
+                                        }
+                                        fromFavorites = false
+                                    }
+                                } label: {
+                                    StationRow(complex: station)
+                                        .frame(width: geometry.size.width-12)
+                                }
+                                .buttonStyle(CButton())
+                            }
                         }
                         
                         // MARK: - Favorites
@@ -146,15 +192,17 @@ struct Home: View {
                                 HStack {
                                     ForEach(favoriteStations, id: \.self) { station in
                                         Button {
-                                            selectedItem = Item(complex: complexData[Int(station.complexID)])
+                                            chosenStation = Int(station.chosenStationNumber)
+                                            fromFavorites = true
+                                            selectedItem = Item(complex: correctComplex(Int(station.complexID)))
                                         } label: {
                                             ZStack {
-                                                RoundedRectangle(cornerRadius: 5)
+                                                RoundedRectangle(cornerRadius: 10)
                                                     .foregroundColor(Color("cLessDarkGray"))
                                                     .shadow(radius: 2)
-                                                    .frame(width: 150,height: 100)
-                                                FavoriteBox(complex: complexData[Int(station.complexID)])
-                                                    .frame(width: 150,height: 100)
+                                                    .frame(width: 150,height: 82)
+                                                StationBox(complex: correctComplex(Int(station.complexID)))
+                                                    .frame(width: 150,height: 82)
                                             }
                                             .padding(.vertical, 4)
                                         }
@@ -172,33 +220,61 @@ struct Home: View {
                                     .padding(.bottom, -4)
                                 Spacer()
                             }
-                            ScrollView(.horizontal, showsIndicators: false) {
-                                HStack {
-                                    ForEach(stations, id: \.self) { station in
-                                        Button {
-                                            selectedItem = Item(complex: station)
-                                        } label: {
-                                            ZStack {
-                                                RoundedRectangle(cornerRadius: 5)
-                                                    .foregroundColor(Color("cLessDarkGray"))
-                                                    .shadow(radius: 2)
-                                                    .frame(width: 150,height: 100)
-                                                FavoriteBox(complex: station)
-                                                    .frame(width: 150,height: 100)
+                            switch locationViewModel.authorizationStatus {
+                            case .notDetermined:
+                                Text("")
+                                    .onAppear { locationViewModel.requestPermission() }
+                            case .denied:
+                                Text("location not shared, go to settings to enable it")
+                            case .authorizedAlways, .authorizedWhenInUse:
+                                ScrollView(.horizontal, showsIndicators: false) {
+                                    HStack {
+                                        ForEach(stations, id: \.self) { station in
+                                            Button {
+                                                selectedItem = Item(complex: station)
+                                                
+                                                for favoriteStation in favoriteStations {
+                                                    if favoriteStation.complexID == station.id {
+                                                        fromFavorites = true
+                                                        break
+                                                    }
+                                                    fromFavorites = false
+                                                }
+
+                                            } label: {
+                                                ZStack {
+                                                    RoundedRectangle(cornerRadius: 10)
+                                                        .foregroundColor(Color("cLessDarkGray"))
+                                                        .shadow(radius: 2)
+                                                        .frame(width: 150,height: 82)
+                                                    StationBox(complex: station)
+                                                        .frame(width: 150,height: 82)
+                                                }
+                                                .padding(.vertical, 4)
                                             }
-                                            .padding(.vertical, 4)
+                                            .buttonStyle(CButton())
                                         }
-                                        .buttonStyle(CButton())
                                     }
+                                    .padding(.leading,12)
                                 }
-                                .padding(.leading,12)
+                                .padding(.vertical, 12.0)
+                                .onAppear {
+                                    lookForNearbyStations()
+                                }
+                            default:
+                                Text("Unexpected status")
                             }
-                            .padding(.vertical, 12.0)
                         }
                     }
                     .sheet(item: $selectedItem) { item in
-                        StationView(complex: item.complex, chosenStation: 0)
-                            .environment(\.managedObjectContext, persistedContainer.viewContext)
+                        if fromFavorites {
+                            // chosen station = favoriteStationNumber thing
+                            StationView(complex: item.complex, chosenStation: chosenStation, isFavorited: true)
+                                .environment(\.managedObjectContext, persistedContainer.viewContext)
+                        } else {
+                            StationView(complex: item.complex, chosenStation: 0, isFavorited: false)
+                                .environment(\.managedObjectContext, persistedContainer.viewContext)
+                        }
                     }
                 }
             }
