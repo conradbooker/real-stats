@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 func rand() -> Int {
     return Int.random(in: 1..<445)
@@ -31,18 +32,20 @@ struct Home: View {
     
     @FetchRequest(entity: FavoriteStation.entity(), sortDescriptors: [NSSortDescriptor(key: "dateCreated", ascending: false)]) private var favoriteStations: FetchedResults<FavoriteStation>
     
+    var coordinate: CLLocationCoordinate2D? {
+        locationViewModel.lastSeenLocation?.coordinate
+    }
+    
 //    private func getNearByStations(_ location: MK)
 //    for station in stations, if station.location choser than station-1, set.add
-
-    
-    var favorites: [Complex] = [complexData[423],complexData[rand()],complexData[rand()],complexData[rand()],complexData[rand()],complexData[rand()]]
-    var stations: [Complex] = [complexData[rand()],complexData[rand()],complexData[rand()],complexData[rand()],complexData[rand()],complexData[rand()]]
 
     @State var searchStations: [Complex] = []
     
     @FocusState var inputIsActive: Bool
     
-    @StateObject var locationViewModel = LocationViewModel()
+    @EnvironmentObject var locationViewModel: LocationViewModel
+    
+    @AppStorage("stationTimes", store: UserDefaults(suiteName: "group.Schematica.real-stats")) var timeData: String = ""
     
     func correctComplex(_ id: Int) -> Complex {
         for station in complexData {
@@ -54,21 +57,20 @@ struct Home: View {
     }
     
     func lookForNearbyStations() -> [Complex] {
-        var closeComplexes = [Complex]()
-        for num in 0..<6 {
-            closeComplexes.append(complexData[num])
+        let currentLoc = CLLocation(latitude: coordinate?.latitude ?? 0, longitude: coordinate?.longitude ?? 0)
+        
+        let stations = complexData
+            .sorted(by: {
+                return $0.location.distance(from: currentLoc) < $1.location.distance(from: currentLoc)
+        })
+        
+        var newStations = [Complex]()
+        
+        for num in 0...10 {
+            newStations.append(stations[num])
         }
-        closeComplexes.append(complexData[0])
-        var lowestComplex = closeComplexes[0]
-        for complex in complexData {
-            let currentLocation = locationViewModel.lastSeenLocation!.coordinate
-            let complexDistance = abs(pow(pow(abs(currentLocation.longitude-complex.location.longitude), 2) + pow(abs(currentLocation.longitude-complex.location.longitude),2),(1/2)))
-            
-            for closeComplex in closeComplexes {
-                find farthest away from currentLocation
-            }
-            if complexDistance > lowestComplexdistance, replace the two
-        }
+                
+        return newStations
     }
     
     var body: some View {
@@ -103,10 +105,14 @@ struct Home: View {
 //                                        for station in filtered {
 //                                            set.insert(station)
 //                                        }
+                                        let currentLoc = CLLocation(latitude: coordinate?.latitude ?? 0, longitude: coordinate?.longitude ?? 0)
+
                                         
                                         withAnimation(.spring(blendDuration: 0.25)) {
                                             searchStations = complexData.filter { $0.complexName.localizedCaseInsensitiveContains(search)
-                                            }
+                                            }.sorted(by: {
+                                                return $0.location.distance(from: currentLoc) < $1.location.distance(from: currentLoc)
+                                        })
                                         }
                                     }
                                 }
@@ -220,16 +226,18 @@ struct Home: View {
                                     .padding(.bottom, -4)
                                 Spacer()
                             }
+                            Text("location: \(coordinate?.latitude ?? 0)")
+                            Text("location: \(coordinate?.longitude ?? 0)")
                             switch locationViewModel.authorizationStatus {
                             case .notDetermined:
-                                Text("")
+                                Text("request permission")
                                     .onAppear { locationViewModel.requestPermission() }
                             case .denied:
                                 Text("location not shared, go to settings to enable it")
                             case .authorizedAlways, .authorizedWhenInUse:
                                 ScrollView(.horizontal, showsIndicators: false) {
                                     HStack {
-                                        ForEach(stations, id: \.self) { station in
+                                        ForEach(lookForNearbyStations(), id: \.self) { station in
                                             Button {
                                                 selectedItem = Item(complex: station)
                                                 
@@ -258,9 +266,6 @@ struct Home: View {
                                     .padding(.leading,12)
                                 }
                                 .padding(.vertical, 12.0)
-                                .onAppear {
-                                    lookForNearbyStations()
-                                }
                             default:
                                 Text("Unexpected status")
                             }

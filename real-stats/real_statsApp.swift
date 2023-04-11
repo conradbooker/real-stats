@@ -10,11 +10,13 @@ import SwiftUI
 @main
 struct real_statsApp: App {
     let persistentContainer = CoreDataManager.shared.persistentContainer
+    @StateObject var locationViewModel = LocationViewModel()
     
     var body: some Scene {
         WindowGroup {
             Home()
                 .environment(\.managedObjectContext, persistentContainer.viewContext)
+                .environmentObject(locationViewModel)
         }
     }
 }

@@ -8,15 +8,10 @@
 import SwiftUI
 import WrappingHStack
 
-var defaultTimes: String = """
-{
-   "north": [],
-   "south": []
-}
-"""
-
 struct StationView: View {
 //    @FetchRequest private var favoriteStations: FetchedResults<FavoriteStation>
+    
+    @ObservedObject var monitor = Network()
     @FetchRequest(entity: FavoriteStation.entity(), sortDescriptors: [NSSortDescriptor(key: "dateCreated", ascending: false)]) private var favoriteStations: FetchedResults<FavoriteStation>
 
     @Environment(\.managedObjectContext) private var viewContext
@@ -76,6 +71,13 @@ struct StationView: View {
                     VStack(alignment: .leading) {
                         Spacer().frame(height:lineSelectorSize.height + short1Size.height + short2Size.height + 40)
                         
+                        // MARK: - No Wifi
+                        
+                        if !hasNetwork() {
+                            Text("No Wifi: real-stats will use scheduled times in conjunction with not recent live GTFS times")
+                                .padding()
+                        }
+                        
                         // MARK: - North
                         Text(complex.stations[chosenStation].northDir)
                             .padding(.horizontal)
@@ -116,7 +118,7 @@ struct StationView: View {
                             .frame(width: 34, height: 4.5)
                             .padding(.top, 6)
                             .onAppear {
-                                times = (String(returnTimes(station: complex.stations[chosenStation])) ?? "").decodeJson(Time.self)
+                                times = getTimes(station: complex.stations[chosenStation])
                             }
                         HStack {
                             VStack(alignment: .leading) {
@@ -166,7 +168,7 @@ struct StationView: View {
                         WrappingHStack(0..<complex.stations.count, id: \.self,spacing: .constant(0)) { index in
                             Button {
                                 chosenStation = index
-                                times = (String(returnTimes(station: complex.stations[chosenStation])) ?? "").decodeJson(Time.self)
+                                times = getTimes(station: complex.stations[chosenStation])
                                 if isFavorited {
                                     for favoriteStation in favoriteStations {
                                         if favoriteStation.complexID == complex.id {

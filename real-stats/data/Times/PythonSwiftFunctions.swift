@@ -6,8 +6,16 @@
 //
 
 import Foundation
+import SwiftUI
 import PythonKit
 import PythonSupport
+
+var defaultTimes: String = """
+{
+   "north": [],
+   "south": []
+}
+"""
 
 func returnTimes(station: Station) -> PythonObject {
     PythonSupport.initialize()
@@ -25,4 +33,16 @@ func returnTimes(station: Station) -> PythonObject {
     
     let response = file.getStationTimes(station.GTFSID,station.trunk,station.possibleLines)
     return response
+}
+
+func getTimes(station: Station) -> Time {
+    @ObservedObject var monitor = Network()
+    
+    if !monitor.isConnected {
+        let stationTimes = String(String(returnTimes(station: station)) ?? defaultTimes).decodeJson(Time.self)
+        return stationTimes
+    } else {
+        // get static times
+    }
+    return defaultTimes.decodeJson(Time.self)
 }

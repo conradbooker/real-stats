@@ -24,91 +24,37 @@ struct LineRow: View {
     var destination: String
     var times: [Indv]
     var disruptions: disruption
-    
+        
     var body: some View {
         GeometryReader { geometry in
             ZStack {
                 HStack(spacing: 0) {
-                    Button {
-                        
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 1000)
-                                .foregroundColor(Color("cLessDarkGray"))
-                                .shadow(radius: 2)
-                            HStack(spacing: 0) {
-                                Spacer()
-                                if times.count > 2 {
-                                    individualTime(time: times[2].countdown)
-                                        .padding(.trailing,15)
-                                } else {
-                                    Text("--")
-                                }
+                    Spacer()
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(Color("cLessDarkGray"))
+                            .shadow(radius: 2)
+                        HStack(spacing: 0) {
+                            Spacer()
+                            if times.count > 2 {
+                                individualTime(time: times[2].countdown)
+                                    .padding(.trailing,15)
+                            } else {
+                                Text("--")
+                                    .padding(.trailing,15)
                             }
                         }
                     }
-                    .buttonStyle(CButton())
-                    .frame(width: geometry.size.width*11/12, height: 65)
-//                    Button {
-//                        
-//                    } label: {
-//                        ZStack {
-//                            RoundedRectangle(cornerRadius: 15)
-//                                .foregroundColor(Color("cLessDarkGray"))
-//                                .shadow(radius: 2)
-//                            VStack {
-//                                if disruptions == .delayed {
-//                                    Image(systemName: "exclamationmark.triangle.fill")
-//                                        .font(.title2)
-//                                    Text("Delays")
-//                                        .font(.caption2)
-//                                } else if disruptions == .none {
-//                                    Image(systemName: "checkmark.square.fill")
-//                                        .font(.title2)
-//                                    Text("Good Service")
-//                                        .font(.caption2)
-//                                } else if disruptions == .skippedStations {
-//                                    Image(systemName: "arrow.triangle.swap")
-//                                        .font(.title2)
-//                                    Text("Skipped Stations")
-//                                        .font(.caption2)
-//                                } else if disruptions == .slowSpeeds {
-//                                    Image(systemName: "tortoise.fill")
-//                                        .font(.title2)
-//                                    Text("Slow Speeds")
-//                                        .font(.caption2)
-//                                } else if disruptions == .reroutes {
-//                                    Image(systemName: "arrow.triangle.branch")
-//                                        .font(.title2)
-//                                    Text("Reroutes")
-//                                        .font(.caption2)
-//                                }
-//                            }
-//                        }
-//                    }
-//                    .frame(width: 40, height: 65)
-//                    .buttonStyle(CButton())
-                    Button {
-                        
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 5)
-                                .frame(width: 20,height: 40)
-                                .foregroundColor(Color("cLessDarkGray"))
-                                .shadow(radius: 2)
-                            Image(systemName: "chevron.right")
-                        }
-                        .padding(.leading,5)
-                    }
-                    .buttonStyle(CButton())
-                    Spacer()
+                    .frame(width: geometry.size.width*2.7/12, height: 65)
                 }
                 HStack(spacing: 0) {
+                    Spacer()
+                        .frame(width: geometry.size.width*6.3/12)
                     Button {
                         
                     } label: {
                         ZStack {
-                            RoundedRectangle(cornerRadius: 1000)
+                            RoundedRectangle(cornerRadius: 20)
                                 .foregroundColor(Color("cLessDarkGray"))
                                 .shadow(radius: 2)
                             HStack(spacing: 0) {
@@ -121,17 +67,16 @@ struct LineRow: View {
                                 }
                             }
                         }
-                        .frame(width: geometry.size.width*9.5/12, height: 65)
+                        .frame(width: geometry.size.width*2.7/12, height: 65)
                     }
                     .buttonStyle(CButton())
-                    Spacer()
                 }
                 HStack(spacing: 0) {
                     Button {
                         
                     } label: {
                         ZStack {
-                            RoundedRectangle(cornerRadius: 1000)
+                            RoundedRectangle(cornerRadius: 20)
                                 .foregroundColor(Color("cLessDarkGray"))
                                 .shadow(radius: 2)
                             HStack(spacing: 0) {
@@ -139,22 +84,44 @@ struct LineRow: View {
                                     .resizable()
                                     .frame(width: 50,height: 50)
                                     .padding(7.5)
-                                Text(destination)
-                                    .font(.title3)
-                                    .fontWeight(.bold)
+                                VStack {
+                                    Text(destination)
+                                        .fontWeight(.bold)
+                                    Frequency(times: times)
+                                }
                                 Spacer()
                                 individualTime(time: times[0].countdown)
                                     .padding(.trailing,15)
                             }
                         }
-                        .frame(width: geometry.size.width*8/12, height: 65)
+                        .frame(width: geometry.size.width*9/12, height: 65)
                     }
                     .buttonStyle(CButton())
                     Spacer()
-                        .frame(width: geometry.size.width*5/12)
                 }
             }
-            .padding(.leading, 1)
+        }
+    }
+}
+
+struct Frequency: View {
+    var times: [Indv]
+    
+    func getFrequency() -> Int {
+        var frequencies: [Int] = []
+        for index in 0..<times.count {
+            if index < times.count-1 {
+                frequencies.append(abs(times[index].countdown-times[index+1].countdown))
+            }
+        }
+        let sum = frequencies.reduce(0, +)
+        return Int(sum / times.count)
+    }
+    
+    var body: some View {
+        VStack {
+            Text("Every \(getFrequency()/60) mins")
+                .font(.caption)
         }
     }
 }
@@ -163,15 +130,29 @@ struct individualTime: View {
     var time: Int
     var body: some View {
         VStack {
-            Text("\(Int(time)/60)")
-                .font(.title2)
-                .fontWeight(.bold)
-            if time == 1 {
+            if time > 70 {
+                Text("\(Int(time-10)/60)")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                if time == 1 {
+                    Text("min")
+                        .font(.footnote)
+                } else {
+                    Text("min")
+                        .font(.footnote)
+                }
+            } else if time > 69 {
+                Text("<1")
+                    .font(.title2)
+                    .fontWeight(.bold)
                 Text("min")
                     .font(.footnote)
-            } else {
-                Text("min")
-                    .font(.footnote)
+            } else if time > 20 {
+                Text("arriving")
+            } else if time > 10 {
+                Text("At")
+            } else if time > 0 {
+                Text("leavin")
             }
         }
     }

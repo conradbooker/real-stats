@@ -10,7 +10,6 @@ import Foundation
 var complexData: [Complex] = load("stationData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
-    print("hello")
     let data: Data
 
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)

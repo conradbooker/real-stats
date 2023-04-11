@@ -141,16 +141,16 @@ def getStationTimes(station,trunkLine,expectedLines):
                         direction = str(tripID.split(".")[-1])[0]
                         
                         GTFSID = str(stop_time_update.stop_id)[:-1]
-                        print(f"route: {routeStr}, id: {tripID}, gtfsID: {GTFSID}, station: {station}")
+                        # print(f"route: {routeStr}, id: {tripID}, gtfsID: {GTFSID}, station: {station}")
 
                         if GTFSID == station:
                             print(f"station is {station}")
                             currentTime = int(time.time())
                             newTime = {}
                             if stop_time_update.HasField("arrival"):
-                                newTime["currentStationTime"] = int(stop_time_update.arrival.time)
+                                newTime["currentStationTime"] = int(stop_time_update.arrival.time) + 10
                             else:
-                                newTime["currentStationTime"] = int(stop_time_update.departure.time)
+                                newTime["currentStationTime"] = int(stop_time_update.departure.time) + 10
                             newTime["tripID"] = tripID
                             newTime["destinationID"] = str(entity.trip_update.stop_time_update[-1].stop_id)
                             newTime["countdown"] = (newTime["currentStationTime"] - currentTime)
