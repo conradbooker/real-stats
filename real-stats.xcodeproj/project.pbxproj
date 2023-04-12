@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		791754BA29D88185007B8F6A /* LineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791754B929D88185007B8F6A /* LineRow.swift */; };
+		791754BA29D88185007B8F6A /* StationTimeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791754B929D88185007B8F6A /* StationTimeRow.swift */; };
 		791754BC29D89738007B8F6A /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791754BB29D89738007B8F6A /* TimeModel.swift */; };
 		791754BF29D898CA007B8F6A /* Python-iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 791754BE29D898CA007B8F6A /* Python-iOS */; };
 		791754C229D898DE007B8F6A /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 791754C129D898DE007B8F6A /* PythonKit */; };
@@ -81,7 +81,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		791754B929D88185007B8F6A /* LineRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineRow.swift; sourceTree = "<group>"; };
+		791754B929D88185007B8F6A /* StationTimeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTimeRow.swift; sourceTree = "<group>"; };
 		791754BB29D89738007B8F6A /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
 		791754C429D89AFC007B8F6A /* PythonSwiftFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonSwiftFunctions.swift; sourceTree = "<group>"; };
 		793EACC229944973002D7332 /* real-stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "real-stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				795419A629BED7CF003FF58F /* StationView.swift */,
-				791754B929D88185007B8F6A /* LineRow.swift */,
+				791754B929D88185007B8F6A /* StationTimeRow.swift */,
 				79F7E78329DA7D59000006C4 /* StationRow.swift */,
 			);
 			path = station;
@@ -452,7 +452,7 @@
 				79BCE8AD29D6343A00042F1F /* Station.swift in Sources */,
 				7973944C29D766F700D0DDDD /* ButtonStyles.swift in Sources */,
 				79F7E78429DA7D59000006C4 /* StationRow.swift in Sources */,
-				791754BA29D88185007B8F6A /* LineRow.swift in Sources */,
+				791754BA29D88185007B8F6A /* StationTimeRow.swift in Sources */,
 				7975C45D29DB3ACE00A4AA1E /* FavoritesModel.xcdatamodeld in Sources */,
 				795419A729BED7CF003FF58F /* StationView.swift in Sources */,
 				79BCE8B629D6538800042F1F /* LineLogo.swift in Sources */,

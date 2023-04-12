@@ -82,7 +82,7 @@ struct StationView: View {
                         Text(complex.stations[chosenStation].northDir)
                             .padding(.horizontal)
                         ForEach(times.north, id: \.self) { line in
-                            LineRow(
+                            StationTimeRow(
                                 line: line.line,
                                 destination: stationKeys[String((line.times[0].destinationID).dropLast(1))] ?? line.times[0].destinationID,
                                 times: line.times,
@@ -94,7 +94,7 @@ struct StationView: View {
                         Text(complex.stations[chosenStation].southDir)
                             .padding(.horizontal)
                         ForEach(times.south, id: \.self) { line in
-                            LineRow(
+                            StationTimeRow(
                                 line: line.line,
                                 destination: stationKeys[String((line.times[0].destinationID).dropLast(1))] ?? line.times[0].destinationID,
                                 times: line.times,
