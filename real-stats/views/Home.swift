@@ -292,5 +292,6 @@ struct Home_Previews: PreviewProvider {
         let persistedContainer = CoreDataManager.shared.persistentContainer
         Home()
             .environment(\.managedObjectContext, persistedContainer.viewContext)
+            .environmentObject(LocationViewModel())
     }
 }

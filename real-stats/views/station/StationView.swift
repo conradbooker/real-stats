@@ -67,6 +67,8 @@ struct StationView: View {
         GeometryReader { geometry in
             ZStack {
                 // MARK: - Main Content
+                Color("cDarkGray")
+                    .ignoresSafeArea()
                 ScrollView {
                     VStack(alignment: .leading) {
                         Spacer().frame(height:lineSelectorSize.height + short1Size.height + short2Size.height + 40)
@@ -88,6 +90,7 @@ struct StationView: View {
                                 times: line.times,
                                 disruptions: .none
                             )
+                            .padding(.horizontal,5)
                             .frame(height: 65)
                         }
                         // MARK: - South
@@ -100,6 +103,7 @@ struct StationView: View {
                                 times: line.times,
                                 disruptions: .none
                             )
+                            .padding(.horizontal,5)
                             .frame(height: 65)
                         }
                     }
@@ -156,7 +160,7 @@ struct StationView: View {
                             } label: {
                                 Image(systemName: isFavorited ? "star.fill" : "star")
                                     .resizable()
-                                    .foregroundColor(isFavorited ? .yellow : .black)
+                                    .foregroundColor(isFavorited ? .yellow : Color("whiteblack"))
                                     .frame(width: 30, height: 30)
                                     .padding(.trailing)
                                     .shadow(radius: 2)
