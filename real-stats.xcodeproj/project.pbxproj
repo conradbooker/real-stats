@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		790597B429F1AB9F006BD992 /* File.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 790597B329F1AB9F006BD992 /* File.rtf */; };
 		791754BA29D88185007B8F6A /* StationTimeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791754B929D88185007B8F6A /* StationTimeRow.swift */; };
 		791754BC29D89738007B8F6A /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791754BB29D89738007B8F6A /* TimeModel.swift */; };
 		791754BF29D898CA007B8F6A /* Python-iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 791754BE29D898CA007B8F6A /* Python-iOS */; };
@@ -81,6 +82,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		790597B329F1AB9F006BD992 /* File.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = File.rtf; path = "real-stats/other/File.rtf"; sourceTree = SOURCE_ROOT; };
 		791754B929D88185007B8F6A /* StationTimeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTimeRow.swift; sourceTree = "<group>"; };
 		791754BB29D89738007B8F6A /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
 		791754C429D89AFC007B8F6A /* PythonSwiftFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonSwiftFunctions.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				795419AC29BED80D003FF58F /* subviews */,
 				791754B829D8815D007B8F6A /* station */,
 				79711F2129C9055E002EBA6F /* Home.swift */,
+				790597B329F1AB9F006BD992 /* File.rtf */,
 				793EACC729944973002D7332 /* ContentView.swift */,
 				795419A429BED7BB003FF58F /* Preferences.swift */,
 				795419A829BED7E1003FF58F /* LineView.swift */,
@@ -413,6 +416,7 @@
 				793EACCE29944973002D7332 /* Preview Assets.xcassets in Resources */,
 				79BCE8B829D761CB00042F1F /* stationData.json in Resources */,
 				793EACCA29944973002D7332 /* Assets.xcassets in Resources */,
+				790597B429F1AB9F006BD992 /* File.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
