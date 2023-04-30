@@ -16,5 +16,6 @@ struct Delay: View {
 struct Delay_Previews: PreviewProvider {
     static var previews: some View {
         Delay()
+            .previewLayout(.fixed(width: 400, height: 80))
     }
 }

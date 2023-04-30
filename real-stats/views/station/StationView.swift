@@ -142,6 +142,21 @@ struct StationView: View {
                             .padding(.leading)
                             .padding(.vertical, 10)
                             Spacer()
+                            
+                            // MARK: - ADA Button
+                            
+                            Button {
+                                
+                            } label: {
+                                if complex.stations[chosenStation].ADA > 0 {
+                                    Image("ADA")
+                                        .resizable()
+                                        .frame(width: 30, height: 30)
+                                }
+                            }
+                            .buttonStyle(CButton())
+                            .shadow(radius: 2)
+                            
                             // MARK: - Favorite Button
                             Button {
                                 if isFavorited {

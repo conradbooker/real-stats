@@ -31,7 +31,7 @@ struct StationTimeRow: View {
                 HStack(spacing: 0) {
                     Spacer()
                     ZStack {
-                        RoundedRectangle(cornerRadius: 20)
+                        RoundedRectangle(cornerRadius: 15)
                             .foregroundColor(Color("cLessDarkGray"))
                             .shadow(radius: 2)
                         HStack(spacing: 0) {
@@ -45,7 +45,7 @@ struct StationTimeRow: View {
                             }
                         }
                     }
-                    .frame(width: geometry.size.width*2.7/12, height: 65)
+                    .frame(width: geometry.size.width*2.7/12, height: 55)
                 }
                 HStack(spacing: 0) {
                     Spacer()
@@ -54,7 +54,7 @@ struct StationTimeRow: View {
                         
                     } label: {
                         ZStack {
-                            RoundedRectangle(cornerRadius: 20)
+                            RoundedRectangle(cornerRadius: 15)
                                 .foregroundColor(Color("cLessDarkGray"))
                                 .shadow(radius: 2)
                             HStack(spacing: 0) {
@@ -67,7 +67,7 @@ struct StationTimeRow: View {
                                 }
                             }
                         }
-                        .frame(width: geometry.size.width*2.7/12, height: 65)
+                        .frame(width: geometry.size.width*2.7/12, height: 55)
                     }
                     .buttonStyle(CButton())
                 }
@@ -76,13 +76,13 @@ struct StationTimeRow: View {
                         
                     } label: {
                         ZStack {
-                            RoundedRectangle(cornerRadius: 20)
+                            RoundedRectangle(cornerRadius: 15)
                                 .foregroundColor(Color("cLessDarkGray"))
                                 .shadow(radius: 2)
                             HStack(spacing: 0) {
                                 Image(line)
                                     .resizable()
-                                    .frame(width: 50,height: 50)
+                                    .frame(width: 40,height: 40)
                                     .padding(7.5)
                                 VStack {
                                     Text(destination)
@@ -94,7 +94,7 @@ struct StationTimeRow: View {
                                     .padding(.trailing,15)
                             }
                         }
-                        .frame(width: geometry.size.width*9/12, height: 65)
+                        .frame(width: geometry.size.width*9/12, height: 55)
                     }
                     .buttonStyle(CButton())
                     Spacer()
@@ -130,15 +130,15 @@ struct individualTime: View {
     var time: Int
     var body: some View {
         VStack {
-            if time > 70 {
+            if time >= 70 {
                 Text("\(Int(time-10)/60)")
-                    .font(.title2)
+                    .font(.title3)
                     .fontWeight(.bold)
-                if time == 1 {
+                if Int(time-10)/60 == 1 {
                     Text("min")
                         .font(.footnote)
                 } else {
-                    Text("min")
+                    Text("mins")
                         .font(.footnote)
                 }
             } else if time > 69 {
@@ -150,9 +150,9 @@ struct individualTime: View {
             } else if time > 20 {
                 Text("arriving")
             } else if time > 10 {
-                Text("At")
+                Text("at station")
             } else if time > 0 {
-                Text("leavin")
+                Text("leaving")
             }
         }
     }
