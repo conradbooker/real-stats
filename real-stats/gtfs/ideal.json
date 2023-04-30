@@ -285,40 +285,37 @@
 },
 {
     "__COMMENT": "this is for the widget",
-    "station": {
-        "id": 203,
-        "stationName": "96 St",
-        "notes": "Skipped Stations",
-        "notes_expanded": "There is no service between 42 St-PABT & 50th St",
-        "northbound": [
-            {
-                "line": "A",
-                "times": [120,200,300,400]
-            },
-            {
-                "line": "C",
-                "times": [120,200,300,400]
-            },
-            {
-                "line": "E",
-                "times": [120,200,300,400]
-            }
-        ],
-        "southbound": [
-            {
-                "line": "A",
-                "times": [120,200,300,400]
-            },
-            {
-                "line": "C",
-                "times": [120,200,300,400]
-            },
-            {
-                "line": "E",
-                "times": [120,200,300,400]
-            }
-        ]
-    }
+    "id": 203,
+    "stationName": "96 St",
+    "notes": "Skipped Stations",
+    "northbound": [
+        {
+            "line": "A",
+            "times": [120,200,300,400]
+        },
+        {
+            "line": "C",
+            "times": [120,200,300,400]
+        },
+        {
+            "line": "E",
+            "times": [120,200,300,400]
+        }
+    ],
+    "southbound": [
+        {
+            "line": "A",
+            "times": [120,200,300,400]
+        },
+        {
+            "line": "C",
+            "times": [120,200,300,400]
+        },
+        {
+            "line": "E",
+            "times": [120,200,300,400]
+        }
+    ]
 },
 {
     "station": 428,
