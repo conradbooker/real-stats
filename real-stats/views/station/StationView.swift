@@ -75,7 +75,7 @@ struct StationView: View {
                         
                         // MARK: - No Wifi
                         
-                        if !hasNetwork() {
+                        if hasNetwork() {
                             Text("No Wifi: real-stats will use scheduled times in conjunction with not recent live GTFS times")
                                 .padding()
                         }
@@ -91,7 +91,7 @@ struct StationView: View {
                                 disruptions: .none
                             )
                             .padding(.horizontal,5)
-                            .frame(height: 65)
+                            .frame(height: 55)
                         }
                         // MARK: - South
                         Text(complex.stations[chosenStation].southDir)
@@ -104,7 +104,7 @@ struct StationView: View {
                                 disruptions: .none
                             )
                             .padding(.horizontal,5)
-                            .frame(height: 65)
+                            .frame(height: 55)
                         }
                     }
                 }
