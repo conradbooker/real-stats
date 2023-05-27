@@ -7,14 +7,16 @@
 
 import SwiftUI
 
-struct TimeRow: View {
-    var body: some View {
-        Text("Hello, World!")
-    }
-}
-
-struct TimeRow_Previews: PreviewProvider {
-    static var previews: some View {
-        TimeRow()
-    }
-}
+//struct TimeRow: View {
+//    var body: some View {
+//        ForEach(exampleTrips, id: \.self) { trip in
+//            Text("hi")
+//        }
+//    }
+//}
+//
+//struct TimeRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TimeRow()
+//    }
+//}

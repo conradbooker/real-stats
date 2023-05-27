@@ -42,8 +42,15 @@
 		7975C45F29DB3B3100A4AA1E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975C45E29DB3B3100A4AA1E /* CoreDataManager.swift */; };
 		7975C46129DC758C00A4AA1E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975C46029DC758C00A4AA1E /* Location.swift */; };
 		7975C48229DDA93200A4AA1E /* WidgetTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975C48129DDA93200A4AA1E /* WidgetTester.swift */; };
+		79996BD52A20D2A6000E338A /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79996BD42A20D2A6000E338A /* TripView.swift */; };
+		79996BD72A20EF12000E338A /* tripStationData.json in Resources */ = {isa = PBXBuildFile; fileRef = 79996BD62A20EF12000E338A /* tripStationData.json */; };
+		79996BD92A20EF43000E338A /* TripStationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79996BD82A20EF43000E338A /* TripStationDataModel.swift */; };
+		79996BDB2A21142F000E338A /* TripStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79996BDA2A21142F000E338A /* TripStationView.swift */; };
+		79996BDE2A226782000E338A /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 79996BDD2A226782000E338A /* Collections */; };
+		79996BE02A226782000E338A /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 79996BDF2A226782000E338A /* DequeModule */; };
+		79996BE22A226782000E338A /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 79996BE12A226782000E338A /* OrderedCollections */; };
 		79A9CCD529E1F2C600D6240D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A9CCD429E1F2C600D6240D /* Network.swift */; };
-		79BCE8AD29D6343A00042F1F /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCE8AC29D6343A00042F1F /* Station.swift */; };
+		79BCE8AD29D6343A00042F1F /* StationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCE8AC29D6343A00042F1F /* StationModel.swift */; };
 		79BCE8AF29D636AE00042F1F /* stationDataDict.py in Resources */ = {isa = PBXBuildFile; fileRef = 79BCE8AE29D636AE00042F1F /* stationDataDict.py */; };
 		79BCE8B129D6386900042F1F /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCE8B029D6386900042F1F /* ModelData.swift */; };
 		79BCE8B429D6531B00042F1F /* extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCE8B329D6531B00042F1F /* extentions.swift */; };
@@ -52,6 +59,9 @@
 		79C1AF4429DF3D950055DF31 /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 79C1AF4329DF3D950055DF31 /* WrappingHStack */; };
 		79C1AF4629DFBE4F0055DF31 /* Python-iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 79C1AF4529DFBE4F0055DF31 /* Python-iOS */; };
 		79C1AF4829DFBE4F0055DF31 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 79C1AF4729DFBE4F0055DF31 /* PythonKit */; };
+		79DF5E752A11986B000E4132 /* TripStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF5E742A11986B000E4132 /* TripStations.swift */; };
+		79DF5E772A119981000E4132 /* TripsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF5E762A119981000E4132 /* TripsModel.swift */; };
+		79DF5E792A119BFF000E4132 /* stopTimes.json in Resources */ = {isa = PBXBuildFile; fileRef = 79DF5E782A119BFF000E4132 /* stopTimes.json */; };
 		79F7E78229DA58C6000006C4 /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 79F7E78129DA58C6000006C4 /* WrappingHStack */; };
 		79F7E78429DA7D59000006C4 /* StationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F7E78329DA7D59000006C4 /* StationRow.swift */; };
 /* End PBXBuildFile section */
@@ -118,13 +128,20 @@
 		7975C46B29DDA51C00A4AA1E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		7975C48129DDA93200A4AA1E /* WidgetTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTester.swift; sourceTree = "<group>"; };
 		797D2A4529DF2FA60002A79F /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.2.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		79996BD42A20D2A6000E338A /* TripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
+		79996BD62A20EF12000E338A /* tripStationData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tripStationData.json; sourceTree = "<group>"; };
+		79996BD82A20EF43000E338A /* TripStationDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripStationDataModel.swift; sourceTree = "<group>"; };
+		79996BDA2A21142F000E338A /* TripStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripStationView.swift; sourceTree = "<group>"; };
 		79A9CCD429E1F2C600D6240D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		79BCE8AC29D6343A00042F1F /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		79BCE8AC29D6343A00042F1F /* StationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationModel.swift; sourceTree = "<group>"; };
 		79BCE8AE29D636AE00042F1F /* stationDataDict.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = stationDataDict.py; sourceTree = "<group>"; };
 		79BCE8B029D6386900042F1F /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		79BCE8B329D6531B00042F1F /* extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extentions.swift; sourceTree = "<group>"; };
 		79BCE8B529D6538800042F1F /* LineLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineLogo.swift; sourceTree = "<group>"; };
 		79BCE8B729D761CB00042F1F /* stationData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = stationData.json; path = "real-stats/gtfs/stationData.json"; sourceTree = SOURCE_ROOT; };
+		79DF5E742A11986B000E4132 /* TripStations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripStations.swift; sourceTree = "<group>"; };
+		79DF5E762A119981000E4132 /* TripsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsModel.swift; sourceTree = "<group>"; };
+		79DF5E782A119BFF000E4132 /* stopTimes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stopTimes.json; sourceTree = "<group>"; };
 		79F7E78329DA7D59000006C4 /* StationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +152,9 @@
 			files = (
 				791754BF29D898CA007B8F6A /* Python-iOS in Frameworks */,
 				79F7E78229DA58C6000006C4 /* WrappingHStack in Frameworks */,
+				79996BE22A226782000E338A /* OrderedCollections in Frameworks */,
+				79996BE02A226782000E338A /* DequeModule in Frameworks */,
+				79996BDE2A226782000E338A /* Collections in Frameworks */,
 				791754C229D898DE007B8F6A /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,7 +265,11 @@
 				791754C329D89908007B8F6A /* Times */,
 				79711F2729CBAE49002EBA6F /* stationData.py */,
 				79BCE8B729D761CB00042F1F /* stationData.json */,
-				79BCE8AC29D6343A00042F1F /* Station.swift */,
+				79DF5E762A119981000E4132 /* TripsModel.swift */,
+				79BCE8AC29D6343A00042F1F /* StationModel.swift */,
+				79996BD62A20EF12000E338A /* tripStationData.json */,
+				79996BD82A20EF43000E338A /* TripStationDataModel.swift */,
+				79DF5E782A119BFF000E4132 /* stopTimes.json */,
 				79BCE8B029D6386900042F1F /* ModelData.swift */,
 				79BCE8AE29D636AE00042F1F /* stationDataDict.py */,
 				79A9CCD429E1F2C600D6240D /* Network.swift */,
@@ -276,6 +300,9 @@
 				795419AF29BED82A003FF58F /* TimeRow.swift */,
 				795419B329BED842003FF58F /* StationBox.swift */,
 				79BCE8B529D6538800042F1F /* LineLogo.swift */,
+				79DF5E742A11986B000E4132 /* TripStations.swift */,
+				79996BD42A20D2A6000E338A /* TripView.swift */,
+				79996BDA2A21142F000E338A /* TripStationView.swift */,
 			);
 			path = subviews;
 			sourceTree = "<group>";
@@ -331,6 +358,9 @@
 				791754BE29D898CA007B8F6A /* Python-iOS */,
 				791754C129D898DE007B8F6A /* PythonKit */,
 				79F7E78129DA58C6000006C4 /* WrappingHStack */,
+				79996BDD2A226782000E338A /* Collections */,
+				79996BDF2A226782000E338A /* DequeModule */,
+				79996BE12A226782000E338A /* OrderedCollections */,
 			);
 			productName = "real-stats";
 			productReference = 793EACC229944973002D7332 /* real-stats.app */;
@@ -389,6 +419,7 @@
 				791754BD29D898CA007B8F6A /* XCRemoteSwiftPackageReference "Python-iOS" */,
 				791754C029D898DE007B8F6A /* XCRemoteSwiftPackageReference "PythonKit" */,
 				79F7E78029DA58C6000006C4 /* XCRemoteSwiftPackageReference "WrappingHStack" */,
+				79996BDC2A226782000E338A /* XCRemoteSwiftPackageReference "swift-collections" */,
 			);
 			productRefGroup = 793EACC329944973002D7332 /* Products */;
 			projectDirPath = "";
@@ -405,12 +436,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79996BD72A20EF12000E338A /* tripStationData.json in Resources */,
 				79711F2829CBAE49002EBA6F /* stationData.py in Resources */,
 				79BCE8AF29D636AE00042F1F /* stationDataDict.py in Resources */,
 				795419B629BED87C003FF58F /* main.py in Resources */,
 				79711F2A29CBAE51002EBA6F /* key.py in Resources */,
 				79711F2429C91360002EBA6F /* ideal.json in Resources */,
 				793EACCE29944973002D7332 /* Preview Assets.xcassets in Resources */,
+				79DF5E792A119BFF000E4132 /* stopTimes.json in Resources */,
 				79BCE8B829D761CB00042F1F /* stationData.json in Resources */,
 				793EACCA29944973002D7332 /* Assets.xcassets in Resources */,
 			);
@@ -441,21 +474,26 @@
 				795419B029BED82A003FF58F /* TimeRow.swift in Sources */,
 				795419A929BED7E1003FF58F /* LineView.swift in Sources */,
 				791754BC29D89738007B8F6A /* TimeModel.swift in Sources */,
+				79996BD92A20EF43000E338A /* TripStationDataModel.swift in Sources */,
 				79A9CCD529E1F2C600D6240D /* Network.swift in Sources */,
 				795419A529BED7BB003FF58F /* Preferences.swift in Sources */,
+				79996BDB2A21142F000E338A /* TripStationView.swift in Sources */,
 				795419AE29BED81B003FF58F /* Delay.swift in Sources */,
+				79DF5E752A11986B000E4132 /* TripStations.swift in Sources */,
+				79DF5E772A119981000E4132 /* TripsModel.swift in Sources */,
 				79BCE8B429D6531B00042F1F /* extentions.swift in Sources */,
 				7975C46129DC758C00A4AA1E /* Location.swift in Sources */,
 				7975C45F29DB3B3100A4AA1E /* CoreDataManager.swift in Sources */,
 				793EACC629944973002D7332 /* real_statsApp.swift in Sources */,
 				794D71AC29DF3A11002A7C28 /* Widgets.intentdefinition in Sources */,
-				79BCE8AD29D6343A00042F1F /* Station.swift in Sources */,
+				79BCE8AD29D6343A00042F1F /* StationModel.swift in Sources */,
 				7973944C29D766F700D0DDDD /* ButtonStyles.swift in Sources */,
 				79F7E78429DA7D59000006C4 /* StationRow.swift in Sources */,
 				791754BA29D88185007B8F6A /* StationTimeRow.swift in Sources */,
 				7975C45D29DB3ACE00A4AA1E /* FavoritesModel.xcdatamodeld in Sources */,
 				795419A729BED7CF003FF58F /* StationView.swift in Sources */,
 				79BCE8B629D6538800042F1F /* LineLogo.swift in Sources */,
+				79996BD52A20D2A6000E338A /* TripView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,6 +818,14 @@
 				kind = branch;
 			};
 		};
+		79996BDC2A226782000E338A /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		79F7E78029DA58C6000006C4 /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dkk/WrappingHStack";
@@ -800,6 +846,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 791754C029D898DE007B8F6A /* XCRemoteSwiftPackageReference "PythonKit" */;
 			productName = PythonKit;
+		};
+		79996BDD2A226782000E338A /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79996BDC2A226782000E338A /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		79996BDF2A226782000E338A /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79996BDC2A226782000E338A /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		79996BE12A226782000E338A /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79996BDC2A226782000E338A /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
 		};
 		79C1AF4329DF3D950055DF31 /* WrappingHStack */ = {
 			isa = XCSwiftPackageProductDependency;

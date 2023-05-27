@@ -188,6 +188,11 @@ struct Home: View {
                         // MARK: - Favorites
                         
                         if search.isEmpty {
+//                            NavigationLink {
+//                                TripStations()
+//                            } label: {
+//                                Text("Trips")
+//                            }
                             HStack {
                                 Text("Favorites")
                                     .padding(.horizontal, 12)
