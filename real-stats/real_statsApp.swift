@@ -14,7 +14,7 @@ struct real_statsApp: App {
     
     var body: some Scene {
         WindowGroup {
-            TripStations()
+            Home()
                 .environment(\.managedObjectContext, persistentContainer.viewContext)
                 .environmentObject(locationViewModel)
         }

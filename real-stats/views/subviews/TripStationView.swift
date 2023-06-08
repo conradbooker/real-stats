@@ -22,23 +22,25 @@ extension Shape {
 
 func getLineColor(line: String) -> Color {
     if ["A","C","E"].contains(line) {
-        return .blue
+        return Color("blue")
     } else if ["N","Q","R","W"].contains(line) {
-        return .yellow
+        return Color("yellow")
     } else if ["B","D","F","M"].contains(line) {
-        return .orange
+        return Color("orange")
     } else if ["J","Z"].contains(line) {
-        return .brown
+        return Color("brown")
     } else if ["1","2","3"].contains(line) {
-        return .red
+        return Color("red")
     } else if ["4","5","6","6X"].contains(line) {
-        return .green
+        return Color("green")
     } else if ["7","7X"].contains(line) {
-        return .purple
+        return Color("purple")
     }else if ["G"].contains(line) {
-        return .green
-    } else if ["L","H","FS","S"].contains(line) {
-        return .gray
+        return Color("lime")
+    } else if ["H","FS","S"].contains(line) {
+        return Color("darkerGray")
+    } else if ["L"].contains(line) {
+        return Color("lighterGray")
     }
     else {
         return .black
@@ -56,38 +58,77 @@ struct LineShape: View {
                 VStack {
                     Spacer()
                     Rectangle()
-                        .frame(width: 10, height: 35)
+                        .frame(width: 16, height: 60)
                         .foregroundColor(getLineColor(line: line))
-                        .padding(.horizontal, 20)
                 }
             } else if index == lastIndex {
                 VStack {
                     Rectangle()
-                        .frame(width: 10, height: 35)
+                        .frame(width: 16, height: 5)
                         .foregroundColor(getLineColor(line: line))
-                        .padding(.horizontal, 20)
                     Spacer()
                 }
             } else {
                 Rectangle()
-                    .frame(width: 10, height: 70)
+                    .frame(width: 16, height: 70)
                     .foregroundColor(getLineColor(line: line))
-                    .padding(.horizontal, 20)
             }
-            if isTransfer {
-                Circle()
-                    .strokeBorder(.black,lineWidth: 1)
-                    .background(Circle().foregroundColor(.white).frame(width: 10, height: 10))
-                    .frame(width: 12, height: 12)
-            } else {
-                Circle()
-                    .strokeBorder(.white,lineWidth: 1)
-                    .background(Circle().foregroundColor(.black).frame(width: 10, height: 10))
-                    .frame(width: 12, height: 12)
+            VStack {
+                Group {
+                    if isTransfer {
+                        ZStack {
+                            Circle()
+                                .strokeBorder(.black,lineWidth: 1)
+                                .background(Circle().foregroundColor(.white).frame(width: 18, height: 18))
+                                .frame(width: 18, height: 18)
+                            Text(line)
+                                .font(.footnote)
+                                .foregroundColor(.black)
+                        }
+                        .frame(width: 18, height: 18)
+                    } else {
+                        ZStack {
+                            Circle()
+                                .foregroundColor(.black)
+                            Text(line)
+                                .font(.footnote)
+                                .foregroundColor(.white)
+                                
+                        }
+                        .frame(width: 18, height: 18)
+                    }
+                }
+                .padding(.vertical,1)
+                Spacer()
             }
+            .padding(.horizontal, 10)
         }
     }
 }
+
+struct FormattedTime: View {
+    var time: Int
+    var currentTime: Int = Int(Date().timeIntervalSince1970)
+    var body: some View {
+        if (time-currentTime)/60 > 1 {
+            Text("\(abs(time-currentTime)/60) mins")
+        } else if (time-currentTime)/60 < 1 && (time-currentTime)/60 > 0 {
+            Text("<1 min")
+        } else {
+            Text("Departed")
+        }
+    }
+}
+//func getLocation(time: Int) -> String {
+//    var currentTime: Int = Int(Date().timeIntervalSince1970)
+//    if (time-currentTime)/60 > 1 {
+//        return String("\(abs(time-currentTime)/60) mins")
+//    } else if (time-currentTime)/60 < 1 && (time-currentTime)/60 > 0 {
+//        return String("<1 min")
+//    } else {
+//        return String("departed")
+//    }
+//}
 
 struct TripStationView: View {
     var index: Int
@@ -98,22 +139,34 @@ struct TripStationView: View {
     var short2: String
     var isTransfer: Bool
     var transferLines: [String]
+    var time: Int
     var body: some View {
         HStack(spacing: 0) {
-            LineShape(isTransfer: isTransfer, line: line, index: index, lastIndex: Array((exampleTrips[trip]?.stations.keys)!).count - 1)
+            LineShape(isTransfer: isTransfer, line: line, index: index, lastIndex: Array((exampleTrips[trip]?.stations.keys) ?? [:].keys).count - 1)
             VStack(alignment: .leading, spacing: 0) {
                 Text(short1)
                     .font(.title3)
-                Text(short2)
+                if short2 != "" {
+                    Text(short2)
+                }
                 HStack(spacing: 2.5) {
                     ForEach(transferLines, id: \.self) { bullet in
-                        Image(bullet)
-                            .resizable()
-                            .frame(width: 20, height: 20)
+                        if bullet != exampleTrips[trip]?.line {
+                            Image(bullet)
+                                .resizable()
+                                .frame(width: 20, height: 20)
+                        }
                     }
                 }
+                Spacer()
             }
             Spacer()
+            VStack(alignment: .trailing, spacing: 0) {
+                FormattedTime(time: time)
+                    .font(.title3)
+                Text(Date(timeIntervalSince1970: TimeInterval(time)), style: .time)
+            }
+            .padding(.trailing)
         }
         .frame(height: 70)
     }
@@ -121,6 +174,7 @@ struct TripStationView: View {
 
 struct TripStationView_Previews: PreviewProvider {
     static var previews: some View {
-        TripStationView(index: 0, line: "B", trip: "066650_5..S16R", ADA: 0, short1: "59 St", short2: "Columbus Circle", isTransfer: true, transferLines: ["1","A","C","D"])
+        TripStationView(index: 0, line: "B", trip: "066650_5..S16R", ADA: 0, short1: "59 St", short2: "Columbus Circle", isTransfer: true, transferLines: ["1","A","C","D"], time: 1601020423)
+            .previewLayout(.fixed(width: 400, height: 70))
     }
 }

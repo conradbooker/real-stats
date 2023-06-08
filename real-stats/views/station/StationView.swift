@@ -8,6 +8,26 @@
 import SwiftUI
 import WrappingHStack
 
+func getSortedTimes(direction: [String: NewStationTime]?) -> [String] {
+    var arr = [String]()
+    for time in direction!.keys {
+        arr.append(time)
+    }
+    arr = arr.sorted()
+    return arr
+}
+
+//func getStationTimes(station: String) -> NewTimes {
+//
+//    var stationTimes: NewTimes = load("608.json")
+//
+//    apiCall().getStationTimes(station: complex.stations[chosenStation].GTFSID) { (times) in
+//        self.times = times
+//    }
+//
+//    return stationTimes
+//}
+
 struct StationView: View {
 //    @FetchRequest private var favoriteStations: FetchedResults<FavoriteStation>
     
@@ -26,7 +46,7 @@ struct StationView: View {
         return CGFloat((items*30)+15)
     }
     
-    @State var times: Time = defaultTimes.decodeJson(Time.self)
+    @State var times: NewTimes = load("608.json")
     
     @State var short1Size = CGSize()
     @State var short2Size = CGSize()
@@ -76,32 +96,32 @@ struct StationView: View {
                         // MARK: - No Wifi
                         
                         if hasNetwork() {
-                            Text("No Wifi: real-stats will use scheduled times in conjunction with not recent live GTFS times")
+                            Text("No Wifi: real-stats will downloaded data")
                                 .padding()
                         }
-                        
-                        // MARK: - North
+                                                
+                        // MARK: - North Times
                         Text(complex.stations[chosenStation].northDir)
                             .padding(.horizontal)
-                        ForEach(times.north, id: \.self) { line in
+                        ForEach(Array(times.north!.keys).sorted(), id: \.self) { line in
                             StationTimeRow(
-                                line: line.line,
-                                destination: stationKeys[String((line.times[0].destinationID).dropLast(1))] ?? line.times[0].destinationID,
-                                times: line.times,
-                                disruptions: .none
+                                line: line,
+                                direction: "N",
+                                trainTimes: times,
+                                times: getSortedTimes(direction: times.north![line]!!)
                             )
                             .padding(.horizontal,5)
                             .frame(height: 55)
                         }
-                        // MARK: - South
-                        Text(complex.stations[chosenStation].southDir)
+                        // MARK: - South Times
+                        Text("\n" + complex.stations[chosenStation].southDir)
                             .padding(.horizontal)
-                        ForEach(times.south, id: \.self) { line in
+                        ForEach(Array(times.south!.keys).sorted(), id: \.self) { line in
                             StationTimeRow(
-                                line: line.line,
-                                destination: stationKeys[String((line.times[0].destinationID).dropLast(1))] ?? line.times[0].destinationID,
-                                times: line.times,
-                                disruptions: .none
+                                line: line,
+                                direction: "S",
+                                trainTimes: times,
+                                times: getSortedTimes(direction: times.south![line]!!)
                             )
                             .padding(.horizontal,5)
                             .frame(height: 55)
@@ -122,7 +142,9 @@ struct StationView: View {
                             .frame(width: 34, height: 4.5)
                             .padding(.top, 6)
                             .onAppear {
-                                times = getTimes(station: complex.stations[chosenStation])
+                                apiCall().getStationTimes(station: complex.stations[chosenStation].GTFSID) { (times) in
+                                    self.times = times
+                                }
                             }
                         HStack {
                             VStack(alignment: .leading) {
@@ -187,7 +209,14 @@ struct StationView: View {
                         WrappingHStack(0..<complex.stations.count, id: \.self,spacing: .constant(0)) { index in
                             Button {
                                 chosenStation = index
-                                times = getTimes(station: complex.stations[chosenStation])
+                                withAnimation(.spring()) {
+                                    apiCall().getStationTimes(station: complex.stations[chosenStation].GTFSID) { (times) in
+                                        self.times = times
+                                    }
+                                }
+                                print("0000")
+                                print(times)
+                                print("0000\n")
                                 if isFavorited {
                                     for favoriteStation in favoriteStations {
                                         if favoriteStation.complexID == complex.id {
@@ -214,7 +243,7 @@ struct StationView: View {
                                                 .overlay(
                                                     RoundedRectangle(cornerRadius: 13)
                                                         .stroke(.blue,lineWidth: 2)
-                                                        .frame(width: getWidth(complex.stations[index].weekdayLines.count) + 6, height: 46)
+                                                        .frame(width: getWidth(complex.stations[index].weekdayLines.count) + 8, height: 48)
                                                 )
                                                 .shadow(radius: 2)
                                         } else {
@@ -225,7 +254,7 @@ struct StationView: View {
                                                 .overlay(
                                                     RoundedRectangle(cornerRadius: 12)
                                                         .stroke(Color("cDarkGray"),lineWidth: 2)
-                                                        .frame(width: getWidth(complex.stations[index].weekdayLines.count) + 6, height: 46)
+                                                        .frame(width: getWidth(complex.stations[index].weekdayLines.count) + 8, height: 48)
                                                 )
 
                                         }

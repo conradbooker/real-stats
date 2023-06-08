@@ -7,6 +7,16 @@
 
 import Foundation
 
+struct NewTimes: Hashable, Codable {
+    var north: [String: [String: NewStationTime]?]?
+    var south: [String: [String: NewStationTime]?]?
+}
+
+struct NewStationTime: Hashable, Codable {
+    var tripID: String
+    var destination: String
+}
+
 struct Time: Hashable, Codable {
     var north: [Times]
     var south: [Times]

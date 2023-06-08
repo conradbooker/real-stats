@@ -33,6 +33,7 @@
 		795419B029BED82A003FF58F /* TimeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795419AF29BED82A003FF58F /* TimeRow.swift */; };
 		795419B429BED842003FF58F /* StationBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795419B329BED842003FF58F /* StationBox.swift */; };
 		795419B629BED87C003FF58F /* main.py in Resources */ = {isa = PBXBuildFile; fileRef = 795419B529BED87C003FF58F /* main.py */; };
+		79670B3A2A23F94A00AEA0FF /* 608.json in Resources */ = {isa = PBXBuildFile; fileRef = 79670B392A23F94A00AEA0FF /* 608.json */; };
 		79711F2229C9055E002EBA6F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79711F2129C9055E002EBA6F /* Home.swift */; };
 		79711F2429C91360002EBA6F /* ideal.json in Resources */ = {isa = PBXBuildFile; fileRef = 79711F2329C91360002EBA6F /* ideal.json */; };
 		79711F2829CBAE49002EBA6F /* stationData.py in Resources */ = {isa = PBXBuildFile; fileRef = 79711F2729CBAE49002EBA6F /* stationData.py */; };
@@ -46,9 +47,6 @@
 		79996BD72A20EF12000E338A /* tripStationData.json in Resources */ = {isa = PBXBuildFile; fileRef = 79996BD62A20EF12000E338A /* tripStationData.json */; };
 		79996BD92A20EF43000E338A /* TripStationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79996BD82A20EF43000E338A /* TripStationDataModel.swift */; };
 		79996BDB2A21142F000E338A /* TripStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79996BDA2A21142F000E338A /* TripStationView.swift */; };
-		79996BDE2A226782000E338A /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 79996BDD2A226782000E338A /* Collections */; };
-		79996BE02A226782000E338A /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 79996BDF2A226782000E338A /* DequeModule */; };
-		79996BE22A226782000E338A /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 79996BE12A226782000E338A /* OrderedCollections */; };
 		79A9CCD529E1F2C600D6240D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A9CCD429E1F2C600D6240D /* Network.swift */; };
 		79BCE8AD29D6343A00042F1F /* StationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCE8AC29D6343A00042F1F /* StationModel.swift */; };
 		79BCE8AF29D636AE00042F1F /* stationDataDict.py in Resources */ = {isa = PBXBuildFile; fileRef = 79BCE8AE29D636AE00042F1F /* stationDataDict.py */; };
@@ -116,6 +114,7 @@
 		795419AF29BED82A003FF58F /* TimeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRow.swift; sourceTree = "<group>"; };
 		795419B329BED842003FF58F /* StationBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationBox.swift; sourceTree = "<group>"; };
 		795419B529BED87C003FF58F /* main.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
+		79670B392A23F94A00AEA0FF /* 608.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 608.json; sourceTree = "<group>"; };
 		79711F2129C9055E002EBA6F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		79711F2329C91360002EBA6F /* ideal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ideal.json; sourceTree = "<group>"; };
 		79711F2729CBAE49002EBA6F /* stationData.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = stationData.py; sourceTree = "<group>"; };
@@ -152,9 +151,6 @@
 			files = (
 				791754BF29D898CA007B8F6A /* Python-iOS in Frameworks */,
 				79F7E78229DA58C6000006C4 /* WrappingHStack in Frameworks */,
-				79996BE22A226782000E338A /* OrderedCollections in Frameworks */,
-				79996BE02A226782000E338A /* DequeModule in Frameworks */,
-				79996BDE2A226782000E338A /* Collections in Frameworks */,
 				791754C229D898DE007B8F6A /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +261,7 @@
 				791754C329D89908007B8F6A /* Times */,
 				79711F2729CBAE49002EBA6F /* stationData.py */,
 				79BCE8B729D761CB00042F1F /* stationData.json */,
+				79670B392A23F94A00AEA0FF /* 608.json */,
 				79DF5E762A119981000E4132 /* TripsModel.swift */,
 				79BCE8AC29D6343A00042F1F /* StationModel.swift */,
 				79996BD62A20EF12000E338A /* tripStationData.json */,
@@ -358,9 +355,6 @@
 				791754BE29D898CA007B8F6A /* Python-iOS */,
 				791754C129D898DE007B8F6A /* PythonKit */,
 				79F7E78129DA58C6000006C4 /* WrappingHStack */,
-				79996BDD2A226782000E338A /* Collections */,
-				79996BDF2A226782000E338A /* DequeModule */,
-				79996BE12A226782000E338A /* OrderedCollections */,
 			);
 			productName = "real-stats";
 			productReference = 793EACC229944973002D7332 /* real-stats.app */;
@@ -419,7 +413,6 @@
 				791754BD29D898CA007B8F6A /* XCRemoteSwiftPackageReference "Python-iOS" */,
 				791754C029D898DE007B8F6A /* XCRemoteSwiftPackageReference "PythonKit" */,
 				79F7E78029DA58C6000006C4 /* XCRemoteSwiftPackageReference "WrappingHStack" */,
-				79996BDC2A226782000E338A /* XCRemoteSwiftPackageReference "swift-collections" */,
 			);
 			productRefGroup = 793EACC329944973002D7332 /* Products */;
 			projectDirPath = "";
@@ -444,6 +437,7 @@
 				79711F2429C91360002EBA6F /* ideal.json in Resources */,
 				793EACCE29944973002D7332 /* Preview Assets.xcassets in Resources */,
 				79DF5E792A119BFF000E4132 /* stopTimes.json in Resources */,
+				79670B3A2A23F94A00AEA0FF /* 608.json in Resources */,
 				79BCE8B829D761CB00042F1F /* stationData.json in Resources */,
 				793EACCA29944973002D7332 /* Assets.xcassets in Resources */,
 			);
@@ -569,7 +563,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -622,7 +616,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -637,14 +631,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "real-stats/real_stats.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"real-stats/Preview Content\"";
-				DEVELOPMENT_TEAM = MDGWGM9GSG;
-				ENABLE_HARDENED_RUNTIME = YES;
+				DEVELOPMENT_TEAM = UC94976V75;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "real-stats/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Real Stats will use location to look for nearby stations. Real Stats does not collect any user data.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -655,15 +651,18 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Schematica.real-stats";
+				PRODUCT_BUNDLE_IDENTIFIER = "Lisa-Booker.real-stats";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -680,11 +679,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"real-stats/Preview Content\"";
-				DEVELOPMENT_TEAM = MDGWGM9GSG;
-				ENABLE_HARDENED_RUNTIME = YES;
+				DEVELOPMENT_TEAM = UC94976V75;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "real-stats/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Real Stats will use location to look for nearby stations. Real Stats does not collect any user data.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -695,15 +695,17 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Schematica.real-stats";
+				PRODUCT_BUNDLE_IDENTIFIER = "Lisa-Booker.real-stats";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -717,7 +719,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MDGWGM9GSG;
+				DEVELOPMENT_TEAM = UC94976V75;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Widgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
@@ -729,7 +731,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Schematica.real-stats.Widgets";
+				PRODUCT_BUNDLE_IDENTIFIER = "Lisa-Booker.real-stats.Widgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -746,7 +748,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MDGWGM9GSG;
+				DEVELOPMENT_TEAM = UC94976V75;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Widgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
@@ -758,7 +760,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Schematica.real-stats.Widgets";
+				PRODUCT_BUNDLE_IDENTIFIER = "Lisa-Booker.real-stats.Widgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -818,14 +820,6 @@
 				kind = branch;
 			};
 		};
-		79996BDC2A226782000E338A /* XCRemoteSwiftPackageReference "swift-collections" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-collections.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 		79F7E78029DA58C6000006C4 /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dkk/WrappingHStack";
@@ -846,21 +840,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 791754C029D898DE007B8F6A /* XCRemoteSwiftPackageReference "PythonKit" */;
 			productName = PythonKit;
-		};
-		79996BDD2A226782000E338A /* Collections */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 79996BDC2A226782000E338A /* XCRemoteSwiftPackageReference "swift-collections" */;
-			productName = Collections;
-		};
-		79996BDF2A226782000E338A /* DequeModule */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 79996BDC2A226782000E338A /* XCRemoteSwiftPackageReference "swift-collections" */;
-			productName = DequeModule;
-		};
-		79996BE12A226782000E338A /* OrderedCollections */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 79996BDC2A226782000E338A /* XCRemoteSwiftPackageReference "swift-collections" */;
-			productName = OrderedCollections;
 		};
 		79C1AF4329DF3D950055DF31 /* WrappingHStack */ = {
 			isa = XCSwiftPackageProductDependency;

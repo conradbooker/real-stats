@@ -8,7 +8,17 @@
 import SwiftUI
 
 var exampleTrips: [String: Trip] = load("stopTimes.json")
-var TripStationsDict: [String: TripStationEntry] = load("tripStationData.json") // do the ordered dict stuff here
+var stationsDict: [String: TripStationEntry] = load("tripStationData.json")
+
+func getTripStationKeys(stations: [String: TripStation]) -> [String] {
+    var arr = [String]()
+    let sortedStations = stations.sorted { $0.value.scheduledTime < $1.value.scheduledTime }
+    for station in sortedStations {
+        arr.append(station.key)
+    }
+    return arr
+}
+
 
 struct TripStations: View {
     var body: some View {

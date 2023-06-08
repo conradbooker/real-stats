@@ -17,6 +17,8 @@ struct Item: Identifiable {
     let complex: Complex
 }
 
+//var exampleStationTimes: NewTimes = load("608.json")
+
 struct Home: View {
     
     @Environment(\.managedObjectContext) private var viewContext
@@ -165,7 +167,7 @@ struct Home: View {
                     }
                     .padding(12.0)
                     
-                    ScrollView {
+                    ScrollView {                        
                         VStack(spacing: 0) {
                             ForEach(searchStations, id: \.self) { station in
                                 Button {
@@ -188,11 +190,6 @@ struct Home: View {
                         // MARK: - Favorites
                         
                         if search.isEmpty {
-//                            NavigationLink {
-//                                TripStations()
-//                            } label: {
-//                                Text("Trips")
-//                            }
                             HStack {
                                 Text("Favorites")
                                     .padding(.horizontal, 12)
@@ -231,14 +228,14 @@ struct Home: View {
                                     .padding(.bottom, -4)
                                 Spacer()
                             }
-                            Text("location: \(coordinate?.latitude ?? 0)")
-                            Text("location: \(coordinate?.longitude ?? 0)")
+//                            Text("location: \(coordinate?.latitude ?? 0)")
+//                            Text("location: \(coordinate?.longitude ?? 0)")
                             switch locationViewModel.authorizationStatus {
                             case .notDetermined:
                                 Text("request permission")
                                     .onAppear { locationViewModel.requestPermission() }
                             case .denied:
-                                Text("location not shared, go to settings to enable it")
+                                Text("Location is not shared, please go to Settings to enable it.")
                             case .authorizedAlways, .authorizedWhenInUse:
                                 ScrollView(.horizontal, showsIndicators: false) {
                                     HStack {

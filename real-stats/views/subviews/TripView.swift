@@ -20,16 +20,17 @@ struct TripView: View {
         NavigationView {
             ScrollView {
                 VStack(spacing: 0) {
-                    ForEach(Array((exampleTrips[trip]?.stations.keys)!), id: \.self) { station in
+                    ForEach(getTripStationKeys(stations: exampleTrips[trip]?.stations ?? [:]), id: \.self) { station in
                         TripStationView(
                             index: exampleTrips[trip]?.stations[station]?.id ?? 0,
                             line: exampleTrips[trip]?.line ?? "",
                             trip: trip,
                             ADA: 0,
-                            short1: TripStationsDict[station]?.short1 ?? "",
-                            short2: TripStationsDict[station]?.short2 ?? "",
-                            isTransfer: TripStationsDict[station]?.isTransfer ?? false,
-                            transferLines: TripStationsDict[station]?.weekdayLines ?? [""]
+                            short1: stationsDict[station]?.short1 ?? "",
+                            short2: stationsDict[station]?.short2 ?? "",
+                            isTransfer: stationsDict[station]?.isTransfer ?? false,
+                            transferLines: stationsDict[station]?.weekdayLines ?? [""],
+                            time: exampleTrips[trip]?.stations[station]?.times[0] ?? 0
                         )
                     }
                 }

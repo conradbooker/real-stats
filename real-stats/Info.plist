@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Real Stats will use location to look for nearby stations. Real Stats does not collect any user data.</string>
 	<key>NSServices</key>
 	<array>
 		<dict>
