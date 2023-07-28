@@ -8,5 +8,5 @@
 import Foundation
 
 func getApiKey() -> String {
-    return ""
+    return "hello"
 }
