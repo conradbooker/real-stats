@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "bottomsheet",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lucaszischka/BottomSheet",
+      "state" : {
+        "revision" : "4c9ef84552712e0117c37d4893270fdc28fb9288",
+        "version" : "3.1.0"
+      }
+    },
+    {
+      "identity" : "scrollableimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gtokman/ScrollableImage",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3097bdaa48d1cc50f9e3d91e4a412d356085941c"
+      }
+    },
+    {
+      "identity" : "wrappinghstack",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dkk/WrappingHStack",
+      "state" : {
+        "revision" : "44987fbb01112e6ec72098dc6481187dd53ad4d2",
+        "version" : "2.2.9"
+      }
+    }
+  ],
+  "version" : 2
+}

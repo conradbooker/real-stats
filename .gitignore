@@ -1,3 +1,5 @@
 
 real-stats/gtfs/key.py
 real-stats/gtfs/__pycache__
+*.swift
+real-stats/data/apikey.swift

@@ -98,62 +98,23 @@ struct SimpleEntry: TimelineEntry {
 
 struct WidgetsEntryView: View {
     var entry: Provider.Entry
-    @State var widgetStyle: WidgetType = .small
-    var times = [WidgetTime(line: "A", time: "1"),WidgetTime(line: "C", time: "3"),WidgetTime(line: "E", time: "7"),WidgetTime(line: "F", time: "2")]
+//    @State var widgetStyle: WidgetType = .small
+//    var times = [WidgetTime(line: "A", time: "1"),WidgetTime(line: "C", time: "3"),WidgetTime(line: "E", time: "7"),WidgetTime(line: "F", time: "2")]
     
     var body: some View {
-        switch widgetStyle {
-        case .small:
-            VStack(alignment: .leading,spacing: 0) {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 10)
-                        .frame(height: 20)
-                        .foregroundColor(Color("cLessDarkGray"))
-                        .shadow(radius: 2)
-                    Text("stationName")
-                }
-                .padding([.top, .leading, .trailing], 6.0)
-                Text("direction1")
-                    .font(.caption)
-                    .padding(.leading, 6)
-                
-                WrappingHStack(times, id: \.self, alignment: .leading,spacing: .constant(2)) { time in
-                    Button {
-                        
-                    } label: {
-                        WidgetSmallTime(line: time.line, time: time.time)
-                            .padding(.top,2)
-                    }
-                    .buttonStyle(CButton())
-                }
-                .padding(.leading, 6)
-                                
-                Text("direction2")
-                    .font(.caption)
-                    .padding(.leading, 6)
-                
-                WrappingHStack(times, id: \.self, alignment: .leading,spacing: .constant(2)) { time in
-                    Button {
-                        
-                    } label: {
-                        WidgetSmallTime(line: time.line, time: time.time)
-                            .padding(.top,2)
-                    }
-                    .buttonStyle(CButton())
-                        .padding(.top,2)
-                }
-                .padding(.leading, 6)
-
-                
-                Spacer()
-            }
-        case .medium:
+        if #available(iOSApplicationExtension 17.0, *) {
             VStack {
-                
+//                Button {
+//                    print("hi")
+//                } label: {
+//                    Text("Hiii")
+//                }
+                Text("Hello !")
             }
-        case .large:
+            .containerBackground(.background, for: .widget)
+        } else {
             VStack {
-                
+                Text("Hello!")
             }
         }
     }

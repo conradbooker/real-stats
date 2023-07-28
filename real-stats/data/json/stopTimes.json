@@ -1,0 +1,4481 @@
+{
+   "052900_W..S": {
+      "direction": "S",
+      "destination": "N10",
+      "currentStation": "R32",
+      "timeToCurrent": 54,
+      "timeFromPrevious": 10,
+      "line": "W",
+      "delay": 100,
+      "serviceDisruptions": {
+         "reroutes": [
+             {
+                "reroutedFrom": "R31",
+                "reroutedTo": "N10",
+                "via": "N",
+                "sudden": false
+             },
+             {
+                "reroutedFrom": "501",
+                "reroutedTo": "F01",
+                "via": "A",
+                "sudden": false
+             }
+         ],
+         "extended": [],
+         "localStations": [
+            "R32",
+            "R33",
+            "R34",
+            "R35",
+            "R39",
+            "R40"
+         ],
+         "skippedStations": [
+            "R40"
+         ],
+         "suspended": [
+            [
+               "N10",
+               "D43"
+            ]
+         ]
+      },
+      "stations": {
+         "R31": {
+            "id": 0,
+            "times": [
+               1686318482
+            ],
+            "scheduledTime": 1686318422,
+            "scheduleAdherence": 0,
+            "isCompleted": true,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": false
+         },
+         "R32": {
+            "id": 1,
+            "times": [
+               1686318547,
+               1686318535,
+               1686318523,
+               1686318511,
+               1686318499,
+               1686318499,
+               1686318487
+            ],
+            "scheduledTime": 1686318487,
+            "scheduleAdherence": 60,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": false
+         },
+         "R33": {
+            "id": 2,
+            "times": [
+               1686318667,
+               1686318655,
+               1686318643,
+               1686318631,
+               1686318619,
+               1686318619,
+               1686318607
+            ],
+            "scheduledTime": 1686318607,
+            "scheduleAdherence": 60,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": false
+         },
+         "R34": {
+            "id": 3,
+            "times": [
+               1686318757,
+               1686318745,
+               1686318733,
+               1686318721,
+               1686318709,
+               1686318709,
+               1686318697
+            ],
+            "scheduledTime": 1686318697,
+            "scheduleAdherence": 60,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": false
+         },
+         "R35": {
+            "id": 4,
+            "times": [
+               1686318847,
+               1686318835,
+               1686318823,
+               1686318811,
+               1686318799,
+               1686318799,
+               1686318787
+            ],
+            "scheduledTime": 1686318787,
+            "scheduleAdherence": 60,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": false
+         },
+         "R36": {
+            "id": 5,
+            "times": [
+               1686318967,
+               1686318955,
+               1686318943,
+               1686318931,
+               1686318919,
+               1686318919,
+               1686318907
+            ],
+            "scheduledTime": 1686318907,
+            "scheduleAdherence": 60,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": false
+         },
+         "R39": {
+            "id": 6,
+            "times": [
+               1686319117,
+               1686319105,
+               1686319093,
+               1686319081,
+               1686319069,
+               1686319069,
+               1686319057
+            ],
+            "scheduledTime": 1686319057,
+            "scheduleAdherence": 60,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": false
+         },
+         "R40": {
+            "id": 7,
+            "times": [
+               1686319237,
+               1686319225,
+               1686319213,
+               1686319201,
+               1686319189,
+               1686319189,
+               1686319177
+            ],
+            "scheduledTime": 1686319177,
+            "scheduleAdherence": 60,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": false
+         },
+         "R41": {
+            "id": 8,
+            "times": [
+               1686319327,
+               1686319315,
+               1686319303,
+               1686319291,
+               1686319279,
+               1686319279,
+               1686319267
+            ],
+            "scheduledTime": 1686319267,
+            "scheduleAdherence": 60,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": false
+         },
+         "N02": {
+            "id": 9,
+            "times": [
+               1686319507,
+               1686319495,
+               1686319483,
+               1686319471,
+               1686319459,
+               1686319459,
+               1686319447
+            ],
+            "scheduledTime": 1686319447,
+            "scheduleAdherence": 60,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": false
+         },
+         "N03": {
+            "id": 10,
+            "times": [
+               1686319597,
+               1686319585,
+               1686319573,
+               1686319561,
+               1686319549,
+               1686319549,
+               1686319537
+            ],
+            "scheduledTime": 1686319537,
+            "scheduleAdherence": 60,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": false
+         },
+         "N04": {
+            "id": 11,
+            "times": [
+               1686319717,
+               1686319705,
+               1686319693,
+               1686319681,
+               1686319669,
+               1686319669,
+               1686319657
+            ],
+            "scheduledTime": 1686319657,
+            "scheduleAdherence": 60,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": false
+         },
+         "N05": {
+            "id": 12,
+            "times": [
+               1686319807,
+               1686319795,
+               1686319783,
+               1686319771,
+               1686319759,
+               1686319759,
+               1686319747
+            ],
+            "scheduledTime": 1686319747,
+            "scheduleAdherence": 60,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": false
+         },
+         "N06": {
+            "id": 13,
+            "times": [
+               1686319897,
+               1686319885,
+               1686319873,
+               1686319861,
+               1686319849,
+               1686319849,
+               1686319837
+            ],
+            "scheduledTime": 1686319837,
+            "scheduleAdherence": 60,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": false
+         },
+         "N07": {
+            "id": 14,
+            "times": [
+               1686319987,
+               1686319975,
+               1686319963,
+               1686319951,
+               1686319939,
+               1686319939,
+               1686319927
+            ],
+            "scheduledTime": 1686319927,
+            "scheduleAdherence": 60,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": false
+         },
+         "N08": {
+            "id": 15,
+            "times": [
+               1686320107,
+               1686320095,
+               1686320083,
+               1686320071,
+               1686320059,
+               1686320059,
+               1686320047
+            ],
+            "scheduledTime": 1686320047,
+            "scheduleAdherence": 60,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": false
+         },
+         "N09": {
+            "id": 16,
+            "times": [
+               1686320227,
+               1686320215,
+               1686320203,
+               1686320191,
+               1686320179,
+               1686320179,
+               1686320167
+            ],
+            "scheduledTime": 1686320167,
+            "scheduleAdherence": 60,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": false
+         },
+         "N10": {
+            "id": 17,
+            "times": [
+               1686320287,
+               1686320275,
+               1686320263,
+               1686320251,
+               1686320239,
+               1686320239,
+               1686320227
+            ],
+            "scheduledTime": 1686320227,
+            "scheduleAdherence": 60,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": false
+         }
+      }
+   },
+   "117200_W..S": {
+      "direction": "S",
+      "destination": "R27",
+      "currentStation": "R24",
+      "timeToCurrent": 44,
+      "timeFromPrevious": 21,
+      "line": "W",
+      "delay": 0,
+      "serviceDisruptions": {
+         "reroutes": [],
+         "extended": [],
+         "localStations": [],
+         "skippedStations": [],
+         "suspended": []
+      },
+      "stations": {
+         "R23": {
+            "id": 0,
+            "times": [
+               1686355838
+            ],
+            "scheduledTime": 1686355838,
+            "scheduleAdherence": 0,
+            "isCompleted": true,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R24": {
+            "id": 1,
+            "times": [
+               1686355904
+            ],
+            "scheduledTime": 1686355904,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R25": {
+            "id": 2,
+            "times": [
+               1686356024
+            ],
+            "scheduledTime": 1686356024,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R26": {
+            "id": 3,
+            "times": [
+               1686356114
+            ],
+            "scheduledTime": 1686356114,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R27": {
+            "id": 4,
+            "times": [
+               1686356234
+            ],
+            "scheduledTime": 1686356234,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         }
+      }
+   },
+   "116803_W..N": {
+      "direction": "N",
+      "destination": "R01",
+      "currentStation": "R01",
+      "timeToCurrent": 43,
+      "timeFromPrevious": 21,
+      "line": "W",
+      "delay": 0,
+      "serviceDisruptions": {
+         "reroutes": [],
+         "extended": [],
+         "localStations": [],
+         "skippedStations": [],
+         "suspended": []
+      },
+      "stations": {
+         "R03": {
+            "id": 0,
+            "times": [
+               1686355838
+            ],
+            "scheduledTime": 1686355838,
+            "scheduleAdherence": 0,
+            "isCompleted": true,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R01": {
+            "id": 1,
+            "times": [
+               1686355903
+            ],
+            "scheduledTime": 1686355903,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         }
+      }
+   },
+   "118050_W..S": {
+      "direction": "S",
+      "destination": "R27",
+      "currentStation": "R22",
+      "timeToCurrent": 104,
+      "timeFromPrevious": 21,
+      "line": "W",
+      "delay": 0,
+      "serviceDisruptions": {
+         "reroutes": [],
+         "extended": [],
+         "localStations": [],
+         "skippedStations": [],
+         "suspended": []
+      },
+      "stations": {
+         "R21": {
+            "id": 0,
+            "times": [
+               1686355838
+            ],
+            "scheduledTime": 1686355838,
+            "scheduleAdherence": 0,
+            "isCompleted": true,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R22": {
+            "id": 1,
+            "times": [
+               1686355964
+            ],
+            "scheduledTime": 1686355964,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R23": {
+            "id": 2,
+            "times": [
+               1686356084
+            ],
+            "scheduledTime": 1686356084,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R24": {
+            "id": 3,
+            "times": [
+               1686356264
+            ],
+            "scheduledTime": 1686356264,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R25": {
+            "id": 4,
+            "times": [
+               1686356384
+            ],
+            "scheduledTime": 1686356384,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R26": {
+            "id": 5,
+            "times": [
+               1686356474
+            ],
+            "scheduledTime": 1686356474,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R27": {
+            "id": 6,
+            "times": [
+               1686356594
+            ],
+            "scheduledTime": 1686356594,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         }
+      }
+   },
+   "117690_W..N": {
+      "direction": "N",
+      "destination": "R01",
+      "currentStation": "R06",
+      "timeToCurrent": 43,
+      "timeFromPrevious": 21,
+      "line": "W",
+      "delay": 0,
+      "serviceDisruptions": {
+         "reroutes": [],
+         "extended": [],
+         "localStations": [],
+         "skippedStations": [],
+         "suspended": []
+      },
+      "stations": {
+         "R08": {
+            "id": 0,
+            "times": [
+               1686355838
+            ],
+            "scheduledTime": 1686355838,
+            "scheduleAdherence": 0,
+            "isCompleted": true,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R06": {
+            "id": 1,
+            "times": [
+               1686355903
+            ],
+            "scheduledTime": 1686355903,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R05": {
+            "id": 2,
+            "times": [
+               1686355993
+            ],
+            "scheduledTime": 1686355993,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R04": {
+            "id": 3,
+            "times": [
+               1686356113
+            ],
+            "scheduledTime": 1686356113,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R03": {
+            "id": 4,
+            "times": [
+               1686356173
+            ],
+            "scheduledTime": 1686356173,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R01": {
+            "id": 5,
+            "times": [
+               1686356293
+            ],
+            "scheduledTime": 1686356293,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         }
+      }
+   },
+   "119000_W..S": {
+      "direction": "S",
+      "destination": "R27",
+      "currentStation": "R17",
+      "timeToCurrent": 78,
+      "timeFromPrevious": 21,
+      "line": "W",
+      "delay": 0,
+      "serviceDisruptions": {
+         "reroutes": [],
+         "extended": [],
+         "localStations": [],
+         "skippedStations": [],
+         "suspended": []
+      },
+      "stations": {
+         "R16": {
+            "id": 0,
+            "times": [
+               1686355838
+            ],
+            "scheduledTime": 1686355838,
+            "scheduleAdherence": 0,
+            "isCompleted": true,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R17": {
+            "id": 1,
+            "times": [
+               1686355938
+            ],
+            "scheduledTime": 1686355938,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R18": {
+            "id": 2,
+            "times": [
+               1686355998
+            ],
+            "scheduledTime": 1686355998,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R19": {
+            "id": 3,
+            "times": [
+               1686356088
+            ],
+            "scheduledTime": 1686356088,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R20": {
+            "id": 4,
+            "times": [
+               1686356178
+            ],
+            "scheduledTime": 1686356178,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R21": {
+            "id": 5,
+            "times": [
+               1686356268
+            ],
+            "scheduledTime": 1686356268,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R22": {
+            "id": 6,
+            "times": [
+               1686356418
+            ],
+            "scheduledTime": 1686356418,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R23": {
+            "id": 7,
+            "times": [
+               1686356538
+            ],
+            "scheduledTime": 1686356538,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R24": {
+            "id": 8,
+            "times": [
+               1686356718
+            ],
+            "scheduledTime": 1686356718,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R25": {
+            "id": 9,
+            "times": [
+               1686356838
+            ],
+            "scheduledTime": 1686356838,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R26": {
+            "id": 10,
+            "times": [
+               1686356928
+            ],
+            "scheduledTime": 1686356928,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R27": {
+            "id": 11,
+            "times": [
+               1686357048
+            ],
+            "scheduledTime": 1686357048,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         }
+      }
+   },
+   "119250_W..N": {
+      "direction": "N",
+      "destination": "R01",
+      "currentStation": "R14",
+      "timeToCurrent": 89,
+      "timeFromPrevious": 21,
+      "line": "W",
+      "delay": 0,
+      "serviceDisruptions": {
+         "reroutes": [],
+         "extended": [],
+         "localStations": [],
+         "skippedStations": [],
+         "suspended": []
+      },
+      "stations": {
+         "R16": {
+            "id": 0,
+            "times": [
+               1686355838
+            ],
+            "scheduledTime": 1686355838,
+            "scheduleAdherence": 0,
+            "isCompleted": true,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R15": {
+            "id": 1,
+            "times": [
+               1686355838
+            ],
+            "scheduledTime": 1686355838,
+            "scheduleAdherence": 0,
+            "isCompleted": true,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R14": {
+            "id": 2,
+            "times": [
+               1686355949
+            ],
+            "scheduledTime": 1686355949,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R13": {
+            "id": 3,
+            "times": [
+               1686356099
+            ],
+            "scheduledTime": 1686356099,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R11": {
+            "id": 4,
+            "times": [
+               1686356189
+            ],
+            "scheduledTime": 1686356189,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R09": {
+            "id": 6,
+            "times": [
+               1686356459
+            ],
+            "scheduledTime": 1686356459,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R08": {
+            "id": 7,
+            "times": [
+               1686356609
+            ],
+            "scheduledTime": 1686356609,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R06": {
+            "id": 8,
+            "times": [
+               1686356699
+            ],
+            "scheduledTime": 1686356699,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R05": {
+            "id": 9,
+            "times": [
+               1686356789
+            ],
+            "scheduledTime": 1686356789,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R04": {
+            "id": 10,
+            "times": [
+               1686356909
+            ],
+            "scheduledTime": 1686356909,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R03": {
+            "id": 11,
+            "times": [
+               1686356969
+            ],
+            "scheduledTime": 1686356969,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R01": {
+            "id": 12,
+            "times": [
+               1686357089
+            ],
+            "scheduledTime": 1686357089,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         }
+      }
+   },
+   "120700_W..S": {
+      "direction": "S",
+      "destination": "R27",
+      "currentStation": "R06",
+      "timeToCurrent": 94,
+      "timeFromPrevious": 21,
+      "line": "W",
+      "delay": 0,
+      "serviceDisruptions": {
+         "reroutes": [],
+         "extended": [],
+         "localStations": [],
+         "skippedStations": [],
+         "suspended": []
+      },
+      "stations": {
+         "R04": {
+            "id": 0,
+            "times": [
+               1686355838
+            ],
+            "scheduledTime": 1686355838,
+            "scheduleAdherence": 0,
+            "isCompleted": true,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R05": {
+            "id": 1,
+            "times": [
+               1686355838
+            ],
+            "scheduledTime": 1686355838,
+            "scheduleAdherence": 0,
+            "isCompleted": true,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R06": {
+            "id": 2,
+            "times": [
+               1686355954
+            ],
+            "scheduledTime": 1686355954,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R08": {
+            "id": 3,
+            "times": [
+               1686356014
+            ],
+            "scheduledTime": 1686356014,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R09": {
+            "id": 4,
+            "times": [
+               1686356164
+            ],
+            "scheduledTime": 1686356164,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R11": {
+            "id": 6,
+            "times": [
+               1686356464
+            ],
+            "scheduledTime": 1686356464,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R13": {
+            "id": 7,
+            "times": [
+               1686356554
+            ],
+            "scheduledTime": 1686356554,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R14": {
+            "id": 8,
+            "times": [
+               1686356704
+            ],
+            "scheduledTime": 1686356704,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R15": {
+            "id": 9,
+            "times": [
+               1686356824
+            ],
+            "scheduledTime": 1686356824,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R16": {
+            "id": 10,
+            "times": [
+               1686356914
+            ],
+            "scheduledTime": 1686356914,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R17": {
+            "id": 11,
+            "times": [
+               1686357034
+            ],
+            "scheduledTime": 1686357034,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R18": {
+            "id": 12,
+            "times": [
+               1686357094
+            ],
+            "scheduledTime": 1686357094,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R19": {
+            "id": 13,
+            "times": [
+               1686357184
+            ],
+            "scheduledTime": 1686357184,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R20": {
+            "id": 14,
+            "times": [
+               1686357274
+            ],
+            "scheduledTime": 1686357274,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R21": {
+            "id": 15,
+            "times": [
+               1686357364
+            ],
+            "scheduledTime": 1686357364,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R22": {
+            "id": 16,
+            "times": [
+               1686357514
+            ],
+            "scheduledTime": 1686357514,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R23": {
+            "id": 17,
+            "times": [
+               1686357679
+            ],
+            "scheduledTime": 1686357679,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R24": {
+            "id": 18,
+            "times": [
+               1686357904
+            ],
+            "scheduledTime": 1686357904,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R25": {
+            "id": 19,
+            "times": [
+               1686358024
+            ],
+            "scheduledTime": 1686358024,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R26": {
+            "id": 20,
+            "times": [
+               1686358114
+            ],
+            "scheduledTime": 1686358114,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R27": {
+            "id": 21,
+            "times": [
+               1686358234
+            ],
+            "scheduledTime": 1686358234,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         }
+      }
+   },
+   "120738_W..N": {
+      "direction": "N",
+      "destination": "R01",
+      "currentStation": "R23",
+      "timeToCurrent": 117,
+      "timeFromPrevious": 25,
+      "line": "W",
+      "delay": 0,
+      "serviceDisruptions": {
+         "reroutes": [],
+         "extended": [],
+         "localStations": [],
+         "skippedStations": [],
+         "suspended": []
+      },
+      "stations": {
+         "R25": {
+            "id": 0,
+            "times": [
+               1686355834
+            ],
+            "scheduledTime": 1686355834,
+            "scheduleAdherence": 0,
+            "isCompleted": true,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R24": {
+            "id": 1,
+            "times": [
+               1686355834
+            ],
+            "scheduledTime": 1686355834,
+            "scheduleAdherence": 0,
+            "isCompleted": true,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R23": {
+            "id": 2,
+            "times": [
+               1686355977
+            ],
+            "scheduledTime": 1686355977,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R22": {
+            "id": 3,
+            "times": [
+               1686356067
+            ],
+            "scheduledTime": 1686356067,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R21": {
+            "id": 4,
+            "times": [
+               1686356217
+            ],
+            "scheduledTime": 1686356217,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R20": {
+            "id": 5,
+            "times": [
+               1686356307
+            ],
+            "scheduledTime": 1686356307,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R19": {
+            "id": 6,
+            "times": [
+               1686356397
+            ],
+            "scheduledTime": 1686356397,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R18": {
+            "id": 7,
+            "times": [
+               1686356487
+            ],
+            "scheduledTime": 1686356487,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R17": {
+            "id": 8,
+            "times": [
+               1686356547
+            ],
+            "scheduledTime": 1686356547,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R16": {
+            "id": 9,
+            "times": [
+               1686356667
+            ],
+            "scheduledTime": 1686356667,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R15": {
+            "id": 10,
+            "times": [
+               1686356787
+            ],
+            "scheduledTime": 1686356787,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R14": {
+            "id": 11,
+            "times": [
+               1686356907
+            ],
+            "scheduledTime": 1686356907,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R13": {
+            "id": 12,
+            "times": [
+               1686357057
+            ],
+            "scheduledTime": 1686357057,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R11": {
+            "id": 13,
+            "times": [
+               1686357147
+            ],
+            "scheduledTime": 1686357147,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R09": {
+            "id": 15,
+            "times": [
+               1686357417
+            ],
+            "scheduledTime": 1686357417,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R08": {
+            "id": 16,
+            "times": [
+               1686357567
+            ],
+            "scheduledTime": 1686357567,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R06": {
+            "id": 17,
+            "times": [
+               1686357657
+            ],
+            "scheduledTime": 1686357657,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R05": {
+            "id": 18,
+            "times": [
+               1686357747
+            ],
+            "scheduledTime": 1686357747,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R04": {
+            "id": 19,
+            "times": [
+               1686357867
+            ],
+            "scheduledTime": 1686357867,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R03": {
+            "id": 20,
+            "times": [
+               1686357927
+            ],
+            "scheduledTime": 1686357927,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R01": {
+            "id": 21,
+            "times": [
+               1686358047
+            ],
+            "scheduledTime": 1686358047,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         }
+      }
+   },
+   "121850_W..S": {
+      "direction": "S",
+      "destination": "R27",
+      "currentStation": "R01",
+      "timeToCurrent": 450,
+      "timeFromPrevious": 0,
+      "line": "W",
+      "delay": 0,
+      "serviceDisruptions": {
+         "reroutes": [],
+         "extended": [],
+         "localStations": [],
+         "skippedStations": [],
+         "suspended": []
+      },
+      "stations": {
+         "R01": {
+            "id": 0,
+            "times": [
+               1686356310
+            ],
+            "scheduledTime": 1686356310,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R03": {
+            "id": 1,
+            "times": [
+               1686356400
+            ],
+            "scheduledTime": 1686356400,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R04": {
+            "id": 2,
+            "times": [
+               1686356460
+            ],
+            "scheduledTime": 1686356460,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R05": {
+            "id": 3,
+            "times": [
+               1686356550
+            ],
+            "scheduledTime": 1686356550,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R06": {
+            "id": 4,
+            "times": [
+               1686356670
+            ],
+            "scheduledTime": 1686356670,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R08": {
+            "id": 5,
+            "times": [
+               1686356730
+            ],
+            "scheduledTime": 1686356730,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R09": {
+            "id": 6,
+            "times": [
+               1686356880
+            ],
+            "scheduledTime": 1686356880,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R11": {
+            "id": 8,
+            "times": [
+               1686357180
+            ],
+            "scheduledTime": 1686357180,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R13": {
+            "id": 9,
+            "times": [
+               1686357270
+            ],
+            "scheduledTime": 1686357270,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R14": {
+            "id": 10,
+            "times": [
+               1686357420
+            ],
+            "scheduledTime": 1686357420,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R15": {
+            "id": 11,
+            "times": [
+               1686357540
+            ],
+            "scheduledTime": 1686357540,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R16": {
+            "id": 12,
+            "times": [
+               1686357630
+            ],
+            "scheduledTime": 1686357630,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R17": {
+            "id": 13,
+            "times": [
+               1686357750
+            ],
+            "scheduledTime": 1686357750,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R18": {
+            "id": 14,
+            "times": [
+               1686357810
+            ],
+            "scheduledTime": 1686357810,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R19": {
+            "id": 15,
+            "times": [
+               1686357900
+            ],
+            "scheduledTime": 1686357900,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R20": {
+            "id": 16,
+            "times": [
+               1686357990
+            ],
+            "scheduledTime": 1686357990,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R21": {
+            "id": 17,
+            "times": [
+               1686358080
+            ],
+            "scheduledTime": 1686358080,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R22": {
+            "id": 18,
+            "times": [
+               1686358230
+            ],
+            "scheduledTime": 1686358230,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R23": {
+            "id": 19,
+            "times": [
+               1686358350
+            ],
+            "scheduledTime": 1686358350,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R24": {
+            "id": 20,
+            "times": [
+               1686358530
+            ],
+            "scheduledTime": 1686358530,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R25": {
+            "id": 21,
+            "times": [
+               1686358650
+            ],
+            "scheduledTime": 1686358650,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R26": {
+            "id": 22,
+            "times": [
+               1686358740
+            ],
+            "scheduledTime": 1686358740,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R27": {
+            "id": 23,
+            "times": [
+               1686358860
+            ],
+            "scheduledTime": 1686358860,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         }
+      }
+   },
+   "121900_W..N": {
+      "direction": "N",
+      "destination": "R01",
+      "currentStation": "R27",
+      "timeToCurrent": 480,
+      "timeFromPrevious": 0,
+      "line": "W",
+      "delay": 0,
+      "serviceDisruptions": {
+         "reroutes": [],
+         "extended": [],
+         "localStations": [],
+         "skippedStations": [],
+         "suspended": []
+      },
+      "stations": {
+         "R27": {
+            "id": 0,
+            "times": [
+               1686356340
+            ],
+            "scheduledTime": 1686356340,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R26": {
+            "id": 1,
+            "times": [
+               1686356460
+            ],
+            "scheduledTime": 1686356460,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R25": {
+            "id": 2,
+            "times": [
+               1686356520
+            ],
+            "scheduledTime": 1686356520,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R24": {
+            "id": 3,
+            "times": [
+               1686356640
+            ],
+            "scheduledTime": 1686356640,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R23": {
+            "id": 4,
+            "times": [
+               1686356805
+            ],
+            "scheduledTime": 1686356805,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R22": {
+            "id": 5,
+            "times": [
+               1686356910
+            ],
+            "scheduledTime": 1686356910,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R21": {
+            "id": 6,
+            "times": [
+               1686357060
+            ],
+            "scheduledTime": 1686357060,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R20": {
+            "id": 7,
+            "times": [
+               1686357150
+            ],
+            "scheduledTime": 1686357150,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R19": {
+            "id": 8,
+            "times": [
+               1686357240
+            ],
+            "scheduledTime": 1686357240,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R18": {
+            "id": 9,
+            "times": [
+               1686357330
+            ],
+            "scheduledTime": 1686357330,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R17": {
+            "id": 10,
+            "times": [
+               1686357390
+            ],
+            "scheduledTime": 1686357390,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R16": {
+            "id": 11,
+            "times": [
+               1686357510
+            ],
+            "scheduledTime": 1686357510,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R15": {
+            "id": 12,
+            "times": [
+               1686357630
+            ],
+            "scheduledTime": 1686357630,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R14": {
+            "id": 13,
+            "times": [
+               1686357750
+            ],
+            "scheduledTime": 1686357750,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R13": {
+            "id": 14,
+            "times": [
+               1686357900
+            ],
+            "scheduledTime": 1686357900,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R11": {
+            "id": 15,
+            "times": [
+               1686357990
+            ],
+            "scheduledTime": 1686357990,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R09": {
+            "id": 17,
+            "times": [
+               1686358260
+            ],
+            "scheduledTime": 1686358260,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R08": {
+            "id": 18,
+            "times": [
+               1686358410
+            ],
+            "scheduledTime": 1686358410,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R06": {
+            "id": 19,
+            "times": [
+               1686358500
+            ],
+            "scheduledTime": 1686358500,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R05": {
+            "id": 20,
+            "times": [
+               1686358590
+            ],
+            "scheduledTime": 1686358590,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R04": {
+            "id": 21,
+            "times": [
+               1686358710
+            ],
+            "scheduledTime": 1686358710,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R03": {
+            "id": 22,
+            "times": [
+               1686358770
+            ],
+            "scheduledTime": 1686358770,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R01": {
+            "id": 23,
+            "times": [
+               1686358890
+            ],
+            "scheduledTime": 1686358890,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         }
+      }
+   },
+   "122750_W..S": {
+      "direction": "S",
+      "destination": "R27",
+      "currentStation": "R01",
+      "timeToCurrent": 990,
+      "timeFromPrevious": 0,
+      "line": "W",
+      "delay": 0,
+      "serviceDisruptions": {
+         "reroutes": [],
+         "extended": [],
+         "localStations": [],
+         "skippedStations": [],
+         "suspended": []
+      },
+      "stations": {
+         "R01": {
+            "id": 0,
+            "times": [
+               1686356850
+            ],
+            "scheduledTime": 1686356850,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R03": {
+            "id": 1,
+            "times": [
+               1686356940
+            ],
+            "scheduledTime": 1686356940,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R04": {
+            "id": 2,
+            "times": [
+               1686357000
+            ],
+            "scheduledTime": 1686357000,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R05": {
+            "id": 3,
+            "times": [
+               1686357090
+            ],
+            "scheduledTime": 1686357090,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R06": {
+            "id": 4,
+            "times": [
+               1686357210
+            ],
+            "scheduledTime": 1686357210,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R08": {
+            "id": 5,
+            "times": [
+               1686357270
+            ],
+            "scheduledTime": 1686357270,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R09": {
+            "id": 6,
+            "times": [
+               1686357420
+            ],
+            "scheduledTime": 1686357420,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R11": {
+            "id": 8,
+            "times": [
+               1686357720
+            ],
+            "scheduledTime": 1686357720,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R13": {
+            "id": 9,
+            "times": [
+               1686357810
+            ],
+            "scheduledTime": 1686357810,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R14": {
+            "id": 10,
+            "times": [
+               1686357960
+            ],
+            "scheduledTime": 1686357960,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R15": {
+            "id": 11,
+            "times": [
+               1686358080
+            ],
+            "scheduledTime": 1686358080,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R16": {
+            "id": 12,
+            "times": [
+               1686358170
+            ],
+            "scheduledTime": 1686358170,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R17": {
+            "id": 13,
+            "times": [
+               1686358290
+            ],
+            "scheduledTime": 1686358290,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R18": {
+            "id": 14,
+            "times": [
+               1686358350
+            ],
+            "scheduledTime": 1686358350,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R19": {
+            "id": 15,
+            "times": [
+               1686358440
+            ],
+            "scheduledTime": 1686358440,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R20": {
+            "id": 16,
+            "times": [
+               1686358530
+            ],
+            "scheduledTime": 1686358530,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R21": {
+            "id": 17,
+            "times": [
+               1686358620
+            ],
+            "scheduledTime": 1686358620,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R22": {
+            "id": 18,
+            "times": [
+               1686358770
+            ],
+            "scheduledTime": 1686358770,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R23": {
+            "id": 19,
+            "times": [
+               1686358920
+            ],
+            "scheduledTime": 1686358920,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R24": {
+            "id": 20,
+            "times": [
+               1686359130
+            ],
+            "scheduledTime": 1686359130,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R25": {
+            "id": 21,
+            "times": [
+               1686359250
+            ],
+            "scheduledTime": 1686359250,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R26": {
+            "id": 22,
+            "times": [
+               1686359340
+            ],
+            "scheduledTime": 1686359340,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R27": {
+            "id": 23,
+            "times": [
+               1686359460
+            ],
+            "scheduledTime": 1686359460,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         }
+      }
+   },
+   "122850_W..N": {
+      "direction": "N",
+      "destination": "R01",
+      "currentStation": "R27",
+      "timeToCurrent": 1050,
+      "timeFromPrevious": 0,
+      "line": "W",
+      "delay": 0,
+      "serviceDisruptions": {
+         "reroutes": [],
+         "extended": [],
+         "localStations": [],
+         "skippedStations": [],
+         "suspended": []
+      },
+      "stations": {
+         "R27": {
+            "id": 0,
+            "times": [
+               1686356910
+            ],
+            "scheduledTime": 1686356910,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R26": {
+            "id": 1,
+            "times": [
+               1686357030
+            ],
+            "scheduledTime": 1686357030,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R25": {
+            "id": 2,
+            "times": [
+               1686357090
+            ],
+            "scheduledTime": 1686357090,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R24": {
+            "id": 3,
+            "times": [
+               1686357210
+            ],
+            "scheduledTime": 1686357210,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R23": {
+            "id": 4,
+            "times": [
+               1686357360
+            ],
+            "scheduledTime": 1686357360,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R22": {
+            "id": 5,
+            "times": [
+               1686357450
+            ],
+            "scheduledTime": 1686357450,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R21": {
+            "id": 6,
+            "times": [
+               1686357600
+            ],
+            "scheduledTime": 1686357600,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R20": {
+            "id": 7,
+            "times": [
+               1686357690
+            ],
+            "scheduledTime": 1686357690,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R19": {
+            "id": 8,
+            "times": [
+               1686357780
+            ],
+            "scheduledTime": 1686357780,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R18": {
+            "id": 9,
+            "times": [
+               1686357870
+            ],
+            "scheduledTime": 1686357870,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R17": {
+            "id": 10,
+            "times": [
+               1686357930
+            ],
+            "scheduledTime": 1686357930,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R16": {
+            "id": 11,
+            "times": [
+               1686358050
+            ],
+            "scheduledTime": 1686358050,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R15": {
+            "id": 12,
+            "times": [
+               1686358170
+            ],
+            "scheduledTime": 1686358170,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R14": {
+            "id": 13,
+            "times": [
+               1686358290
+            ],
+            "scheduledTime": 1686358290,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R13": {
+            "id": 14,
+            "times": [
+               1686358440
+            ],
+            "scheduledTime": 1686358440,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R11": {
+            "id": 15,
+            "times": [
+               1686358530
+            ],
+            "scheduledTime": 1686358530,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R09": {
+            "id": 17,
+            "times": [
+               1686358800
+            ],
+            "scheduledTime": 1686358800,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R08": {
+            "id": 18,
+            "times": [
+               1686358950
+            ],
+            "scheduledTime": 1686358950,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R06": {
+            "id": 19,
+            "times": [
+               1686359040
+            ],
+            "scheduledTime": 1686359040,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R05": {
+            "id": 20,
+            "times": [
+               1686359130
+            ],
+            "scheduledTime": 1686359130,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R04": {
+            "id": 21,
+            "times": [
+               1686359250
+            ],
+            "scheduledTime": 1686359250,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R03": {
+            "id": 22,
+            "times": [
+               1686359310
+            ],
+            "scheduledTime": 1686359310,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R01": {
+            "id": 23,
+            "times": [
+               1686359430
+            ],
+            "scheduledTime": 1686359430,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         }
+      }
+   },
+   "123750_W..N": {
+      "direction": "N",
+      "destination": "R01",
+      "currentStation": "R27",
+      "timeToCurrent": 1590,
+      "timeFromPrevious": 0,
+      "line": "W",
+      "delay": 0,
+      "serviceDisruptions": {
+         "reroutes": [],
+         "extended": [],
+         "localStations": [],
+         "skippedStations": [],
+         "suspended": []
+      },
+      "stations": {
+         "R27": {
+            "id": 0,
+            "times": [
+               1686357450
+            ],
+            "scheduledTime": 1686357450,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R26": {
+            "id": 1,
+            "times": [
+               1686357570
+            ],
+            "scheduledTime": 1686357570,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R25": {
+            "id": 2,
+            "times": [
+               1686357630
+            ],
+            "scheduledTime": 1686357630,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R24": {
+            "id": 3,
+            "times": [
+               1686357750
+            ],
+            "scheduledTime": 1686357750,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R23": {
+            "id": 4,
+            "times": [
+               1686357945
+            ],
+            "scheduledTime": 1686357945,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R22": {
+            "id": 5,
+            "times": [
+               1686358080
+            ],
+            "scheduledTime": 1686358080,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R21": {
+            "id": 6,
+            "times": [
+               1686358230
+            ],
+            "scheduledTime": 1686358230,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R20": {
+            "id": 7,
+            "times": [
+               1686358320
+            ],
+            "scheduledTime": 1686358320,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R19": {
+            "id": 8,
+            "times": [
+               1686358410
+            ],
+            "scheduledTime": 1686358410,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R18": {
+            "id": 9,
+            "times": [
+               1686358500
+            ],
+            "scheduledTime": 1686358500,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R17": {
+            "id": 10,
+            "times": [
+               1686358560
+            ],
+            "scheduledTime": 1686358560,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R16": {
+            "id": 11,
+            "times": [
+               1686358680
+            ],
+            "scheduledTime": 1686358680,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R15": {
+            "id": 12,
+            "times": [
+               1686358800
+            ],
+            "scheduledTime": 1686358800,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R14": {
+            "id": 13,
+            "times": [
+               1686358920
+            ],
+            "scheduledTime": 1686358920,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R13": {
+            "id": 14,
+            "times": [
+               1686359070
+            ],
+            "scheduledTime": 1686359070,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R11": {
+            "id": 15,
+            "times": [
+               1686359160
+            ],
+            "scheduledTime": 1686359160,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R09": {
+            "id": 17,
+            "times": [
+               1686359430
+            ],
+            "scheduledTime": 1686359430,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R08": {
+            "id": 18,
+            "times": [
+               1686359580
+            ],
+            "scheduledTime": 1686359580,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R06": {
+            "id": 19,
+            "times": [
+               1686359670
+            ],
+            "scheduledTime": 1686359670,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R05": {
+            "id": 20,
+            "times": [
+               1686359760
+            ],
+            "scheduledTime": 1686359760,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R04": {
+            "id": 21,
+            "times": [
+               1686359880
+            ],
+            "scheduledTime": 1686359880,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R03": {
+            "id": 22,
+            "times": [
+               1686359940
+            ],
+            "scheduledTime": 1686359940,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R01": {
+            "id": 23,
+            "times": [
+               1686360060
+            ],
+            "scheduledTime": 1686360060,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         }
+      }
+   },
+   "124600_W..S": {
+      "direction": "S",
+      "destination": "R27",
+      "currentStation": "R01",
+      "timeToCurrent": 2100,
+      "timeFromPrevious": 0,
+      "line": "W",
+      "delay": 0,
+      "serviceDisruptions": {
+         "reroutes": [],
+         "extended": [],
+         "localStations": [],
+         "skippedStations": [],
+         "suspended": []
+      },
+      "stations": {
+         "R01": {
+            "id": 0,
+            "times": [
+               1686357960
+            ],
+            "scheduledTime": 1686357960,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R03": {
+            "id": 1,
+            "times": [
+               1686358050
+            ],
+            "scheduledTime": 1686358050,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R04": {
+            "id": 2,
+            "times": [
+               1686358110
+            ],
+            "scheduledTime": 1686358110,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R05": {
+            "id": 3,
+            "times": [
+               1686358200
+            ],
+            "scheduledTime": 1686358200,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R06": {
+            "id": 4,
+            "times": [
+               1686358320
+            ],
+            "scheduledTime": 1686358320,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R08": {
+            "id": 5,
+            "times": [
+               1686358380
+            ],
+            "scheduledTime": 1686358380,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R09": {
+            "id": 6,
+            "times": [
+               1686358530
+            ],
+            "scheduledTime": 1686358530,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R11": {
+            "id": 8,
+            "times": [
+               1686358830
+            ],
+            "scheduledTime": 1686358830,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R13": {
+            "id": 9,
+            "times": [
+               1686358920
+            ],
+            "scheduledTime": 1686358920,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R14": {
+            "id": 10,
+            "times": [
+               1686359070
+            ],
+            "scheduledTime": 1686359070,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R15": {
+            "id": 11,
+            "times": [
+               1686359190
+            ],
+            "scheduledTime": 1686359190,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R16": {
+            "id": 12,
+            "times": [
+               1686359280
+            ],
+            "scheduledTime": 1686359280,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R17": {
+            "id": 13,
+            "times": [
+               1686359400
+            ],
+            "scheduledTime": 1686359400,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R18": {
+            "id": 14,
+            "times": [
+               1686359460
+            ],
+            "scheduledTime": 1686359460,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R19": {
+            "id": 15,
+            "times": [
+               1686359550
+            ],
+            "scheduledTime": 1686359550,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R20": {
+            "id": 16,
+            "times": [
+               1686359640
+            ],
+            "scheduledTime": 1686359640,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R21": {
+            "id": 17,
+            "times": [
+               1686359730
+            ],
+            "scheduledTime": 1686359730,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R22": {
+            "id": 18,
+            "times": [
+               1686359880
+            ],
+            "scheduledTime": 1686359880,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R23": {
+            "id": 19,
+            "times": [
+               1686359970
+            ],
+            "scheduledTime": 1686359970,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R24": {
+            "id": 20,
+            "times": [
+               1686360120
+            ],
+            "scheduledTime": 1686360120,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R25": {
+            "id": 21,
+            "times": [
+               1686360240
+            ],
+            "scheduledTime": 1686360240,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R26": {
+            "id": 22,
+            "times": [
+               1686360330
+            ],
+            "scheduledTime": 1686360330,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R27": {
+            "id": 23,
+            "times": [
+               1686360450
+            ],
+            "scheduledTime": 1686360450,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         }
+      }
+   },
+   "124900_W..N": {
+      "direction": "N",
+      "destination": "R01",
+      "currentStation": "R27",
+      "timeToCurrent": 2280,
+      "timeFromPrevious": 0,
+      "line": "W",
+      "delay": 0,
+      "serviceDisruptions": {
+         "reroutes": [],
+         "extended": [],
+         "localStations": [],
+         "skippedStations": [],
+         "suspended": []
+      },
+      "stations": {
+         "R27": {
+            "id": 0,
+            "times": [
+               1686358140
+            ],
+            "scheduledTime": 1686358140,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R26": {
+            "id": 1,
+            "times": [
+               1686358260
+            ],
+            "scheduledTime": 1686358260,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R25": {
+            "id": 2,
+            "times": [
+               1686358320
+            ],
+            "scheduledTime": 1686358320,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R24": {
+            "id": 3,
+            "times": [
+               1686358440
+            ],
+            "scheduledTime": 1686358440,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R23": {
+            "id": 4,
+            "times": [
+               1686358635
+            ],
+            "scheduledTime": 1686358635,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R22": {
+            "id": 5,
+            "times": [
+               1686358770
+            ],
+            "scheduledTime": 1686358770,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R21": {
+            "id": 6,
+            "times": [
+               1686358920
+            ],
+            "scheduledTime": 1686358920,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R20": {
+            "id": 7,
+            "times": [
+               1686359010
+            ],
+            "scheduledTime": 1686359010,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R19": {
+            "id": 8,
+            "times": [
+               1686359100
+            ],
+            "scheduledTime": 1686359100,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R18": {
+            "id": 9,
+            "times": [
+               1686359190
+            ],
+            "scheduledTime": 1686359190,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R17": {
+            "id": 10,
+            "times": [
+               1686359250
+            ],
+            "scheduledTime": 1686359250,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R16": {
+            "id": 11,
+            "times": [
+               1686359370
+            ],
+            "scheduledTime": 1686359370,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R15": {
+            "id": 12,
+            "times": [
+               1686359490
+            ],
+            "scheduledTime": 1686359490,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R14": {
+            "id": 13,
+            "times": [
+               1686359610
+            ],
+            "scheduledTime": 1686359610,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R13": {
+            "id": 14,
+            "times": [
+               1686359760
+            ],
+            "scheduledTime": 1686359760,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R11": {
+            "id": 15,
+            "times": [
+               1686359850
+            ],
+            "scheduledTime": 1686359850,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R09": {
+            "id": 17,
+            "times": [
+               1686360120
+            ],
+            "scheduledTime": 1686360120,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R08": {
+            "id": 18,
+            "times": [
+               1686360270
+            ],
+            "scheduledTime": 1686360270,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R06": {
+            "id": 19,
+            "times": [
+               1686360360
+            ],
+            "scheduledTime": 1686360360,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R05": {
+            "id": 20,
+            "times": [
+               1686360450
+            ],
+            "scheduledTime": 1686360450,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R04": {
+            "id": 21,
+            "times": [
+               1686360570
+            ],
+            "scheduledTime": 1686360570,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R03": {
+            "id": 22,
+            "times": [
+               1686360630
+            ],
+            "scheduledTime": 1686360630,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R01": {
+            "id": 23,
+            "times": [
+               1686360750
+            ],
+            "scheduledTime": 1686360750,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         }
+      }
+   },
+   "125550_W..S": {
+      "direction": "S",
+      "destination": "R27",
+      "currentStation": "R01",
+      "timeToCurrent": 2670,
+      "timeFromPrevious": 0,
+      "line": "W",
+      "delay": 0,
+      "serviceDisruptions": {
+         "reroutes": [],
+         "extended": [],
+         "localStations": [],
+         "skippedStations": [],
+         "suspended": []
+      },
+      "stations": {
+         "R01": {
+            "id": 0,
+            "times": [
+               1686358530
+            ],
+            "scheduledTime": 1686358530,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R03": {
+            "id": 1,
+            "times": [
+               1686358620
+            ],
+            "scheduledTime": 1686358620,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R04": {
+            "id": 2,
+            "times": [
+               1686358680
+            ],
+            "scheduledTime": 1686358680,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R05": {
+            "id": 3,
+            "times": [
+               1686358770
+            ],
+            "scheduledTime": 1686358770,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R06": {
+            "id": 4,
+            "times": [
+               1686358890
+            ],
+            "scheduledTime": 1686358890,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R08": {
+            "id": 5,
+            "times": [
+               1686358950
+            ],
+            "scheduledTime": 1686358950,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R09": {
+            "id": 6,
+            "times": [
+               1686359100
+            ],
+            "scheduledTime": 1686359100,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R11": {
+            "id": 8,
+            "times": [
+               1686359400
+            ],
+            "scheduledTime": 1686359400,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R13": {
+            "id": 9,
+            "times": [
+               1686359490
+            ],
+            "scheduledTime": 1686359490,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R14": {
+            "id": 10,
+            "times": [
+               1686359640
+            ],
+            "scheduledTime": 1686359640,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R15": {
+            "id": 11,
+            "times": [
+               1686359760
+            ],
+            "scheduledTime": 1686359760,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R16": {
+            "id": 12,
+            "times": [
+               1686359850
+            ],
+            "scheduledTime": 1686359850,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R17": {
+            "id": 13,
+            "times": [
+               1686359970
+            ],
+            "scheduledTime": 1686359970,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R18": {
+            "id": 14,
+            "times": [
+               1686360030
+            ],
+            "scheduledTime": 1686360030,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R19": {
+            "id": 15,
+            "times": [
+               1686360120
+            ],
+            "scheduledTime": 1686360120,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R20": {
+            "id": 16,
+            "times": [
+               1686360210
+            ],
+            "scheduledTime": 1686360210,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R21": {
+            "id": 17,
+            "times": [
+               1686360300
+            ],
+            "scheduledTime": 1686360300,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R22": {
+            "id": 18,
+            "times": [
+               1686360450
+            ],
+            "scheduledTime": 1686360450,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R23": {
+            "id": 19,
+            "times": [
+               1686360555
+            ],
+            "scheduledTime": 1686360555,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R24": {
+            "id": 20,
+            "times": [
+               1686360720
+            ],
+            "scheduledTime": 1686360720,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R25": {
+            "id": 21,
+            "times": [
+               1686360840
+            ],
+            "scheduledTime": 1686360840,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R26": {
+            "id": 22,
+            "times": [
+               1686360930
+            ],
+            "scheduledTime": 1686360930,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R27": {
+            "id": 23,
+            "times": [
+               1686361050
+            ],
+            "scheduledTime": 1686361050,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         }
+      }
+   },
+   "126600_W..S": {
+      "direction": "S",
+      "destination": "R27",
+      "currentStation": "R01",
+      "timeToCurrent": 3300,
+      "timeFromPrevious": 0,
+      "line": "W",
+      "delay": 0,
+      "serviceDisruptions": {
+         "reroutes": [],
+         "extended": [],
+         "localStations": [],
+         "skippedStations": [],
+         "suspended": []
+      },
+      "stations": {
+         "R01": {
+            "id": 0,
+            "times": [
+               1686359160
+            ],
+            "scheduledTime": 1686359160,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R03": {
+            "id": 1,
+            "times": [
+               1686359250
+            ],
+            "scheduledTime": 1686359250,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R04": {
+            "id": 2,
+            "times": [
+               1686359310
+            ],
+            "scheduledTime": 1686359310,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R05": {
+            "id": 3,
+            "times": [
+               1686359400
+            ],
+            "scheduledTime": 1686359400,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R06": {
+            "id": 4,
+            "times": [
+               1686359520
+            ],
+            "scheduledTime": 1686359520,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R08": {
+            "id": 5,
+            "times": [
+               1686359580
+            ],
+            "scheduledTime": 1686359580,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R09": {
+            "id": 6,
+            "times": [
+               1686359730
+            ],
+            "scheduledTime": 1686359730,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R11": {
+            "id": 8,
+            "times": [
+               1686360030
+            ],
+            "scheduledTime": 1686360030,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R13": {
+            "id": 9,
+            "times": [
+               1686360120
+            ],
+            "scheduledTime": 1686360120,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R14": {
+            "id": 10,
+            "times": [
+               1686360270
+            ],
+            "scheduledTime": 1686360270,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R15": {
+            "id": 11,
+            "times": [
+               1686360390
+            ],
+            "scheduledTime": 1686360390,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R16": {
+            "id": 12,
+            "times": [
+               1686360480
+            ],
+            "scheduledTime": 1686360480,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R17": {
+            "id": 13,
+            "times": [
+               1686360600
+            ],
+            "scheduledTime": 1686360600,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R18": {
+            "id": 14,
+            "times": [
+               1686360660
+            ],
+            "scheduledTime": 1686360660,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R19": {
+            "id": 15,
+            "times": [
+               1686360750
+            ],
+            "scheduledTime": 1686360750,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R20": {
+            "id": 16,
+            "times": [
+               1686360840
+            ],
+            "scheduledTime": 1686360840,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R21": {
+            "id": 17,
+            "times": [
+               1686360930
+            ],
+            "scheduledTime": 1686360930,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R22": {
+            "id": 18,
+            "times": [
+               1686361080
+            ],
+            "scheduledTime": 1686361080,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R23": {
+            "id": 19,
+            "times": [
+               1686361170
+            ],
+            "scheduledTime": 1686361170,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R24": {
+            "id": 20,
+            "times": [
+               1686361320
+            ],
+            "scheduledTime": 1686361320,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R25": {
+            "id": 21,
+            "times": [
+               1686361440
+            ],
+            "scheduledTime": 1686361440,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R26": {
+            "id": 22,
+            "times": [
+               1686361530
+            ],
+            "scheduledTime": 1686361530,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R27": {
+            "id": 23,
+            "times": [
+               1686361650
+            ],
+            "scheduledTime": 1686361650,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         }
+      }
+   },
+   "126900_W..N": {
+      "direction": "N",
+      "destination": "R01",
+      "currentStation": "R27",
+      "timeToCurrent": 3480,
+      "timeFromPrevious": 0,
+      "line": "W",
+      "delay": 0,
+      "serviceDisruptions": {
+         "reroutes": [],
+         "extended": [],
+         "localStations": [],
+         "skippedStations": [],
+         "suspended": []
+      },
+      "stations": {
+         "R27": {
+            "id": 0,
+            "times": [
+               1686359340
+            ],
+            "scheduledTime": 1686359340,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R26": {
+            "id": 1,
+            "times": [
+               1686359460
+            ],
+            "scheduledTime": 1686359460,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R25": {
+            "id": 2,
+            "times": [
+               1686359520
+            ],
+            "scheduledTime": 1686359520,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R24": {
+            "id": 3,
+            "times": [
+               1686359640
+            ],
+            "scheduledTime": 1686359640,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R23": {
+            "id": 4,
+            "times": [
+               1686359850
+            ],
+            "scheduledTime": 1686359850,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R22": {
+            "id": 5,
+            "times": [
+               1686360000
+            ],
+            "scheduledTime": 1686360000,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R21": {
+            "id": 6,
+            "times": [
+               1686360150
+            ],
+            "scheduledTime": 1686360150,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R20": {
+            "id": 7,
+            "times": [
+               1686360240
+            ],
+            "scheduledTime": 1686360240,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R19": {
+            "id": 8,
+            "times": [
+               1686360330
+            ],
+            "scheduledTime": 1686360330,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R18": {
+            "id": 9,
+            "times": [
+               1686360420
+            ],
+            "scheduledTime": 1686360420,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R17": {
+            "id": 10,
+            "times": [
+               1686360480
+            ],
+            "scheduledTime": 1686360480,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R16": {
+            "id": 11,
+            "times": [
+               1686360600
+            ],
+            "scheduledTime": 1686360600,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R15": {
+            "id": 12,
+            "times": [
+               1686360720
+            ],
+            "scheduledTime": 1686360720,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R14": {
+            "id": 13,
+            "times": [
+               1686360840
+            ],
+            "scheduledTime": 1686360840,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R13": {
+            "id": 14,
+            "times": [
+               1686360990
+            ],
+            "scheduledTime": 1686360990,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R11": {
+            "id": 15,
+            "times": [
+               1686361080
+            ],
+            "scheduledTime": 1686361080,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R09": {
+            "id": 17,
+            "times": [
+               1686361350
+            ],
+            "scheduledTime": 1686361350,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R08": {
+            "id": 18,
+            "times": [
+               1686361500
+            ],
+            "scheduledTime": 1686361500,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R06": {
+            "id": 19,
+            "times": [
+               1686361590
+            ],
+            "scheduledTime": 1686361590,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R05": {
+            "id": 20,
+            "times": [
+               1686361680
+            ],
+            "scheduledTime": 1686361680,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R04": {
+            "id": 21,
+            "times": [
+               1686361800
+            ],
+            "scheduledTime": 1686361800,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R03": {
+            "id": 22,
+            "times": [
+               1686361860
+            ],
+            "scheduledTime": 1686361860,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         },
+         "R01": {
+            "id": 23,
+            "times": [
+               1686361980
+            ],
+            "scheduledTime": 1686361980,
+            "scheduleAdherence": 0,
+            "isCompleted": false,
+            "suddenReroute": false,
+            "skipped": false,
+            "inNormalStopSequence": true
+         }
+      }
+   }
+}

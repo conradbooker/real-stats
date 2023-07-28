@@ -15,11 +15,22 @@ struct Trip: Hashable, Codable, Identifiable {
     var direction: String
     var line: String
     var stations: [String: TripStation]
+    var destination: String
+    var delay: Int
 }
 
 struct Disruption: Hashable, Codable {
-    var delays: [String]
-    var reroutes: [String]
+    var reroutes: [Reroute]
+    var skippedStations: [String]
+    var localStations: [String]
+    var suspended: [[String]]
+}
+
+struct Reroute: Hashable, Codable {
+    var reroutedFrom: String
+    var reroutedTo: String
+    var via: String
+    var sudden: Bool
 }
 
 struct TripStation: Hashable, Codable, Identifiable {
@@ -29,4 +40,5 @@ struct TripStation: Hashable, Codable, Identifiable {
     var scheduleAdherence: Int
     var isCompleted: Bool
     var inNormalStopSequence: Bool
+    var suddenReroute: Bool
 }
