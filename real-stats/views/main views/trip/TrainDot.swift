@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// This shape was converted from SVG into Swift
+
 struct MyIcon: Shape {
     func path(in rect: CGRect) -> Path {
         var path = Path()

@@ -26,43 +26,65 @@ func formattedSkippedStations(stations: [String]) -> String {
     }
     return temp
 }
+
+func getAllStations(stations: [String]) -> String {
+    var temp = ""
+    temp += "\(stationsDict[stations[0]]?.short1 ?? "")"
+    if stations.count > 1 {
+        for station in stations[1...] {
+            temp += ", \(stationsDict[station]?.short1 ?? "")"
+        }
+    }
+    return temp
+}
+
 func formattedLocalBoros(stations: [String]) -> String {
-    var boros: Set<String> = Set<String>()
+    var boros: Array<String> = Array<String>()
     var temp = ""
     
     for station in stations {
-//        temp += ", \(stationsDict[station]?.boro ?? "")"
         if stationsDict[station]?.boro ?? "" == "M" {
-            boros.insert("Manhattan")
+            if !(boros.contains("Manhattan")) {
+                boros.append("Manhattan")
+            }
         } else if stationsDict[station]?.boro ?? "" == "Bk" {
-            boros.insert("Brooklyn")
+            if !(boros.contains("Brooklyn")) {
+                boros.append("Brooklyn")
+            }
         } else if stationsDict[station]?.boro ?? "" == "Bx" {
-            boros.insert("Bronx")
+            if !(boros.contains("The Bronx")) {
+                boros.append("The Bronx")
+            }
         } else if stationsDict[station]?.boro ?? "" == "Q" {
-            boros.insert("Queens")
+            if !(boros.contains("Queens")) {
+                boros.append("Queens")
+            }
         }
     }
-    for boro in boros {
-        temp += ", \(boro)"
+    temp += boros[0]
+    if boros.count > 1 {
+        let newBoros = boros[1...]
+        for boro in newBoros {
+            temp += ", \(boro)"
+        }
     }
+    
     return temp
 }
 
 struct DisruptionBox: View {
     var type: ServiceDisruption
     
-    var tripID: String
-    var trips: [String: Trip]
+    var trip: Trip
     var reroute: Reroute
     var from: String = ""
     var to: String = ""
     var stationsArray: [String] = [String]()
     var suspended: [String]
     
-    init(type: ServiceDisruption, tripID: String, trips: [String : Trip], reroute: Reroute, suspended: [String]) {
+    init(type: ServiceDisruption, trip: Trip, reroute: Reroute, suspended: [String]) {
         self.type = type
-        self.tripID = tripID
-        self.trips = trips
+        self.trip = trip
         self.reroute = reroute
         self.suspended = suspended
         
@@ -79,9 +101,9 @@ struct DisruptionBox: View {
             self.to = suspended[1]
             self.to = stationsDict[to]?.short1 ?? ""
         } else if type == .skipped {
-            stationsArray = trips[tripID]?.serviceDisruptions.skippedStations ?? [String]()
+            stationsArray = trip.serviceDisruptions.skippedStations ?? [String]()
         } else if type == .local {
-            stationsArray = trips[tripID]?.serviceDisruptions.localStations ?? [String]()
+            stationsArray = trip.serviceDisruptions.localStations ?? [String]()
         }
     }
     
@@ -130,7 +152,7 @@ struct DisruptionBox: View {
         } else if type == .local {
             VStack(alignment: .leading, spacing: 0) {
                 HStack(spacing: 0) {
-                    Text("**Running Local** in\(formattedLocalBoros(stations: stationsArray))")
+                    Text("**Running Local** in: \(formattedLocalBoros(stations: stationsArray))")
                         .padding(4)
                 }
             }
@@ -140,7 +162,7 @@ struct DisruptionBox: View {
 
 struct DisruptionBox_Previews: PreviewProvider {
     static var previews: some View {
-        DisruptionBox(type: .rerouted, tripID: "052900_W..S", trips: exampleTrips, reroute: (exampleTrips["052900_W..S"]?.serviceDisruptions.reroutes[0])!, suspended: ["",""])
+        DisruptionBox(type: .rerouted, trip: exampleTrip, reroute: (exampleTrips["052900_W..S"]?.serviceDisruptions.reroutes[0])!, suspended: ["",""])
             .previewLayout(.fixed(width: 150, height: 80))
     }
 }

@@ -1445,7 +1445,7 @@
             "lat": 40.577422, 
             "long": -73.981233, 
             "northDir": "Manhattan", 
-            "southDir": "Coney Island", 
+            "southDir": "Arrivals", 
             "ADA": 1
          }
       ]
@@ -2675,7 +2675,7 @@
             "lat": 40.706476, 
             "long": -74.011056, 
             "northDir": "Brooklyn", 
-            "southDir": "", 
+            "southDir": "Arrivals", 
             "ADA": 0
          }
       ]
@@ -2704,7 +2704,7 @@
             "lat": 40.711396, 
             "long": -73.889601, 
             "northDir": "Manhattan", 
-            "southDir": "", 
+            "southDir": "Arrivals", 
             "ADA": 1
          }
       ]
@@ -6196,7 +6196,7 @@
             "borough": "Q", 
             "lat": 40.712646, 
             "long": -73.783817, 
-            "northDir": "", 
+            "northDir": "Arrivals", 
             "southDir": "Manhattan", 
             "ADA": 1
          }
@@ -6850,7 +6850,7 @@
             "borough": "Q", 
             "lat": 40.702147, 
             "long": -73.801109, 
-            "northDir": "", 
+            "northDir": "Arrivals", 
             "southDir": "Manhattan", 
             "ADA": 1
          }
@@ -8696,7 +8696,7 @@
             "lat": 40.666235, 
             "long": -73.884079, 
             "northDir": "Manhattan", 
-            "southDir": "", 
+            "southDir": "Arrivals", 
             "ADA": 0
          }
       ]
@@ -8913,7 +8913,7 @@
             "lat": 40.632836, 
             "long": -73.947642, 
             "northDir": "Manhattan", 
-            "southDir": "", 
+            "southDir": "Arrivals", 
             "ADA": 1
          }
       ]
@@ -8941,7 +8941,7 @@
             "borough": "Bx", 
             "lat": 40.852462, 
             "long": -73.828121, 
-            "northDir": "", 
+            "northDir": "Arrivals", 
             "southDir": "Manhattan", 
             "ADA": 1
          }
@@ -9453,7 +9453,7 @@
             "borough": "Bx", 
             "lat": 40.886037, 
             "long": -73.878751, 
-            "northDir": "", 
+            "northDir": "Arrivals", 
             "southDir": "Manhattan", 
             "ADA": 0
          }
@@ -10259,7 +10259,7 @@
             "borough": "Bx", 
             "lat": 40.903125, 
             "long": -73.85062, 
-            "northDir": "", 
+            "northDir": "Arrivals", 
             "southDir": "Manhattan", 
             "ADA": 0
          }
@@ -10810,7 +10810,7 @@
             "borough": "M", 
             "lat": 40.82388, 
             "long": -73.93647, 
-            "northDir": "", 
+            "northDir": "Arrivals", 
             "southDir": "Downtown & Brooklyn", 
             "ADA": 0
          }
@@ -10991,7 +10991,7 @@
             "borough": "Bx", 
             "lat": 40.8883, 
             "long": -73.830834, 
-            "northDir": "", 
+            "northDir": "Arrivals", 
             "southDir": "Manhattan", 
             "ADA": 0
          }
@@ -11132,7 +11132,7 @@
             "borough": "Q", 
             "lat": 40.7596, 
             "long": -73.83003, 
-            "northDir": "", 
+            "northDir": "Arrivals", 
             "southDir": "Manhattan", 
             "ADA": 1
          }
@@ -11610,7 +11610,7 @@
             "lat": 40.755882, 
             "long": -74.00191, 
             "northDir": "Queens", 
-            "southDir": "", 
+            "southDir": "Arrivals", 
             "ADA": 1
          }
       ]
@@ -12068,7 +12068,7 @@
             "borough": "Q", 
             "lat": 40.746554, 
             "long": -73.943832, 
-            "northDir": "", 
+            "northDir": "Arrivals", 
             "southDir": "Brooklyn", 
             "ADA": 0
          }, 
@@ -12506,8 +12506,8 @@
          {
             "id": 401, 
             "GTFSID": "630", 
-            "short1": "Lexington Av", 
-            "short2": "53 St/51 St", 
+            "short1": "51 St",
+            "short2": "",
             "stopName": "51 St", 
             "possibleLines": [
                "4", 
@@ -12563,9 +12563,9 @@
          {
             "id": 400, 
             "GTFSID": "629", 
-            "short1": "Lexington Av", 
-            "short2": "59 St", 
-            "stopName": "59 St", 
+            "short1": "59 St",
+            "short2": "Lexington Av",
+            "stopName": "59 St",
             "possibleLines": [
                "4", 
                "5", 
@@ -12704,9 +12704,9 @@
          {
             "id": 267, 
             "GTFSID": "G14", 
-            "short1": "Roosevelt Av", 
-            "short2": "Jackson Hts", 
-            "stopName": "Jackson Hts-Roosevelt Av", 
+            "short1": "Jackson Hts",
+            "short2": "Roosevelt Av",
+            "stopName": "Jackson Hts-Roosevelt Av",
             "possibleLines": [
                "E", 
                "F", 
@@ -12884,7 +12884,7 @@
             "borough": "M", 
             "lat": 40.739777, 
             "long": -74.002578, 
-            "northDir": "", 
+            "northDir": "Arrivals", 
             "southDir": "Brooklyn", 
             "ADA": 1
          }
@@ -12898,9 +12898,9 @@
          {
             "id": 230, 
             "GTFSID": "D21", 
-            "short1": "Broadway", 
-            "short2": "Lafayette St", 
-            "stopName": "Broadway-Lafayette St", 
+            "short1": "Broadway",
+            "short2": "Lafayette St",
+            "stopName": "Broadway-Lafayette St",
             "possibleLines": [
                "A", 
                "C", 
@@ -13319,7 +13319,7 @@
             "lat": 40.712582, 
             "long": -74.009781, 
             "northDir": "Uptown & Queens", 
-            "southDir": "", 
+            "southDir": "Arrivals", 
             "ADA": 1
          }, 
          {
@@ -13473,15 +13473,14 @@
                "C"
             ], 
             "weekdayLines": [
-               "A", 
                "C"
             ], 
             "trunk": "Franklin Shuttle", 
             "borough": "Bk", 
             "lat": 40.680596, 
-            "long": -73.955827, 
-            "northDir": "", 
-            "southDir": "Prospect Park", 
+            "long": -73.955827,
+            "northDir": "Manhattan",
+            "southDir": "Euclid Av",
             "ADA": 1
          }, 
          {
@@ -13500,8 +13499,8 @@
             "borough": "Bk", 
             "lat": 40.68138, 
             "long": -73.956848, 
-            "northDir": "Manhattan", 
-            "southDir": "Euclid Av", 
+            "northDir": "Arrivals",
+            "southDir": "Prospect Park",
             "ADA": 1
          }
       ]
@@ -13746,7 +13745,7 @@
             "lat": 40.702068, 
             "long": -74.013664, 
             "northDir": "Uptown & The Bronx", 
-            "southDir": "", 
+            "southDir": "Arrivals", 
             "ADA": 1
          }
       ]

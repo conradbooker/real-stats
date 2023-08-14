@@ -8,6 +8,7 @@
 import Foundation
 
 struct NewTimes: Hashable, Codable {
+    var service: Bool
     var north: [String: [String: NewStationTime]?]?
     var south: [String: [String: NewStationTime]?]?
 }

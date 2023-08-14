@@ -1,4 +1,5 @@
 {
-  "north": {},
-  "south": {}
+    "service": true,
+    "north": {},
+    "south": {}
 }

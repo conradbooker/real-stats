@@ -11,13 +11,30 @@ import SwiftUI
 struct Service_BandageApp: App {
     let persistentContainer = CoreDataManager.shared.persistentContainer
     @StateObject var locationViewModel = LocationViewModel()
+    
+    @AppStorage("darkMode") var darkMode: Int = 2
+    @Environment(\.colorScheme) var colorScheme
+
+    private func getColorScheme() -> ColorScheme {
+        if darkMode == 0 {
+            return .light
+        } else if darkMode == 1 {
+            return .dark
+        }
+        print(colorScheme)
+        if (colorScheme == .dark) {
+            return .dark
+        }
+        return .light
+    }
 
     
     var body: some Scene {
         WindowGroup {
-            BottomSheet()
+            SplashScreen()
                 .environment(\.managedObjectContext, persistentContainer.viewContext)
                 .environmentObject(locationViewModel)
+                .preferredColorScheme(getColorScheme())
         }
     }
 }

@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "map",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/iakov-kaiumov/Map",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9d8306ad39fe0184a64cdd0e77e4aebc30091f45"
+      }
+    },
+    {
       "identity" : "scrollableimage",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/gtokman/ScrollableImage",

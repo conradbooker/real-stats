@@ -92,30 +92,52 @@ struct Home: View {
                                 .foregroundColor(Color("cLessDarkGray"))
                                 .shadow(radius: 2)
                                 .frame(height: 40)
-                            TextField("Search for a station or a train", text: $search)
-                                .padding(.leading,6)
-                                .focused($inputIsActive)
-                                .onChange(of: search) { _ in
-                                    if search.isEmpty {
-                                        searchStations = []
-                                    } else {
-                                        let currentLoc = CLLocation(latitude: coordinate?.latitude ?? 0, longitude: coordinate?.longitude ?? 0)
-
-                                        
-                                        withAnimation(.spring(blendDuration: 0.25)) {
-                                            searchStations = complexData.filter { $0.complexName.localizedCaseInsensitiveContains(search)
-                                            }.sorted(by: {
-                                                return $0.location.distance(from: currentLoc) < $1.location.distance(from: currentLoc)
-                                        })
+                            if #available(iOS 15.0, *) {
+                                TextField("Search for a station or a train", text: $search)
+                                    .padding(.leading,6)
+                                    .focused($inputIsActive)
+                                    .onChange(of: search) { _ in
+                                        if search.isEmpty {
+                                            searchStations = []
+                                        } else {
+                                            let currentLoc = CLLocation(latitude: coordinate?.latitude ?? 0, longitude: coordinate?.longitude ?? 0)
+                                            
+                                            
+                                            withAnimation(.spring(blendDuration: 0.25)) {
+                                                searchStations = complexData.filter { $0.complexName.localizedCaseInsensitiveContains(search)
+                                                }.sorted(by: {
+                                                    return $0.location.distance(from: currentLoc) < $1.location.distance(from: currentLoc)
+                                                })
+                                            }
                                         }
                                     }
-                                }
+                            } else {
+                                TextField("Search for a station or a train", text: $search)
+                                    .padding(.leading,6)
+                                    .onChange(of: search) { _ in
+                                        if search.isEmpty {
+                                            searchStations = []
+                                        } else {
+                                            let currentLoc = CLLocation(latitude: coordinate?.latitude ?? 0, longitude: coordinate?.longitude ?? 0)
+                                            
+                                            
+                                            withAnimation(.spring(blendDuration: 0.25)) {
+                                                searchStations = complexData.filter { $0.complexName.localizedCaseInsensitiveContains(search)
+                                                }.sorted(by: {
+                                                    return $0.location.distance(from: currentLoc) < $1.location.distance(from: currentLoc)
+                                                })
+                                            }
+                                        }
+                                    }
+                            }
                         }
                         if search != "" {
                             // Cancel
                             Button {
                                 withAnimation(.linear(duration: 0.25)) { search = "" }
-                                withAnimation(.linear(duration: 0.25)) { inputIsActive = false }
+                                if #available(iOS 15.0, *) {
+                                    withAnimation(.linear(duration: 0.25)) { inputIsActive = false }
+                                }
                             } label: {
                                 ZStack {
                                     RoundedRectangle(cornerRadius: 10)
@@ -129,7 +151,9 @@ struct Home: View {
                             .buttonStyle(CButton())
                             
                             Button {
-                                withAnimation(.linear(duration: 0.25)) { inputIsActive = false }
+                                if #available(iOS 15.0, *) {
+                                    withAnimation(.linear(duration: 0.25)) { inputIsActive = false }
+                                }
                             } label: {
                                 ZStack {
                                     RoundedRectangle(cornerRadius: 10)
@@ -143,7 +167,9 @@ struct Home: View {
                             .buttonStyle(CButton())
                         } else if inputIsActive {
                             Button {
-                                withAnimation(.linear(duration: 0.25)) { inputIsActive = false }
+                                if #available(iOS 15.0, *) {
+                                    withAnimation(.linear(duration: 0.25)) { inputIsActive = false }
+                                }
                             } label: {
                                 ZStack {
                                     RoundedRectangle(cornerRadius: 10)

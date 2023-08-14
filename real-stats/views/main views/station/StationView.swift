@@ -14,28 +14,19 @@ func getSortedTimes(direction: [String: NewStationTime]?) -> [String] {
         arr.append(time)
     }
     arr = arr.sorted()
-    return arr
+    return Array(arr.prefix(3))
 }
 
-//func getStationTimes(station: String) -> NewTimes {
-//
-//    var stationTimes: NewTimes = load("608.json")
-//
-//    apiCall().getStationTimes(station: complex.stations[chosenStation].GTFSID) { (times) in
-//        self.times = times
-//    }
-//
-//    return stationTimes
-//}
 
 struct StationView: View {
 //    @FetchRequest private var favoriteStations: FetchedResults<FavoriteStation>
+    let persistentContainer = CoreDataManager.shared.persistentContainer
     
     @ObservedObject var monitor = Network()
     @FetchRequest(entity: FavoriteStation.entity(), sortDescriptors: [NSSortDescriptor(key: "dateCreated", ascending: false)]) private var favoriteStations: FetchedResults<FavoriteStation>
 
     @Environment(\.managedObjectContext) private var viewContext
-    @Environment(\.dismiss) var dismiss
+//    @Environment(\.dismiss) var dismiss
     let persistedContainer = CoreDataManager.shared.persistentContainer
     
     var complex: Complex
@@ -48,12 +39,22 @@ struct StationView: View {
     }
     
     @State var times: NewTimes = load("608.json")
+    @State var trips: [String: Trip] = load("stopTimes.json")
+    
+    @State var tripKeys: [String] = []
     
     @State var short1Size = CGSize()
     @State var short2Size = CGSize()
     @State var lineSelectorSize = CGSize()
     
     @State var isFavorited: Bool
+    
+    init(complex: Complex, chosenStation: Int, isFavorited: Bool) {
+        self.complex = complex
+        self._chosenStation = State(initialValue: chosenStation)
+        self._isFavorited = State(initialValue: isFavorited)
+        
+    }
     
     /*
      for station in fetchrequests favorites, if favorites.chosen id == complex.id, isfavorited = false
@@ -93,6 +94,9 @@ struct StationView: View {
                 ScrollView {
                     VStack(alignment: .leading) {
                         Spacer().frame(height:lineSelectorSize.height + short1Size.height + short2Size.height + 40)
+                            .onAppear {
+                                print(chosenStation)
+                            }
                         
                         // MARK: - No Wifi
                         
@@ -100,36 +104,113 @@ struct StationView: View {
                             Text("No Wifi: real-stats will downloaded data")
                                 .padding()
                         }
-                                                
-                        // MARK: - North Times
-                        Text(complex.stations[chosenStation].northDir)
-                            .padding(.horizontal)
-                        ForEach(Array(times.north!.keys).sorted(), id: \.self) { line in
-                            StationTimeRow(
-                                line: line,
-                                direction: "N",
-                                trainTimes: times,
-                                times: getSortedTimes(direction: times.north![line]!!)
-                            )
-                            .padding(.horizontal,5)
-                            .frame(height: 55)
+                        if times.service {
+                            // MARK: - North Times
+                            if (Array(times.north!.keys).sorted().count < 1) {
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .foregroundColor(Color("cLessDarkGray"))
+                                        .shadow(radius: 2)
+                                        .frame(height: 100)
+                                        .padding()
+                                    HStack {
+                                        Image(systemName: "exclamationmark.triangle.fill")
+                                            .foregroundStyle(.black, .yellow)
+                                            .font(.system(size: 60))
+                                            .shadow(radius: 2)
+                                        .padding()
+                                        Text("No service to \(complex.stations[chosenStation].northDir) at this station")
+                                            .font(.headline)
+                                            .fontWeight(.semibold)
+                                            .padding(5)
+                                            .frame(width: geometry.size.width / 2)
+                                    }
+                                }
+                                .padding(.bottom,-20)
+                            } else {
+                                Text(complex.stations[chosenStation].northDir)
+                                    .font(.title3)
+                                    .padding(.horizontal)
+                                    .padding(.top,2)
+                                ForEach(Array(times.north!.keys).sorted(), id: \.self) { line in
+                                    StationTimeRow(
+                                        line: line,
+                                        direction: "N",
+                                        trainTimes: times,
+                                        times: getSortedTimes(direction: times.north![line]!!),
+                                        trips: trips
+                                    )
+                                    .environment(\.managedObjectContext, persistentContainer.viewContext)
+                                    .padding(.horizontal,5)
+                                    .frame(height: 55)
+                                }
+                            }
+                            // MARK: - South Times
+                            if (Array(times.south!.keys).sorted().count < 1) {
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .foregroundColor(Color("cLessDarkGray"))
+                                        .shadow(radius: 2)
+                                        .frame(height: 100)
+                                        .padding()
+                                    HStack {
+                                        Image(systemName: "exclamationmark.triangle.fill")
+                                            .foregroundStyle(.black, .yellow)
+                                            .font(.system(size: 60))
+                                            .shadow(radius: 2)
+                                        .padding()
+                                        Text("No service to \(complex.stations[chosenStation].southDir) at this station")
+                                            .font(.headline)
+                                            .fontWeight(.semibold)
+                                            .padding(5)
+                                            .frame(width: geometry.size.width / 2)
+                                    }
+                                }
+                                .padding(.bottom,-20)
+                            } else {
+                                Divider()
+                                    .padding(.top)
+                                Text(complex.stations[chosenStation].southDir)
+                                    .font(.title3)
+                                    .padding(.horizontal)
+                                ForEach(Array(times.south!.keys).sorted(), id: \.self) { line in
+                                    StationTimeRow(
+                                        line: line,
+                                        direction: "S",
+                                        trainTimes: times,
+                                        times: getSortedTimes(direction: times.south![line]!!),
+                                        trips: trips
+                                    )
+                                    .environment(\.managedObjectContext, persistentContainer.viewContext)
+                                    .padding(.horizontal,5)
+                                    .frame(height: 55)
+                                }
+                            }
+                        } else {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 10)
+                                    .foregroundColor(Color("cLessDarkGray"))
+                                    .shadow(radius: 2)
+                                    .frame(height: 100)
+                                    .padding()
+                                HStack {
+                                    Image(systemName: "exclamationmark.triangle.fill")
+                                        .foregroundStyle(.black, .yellow)
+                                        .font(.system(size: 60))
+                                        .shadow(radius: 2)
+                                    .padding()
+                                    Text("No service at this station ☹️")
+                                        .font(.headline)
+                                        .fontWeight(.semibold)
+                                        .padding(.leading, -5)
+                                }
+                            }
                         }
-                        // MARK: - South Times
-                        Text("\n" + complex.stations[chosenStation].southDir)
-                            .padding(.horizontal)
-                        ForEach(Array(times.south!.keys).sorted(), id: \.self) { line in
-                            StationTimeRow(
-                                line: line,
-                                direction: "S",
-                                trainTimes: times,
-                                times: getSortedTimes(direction: times.south![line]!!)
-                            )
-                            .padding(.horizontal,5)
-                            .frame(height: 55)
-                        }
+                        Spacer()
+                            .frame(height: 200)
                     }
                 }
-                // MARK: - Top Park
+                // MARK: - Top Part
                 ZStack {
                     VStack {
                         Rectangle()
@@ -144,9 +225,15 @@ struct StationView: View {
                             .frame(width: 34, height: 4.5)
                             .padding(.top, 6)
                             .onAppear {
-                                apiCall().getStationTimes(station: complex.stations[chosenStation].GTFSID) { (times) in
-                                    self.times = times
+                                apiCall().getStationAndTrips(station: complex.stations[chosenStation].GTFSID) { (stationAndTrip) in
+                                    self.times = stationAndTrip.station
+                                    self.trips = stationAndTrip.trips
+//                                    print(stationAndTrip)
                                 }
+
+//                                apiCall().getStationTimes(station: complex.stations[chosenStation].GTFSID) { (times) in
+//                                    self.times = times
+//                                }
                             }
                         HStack {
                             VStack(alignment: .leading) {
@@ -211,9 +298,12 @@ struct StationView: View {
                         WrappingHStack(0..<complex.stations.count, id: \.self,spacing: .constant(0)) { index in
                             Button {
                                 chosenStation = index
-                                withAnimation(.spring()) {
-                                    apiCall().getStationTimes(station: complex.stations[chosenStation].GTFSID) { (times) in
-                                        self.times = times
+                                
+                                apiCall().getStationAndTrips(station: complex.stations[chosenStation].GTFSID) { (stationAndTrip) in
+                                    withAnimation(.spring(response: 0.31, dampingFraction: 1-0.26)) {
+                                        self.times = stationAndTrip.station
+                                        self.trips = stationAndTrip.trips
+                                        //                                    print(stationAndTrip)
                                     }
                                 }
                                 if isFavorited {

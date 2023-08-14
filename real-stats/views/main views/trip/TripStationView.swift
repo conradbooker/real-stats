@@ -21,31 +21,57 @@ extension Shape {
 }
 
 func getLineColor(line: String, time: Int) -> Color {
+    let opacityAmmount = 0.5
     if time < Int(NSDate().timeIntervalSince1970) {
-        return .gray
-    } else if ["A","C","E"].contains(line) {
-        return Color("blue")
-    } else if ["N","Q","R","W"].contains(line) {
-        return Color("yellow")
-    } else if ["B","D","F","M"].contains(line) {
-        return Color("orange")
-    } else if ["J","Z"].contains(line) {
-        return Color("brown")
-    } else if ["1","2","3"].contains(line) {
-        return Color("red")
-    } else if ["4","5","6","6X"].contains(line) {
-        return Color("green")
-    } else if ["7","7X"].contains(line) {
-        return Color("purple")
-    }else if ["G"].contains(line) {
-        return Color("lime")
-    } else if ["H","FS","S"].contains(line) {
-        return Color("darkerGray")
-    } else if ["L"].contains(line) {
-        return Color("lighterGray")
-    }
-    else {
-        return .black
+        if ["A","C","E"].contains(line) {
+            return Color("blue").opacity(opacityAmmount)
+        } else if ["N","Q","R","W"].contains(line) {
+            return Color("yellow").opacity(opacityAmmount)
+        } else if ["B","D","F","FX","M"].contains(line) {
+            return Color("orange").opacity(opacityAmmount)
+        } else if ["J","Z"].contains(line) {
+            return Color("brown").opacity(opacityAmmount)
+        } else if ["1","2","3"].contains(line) {
+            return Color("red").opacity(opacityAmmount)
+        } else if ["4","5","6","6X"].contains(line) {
+            return Color("green").opacity(opacityAmmount)
+        } else if ["7","7X"].contains(line) {
+            return Color("purple").opacity(opacityAmmount)
+        }else if ["G"].contains(line) {
+            return Color("lime").opacity(opacityAmmount)
+        } else if ["H","FS","S","0"].contains(line) {
+            return Color("darkerGray").opacity(opacityAmmount)
+        } else if ["L"].contains(line) {
+            return Color("lighterGray").opacity(opacityAmmount)
+        }
+        else {
+            return .black
+        }
+    } else {
+        if ["A","C","E"].contains(line) {
+            return Color("blue")
+        } else if ["N","Q","R","W"].contains(line) {
+            return Color("yellow")
+        } else if ["B","D","F","FX","M"].contains(line) {
+            return Color("orange")
+        } else if ["J","Z"].contains(line) {
+            return Color("brown")
+        } else if ["1","2","3"].contains(line) {
+            return Color("red")
+        } else if ["4","5","6","6X"].contains(line) {
+            return Color("green")
+        } else if ["7","7X"].contains(line) {
+            return Color("purple")
+        }else if ["G"].contains(line) {
+            return Color("lime")
+        } else if ["H","FS","S","0"].contains(line) {
+            return Color("darkerGray")
+        } else if ["L"].contains(line) {
+            return Color("lighterGray")
+        }
+        else {
+            return .black
+        }
     }
 }
 
@@ -57,8 +83,7 @@ func getOpacity(time: Int) -> Double {
 }
 
 struct LineShape: View {
-    var trips: [String: Trip]
-    var tripID: String
+    var trip: Trip
     var station: String
     var line: String
     var counter: Int
@@ -68,16 +93,31 @@ struct LineShape: View {
     var body: some View {
         VStack {
             Group {
-                if stationsDict[station]?.isTransfer ?? false {
-                    Circle()
-                        .strokeBorder(getLineColor(line: line, time: trips[tripID]?.stations[station]?.times[0] ?? 0),lineWidth: 3)
-                        .background(Circle().foregroundColor(Color("cDarkGray")).frame(width: imageSize-1, height: imageSize-1))
+                if (stationsDict[station]?.isTransfer ?? false) {
+                    ZStack {
+                        Circle()
+                            .foregroundColor(Color("cDarkGray"))
+                            .frame(width: imageSize-1, height: imageSize-1)
+                        Circle()
+                            .strokeBorder(getLineColor(line: line, time: trip.stations[station]?.times[0] ?? 0),lineWidth: 3)
+                            .background(Circle().foregroundColor(Color("cDarkGray")).frame(width: imageSize-0.3305, height: imageSize-0.33333333)
+                                .padding(.top,-0.005))
                         .frame(width: imageSize, height: imageSize)
+                    }
                 } else {
-                    Circle()
-                        .strokeBorder(Color("cDarkGray"),lineWidth: 3)
-                        .background(Circle().foregroundColor(getLineColor(line: line, time: trips[tripID]?.stations[station]?.times[0] ?? 0)).frame(width: imageSize-1, height: imageSize-1))
+                    ZStack {
+                        Circle()
+                            .foregroundColor(Color("cDarkGray"))
+                            .frame(width: imageSize-0.3, height: imageSize-0.3)
+                        Circle()
+                            .strokeBorder(Color("cDarkGray"),lineWidth: 3)
+                            .background(
+                                Circle()
+                                    .foregroundColor(getLineColor(line: line, time: trip.stations[station]?.times[0] ?? 0))
+                                    .frame(width: imageSize-1, height: imageSize-1)
+                            )
                         .frame(width: imageSize, height: imageSize)
+                    }
                 }
             }
             .padding(.vertical,1)
@@ -97,35 +137,55 @@ struct FormattedTime: View {
         VStack {
 //            Text("\(time-currentTime)")
             if time-currentTime > 60 {
-                Text("\(abs(time-currentTime)/60) mins")
+                if abs(time-currentTime)/60 == 1 {
+                    Text("\(abs(time-currentTime)/60) min")
+                } else {
+                    Text("\(abs(time-currentTime)/60) mins")
+                }
             } else if (time-currentTime) < 60 && (time-currentTime) > 0 {
-                Text("<1 min")
+                if (time-currentTime) > 40 {
+                    Text("<1 min")
+                } else if (time-currentTime) > 20 {
+                    Text("due")
+                } else if time-currentTime > 0 {
+                    Text("here")
+                }
             } else {
-                Text("\(abs(time-currentTime)/60) mins ago")
+                if (abs(time-currentTime)/60) == 1 {
+                    Text("1 min ago")
+                } else {
+                    Text("\(abs(time-currentTime)/60) mins ago")
+                }
             }
         }
     }
 }
 
 struct TripStationView: View {
-    var tripID: String
+    let persistentContainer = CoreDataManager.shared.persistentContainer
     var station: String
     var line: String
-    var trips: [String: Trip]
+    var trip: Trip
     var counter: Int
+    
+    @State var fromFavorites = false
+    @State var selectedItem: Item?
+    @State var chosenStation: Int = 0
+
+    @FetchRequest(entity: FavoriteStation.entity(), sortDescriptors: [NSSortDescriptor(key: "dateCreated", ascending: false)]) private var favoriteStations: FetchedResults<FavoriteStation>
     
     var body: some View {
         HStack(spacing: 0) {
             ZStack {
-                LineShape(trips: trips, tripID: tripID, station: station, line: line, counter: counter)
+                LineShape(trip: trip, station: station, line: line, counter: counter)
                 VStack {
-                    if getCurrentStationClean(stations: trips[tripID]?.stations ?? [:]) == station {
+                    if getCurrentStationClean(stations: trip.stations ?? [:]) == station {
                         withAnimation(.spring(response: 0.4)) {
                             TrainDot(line: line)
                                 .frame(height: 30)
                         }
                         Spacer()
-                    } else if getStationBefore(stations: trips[tripID]?.stations ?? [:]) == station {
+                    } else if getStationBefore(stations: trip.stations ?? [:]) == station {
                         Spacer()
                             .frame(height: 20)
                         withAnimation(.spring(response: 0.4)) {
@@ -138,28 +198,49 @@ struct TripStationView: View {
                 }
             }
             Group {
-                VStack(alignment: .leading, spacing: 0) {
-                    Text(stationsDict[station]?.short1 ?? "")
-                    if (stationsDict[station]?.short2 ?? "") != "" {
-                        Text(stationsDict[station]?.short2 ?? "")
-                            .font(.subheadline)
-                    }
-                    HStack(spacing: 1.5) {
-                        ForEach(stationsDict[station]?.weekdayLines ?? [""], id: \.self) { bullet in
-                            if bullet != trips[tripID]?.line ?? "" {
-                                Image(bullet)
-                                    .resizable()
-                                    .frame(width: 16, height: 16)
+                Button {
+                    for complex in complexData {
+                        for stat in complex.stations {
+                            if stat.GTFSID == station {
+                                selectedItem = Item(complex: complex)
+                                for favoriteStation in favoriteStations {
+                                    if favoriteStation.complexID == complex.id {
+                                        fromFavorites = true
+                                        chosenStation = Int(favoriteStation.chosenStationNumber)
+                                        break
+                                    }
+                                    chosenStation = 0
+                                    fromFavorites = false
+                                }
                             }
                         }
                     }
-                    Spacer()
+                } label: {
+                    VStack(alignment: .leading, spacing: 0) {
+                        Text(stationsDict[station]?.short1 ?? "")
+                        if (stationsDict[station]?.short2 ?? "") != "" {
+                            Text(stationsDict[station]?.short2 ?? "")
+                                .font(.subheadline)
+                        }
+                        HStack(spacing: 1.5) {
+                            ForEach(stationsDict[station]?.weekdayLines ?? [""], id: \.self) { bullet in
+                                if bullet != trip.line ?? "" {
+                                    Image(bullet)
+                                        .resizable()
+                                        .frame(width: 16, height: 16)
+                                }
+                            }
+                        }
+                        Spacer()
+                    }
                 }
+                .buttonStyle(CButton())
+
                 Spacer()
                 VStack(alignment: .trailing, spacing: 0) {
-                    FormattedTime(time: trips[tripID]?.stations[station]?.times[0] ?? 0, counter: counter)
-                    Text(Date(timeIntervalSince1970: TimeInterval(trips[tripID]?.stations[station]?.times[0] ?? 0)), style: .time)
-                    if trips[tripID]?.stations[station]?.suddenReroute == true {
+                    FormattedTime(time: trip.stations[station]?.times[0] ?? 0, counter: counter)
+                    Text(Date(timeIntervalSince1970: TimeInterval(trip.stations[station]?.times[0] ?? 0)), style: .time)
+                    if trip.stations[station]?.suddenReroute == true {
                         HStack {
                             Image(systemName: "exclamationmark.triangle.fill")
                                 .frame(width: 15,height: 15)
@@ -172,7 +253,18 @@ struct TripStationView: View {
                 }
                 .padding(.trailing)
             }
-            .opacity(getOpacity(time: trips[tripID]?.stations[station]?.times[0] ?? 0))
+            .opacity(getOpacity(time: trip.stations[station]?.times[0] ?? 0))
+
+        }
+        .sheet(item: $selectedItem) { item in
+            if fromFavorites {
+                // chosen station = favoriteStationNumber thing
+                StationView(complex: item.complex, chosenStation: chosenStation, isFavorited: true)
+                    .environment(\.managedObjectContext, persistentContainer.viewContext)
+            } else {
+                StationView(complex: item.complex, chosenStation: 0, isFavorited: false)
+                    .environment(\.managedObjectContext, persistentContainer.viewContext)
+            }
         }
         
     }
@@ -180,7 +272,9 @@ struct TripStationView: View {
 
 struct TripStationView_Previews: PreviewProvider {
     static var previews: some View {
-        TripStationView(tripID: "104700_W..N", station: "R27", line: "W", trips: exampleTrips, counter: 0)
+        let persistedContainer = CoreDataManager.shared.persistentContainer
+        TripStationView(station: "R27", line: "W", trip: exampleTrip, counter: 0)
+            .environment(\.managedObjectContext, persistedContainer.viewContext)
             .previewLayout(.fixed(width: 400, height: 70))
     }
 }

@@ -20,15 +20,34 @@ var stationKeys = [
 ]
 
 var defaultStationTimes: NewTimes = load("608.json")
+var placeHolderStationTimes: NewTimes = load("601.json")
 
-struct TripItem: Identifiable {
+struct LineItem: Identifiable {
+    var id = UUID()
+    var direction: String
+    var line: String
+}
+struct TripsItem: Identifiable {
     var id = UUID()
     var trips: [String: Trip]
     var line: String
     var tripID: String
 }
+struct TripItem: Identifiable {
+    var id = UUID()
+    var trip: Trip
+    var line: String
+    var tripID: String
+}
+struct DisruptionItem: Identifiable {
+    var id = UUID()
+    var line: String
+    var direction: String
+}
 
 struct StationTimeRow: View {
+    let persistentContainer = CoreDataManager.shared.persistentContainer
+    
     var line: String
     var direction: String
     var trainTimes: NewTimes
@@ -38,11 +57,20 @@ struct StationTimeRow: View {
     @State var currentStation: String = ""
     
     @State var selectedTrip: TripItem?
+    @State var selectedDisruption: DisruptionItem?
+    
     @State var showTrips = false
+    @State var showBottom = false
+
+    var trips: [String: Trip]
     
-    @State var trips: [String: Trip] = exampleTrips
-    
-    init(line: String, direction: String, trainTimes: NewTimes, times: [String]) {
+    var trip1ID: String = ""
+    var trip2ID: String = ""
+    var trip3ID: String = ""
+
+    @State private var tripIDs = []
+
+    init(line: String, direction: String, trainTimes: NewTimes, times: [String], trips: [String: Trip]) {
         self.line = line
         self.trainTimes = trainTimes
         self.times = times
@@ -52,29 +80,44 @@ struct StationTimeRow: View {
         } else {
             self.tripID = trainTimes.south?[line]??[times[0]]?.tripID ?? ""
         }
+        self.trips = trips
         self.currentStation = stationsDict[
             getCurrentStationClean(stations:trips[tripID]?.stations ?? [:])
         ]?.short1 ?? ""
+        if direction == "N" {
+            if times.count > 2 {
+                trip3ID = trainTimes.north?[line]??[times[2]]?.tripID ?? ""
+            }
+            if times.count > 1 {
+                trip2ID = trainTimes.north?[line]??[times[1]]?.tripID ?? ""
+            }
+            trip1ID = trainTimes.north?[line]??[times[0]]?.tripID ?? ""
+        } else {
+            if times.count > 2 {
+                trip3ID = trainTimes.south?[line]??[times[2]]?.tripID ?? ""
+            }
+            if times.count > 1 {
+                trip2ID = trainTimes.south?[line]??[times[1]]?.tripID ?? ""
+            }
+            trip1ID = trainTimes.south?[line]??[times[0]]?.tripID ?? ""
+        }
+
     }
+    
     
     var body: some View {
         GeometryReader { geometry in
             ZStack {
                 HStack(spacing: 0) {
                     Spacer()
-                        .onAppear {
-                            apiCall().getTrip(line: line) { (trips) in
-                                self.trips = trips
-                            }
-                        }
                     // MARK: - Third Time
                     Button {
                         if times.count > 2 {
                             showTrips = true
                             if direction == "N" {
-                                selectedTrip = TripItem(trips: trips, line: line, tripID: trainTimes.north?[line]??[times[2]]?.tripID ?? "")
+                                selectedTrip = TripItem(trip: trips[trip3ID]!, line: line, tripID: trainTimes.north?[line]??[times[2]]?.tripID ?? "")
                             } else {
-                                selectedTrip = TripItem(trips: trips, line: line, tripID: trainTimes.south?[line]??[times[2]]?.tripID ?? "")
+                                selectedTrip = TripItem(trip: trips[trip3ID]!, line: line, tripID: trainTimes.south?[line]??[times[2]]?.tripID ?? "")
                             }
                         }
                     } label: {
@@ -105,9 +148,9 @@ struct StationTimeRow: View {
                         if times.count > 1 {
                             showTrips = true
                             if direction == "N" {
-                                selectedTrip = TripItem(trips: trips, line: line, tripID: trainTimes.north?[line]??[times[1]]?.tripID ?? "")
+                                selectedTrip = TripItem(trip: trips[trip2ID]!, line: line, tripID: trainTimes.north?[line]??[times[1]]?.tripID ?? "")
                             } else {
-                                selectedTrip = TripItem(trips: trips, line: line, tripID: trainTimes.south?[line]??[times[1]]?.tripID ?? "")
+                                selectedTrip = TripItem(trip: trips[trip2ID]!, line: line, tripID: trainTimes.south?[line]??[times[1]]?.tripID ?? "")
                             }
                         }
                     } label: {
@@ -135,9 +178,9 @@ struct StationTimeRow: View {
                     Button {
                         showTrips = true
                         if direction == "N" {
-                            selectedTrip = TripItem(trips: trips, line: line, tripID: trainTimes.north?[line]??[times[0]]?.tripID ?? "")
+                            selectedTrip = TripItem(trip: trips[trip1ID]!, line: line, tripID: trainTimes.north?[line]??[times[0]]?.tripID ?? "")
                         } else {
-                            selectedTrip = TripItem(trips: trips, line: line, tripID: trainTimes.south?[line]??[times[0]]?.tripID ?? "")
+                            selectedTrip = TripItem(trip: trips[trip1ID]!, line: line, tripID: trainTimes.south?[line]??[times[0]]?.tripID ?? "")
                         }
                     } label: {
                         ZStack {
@@ -145,13 +188,57 @@ struct StationTimeRow: View {
                                 .foregroundColor(Color("cLessDarkGray"))
                                 .shadow(radius: 2)
                             HStack(spacing: 0) {
+                                VStack(alignment: .leading) {
+                                    Text(stationsDict[
+                                        trips[trip1ID]?.destination ?? ""
+                                    ]?.short1 ?? "")
+                                        .fontWeight(.bold)
+                                    if (trips[trip1ID]?.delay ?? 0 < 60) {
+                                        Text(getCurrentStation(stations: trips[trip1ID]?.stations ?? [:]))
+                                            .foregroundColor(Color("green"))
+                                            .font(.footnote)
+                                    } else {
+                                        Text("Stuck \(getCurrentStation(stations: trips[trip1ID]?.stations ?? [:])) for \(trips[trip1ID]?.delay ?? 60) sec")
+                                            .foregroundColor(Color("red"))
+                                            .font(.footnote)
+                                    }
+                                }
+                                Spacer()
+                                individualTime(time: Int(times[0]) ?? 0)
+                                    .padding(.trailing,15)
+//                                Text(trainTimes.south?[line]??[times[0]]?.tripID ?? "")
+                            }
+                            .padding(.leading,37)
+                        }
+                        .frame(width: geometry.size.width*8.1/12, height: 55)
+                        .padding(.leading,25)
+                    }
+                    .buttonStyle(CButton())
+                    Spacer()
+                }
+                // MARK: - Line
+                HStack(spacing: 0) {
+                    Button {
+                        if direction == "N" {
+                            selectedDisruption = DisruptionItem(line: line, direction: "north")
+                        } else {
+                            selectedDisruption = DisruptionItem(line: line, direction: "south")
+                        }
+                    } label: {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 15)
+                                .foregroundColor(Color("cLessDarkGray"))
+                                .shadow(radius: 2)
+                                .frame(width: 55, height: 55)
+                                .padding(.leading, -7.4)
+                            HStack(spacing: 0) {
                                 ZStack {
                                     Image(line)
                                         .resizable()
                                         .frame(width: 40,height: 40)
                                         .padding(7.5)
                                         .shadow(radius: 2)
-                                    if trips[tripID]?.serviceDisruptions.skippedStations != [] || trips[tripID]?.serviceDisruptions.localStations != [] || trips[tripID]?.serviceDisruptions.suspended != [] || trips[tripID]?.serviceDisruptions.reroutes != [] {
+                                    if trips[trip1ID]?.serviceDisruptions.skippedStations != [] || trips[trip1ID]?.serviceDisruptions.localStations != [] || trips[trip1ID]?.serviceDisruptions.suspended != [] || trips[trip1ID]?.serviceDisruptions.reroutes != [] {
                                         VStack {
                                             Spacer()
                                             HStack {
@@ -167,35 +254,21 @@ struct StationTimeRow: View {
                                         .frame(width: 40,height: 40)
                                     }
                                 }
-                                VStack(alignment: .leading) {
-                                    Text(stationsDict[
-                                        trips[tripID]?.destination ?? ""
-                                    ]?.short1 ?? "")
-                                        .fontWeight(.bold)
-                                    if (trips[tripID]?.delay ?? 0 < 60) {
-                                        Text(getCurrentStation(stations: trips[tripID]?.stations ?? [:]))
-                                            .foregroundColor(Color("green"))
-                                            .font(.footnote)
-                                    } else {
-                                        Text("Stuck \(getCurrentStation(stations: trips[tripID]?.stations ?? [:])) for \(trips[tripID]?.delay ?? 60) sec")
-                                            .foregroundColor(Color("red"))
-                                            .font(.footnote)
-                                    }
-                                }
                                 Spacer()
-                                individualTime(time: Int(times[0]) ?? 0)
-                                    .padding(.trailing,15)
 //                                Text(trainTimes.south?[line]??[times[0]]?.tripID ?? "")
                             }
                         }
-                        .frame(width: geometry.size.width*9/12, height: 55)
+                        .frame(width: geometry.size.width*2/12, height: 55)
                     }
                     .buttonStyle(CButton())
                     Spacer()
                 }
             }
         }.sheet(item: $selectedTrip) { trip in
-            TripView(line: trip.line, tripID: trip.tripID, trips: trip.trips)
+            TripView(line: trip.line, trip: trip.trip, tripID: trip.tripID)
+                .environment(\.managedObjectContext, persistentContainer.viewContext)
+        }.sheet(item: $selectedDisruption) { disruption in
+            serviceAlertsView(line: disruption.line, direction: disruption.direction)
         }
     }
 }
@@ -223,11 +296,9 @@ struct individualTime: View {
                 Text("min")
                     .font(.footnote)
             } else if time-currentTime > 20 {
-                Text("arriving")
-            } else if time-currentTime > 10 {
-                Text("at station")
+                Text("due")
             } else if time-currentTime > 0 {
-                Text("leaving")
+                Text("here")
             }
         }
     }
@@ -237,9 +308,9 @@ struct StationTimeRow_Previews: PreviewProvider {
     static var previews: some View {
         
         StationTimeRow(
-            line: "1", direction: "N",
-            trainTimes: defaultStationTimes,
-            times: getSortedTimes(direction: defaultStationTimes.north!["1"]!!)
+            line: "6", direction: "N",
+            trainTimes: placeHolderStationTimes,
+            times: getSortedTimes(direction: placeHolderStationTimes.north!["6X"]!!), trips: exampleTrips
         )
         .previewLayout(.fixed(width: 375, height: 65))
     }

@@ -10,7 +10,11 @@ import SwiftUI
 
 // MARK: - FUNCTIONS
 
+var exampleTripAndStationData: TripAndStation = load("tripAndStationData.json")
 var exampleTrips: [String: Trip] = load("stopTimes.json")
+var exampleTrip: Trip = load("stopTime.json")
+var exampleServiceAlerts: [String: Line_ServiceDisruption] = load("exampleServiceDisruptions.json")
+var exampleServiceAlert: Line_ServiceDisruption = load("exampleServiceDisruption.json")
 var stationsDict: [String: TripStationEntry] = load("tripStationData.json")
 
 func getTripStationKeys(stations: [String: TripStation], all: Bool) -> [String] {
@@ -56,7 +60,7 @@ func getCurrentStation(stations: [String: TripStation]) -> String {
             if  station.value.times[0] - Int(Date().timeIntervalSince1970) < 20 {
                 return "@ \(stationsDict[station.key]?.short1 ?? "")"
             } else {
-                return "travelling to \(stationsDict[station.key]?.short1 ?? "")"
+                return "→ \(stationsDict[station.key]?.short1 ?? "")"
             }
         }
     }
@@ -95,11 +99,14 @@ extension Collection {
 }
 
 struct TripView: View {
+    let persistentContainer = CoreDataManager.shared.persistentContainer
+    
     @State private var counter: Int = 0
     
     var line: String
-    var tripID: String
-    @State var trips: [String: Trip]
+    @State var trip: Trip
+    @State var tripID: String
+    
     var destination: String = ""
     
     @State var stationKeys: [String] = [String]()
@@ -112,15 +119,15 @@ struct TripView: View {
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
-    init(line: String, tripID: String, trips: [String : Trip]) {
+    init(line: String, trip: Trip, tripID: String) {
         self.line = line
-        self.tripID = tripID
-        self.trips = trips
-        self.stationKeys = getTripStationKeys(stations: trips[tripID]?.stations ?? [:], all: false)
-        self.destination = trips[tripID]?.destination ?? ""
+        self.trip = trip
+        self._tripID = State(initialValue: tripID)
+        self.stationKeys = getTripStationKeys(stations: trip.stations, all: false)
+        self.destination = trip.destination
         self.destination = stationsDict[destination]?.short1 ?? ""
-        self.reroutedStations = trips[tripID]?.serviceDisruptions.reroutes ?? [Reroute]()
-        self.suspendedStations = trips[tripID]?.serviceDisruptions.suspended ?? [[String]()]
+        self.reroutedStations = trip.serviceDisruptions.reroutes 
+        self.suspendedStations = trip.serviceDisruptions.suspended 
     }
     
 //    ZStack {
@@ -139,24 +146,26 @@ struct TripView: View {
                 Color("cDarkGray")
                     .ignoresSafeArea()
                 ScrollView {
-                    // MARK: - Line Portion
+                    // MARK: - All Line Stations
                     VStack(alignment: .leading) {
                         Spacer()
                             .frame(height: serviceSize.height + 100)
                             .onReceive(timer) { _ in
-                                counter += 1
+                                withAnimation(.spring(response: 0.4)) {
+                                    counter += 1
+                                }
                             }
                         HStack {
                             Button {
                                 all.toggle()
                                 withAnimation(.spring(response: 0.4)) {
-                                    stationKeys = getTripStationKeys(stations: trips[tripID]?.stations ?? [:], all: all)
+                                    stationKeys = getTripStationKeys(stations: trip.stations, all: all)
                                 }
                             } label: {
                                 ZStack {
                                     RoundedRectangle(cornerRadius: 10)
                                         .frame(width: 130, height: 30)
-                                        .foregroundColor(Color("cDarkGray"))
+                                        .foregroundColor(Color("cLessDarkGray"))
                                         .shadow(radius: 2)
                                     if all {
                                         Text("Fewer stations")
@@ -171,7 +180,7 @@ struct TripView: View {
                             Spacer()
                                 .onAppear {
                                     withAnimation(.spring(response: 0.4)) {
-                                        stationKeys = getTripStationKeys(stations: trips[tripID]?.stations ?? [:], all: false)
+                                        stationKeys = getTripStationKeys(stations: trip.stations, all: false)
                                     }
                                 }
                         }
@@ -186,56 +195,104 @@ struct TripView: View {
                                 HStack(spacing:0) {
                                     VStack(spacing: 0) {
 //                                        change to destination here (if station == destination)
-                                        if Int(trips[tripID]?.stations[station]?.id ?? 0)+1 != Int(trips[tripID]?.stations.count ?? 0) {
-                                            if trips[tripID]?.stations[station]?.id ?? 0 == 0 && !all {
-                                                Rectangle()
-                                                    .frame(width: 16, height: 10)
-                                                    .foregroundColor(getLineColor(line: line, time: trips[tripID]?.stations[station]?.times[0] ?? 0))
-                                                    .padding(.horizontal,18)
-                                                Rectangle()
-                                                    .frame(width: 16, height: 5)
-                                                    .foregroundColor(getLineColor(line: line, time: trips[tripID]?.stations[station]?.times[0] ?? 0))
-                                                    .padding(.horizontal,18)
-                                                    .opacity(0)
+                                        if getTripStationKeys(stations: trip.stations , all: true).first == station && !all {
+                                            Rectangle()
+                                                .frame(width: 16, height: 10)
+                                                .foregroundColor(getLineColor(line: line, time: trip.stations[station]?.times[0] ?? 0))
+                                                .padding(.horizontal,18)
+                                            Rectangle()
+                                                .frame(width: 16, height: 5)
+                                                .foregroundColor(getLineColor(line: line, time: trip.stations[station]?.times[0] ?? 0))
+                                                .padding(.horizontal,18)
+                                                .opacity(0)
 
-                                                Rectangle()
-                                                    .frame(width: 16, height: 5)
-                                                    .foregroundColor(getLineColor(line: line, time: trips[tripID]?.stations[station]?.times[0] ?? 0))
-                                                    .padding(.horizontal,18)
-                                                Rectangle()
-                                                    .frame(width: 16, height: 5)
-                                                    .foregroundColor(getLineColor(line: line, time: trips[tripID]?.stations[station]?.times[0] ?? 0))
-                                                    .padding(.horizontal,18)
-                                                    .opacity(0)
+                                            Rectangle()
+                                                .frame(width: 16, height: 5)
+                                                .foregroundColor(getLineColor(line: line, time: trip.stations[station]?.times[0] ?? 0))
+                                                .padding(.horizontal,18)
+                                            Rectangle()
+                                                .frame(width: 16, height: 5)
+                                                .foregroundColor(getLineColor(line: line, time: trip.stations[station]?.times[0] ?? 0))
+                                                .padding(.horizontal,18)
+                                                .opacity(0)
 
-                                                Rectangle()
-                                                    .frame(width: 16, height: 5)
-                                                    .foregroundColor(getLineColor(line: line, time: trips[tripID]?.stations[station]?.times[0] ?? 0))
-                                                    .padding(.horizontal,18)
-                                                Rectangle()
-                                                    .frame(width: 16, height: 5)
-                                                    .foregroundColor(getLineColor(line: line, time: trips[tripID]?.stations[station]?.times[0] ?? 0))
-                                                    .padding(.horizontal,18)
-                                                    .opacity(0)
+                                            Rectangle()
+                                                .frame(width: 16, height: 5)
+                                                .foregroundColor(getLineColor(line: line, time: trip.stations[station]?.times[0] ?? 0))
+                                                .padding(.horizontal,18)
+                                            Rectangle()
+                                                .frame(width: 16, height: 5)
+                                                .foregroundColor(getLineColor(line: line, time: trip.stations[station]?.times[0] ?? 0))
+                                                .padding(.horizontal,18)
+                                                .opacity(0)
 
-                                                Rectangle()
-                                                    .frame(width: 16, height: 5)
-                                                    .foregroundColor(getLineColor(line: line, time: trips[tripID]?.stations[station]?.times[0] ?? 0))
-                                                    .padding(.horizontal,18)
+                                            Rectangle()
+                                                .frame(width: 16, height: 5)
+                                                .foregroundColor(getLineColor(line: line, time: trip.stations[station]?.times[0] ?? 0))
+                                                .padding(.horizontal,18)
 
-                                                Rectangle()
-                                                    .frame(width: 16, height: 25)
-                                                    .foregroundColor(getLineColor(line: line, time: trips[tripID]?.stations[station]?.times[0] ?? 0))
-                                                    .padding(.horizontal,18)
-                                            } else {
-                                                Rectangle()
-                                                    .frame(width: 16, height: 70)
-                                                    .foregroundColor(getLineColor(line: line, time: trips[tripID]?.stations[station]?.times[0] ?? 0))
-                                                    .padding(.horizontal,18)
-                                            }
+                                            Rectangle()
+                                                .frame(width: 16, height: 25)
+                                                .foregroundColor(getLineColor(line: line, time: trip.stations[station]?.times[0] ?? 0))
+                                                .padding(.horizontal,18)
+                                        } else if getTripStationKeys(stations: trip.stations , all: true).last == station {
+                                            
+                                        } else {
+                                            Rectangle()
+                                                .frame(width: 16, height: 70)
+                                                .foregroundColor(getLineColor(line: line, time: trip.stations[station]?.times[0] ?? 0))
+                                                .padding(.horizontal,18)
                                         }
+//                                        if Int(trip.stations[station]?.id ?? 0)+1 != Int(trip.stations.count ?? 0) {
+//                                            if trip.stations[station]?.id ?? 0 == 0 && !all {
+//                                                Rectangle()
+//                                                    .frame(width: 16, height: 10)
+//                                                    .foregroundColor(getLineColor(line: line, time: trip.stations[station]?.times[0] ?? 0))
+//                                                    .padding(.horizontal,18)
+//                                                Rectangle()
+//                                                    .frame(width: 16, height: 5)
+//                                                    .foregroundColor(getLineColor(line: line, time: trip.stations[station]?.times[0] ?? 0))
+//                                                    .padding(.horizontal,18)
+//                                                    .opacity(0)
+//
+//                                                Rectangle()
+//                                                    .frame(width: 16, height: 5)
+//                                                    .foregroundColor(getLineColor(line: line, time: trip.stations[station]?.times[0] ?? 0))
+//                                                    .padding(.horizontal,18)
+//                                                Rectangle()
+//                                                    .frame(width: 16, height: 5)
+//                                                    .foregroundColor(getLineColor(line: line, time: trip.stations[station]?.times[0] ?? 0))
+//                                                    .padding(.horizontal,18)
+//                                                    .opacity(0)
+//
+//                                                Rectangle()
+//                                                    .frame(width: 16, height: 5)
+//                                                    .foregroundColor(getLineColor(line: line, time: trip.stations[station]?.times[0] ?? 0))
+//                                                    .padding(.horizontal,18)
+//                                                Rectangle()
+//                                                    .frame(width: 16, height: 5)
+//                                                    .foregroundColor(getLineColor(line: line, time: trip.stations[station]?.times[0] ?? 0))
+//                                                    .padding(.horizontal,18)
+//                                                    .opacity(0)
+//
+//                                                Rectangle()
+//                                                    .frame(width: 16, height: 5)
+//                                                    .foregroundColor(getLineColor(line: line, time: trip.stations[station]?.times[0] ?? 0))
+//                                                    .padding(.horizontal,18)
+//
+//                                                Rectangle()
+//                                                    .frame(width: 16, height: 25)
+//                                                    .foregroundColor(getLineColor(line: line, time: trip.stations[station]?.times[0] ?? 0))
+//                                                    .padding(.horizontal,18)
+//                                            } else {
+//                                                Rectangle()
+//                                                    .frame(width: 16, height: 70)
+//                                                    .foregroundColor(getLineColor(line: line, time: trip.stations[station]?.times[0] ?? 0))
+//                                                    .padding(.horizontal,18)
+//                                            }
+//                                        }
                                     }
-//                                    Text("first: \(Int(trips[tripID]?.stations[station]?.id ?? 0)), second: \(trips[tripID]?.stations.count ?? 0)")
+//                                    Text("first: \(Int(trip.stations[station]?.id ?? 0)), second: \(trip.stations.count ?? 0)")
                                     Spacer()
                                 }
                             }
@@ -244,8 +301,9 @@ struct TripView: View {
                         VStack(spacing: 0) {
                             ForEach(stationKeys, id: \.self) { station in
                                 TripStationView(
-                                    tripID: tripID, station: station, line: line, trips: trips, counter: counter
+                                    station: station, line: line, trip: trip, counter: counter
                                 )
+                                .environment(\.managedObjectContext, persistentContainer.viewContext)
                                 .frame(height: 70)
                                 
                             }
@@ -255,7 +313,7 @@ struct TripView: View {
                 .refreshable {
                     counter += 1
                 }
-                // MARK: - Service disruptions
+                // MARK: - Service disruptions + line overview
                 ZStack {
                     VStack {
                         Rectangle()
@@ -266,6 +324,11 @@ struct TripView: View {
                     }
                     // MARK: - Line portion stuff
                     VStack(spacing: 0) {
+                        Capsule()
+                            .fill(Color("second"))
+                            .frame(width: 34, height: 4.5)
+                            .padding(.top, -10)
+
                         HStack {
                             Image(line)
                                 .resizable()
@@ -276,14 +339,16 @@ struct TripView: View {
                                 .fontWeight(.bold)
                             Spacer()
                             Button {
-                                apiCall().getTrip(line: line) { (trips) in
-                                    self.trips = trips
+                                apiCall().getIndividualTrip(trip: tripID) { (trip) in
+                                    withAnimation(.spring(response: 0.4)) {
+                                        self.trip = trip
+                                    }
                                 }
                             } label: {
                                 ZStack {
                                     RoundedRectangle(cornerRadius: 10)
                                         .frame(width: 30, height: 30)
-                                        .foregroundColor(Color("cDarkGray"))
+                                        .foregroundColor(Color("cLessDarkGray"))
                                         .shadow(radius: 2)
                                     Image(systemName: "arrow.clockwise")
                                 }
@@ -291,16 +356,16 @@ struct TripView: View {
                             .buttonStyle(CButton())
                         }
                         // MARK: - Delay
-                        if trips[tripID]?.delay ?? 0 < 60 {
+                        if trip.delay < 60 {
                             HStack {
-                                Text(getCurrentStation(stations: trips[tripID]?.stations ?? [:]))
+                                Text(getCurrentStation(stations: trip.stations ))
                                     .font(.subheadline)
                                 Spacer()
                             }
                             .padding(.vertical, 2)
                         } else {
                             HStack {
-                                Text("Delayed \(getCurrentStation(stations: trips[tripID]?.stations ?? [:])) for \(trips[tripID]?.delay ?? 0) seconds")
+                                Text("Delayed \(getCurrentStation(stations: trip.stations)) for \(trip.delay) seconds")
                                     .font(.subheadline)
                                 Spacer()
                             }
@@ -312,22 +377,22 @@ struct TripView: View {
                             HStack {
                                 Spacer()
                                     .frame(width: 15)
-                                if trips[tripID]?.serviceDisruptions.reroutes != [] {
+                                if trip.serviceDisruptions.reroutes != [] {
                                     ForEach(reroutedStations, id: \.self) { reroute in
                                         ZStack {
                                             if reroute.sudden == true {
                                                 RoundedRectangle(cornerRadius: 10)
-                                                    .foregroundColor(Color("cDarkGray"))
+                                                    .stroke(.yellow,lineWidth: 3)
+                                                    .foregroundColor(Color("cLessDarkGray"))
                                                     .frame(width: 130,height: 74)
                                                     .shadow(radius: 2)
-                                                    .border(.yellow,width: 4)
                                             } else {
                                                 RoundedRectangle(cornerRadius: 10)
-                                                    .foregroundColor(Color("cDarkGray"))
+                                                    .foregroundColor(Color("cLessDarkGray"))
                                                     .frame(width: 130,height: 74)
                                                     .shadow(radius: 2)
                                             }
-                                            DisruptionBox(type: .rerouted, tripID: tripID, trips: trips, reroute: reroute, suspended: ["",""])
+                                            DisruptionBox(type: .rerouted, trip: trip, reroute: reroute, suspended: ["",""])
                                                 .frame(width: 130,height: 74)
                                                 .font(.subheadline)
 
@@ -335,15 +400,15 @@ struct TripView: View {
                                         .frame(width: 136,height: 80)
                                     }
                                 }
-                                if trips[tripID]?.serviceDisruptions.suspended != [] {
+                                if trip.serviceDisruptions.suspended != [] {
                                     ForEach(suspendedStations, id: \.self) { suspendedStationGroup in
                                         if suspendedStationGroup != [] {
                                             ZStack {
                                                 RoundedRectangle(cornerRadius: 10)
-                                                    .foregroundColor(Color("cDarkGray"))
+                                                    .foregroundColor(Color("cLessDarkGray"))
                                                     .frame(width: 130,height: 74)
                                                     .shadow(radius: 2)
-                                                DisruptionBox(type: .suspended, tripID: tripID, trips: trips, reroute: (exampleTrips["052900_W..S"]?.serviceDisruptions.reroutes[0])!, suspended: suspendedStationGroup)
+                                                DisruptionBox(type: .suspended, trip: trip, reroute: (exampleTrips["052900_W..S"]?.serviceDisruptions.reroutes[0])!, suspended: suspendedStationGroup)
                                                     .frame(width: 130,height: 74)
                                                     .font(.subheadline)
                                                 
@@ -352,26 +417,26 @@ struct TripView: View {
                                         }
                                     }
                                 }
-                                if trips[tripID]?.serviceDisruptions.localStations.count ?? 0 > 0 {
+                                if trip.serviceDisruptions.localStations.count > 0 {
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 10)
-                                            .foregroundColor(Color("cDarkGray"))
+                                            .foregroundColor(Color("cLessDarkGray"))
                                             .frame(width: 130,height: 74)
                                             .shadow(radius: 2)
-                                        DisruptionBox(type: .local, tripID: tripID, trips: trips, reroute: (exampleTrips["052900_W..S"]?.serviceDisruptions.reroutes[0])!, suspended: ["",""])
+                                        DisruptionBox(type: .local, trip: trip, reroute: (exampleTrips["052900_W..S"]?.serviceDisruptions.reroutes[0])!, suspended: ["",""])
                                             .frame(width: 130,height: 74)
                                             .font(.subheadline)
                                         
                                     }
                                     .frame(width: 136,height: 80)
                                 }
-                                if trips[tripID]?.serviceDisruptions.skippedStations.count ?? 0 > 0 {
+                                if trip.serviceDisruptions.skippedStations.count > 0 {
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 10)
-                                            .foregroundColor(Color("cDarkGray"))
+                                            .foregroundColor(Color("cLessDarkGray"))
                                             .frame(width: 130,height: 74)
                                             .shadow(radius: 2)
-                                        DisruptionBox(type: .skipped, tripID: tripID, trips: trips, reroute: (exampleTrips["052900_W..S"]?.serviceDisruptions.reroutes[0])!, suspended: ["",""])
+                                        DisruptionBox(type: .skipped, trip: trip, reroute: (exampleTrips["052900_W..S"]?.serviceDisruptions.reroutes[0])!, suspended: ["",""])
                                             .frame(width: 130,height: 74)
                                             .font(.subheadline)
                                         
@@ -396,6 +461,6 @@ struct TripView: View {
 
 struct TripView_Previews: PreviewProvider {
     static var previews: some View {
-        TripView(line: "W", tripID: "052900_W..S", trips: exampleTrips)
+        TripView(line: "W", trip: exampleTrip, tripID: "")
     }
 }

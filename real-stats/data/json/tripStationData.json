@@ -2142,8 +2142,8 @@
       "R",
       "W"
     ],
-    "short1": "Lexington Av",
-    "short2": "59 St",
+    "short1": "59 St",
+    "short2": "Lexington Av",
     "stationName": "59 St",
     "boro": "M",
     "structure": "Subway",
@@ -2179,8 +2179,8 @@
       "7X",
       "GS"
     ],
-    "short1": "42 St",
-    "short2": "Grand Central",
+    "short1": "Grand Central",
+    "short2": "42 St",
     "stationName": "Grand Central-42 St",
     "boro": "M",
     "structure": "Subway",
@@ -3162,7 +3162,7 @@
       "Q",
       "FS"
     ],
-    "short1": "Prospect Park",
+    "short1": "Prospect Pk",
     "short2": "",
     "stationName": "Prospect Park",
     "boro": "Bk",
@@ -6097,7 +6097,7 @@
       "J",
       "Z"
     ],
-    "short1": "Jamaica Center",
+    "short1": "Jamaica Ctr",
     "short2": "Parsons Blvd-Archer Av",
     "stationName": "Jamaica Center-Parsons/Archer",
     "boro": "Q",
@@ -6842,8 +6842,8 @@
       "G",
       "R"
     ],
-    "short1": "4 Av",
-    "short2": "9 St",
+    "short1": "9 St",
+    "short2": "4 Av",
     "stationName": "4 Av-9 St",
     "boro": "Bk",
     "structure": "Subway",
@@ -7017,8 +7017,8 @@
       "M",
       "R"
     ],
-    "short1": "Roosevelt Av",
-    "short2": "Jackson Hts",
+    "short1": "Jackson Hts",
+    "short2": "Roosevelt Av",
     "stationName": "Jackson Hts-Roosevelt Av",
     "boro": "Q",
     "structure": "Subway",
@@ -7308,7 +7308,7 @@
       "R",
       "W"
     ],
-    "short1": "World Trade Center",
+    "short1": "World Trade Ctr",
     "short2": "",
     "stationName": "World Trade Center",
     "boro": "M",
@@ -7530,8 +7530,8 @@
       "R",
       "W"
     ],
-    "short1": "South Ferry",
-    "short2": "Whitehall St",
+    "short1": "Whitehall St",
+    "short2": "South Ferry",
     "stationName": "Whitehall St-South Ferry",
     "boro": "M",
     "structure": "Subway",

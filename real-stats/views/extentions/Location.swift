@@ -10,6 +10,7 @@ import SwiftUI
 import CoreLocation
 import MapKit
 
+//@MainActor
 class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var authorizationStatus: CLAuthorizationStatus
     @Published var lastSeenLocation: CLLocation?
@@ -22,7 +23,7 @@ class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
         if !inited {
             locations.last.map {
                 region = MKCoordinateRegion(
-                    center: CLLocationCoordinate2D(latitude: $0.coordinate.latitude, longitude: $0.coordinate.longitude),
+                    center: CLLocationCoordinate2D(latitude: $0.coordinate.latitude - 0.005, longitude: $0.coordinate.longitude),
                     span: MKCoordinateSpan(latitudeDelta: 0.025, longitudeDelta: 0.025)
                 )
             }
@@ -40,12 +41,16 @@ class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
+        print("hi")
     }
     func requestPermission() {
         locationManager.requestWhenInUseAuthorization()
     }
 
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        authorizationStatus = manager.authorizationStatus
+        DispatchQueue.main.async {
+            self.authorizationStatus = manager.authorizationStatus
+        }
     }
 }
+

@@ -6,8 +6,23 @@
 	<array>
 		<dict>
 			<key>NSLocationWhenInUseUsageDescription</key>
-			<string>Real Stats will use location to look for nearby stations. Real Stats does not collect any user data.</string>
+			<string>Transit Bandage will use location to look for nearby stations. Transit Bandage does not collect any user data.</string>
 		</dict>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>http://127.0.0.1:5000</key>
+			<dict>
+				<key>NSExceptionRequiresForwardSecrecy</key>
+				<false/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>

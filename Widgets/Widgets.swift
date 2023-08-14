@@ -8,7 +8,7 @@
 import WidgetKit
 import SwiftUI
 import Intents
-import WrappingHStack
+//import WrappingHStack
 
 struct CButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
@@ -111,7 +111,7 @@ struct WidgetsEntryView: View {
 //                }
                 Text("Hello !")
             }
-            .containerBackground(.background, for: .widget)
+//            .containerBackground(.background, for: .widget)
         } else {
             VStack {
                 Text("Hello!")
