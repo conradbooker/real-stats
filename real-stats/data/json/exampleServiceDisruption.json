@@ -1,0 +1,57 @@
+{
+  "northbound": {
+    "delays": {
+        "24313..A": {
+            "destination": "A31",
+            "delayAmmount": 240,
+            "location": "A30"
+        }
+    },
+    "extended": [],
+    "localStations": {
+        "416416": {
+              "occurances": 3,
+              "stations": [
+                  "416",
+                  "418",
+                  "419",
+                  "420"
+              ]
+          }
+    },
+    "reroutes": {
+        "A41A32": {
+           "reroutedFrom": "A41",
+           "reroutedTo": "A32",
+           "via": "F",
+           "sudden": false,
+           "occurances": 13
+        }
+    },
+    "skippedStations": {
+      "416416": {
+        "occurances": 3,
+        "stations": [
+            "416",
+            "418",
+            "419",
+            "420"
+        ]
+      }
+    },
+    "suspended": {
+        "A32A41": {
+            "stations": ["A55","H11"],
+            "occurances": 4
+        }
+    }
+  },
+  "southbound": {
+    "delays": {},
+    "extended": [],
+    "localStations": {},
+    "reroutes": {},
+    "skippedStations": {},
+    "suspended": {}
+  }
+}

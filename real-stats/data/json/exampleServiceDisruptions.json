@@ -1,0 +1,617 @@
+{
+  "1": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "2": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {
+        "209212": {
+          "occurances": 16,
+          "stations": [
+            "209",
+            "210",
+            "211",
+            "212"
+          ]
+        }
+      },
+      "suspended": {}
+    }
+  },
+  "3": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "4": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {
+        "416416": {
+          "occurances": 1,
+          "stations": [
+            "416"
+          ]
+        }
+      },
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "5": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "6": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "7": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {
+        "705709": {
+          "occurances": 9,
+          "stations": [
+            "705",
+            "709"
+          ]
+        },
+        "709709": {
+          "occurances": 2,
+          "stations": [
+            "709"
+          ]
+        }
+      },
+      "suspended": {}
+    }
+  },
+  "6X": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "7X": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "A": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "B": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "C": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "D": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "E": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {
+        "F05F07": {
+          "occurances": 19,
+          "stations": [
+            "F05",
+            "F07"
+          ]
+        }
+      },
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "F": {
+    "northbound": {
+      "delays": {
+        "087533_F..N": {
+          "delayAmmount": 180,
+          "destination": "F01",
+          "location": "F27"
+        },
+        "088515_F..N": {
+          "delayAmmount": 170,
+          "destination": "F01",
+          "location": "F34"
+        }
+      },
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {
+        "F04F07": {
+          "occurances": 20,
+          "stations": [
+            "F04",
+            "F05",
+            "F07"
+          ]
+        }
+      },
+      "suspended": {}
+    }
+  },
+  "FS": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "G": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "GS": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "H": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "J": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {
+        "J15J15": {
+          "occurances": 11,
+          "stations": [
+            "J15"
+          ]
+        }
+      },
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "L": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "M": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {
+        "M08M08": {
+          "occurances": 1,
+          "stations": [
+            "M08"
+          ]
+        }
+      },
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "N": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {
+        "N02R41": {
+          "occurances": 10,
+          "stations": [
+            "N02",
+            "N03",
+            "N04",
+            "N05",
+            "N06",
+            "N07",
+            "N08",
+            "N09",
+            "N10",
+            "R41"
+          ]
+        },
+        "R04R08": {
+          "occurances": 4,
+          "stations": [
+            "R04",
+            "R05",
+            "R06",
+            "R08"
+          ]
+        }
+      },
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "Q": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {
+        "N10Q01": {
+          "occurances": 1,
+          "reroutedFrom": "N10",
+          "reroutedTo": "Q01",
+          "sudden": false,
+          "via": "N"
+        }
+      },
+      "skippedStations": {
+        "D24R30": {
+          "occurances": 2,
+          "stations": [
+            "D24",
+            "D25",
+            "D26",
+            "D27",
+            "D28",
+            "D29",
+            "D30",
+            "D31",
+            "D32",
+            "D33",
+            "D34",
+            "D35",
+            "D37",
+            "D38",
+            "D39",
+            "D40",
+            "D41",
+            "D42",
+            "R30"
+          ]
+        }
+      },
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "R": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {},
+      "skippedStations": {},
+      "suspended": {}
+    }
+  },
+  "W": {
+    "northbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {
+        "R14Q05": {
+          "occurances": 2,
+          "reroutedFrom": "R14",
+          "reroutedTo": "Q05",
+          "sudden": false,
+          "via": "Q"
+        }
+      },
+      "skippedStations": {},
+      "suspended": {}
+    },
+    "southbound": {
+      "delays": {},
+      "extended": [],
+      "localStations": {},
+      "reroutes": {
+        "Q05R14": {
+          "occurances": 5,
+          "reroutedFrom": "Q05",
+          "reroutedTo": "R14",
+          "sudden": false,
+          "via": "Q"
+        }
+      },
+      "skippedStations": {},
+      "suspended": {}
+    }
+  }
+}

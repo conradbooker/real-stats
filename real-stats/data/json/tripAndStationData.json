@@ -1,0 +1,8 @@
+{
+    "station": {
+        "service": false,
+        "north": {},
+        "south": {}
+    },
+    "trips": {}
+}
