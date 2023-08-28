@@ -92,6 +92,6 @@ struct Station: Hashable, Codable, Identifiable {
     var ADA: Int
     var short1: String
     var short2: String
-    var possibleLines: [String]
+//    var possibleLines: [String]
     var weekdayLines: [String]
 }

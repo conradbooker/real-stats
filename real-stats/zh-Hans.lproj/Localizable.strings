@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  Service Bandage
+
+  Created by Conrad on 8/27/23.
+  
+*/
+"Favorites" = "最喜欢的电台";
+"Nearby" = "附近车站";
+"%@ St" = "%@ 街";
+"Search for a station or a train" = "搜索车站或地铁线路";
+"Flushing" = "法拉盛";
+"no-service" = "该站不提供 %@ 服务";
+"More stations" = "显示更多的站台";
+"Fewer stations" = "显示较少的站台";
+"%@ mins" = "%@ 分钟";
+"About" = "关于这个应用程序";
+"Send Feedback" = "发送反馈";
+"Sorry for the interruption!" = "很抱歉打扰了！";
+"Your current app version is not up to date. Please update Transit Bandage!" = "您当前的应用程序版本不是最新的。 请更新 “Transit Bandage”！";
+"(It should take less than 30 seconds)" = "（时间应该少于 30 秒）";
+"at station" = "列车在站台";
+"due" = "列车进站";
+"mins" = "分钟";
+"Added Staten Island Railway, and PATH Support (BETA)" = "添加了“Staten Island Railway”和“PATH”支持（测试版）";
+"Added refresh button for stations" = "添加了电台刷新按钮";
+"Fixed various station naming" = "修复了各种车站命名";
+"Update" = "更新应用程序";
+"Continue" = "继续";
+"Color Scheme:" = "色彩方案";
+"Light" = "明亮模式";
+"Dark" = "深色模式";
+"System" = "跟随系统";
+
+"Region: NYC (More regions coming soon)" = "地区：纽约市（更多地区即将推出）";
+"Region:" = "地区：";
+
+"whats-new" = "新功能，%@ 版";
+"Version: 1.1" = "版本：1.1";
+"Settings" = "设置";
+"No Email Set Up" = "电子邮件未设置";
+"Made with ❤️ in NYC 🗽🥨" = "用爱心制作于纽约市 🗽🥨";
+"You do not have an email set up. Go to settings, or send the email to \"transitbandage@gmail.com\"." = "您尚未设置电子邮件。前往设置，或发送电子邮件至\"transitbandage@gmail.com\"。";
+
+"skipping-stations" = "不停靠: %@";

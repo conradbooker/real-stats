@@ -107,7 +107,7 @@ struct TripAndStation: Hashable, Codable {
 
 class apiCall {
     func getStationTimes(station: String, completion:@escaping (NewTimes) -> ()) {
-        guard let url = URL(string: "https://service-bandage.herokuapp.com/stations/\(station)?APIKey=\(getApiKey())") else { return }
+        guard let url = URL(string: "http://127.0.0.1:5000/stations/\(station)?APIKey=\(getApiKey())") else { return }
         
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             let times = try? JSONDecoder().decode(NewTimes.self, from: data ?? defaultStationTimeData)
@@ -117,7 +117,7 @@ class apiCall {
         .resume()
     }
     func getTrip(line: String, completion:@escaping ([String: Trip]) -> ()) {
-        guard let url = URL(string: "https://service-bandage.herokuapp.com/trips/\(line)?APIKey=\(getApiKey())") else { return }
+        guard let url = URL(string: "http://127.0.0.1:5000/trips/\(line)?APIKey=\(getApiKey())") else { return }
         
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             let trips = try? JSONDecoder().decode([String: Trip].self, from: data ?? defaultTripsData)
@@ -127,7 +127,7 @@ class apiCall {
         .resume()
     }
     func getIndividualTrip(trip: String, completion:@escaping (Trip) -> ()) {
-        guard let url = URL(string: "https://service-bandage.herokuapp.com/individual-trip/\(trip)?APIKey=\(getApiKey())") else { return }
+        guard let url = URL(string: "http://127.0.0.1:5000/individual-trip/\(trip)?APIKey=\(getApiKey())") else { return }
         print(trip)
         
         URLSession.shared.dataTask(with: url) { (data, _, _) in
@@ -139,7 +139,7 @@ class apiCall {
     }
     
     func getStationAndTrips(station: String, completion: @escaping (TripAndStation) -> ()) {
-        guard let url = URL(string: "https://service-bandage.herokuapp.com/stations-with-trips/\(station)?APIKey=\(getApiKey())") else { return }
+        guard let url = URL(string: "http://127.0.0.1:5000/stations-with-trips/\(station)?APIKey=\(getApiKey())") else { return }
                 
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             let tripAndStation = try? JSONDecoder().decode(TripAndStation.self, from: data ?? defaultTripAndStationData)
@@ -152,7 +152,7 @@ class apiCall {
     }
     
     func getMultipleTrips(trips: [String], completion:@escaping ([String: Trip]) -> ()) {
-        guard let url = URL(string: "https://service-bandage.herokuapp.com/multiple-trips?APIKey=\(getApiKey())") else { return }
+        guard let url = URL(string: "http://127.0.0.1:5000/multiple-trips?APIKey=\(getApiKey())") else { return }
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -172,7 +172,7 @@ class apiCall {
         .resume()
     }
     func getAllServiceDisruptions(line: String, completion:@escaping ([String: Line_ServiceDisruption]) -> ()) {
-        guard let url = URL(string: "https://service-bandage.herokuapp.com/service-alerts/\(line)?APIKey=\(getApiKey())") else { return }
+        guard let url = URL(string: "http://127.0.0.1:5000/service-alerts/\(line)?APIKey=\(getApiKey())") else { return }
         
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             let trips = try? JSONDecoder().decode([String: Line_ServiceDisruption].self, from: data ?? defaultTripsData)
@@ -182,7 +182,130 @@ class apiCall {
         .resume()
     }
     func getServiceDisruption(line: String, completion: @escaping (Line_ServiceDisruption) -> ()) {
-        guard let url = URL(string: "https://service-bandage.herokuapp.com/service-alerts/\(line)?APIKey=\(getApiKey())") else { return }
+        guard let url = URL(string: "http://127.0.0.1:5000/service-alerts/\(line)?APIKey=\(getApiKey())") else { return }
+        
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            let trips = try? JSONDecoder().decode(Line_ServiceDisruption.self, from: data ?? defaultTripsData)
+            
+            completion(trips ?? exampleServiceAlert)
+        }
+        .resume()
+    }
+    
+    func getCurrentVersion(completion: @escaping (Bool) -> ()) {
+        guard let bundleId = Bundle.main.infoDictionary?["CFBundleIdentifier"] as? String else { return }
+        guard let url = URL(string: "https://itunes.apple.com/lookup?bundleId=\(bundleId)&country=br") else { return }
+            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let data = data {
+                do {
+                    let jsonObject = try JSONSerialization.jsonObject(with: data)
+                    guard let json = jsonObject as? [String: Any] else {
+                        print("The received that is not a Dictionary")
+                        return
+                    }
+                    let results = json["results"] as? [[String: Any]]
+                    let firstResult = results?.first
+                    let currentVersion = firstResult?["version"] as? String
+                    print("currentVersion: ", currentVersion ?? "")
+                } catch let serializationError {
+                    print("Serialization Error: ", serializationError)
+                }
+            } else if let error = error {
+                print("Error: ", error)
+            } else if let response = response {
+                print("Response: ", response)
+            } else {
+                print("Unknown error")
+            }
+        }
+        task.resume()
+
+    }
+}
+
+
+
+
+
+
+class apiCallProduction {
+    func getStationTimes(station: String, completion:@escaping (NewTimes) -> ()) {
+        guard let url = URL(string: "http://127.0.0.1:5000/stations/\(station)?APIKey=\(getApiKey())") else { return }
+        
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            let times = try? JSONDecoder().decode(NewTimes.self, from: data ?? defaultStationTimeData)
+            
+            completion(times ?? defaultStationTimes)
+        }
+        .resume()
+    }
+    func getTrip(line: String, completion:@escaping ([String: Trip]) -> ()) {
+        guard let url = URL(string: "http://127.0.0.1:5000/trips/\(line)?APIKey=\(getApiKey())") else { return }
+        
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            let trips = try? JSONDecoder().decode([String: Trip].self, from: data ?? defaultTripsData)
+            
+            completion(trips ?? exampleTrips)
+        }
+        .resume()
+    }
+    func getIndividualTrip(trip: String, completion:@escaping (Trip) -> ()) {
+        guard let url = URL(string: "http://127.0.0.1:5000/individual-trip/\(trip)?APIKey=\(getApiKey())") else { return }
+        print(trip)
+        
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            let trips = try? JSONDecoder().decode(Trip.self, from: data ?? defaultTripData)
+            
+            completion(trips ?? exampleTrip)
+        }
+        .resume()
+    }
+    
+    func getStationAndTrips(station: String, completion: @escaping (TripAndStation) -> ()) {
+        guard let url = URL(string: "http://127.0.0.1:5000/stations-with-trips/\(station)?APIKey=\(getApiKey())") else { return }
+                
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            let tripAndStation = try? JSONDecoder().decode(TripAndStation.self, from: data ?? defaultTripAndStationData)
+            
+            DispatchQueue.main.async {
+                completion(tripAndStation ?? exampleTripAndStationData)
+            }
+        }
+        .resume()
+    }
+    
+    func getMultipleTrips(trips: [String], completion:@escaping ([String: Trip]) -> ()) {
+        guard let url = URL(string: "http://127.0.0.1:5000/multiple-trips?APIKey=\(getApiKey())") else { return }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        let parameters: [String: Any] = [
+            "trips": trips
+        ]
+        request.httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: .fragmentsAllowed)
+        
+        print(parameters)
+
+        URLSession.shared.dataTask(with: request) { (data, _, _) in
+            let trips = try? JSONDecoder().decode([String: Trip].self, from: data ?? defaultTripsData)
+            
+            completion(trips ?? exampleTrips)
+        }
+        .resume()
+    }
+    func getAllServiceDisruptions(line: String, completion:@escaping ([String: Line_ServiceDisruption]) -> ()) {
+        guard let url = URL(string: "http://127.0.0.1:5000/service-alerts/\(line)?APIKey=\(getApiKey())") else { return }
+        
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            let trips = try? JSONDecoder().decode([String: Line_ServiceDisruption].self, from: data ?? defaultTripsData)
+            
+            completion(trips ?? exampleServiceAlerts)
+        }
+        .resume()
+    }
+    func getServiceDisruption(line: String, completion: @escaping (Line_ServiceDisruption) -> ()) {
+        guard let url = URL(string: "http://127.0.0.1:5000/service-alerts/\(line)?APIKey=\(getApiKey())") else { return }
         
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             let trips = try? JSONDecoder().decode(Line_ServiceDisruption.self, from: data ?? defaultTripsData)
@@ -192,98 +315,3 @@ class apiCall {
         .resume()
     }
 }
-
-
-
-
-class apiCallProduction {
-    func getStationTimes(station: String, completion:@escaping (NewTimes) -> ()) {
-        guard let url = URL(string: "https://service-bandage.herokuapp.com/stations/\(station)?APIKey=\(getApiKey())") else { return }
-        
-        URLSession.shared.dataTask(with: url) { (data, _, _) in
-            let times = try? JSONDecoder().decode(NewTimes.self, from: data ?? defaultStationTimeData)
-            
-            DispatchQueue.main.async {
-                completion(times ?? defaultStationTimes)
-            }
-        }
-        .resume()
-    }
-    func getTrip(line: String, completion:@escaping ([String: Trip]) -> ()) {
-        guard let url = URL(string: "https://service-bandage.herokuapp.com/trips/\(line)?APIKey=\(getApiKey())") else { return }
-        
-        URLSession.shared.dataTask(with: url) { (data, _, _) in
-            let trips = try? JSONDecoder().decode([String: Trip].self, from: data ?? defaultTripsData)
-            
-            DispatchQueue.main.async {
-                completion(trips ?? exampleTrips)
-            }
-        }
-        .resume()
-    }
-    func getIndividualTrip(trip: String, completion:@escaping (Trip) -> ()) {
-        guard let url = URL(string: "https://service-bandage.herokuapp.com/individual-trip/\(trip)?APIKey=\(getApiKey())") else { return }
-        
-        URLSession.shared.dataTask(with: url) { (data, _, _) in
-            let trips = try? JSONDecoder().decode(Trip.self, from: data ?? defaultTripData)
-            
-            DispatchQueue.main.async {
-                completion(trips ?? exampleTrip)
-            }
-        }
-        .resume()
-    }
-    func getMultipleTrips(trips: [String], completion:@escaping ([String: Trip]) -> ()) {
-        guard let url = URL(string: "https://service-bandage.herokuapp.com/multiple-trips?APIKey=\(getApiKey())") else { return }
-        
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        
-        let jsonData: Data
-        do {
-            let parameters: [String: [String]] = [
-                "trips": trips
-            ]
-            jsonData = try JSONSerialization.data(withJSONObject: parameters)
-        } catch {
-            return
-        }
-
-        request.httpBody = jsonData
-
-        URLSession.shared.dataTask(with: url) { (data, _, _) in
-            let trips = try? JSONDecoder().decode([String: Trip].self, from: data ?? defaultTripsData)
-            
-            DispatchQueue.main.async {
-                completion(trips ?? exampleTrips)
-            }
-        }
-        .resume()
-    }
-    
-    func getAllServiceDisruptions(line: String, completion:@escaping ([String: Line_ServiceDisruption]) -> ()) {
-        guard let url = URL(string: "https://service-bandage.herokuapp.com/service-alerts/\(line)?APIKey=\(getApiKey())") else { return }
-        
-        URLSession.shared.dataTask(with: url) { (data, _, _) in
-            let trips = try? JSONDecoder().decode([String: Line_ServiceDisruption].self, from: data ?? defaultTripsData)
-            
-            DispatchQueue.main.async {
-                completion(trips ?? exampleServiceAlerts)
-            }
-        }
-        .resume()
-    }
-    func getServiceDisruption(line: String, completion:@escaping (Line_ServiceDisruption) -> ()) {
-        guard let url = URL(string: "https://service-bandage.herokuapp.com/service-alerts/\(line)?APIKey=\(getApiKey())") else { return }
-        
-        URLSession.shared.dataTask(with: url) { (data, _, _) in
-            let trips = try? JSONDecoder().decode(Line_ServiceDisruption.self, from: data ?? defaultTripsData)
-            
-            DispatchQueue.main.async {
-                completion(trips ?? exampleServiceAlert)
-            }
-        }
-        .resume()
-    }
-}
-

@@ -23,23 +23,23 @@ extension Shape {
 func getLineColor(line: String, time: Int) -> Color {
     let opacityAmmount = 0.5
     if time < Int(NSDate().timeIntervalSince1970) {
-        if ["A","C","E"].contains(line) {
+        if ["A","C","E","SI","JSQ_33_HOB","33_HOB"].contains(line) {
             return Color("blue").opacity(opacityAmmount)
-        } else if ["N","Q","R","W"].contains(line) {
+        } else if ["N","Q","R","W","JSQ_33"].contains(line) {
             return Color("yellow").opacity(opacityAmmount)
         } else if ["B","D","F","FX","M"].contains(line) {
             return Color("orange").opacity(opacityAmmount)
         } else if ["J","Z"].contains(line) {
             return Color("brown").opacity(opacityAmmount)
-        } else if ["1","2","3"].contains(line) {
+        } else if ["1","2","3","NWK_WTC"].contains(line) {
             return Color("red").opacity(opacityAmmount)
-        } else if ["4","5","6","6X"].contains(line) {
+        } else if ["4","5","6","6X","HOB_WTC"].contains(line) {
             return Color("green").opacity(opacityAmmount)
         } else if ["7","7X"].contains(line) {
             return Color("purple").opacity(opacityAmmount)
         }else if ["G"].contains(line) {
             return Color("lime").opacity(opacityAmmount)
-        } else if ["H","FS","S","0"].contains(line) {
+        } else if ["H","FS","GS","0"].contains(line) {
             return Color("darkerGray").opacity(opacityAmmount)
         } else if ["L"].contains(line) {
             return Color("lighterGray").opacity(opacityAmmount)
@@ -48,23 +48,23 @@ func getLineColor(line: String, time: Int) -> Color {
             return .black
         }
     } else {
-        if ["A","C","E"].contains(line) {
+        if ["A","C","E","SI","JSQ_33_HOB","33_HOB"].contains(line) {
             return Color("blue")
-        } else if ["N","Q","R","W"].contains(line) {
+        } else if ["N","Q","R","W","JSQ_33"].contains(line) {
             return Color("yellow")
         } else if ["B","D","F","FX","M"].contains(line) {
             return Color("orange")
         } else if ["J","Z"].contains(line) {
             return Color("brown")
-        } else if ["1","2","3"].contains(line) {
+        } else if ["1","2","3","NWK_WTC"].contains(line) {
             return Color("red")
-        } else if ["4","5","6","6X"].contains(line) {
+        } else if ["4","5","6","6X","HOB_WTC"].contains(line) {
             return Color("green")
         } else if ["7","7X"].contains(line) {
             return Color("purple")
         }else if ["G"].contains(line) {
             return Color("lime")
-        } else if ["H","FS","S","0"].contains(line) {
+        } else if ["H","FS","S","GS"].contains(line) {
             return Color("darkerGray")
         } else if ["L"].contains(line) {
             return Color("lighterGray")
@@ -135,20 +135,19 @@ struct FormattedTime: View {
     
     var body: some View {
         VStack {
-//            Text("\(time-currentTime)")
-            if time-currentTime > 60 {
-                if abs(time-currentTime)/60 == 1 {
-                    Text("\(abs(time-currentTime)/60) min")
+            if time-currentTime >= 60 {
+                if abs(time-currentTime-20)/60 == 1 {
+                    Text("\(abs((time-currentTime)-20)/60) min")
+                } else if (time-currentTime)-20 < 60 {
+                    Text("\((abs(time-currentTime)%60)+40)s")
                 } else {
-                    Text("\(abs(time-currentTime)/60) mins")
+                    Text("\(abs((time-currentTime)-20)/60) mins")
                 }
             } else if (time-currentTime) < 60 && (time-currentTime) > 0 {
-                if (time-currentTime) > 40 {
-                    Text("<1 min")
-                } else if (time-currentTime) > 20 {
-                    Text("due")
+                if (time-currentTime) > 20 {
+                    Text("\((abs(time-currentTime)%60)-20)s")
                 } else if time-currentTime > 0 {
-                    Text("here")
+                    Text("at station")
                 }
             } else {
                 if (abs(time-currentTime)/60) == 1 {
@@ -179,13 +178,13 @@ struct TripStationView: View {
             ZStack {
                 LineShape(trip: trip, station: station, line: line, counter: counter)
                 VStack {
-                    if getCurrentStationClean(stations: trip.stations ?? [:]) == station {
+                    if getCurrentStationClean(stations: trip.stations) == station {
                         withAnimation(.spring(response: 0.4)) {
                             TrainDot(line: line)
                                 .frame(height: 30)
                         }
                         Spacer()
-                    } else if getStationBefore(stations: trip.stations ?? [:]) == station {
+                    } else if getStationBefore(stations: trip.stations) == station {
                         Spacer()
                             .frame(height: 20)
                         withAnimation(.spring(response: 0.4)) {
@@ -257,13 +256,24 @@ struct TripStationView: View {
 
         }
         .sheet(item: $selectedItem) { item in
-            if fromFavorites {
-                // chosen station = favoriteStationNumber thing
-                StationView(complex: item.complex, chosenStation: chosenStation, isFavorited: true)
-                    .environment(\.managedObjectContext, persistentContainer.viewContext)
+            if #available(iOS 16.0, *) {
+                if fromFavorites {
+                    // chosen station = favoriteStationNumber thing
+                    StationView(complex: item.complex, chosenStation: chosenStation, isFavorited: true)
+                        .environment(\.managedObjectContext, persistentContainer.viewContext)
+                } else {
+                    StationView(complex: item.complex, chosenStation: 0, isFavorited: false)
+                        .environment(\.managedObjectContext, persistentContainer.viewContext)
+                }
             } else {
-                StationView(complex: item.complex, chosenStation: 0, isFavorited: false)
-                    .environment(\.managedObjectContext, persistentContainer.viewContext)
+                if fromFavorites {
+                    // chosen station = favoriteStationNumber thing
+                    StationViewOld(complex: item.complex, chosenStation: chosenStation, isFavorited: true)
+                        .environment(\.managedObjectContext, persistentContainer.viewContext)
+                } else {
+                    StationViewOld(complex: item.complex, chosenStation: 0, isFavorited: false)
+                        .environment(\.managedObjectContext, persistentContainer.viewContext)
+                }
             }
         }
         

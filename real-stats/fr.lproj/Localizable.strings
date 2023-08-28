@@ -1,0 +1,46 @@
+/* 
+  Localizable.strings
+  Service Bandage
+
+  Created by Conrad on 8/27/23.
+  
+*/
+
+"Favorites" = "Stations préférées";
+"Nearby" = "Stations à proximité";
+"%@ St" = "%@ Rue";
+"Search for a station or a train" = "Rechercher une station ou un train";
+"Flushing" = "Flushing";
+"no-service" = "Pas de service pour le %@ à cette station";
+"More stations" = "Plus";
+"Fewer stations" = "Moins";
+"%@ mins" = "%@ min";
+"About" = "À propos de";
+"Send Feedback" = "Envoyer des commentaires";
+"Sorry for the interruption!" = "Désolé pour l'interruption !";
+"Your current app version is not up to date. Please update Transit Bandage!" = "Votre version actuelle de l'application n'est pas à jour. Veuillez mettre à jour Transit Bandage !";
+"(It should take less than 30 seconds)" = "(Cela devrait prendre moins de 30 secondes)";
+"at station" = "à la station";
+"due" = "arr.";
+"mins" = "min";
+"Added Staten Island Railway, and PATH Support (BETA)" = "Ajout du Railway Staten Island et du support PATH (BÊTA)";
+"Added refresh button for stations" = "Ajout du bouton de rafraîchissement pour les stations";
+"Fixed various station naming" = "Correction de divers noms de stations";
+"Update" = "Mettre à jour";
+"Continue" = "Continuer";
+"Color Scheme:" = "Schéma de couleur :";
+"Light" = "Clair";
+"Dark" = "Sombre";
+"System" = "Système";
+
+"Region: NYC (More regions coming soon)" = "Région : NYC (D'autres régions à venir)";
+"Region:" = "Région :";
+
+"whats-new" = "Nouveautés %@";
+"Version: 1.1" = "Version : 1.1";
+"Settings" = "Paramètres";
+"No Email Set Up" = "Pas d'e-mail configuré";
+"Made with ❤️ in NYC 🗽🥨" = "Fabriqué avec ❤️ à NYC 🗽🥨";
+"You do not have an email set up. Go to settings, or send the email to \"transitbandage@gmail.com\"." = "Vous n'avez pas configuré d'adresse e-mail. Accédez aux paramètres ou envoyez un e-mail à « transitbandage@gmail.com ».";
+
+"skipping-stations" = "Stations sautées : %@";

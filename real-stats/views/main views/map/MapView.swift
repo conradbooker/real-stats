@@ -106,9 +106,15 @@ struct MapView: View {
                                   HStack(spacing: 2) {
                                       ForEach(correctComplex(Int(station.complexID)).stations, id: \.self) { station in
                                           ForEach(station.weekdayLines, id: \.self) { line in
-                                              Image(line)
-                                                  .resizable()
-                                                  .frame(width: 15,height: 15)
+                                              if ["LIRR","HBLR","NJT","MNR","PATH"].contains(line) {
+                                                  Image(line)
+                                                      .resizable()
+                                                      .frame(width: 30,height: 15)
+                                              } else {
+                                                  Image(line)
+                                                      .resizable()
+                                                      .frame(width: 15,height: 15)
+                                              }
                                           }
                                       }
                                   }
@@ -179,13 +185,24 @@ struct MapView: View {
             
         }
         .sheet(item: $selectedItem) { item in
-            if fromFavorites {
-                // chosen station = favoriteStationNumber thing
-                StationView(complex: item.complex, chosenStation: chosenStation, isFavorited: true)
-                    .environment(\.managedObjectContext, persistedContainer.viewContext)
+            if #available(iOS 16.0, *) {
+                if fromFavorites {
+                    // chosen station = favoriteStationNumber thing
+                    StationView(complex: item.complex, chosenStation: chosenStation, isFavorited: true)
+                        .environment(\.managedObjectContext, persistedContainer.viewContext)
+                } else {
+                    StationView(complex: item.complex, chosenStation: 0, isFavorited: false)
+                        .environment(\.managedObjectContext, persistedContainer.viewContext)
+                }
             } else {
-                StationView(complex: item.complex, chosenStation: 0, isFavorited: false)
-                    .environment(\.managedObjectContext, persistedContainer.viewContext)
+                if fromFavorites {
+                    // chosen station = favoriteStationNumber thing
+                    StationViewOld(complex: item.complex, chosenStation: chosenStation, isFavorited: true)
+                        .environment(\.managedObjectContext, persistedContainer.viewContext)
+                } else {
+                    StationViewOld(complex: item.complex, chosenStation: 0, isFavorited: false)
+                        .environment(\.managedObjectContext, persistedContainer.viewContext)
+                }
             }
         }
         .sheet(isPresented: $showSettings) {
@@ -321,7 +338,7 @@ struct MapView: View {
                                                 Text("You do not have an email set up. Go to settings, or send the email to \"transitbandage@gmail.com\".")
                                             })
 
-                                            Text("Version: 1.0")
+                                            Text("Version: 1.1")
                                             Text("Made with ❤️ in NYC 🗽🥨")
                                         }
                                         .padding(.leading)
@@ -344,7 +361,7 @@ struct MapView: View {
                                     Spacer()
                                 }
                                 HStack {
-                                    Text("Timeline:\nPATH - September 2023\nNJ Transit Light Rail - October 2023\nNYC Buses - December 2023\nLIRR, MetroNorth - March 2024\nNJ Transit Rail + Buses - March 2024\nCTRail - June 2024\n\nOther Systems:\nBoston, Philadelphia, Chicago, Baltimore / DC, Montreal, Toronto - 2024\nLA, San Francisco, London, Paris - 2025\n\nLicensing: Route indicators used with permission of the Metropolitan Transportation Agency.\n\n**Please note**: Transit Bandage uses data provided by the MTA's data feed. If there are disrepencies with their data, there are descrepencies with out data")
+                                    Text("Timeline:\nLIRR / Metro North - September 2023\nNYC Buses - September 2023\nNJ Transit Rail + Buses - March 2024\nCTRail - June 2024\n\nOther Systems:\nBoston, Philadelphia, Chicago, Baltimore / DC, Montreal, Toronto - 2024\nLA, San Francisco, London, Paris - 2025\n\nLicensing: Route indicators used with permission of the Metropolitan Transportation Agency.\n\n**Please note**: Transit Bandage uses data provided by the MTA's data feed. If there are discrepancies with their data, there are discrepancies with out data.")
                                         .padding()
                                     Spacer()
                                 }

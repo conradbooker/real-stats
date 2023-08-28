@@ -71,7 +71,7 @@ func getCurrentStationClean(stations: [String: TripStation]) -> String {
     let sortedStations = stations.sorted { $0.value.scheduledTime < $1.value.scheduledTime }
     
     for station in sortedStations {
-        if station.value.times[0] - 45 - Int(Date().timeIntervalSince1970) < 20 && station.value.times[0] - Int(Date().timeIntervalSince1970) > 0 {
+        if station.value.times[0] - 20 - Int(Date().timeIntervalSince1970) <= 20 && station.value.times[0] - Int(Date().timeIntervalSince1970) > 0 {
             return station.key
         }
     }
@@ -84,7 +84,7 @@ func getStationBefore(stations: [String: TripStation]) -> String {
     var stationBefore = ""
     
     for station in sortedStations {
-        if station.value.times[0] - 45 - Int(Date().timeIntervalSince1970) > 20 {
+        if station.value.times[0] - 20 - Int(Date().timeIntervalSince1970) > 20 {
             return stationBefore
         }
         stationBefore = station.key

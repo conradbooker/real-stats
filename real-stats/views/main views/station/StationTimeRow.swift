@@ -227,7 +227,7 @@ struct StationTimeRow: View {
                     } label: {
                         ZStack {
                             RoundedRectangle(cornerRadius: 15)
-                                .foregroundColor(Color("cLessDarkGray"))
+                                .foregroundColor(Color("cMediumGray"))
                                 .shadow(radius: 2)
                                 .frame(width: 55, height: 55)
                                 .padding(.leading, -7.4)

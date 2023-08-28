@@ -2654,37 +2654,13 @@
             "ADA": 1
          }, 
          {
-            "id": 349, 
-            "GTFSID": "254", 
-            "short1": "Junius St", 
-            "short2": "", 
-            "stopName": "Junius St", 
-            "weekdayLines": [
-               "3"
-            ], 
-            "trunk": "Eastern Pky", 
-            "borough": "Bk", 
-            "lat": 40.663515, 
-            "long": -73.902447, 
-            "northDir": "Manhattan", 
-            "southDir": "New Lots", 
-            "ADA": 0
-         }
-      ]
-   }, 
-   {
-      "id": 136, 
-      "complexName": "New Lots Av", 
-      "searchName": "New Lots Av", 
-      "stations": [
-         {
             "id": 136, 
             "GTFSID": "L27", 
             "short1": "New Lots Av", 
             "short2": "", 
             "stopName": "New Lots Av", 
             "weekdayLines": [
-               "L"
+               "3"
             ], 
             "trunk": "Canarsie", 
             "borough": "Bk", 
@@ -3284,28 +3260,9 @@
    }, 
    {
       "id": 167, 
-      "complexName": "9 St", 
-      "searchName": "W 4 St West washington square sq. 9 st", 
+      "complexName": "W 4 St-Wash Sq", 
+      "searchName": "W 4 St-Wash Sq", 
       "stations": [
-         {
-            "id": 167, 
-            "GTFSID": "A32", 
-            "short1": "W 4 St", 
-            "short2": "Washington Sq", 
-            "stopName": "W 4 St-Wash Sq", 
-            "weekdayLines": [
-               "A", 
-               "C", 
-               "E"
-            ], 
-            "trunk": "8th Av", 
-            "borough": "M", 
-            "lat": 40.732338, 
-            "long": -74.000495, 
-            "northDir": "Uptown & Queens", 
-            "southDir": "Downtown & Brooklyn", 
-            "ADA": 1
-         }, 
          {
             "id": 167, 
             "GTFSID": "D20", 
@@ -3325,23 +3282,25 @@
             "northDir": "Uptown & Queens", 
             "southDir": "Downtown & Brooklyn", 
             "ADA": 1
-         },
+         }, 
          {
-            "id": 167,
-            "GTFSID": "P10",
-            "short1": "9 St",
-            "short2": "",
-            "stopName": "9 St",
+            "id": 167, 
+            "GTFSID": "A32", 
+            "short1": "W 4 St", 
+            "short2": "Washington Sq", 
+            "stopName": "W 4 St-Wash Sq", 
             "weekdayLines": [
-               "PATH"
-            ],
-            "trunk": "PATH",
-            "borough": "M",
-            "lat": 40.73424,
-            "long": -73.9991,
-            "northDir": "33 St",
-            "southDir": "New Jersey",
-            "ADA": 0
+               "A", 
+               "C", 
+               "E"
+            ], 
+            "trunk": "8th Av", 
+            "borough": "M", 
+            "lat": 40.732338, 
+            "long": -74.000495, 
+            "northDir": "Uptown & Queens", 
+            "southDir": "Downtown & Brooklyn", 
+            "ADA": 1
          }
       ]
    }, 
@@ -4553,8 +4512,8 @@
             "short2": "", 
             "stopName": "57 St", 
             "weekdayLines": [
-               "M"
-            ],
+               "F"
+            ], 
             "trunk": "6th Av", 
             "borough": "M", 
             "lat": 40.763972, 
@@ -4595,25 +4554,8 @@
    {
       "id": 228, 
       "complexName": "23 St", 
-      "searchName": "23 St",
+      "searchName": "23 St", 
       "stations": [
-         {
-            "id": 228, 
-            "GTFSID": "P12", 
-            "short1": "23 St", 
-            "short2": "", 
-            "stopName": "23 St", 
-            "weekdayLines": [
-               "PATH"
-            ], 
-            "trunk": "PATH", 
-            "borough": "M", 
-            "lat": 40.7429, 
-            "long": -73.99278, 
-            "northDir": "33 St", 
-            "southDir": "New Jersey", 
-            "ADA": 0
-         }, 
          {
             "id": 228, 
             "GTFSID": "D18", 
@@ -5331,6 +5273,7 @@
             "weekdayLines": [
                "E", 
                "F", 
+               "M", 
                "R"
             ], 
             "trunk": "Queens Blvd", 
@@ -5355,6 +5298,7 @@
             "short2": "", 
             "stopName": "67 Av", 
             "weekdayLines": [
+               "M", 
                "R"
             ], 
             "trunk": "Queens Blvd", 
@@ -5379,6 +5323,7 @@
             "short2": "Rego Park", 
             "stopName": "63 Dr-Rego Park", 
             "weekdayLines": [
+               "M", 
                "R"
             ], 
             "trunk": "Queens Blvd", 
@@ -5403,6 +5348,7 @@
             "short2": "", 
             "stopName": "Woodhaven Blvd", 
             "weekdayLines": [
+               "M", 
                "R"
             ], 
             "trunk": "Queens Blvd", 
@@ -5427,6 +5373,7 @@
             "short2": "Newtown", 
             "stopName": "Grand Av-Newtown", 
             "weekdayLines": [
+               "M", 
                "R"
             ], 
             "trunk": "Queens Blvd", 
@@ -5451,6 +5398,7 @@
             "short2": "", 
             "stopName": "Elmhurst Av", 
             "weekdayLines": [
+               "M", 
                "R"
             ], 
             "trunk": "Queens Blvd", 
@@ -5475,6 +5423,7 @@
             "short2": "", 
             "stopName": "65 St", 
             "weekdayLines": [
+               "M", 
                "R"
             ], 
             "trunk": "Queens Blvd", 
@@ -5499,6 +5448,7 @@
             "short2": "", 
             "stopName": "Northern Blvd", 
             "weekdayLines": [
+               "M", 
                "R"
             ], 
             "trunk": "Queens Blvd", 
@@ -5523,6 +5473,7 @@
             "short2": "", 
             "stopName": "46 St", 
             "weekdayLines": [
+               "M", 
                "R"
             ], 
             "trunk": "Queens Blvd", 
@@ -5547,6 +5498,7 @@
             "short2": "", 
             "stopName": "Steinway St", 
             "weekdayLines": [
+               "M", 
                "R"
             ], 
             "trunk": "Queens Blvd", 
@@ -5571,6 +5523,7 @@
             "short2": "", 
             "stopName": "36 St", 
             "weekdayLines": [
+               "M", 
                "R"
             ], 
             "trunk": "Queens Blvd", 
@@ -5596,7 +5549,7 @@
             "stopName": "Queens Plaza", 
             "weekdayLines": [
                "E", 
-               "F",
+               "M", 
                "R"
             ], 
             "trunk": "Queens Blvd", 
@@ -5622,8 +5575,8 @@
             "stopName": "5 Av/53 St", 
             "weekdayLines": [
                "E", 
-               "F"
-            ],
+               "M"
+            ], 
             "trunk": "Queens Blvd", 
             "borough": "M", 
             "lat": 40.760167, 
@@ -5637,7 +5590,7 @@
    {
       "id": 277, 
       "complexName": "7 Av", 
-      "searchName": "7 Av 53 St",
+      "searchName": "7 Av", 
       "stations": [
          {
             "id": 277, 
@@ -6732,8 +6685,8 @@
    }, 
    {
       "id": 328, 
-      "complexName": "World Trade Center", 
-      "searchName": "World Trade Center WTC", 
+      "complexName": "WTC Cortlandt", 
+      "searchName": "WTC Cortlandt", 
       "stations": [
          {
             "id": 328, 
@@ -6750,23 +6703,6 @@
             "long": -74.012188, 
             "northDir": "Uptown & The Bronx", 
             "southDir": "Downtown", 
-            "ADA": 1
-         },
-         {
-            "id": 328,
-            "GTFSID": "P06",
-            "short1": "World Trade Ctr",
-            "short2": "",
-            "stopName": "World Trade Center",
-            "weekdayLines": [
-               "PATH"
-            ],
-            "trunk": "PATH",
-            "borough": "M",
-            "lat": 40.71271,
-            "long": -74.01193,
-            "northDir": "Arrivals",
-            "southDir": "New Jersey",
             "ADA": 1
          }
       ]
@@ -9242,7 +9178,7 @@
    {
       "id": 447, 
       "complexName": "Flushing-Main St", 
-      "searchName": "Flushing Main St LIRR", 
+      "searchName": "Flushing-Main St", 
       "stations": [
          {
             "id": 447, 
@@ -10250,9 +10186,9 @@
       ]
    }, 
    {
-      "id": 322,
-      "complexName": "14 St",
-      "searchName": "14 St 6 Avenue",
+      "id": 322, 
+      "complexName": "14 St/6 Av", 
+      "searchName": "14 St/6 Av", 
       "stations": [
          {
             "id": 322, 
@@ -10307,29 +10243,12 @@
             "northDir": "8 Av", 
             "southDir": "Brooklyn", 
             "ADA": 0
-         },
-         {
-            "id": 601,
-            "GTFSID": "P11",
-            "short1": "14 St",
-            "short2": "",
-            "stopName": "14 St",
-            "weekdayLines": [
-               "PATH"
-            ],
-            "trunk": "PATH",
-            "borough": "M",
-            "lat": 40.73735,
-            "long": -73.99684,
-            "northDir": "33 St",
-            "southDir": "New Jersey",
-            "ADA": 0
          }
       ]
    }, 
    {
-      "id": 15,
-      "complexName": "14 St-Union Sq",
+      "id": 406, 
+      "complexName": "14 St-Union Sq", 
       "searchName": "14 St-Union Sq", 
       "stations": [
          {
@@ -10434,7 +10353,7 @@
       ]
    }, 
    {
-      "id": 219, 
+      "id": 389, 
       "complexName": "161 St-Yankee Stadium", 
       "searchName": "161 St-Yankee Stadium", 
       "stations": [
@@ -10518,28 +10437,10 @@
       ]
    }, 
    {
-      "id": 274, 
-      "complexName": "Court Sq-23 St", 
-      "searchName": "Court Sq-23 St", 
+      "id": 281, 
+      "complexName": "Court Sq", 
+      "searchName": "Court Sq", 
       "stations": [
-         {
-            "id": 274, 
-            "GTFSID": "F09", 
-            "short1": "Court Sq", 
-            "short2": "23 St", 
-            "stopName": "Court Sq-23 St", 
-            "weekdayLines": [
-               "E", 
-               "F"
-            ],
-            "trunk": "Queens Blvd", 
-            "borough": "Q", 
-            "lat": 40.747846, 
-            "long": -73.946, 
-            "northDir": "Forest Hills - Jamaica", 
-            "southDir": "Manhattan", 
-            "ADA": 3
-         }, 
          {
             "id": 281, 
             "GTFSID": "G22", 
@@ -10574,13 +10475,31 @@
             "northDir": "Flushing", 
             "southDir": "Manhattan", 
             "ADA": 1
+         }, 
+         {
+            "id": 274, 
+            "GTFSID": "F09", 
+            "short1": "Court Sq", 
+            "short2": "23 St", 
+            "stopName": "Court Sq-23 St", 
+            "weekdayLines": [
+               "E", 
+               "M"
+            ], 
+            "trunk": "Queens Blvd", 
+            "borough": "Q", 
+            "lat": 40.747846, 
+            "long": -73.946, 
+            "northDir": "Forest Hills - Jamaica", 
+            "southDir": "Manhattan", 
+            "ADA": 3
          }
       ]
    }, 
    {
-      "id": 227,
-      "complexName": "34 St - Herald Sq / 33 St",
-      "searchName": "34 St - Herald Sq / 33 St",
+      "id": 227, 
+      "complexName": "34 St-Herald Sq", 
+      "searchName": "34 St-Herald Sq", 
       "stations": [
          {
             "id": 227, 
@@ -10620,23 +10539,6 @@
             "long": -73.98795, 
             "northDir": "Uptown & Queens", 
             "southDir": "Downtown & Brooklyn", 
-            "ADA": 1
-         },
-         {
-            "id": 607,
-            "GTFSID": "P13",
-            "short1": "33 St",
-            "short2": "",
-            "stopName": "33 St",
-            "weekdayLines": [
-               "PATH"
-            ],
-            "trunk": "PATH",
-            "borough": "M",
-            "lat": 40.74912,
-            "long": -73.98827,
-            "northDir": "Arrivals",
-            "southDir": "New Jersey",
             "ADA": 1
          }
       ]
@@ -10686,7 +10588,7 @@
    {
       "id": 226, 
       "complexName": "42 St-Bryant Pk/5 Av", 
-      "searchName": "42 St-Bryant Park/5 Av", 
+      "searchName": "42 St-Bryant Pk/5 Av", 
       "stations": [
          {
             "id": 226, 
@@ -10791,10 +10693,29 @@
       ]
    }, 
    {
-      "id": 317, 
-      "complexName": "Times Sq-42 St", 
-      "searchName": "Times Sq-42 St Port Authority Bus Terminal", 
+      "id": 163, 
+      "complexName": "42 St-Port Authority Bus Terminal", 
+      "searchName": "42 St-Port Authority Bus Terminal", 
       "stations": [
+         {
+            "id": 163, 
+            "GTFSID": "A27", 
+            "short1": "42 St", 
+            "short2": "PABT", 
+            "stopName": "42 St-Port Authority Bus Terminal", 
+            "weekdayLines": [
+               "A", 
+               "C", 
+               "E"
+            ], 
+            "trunk": "8th Av", 
+            "borough": "M", 
+            "lat": 40.757308, 
+            "long": -73.989735, 
+            "northDir": "Uptown - Queens", 
+            "southDir": "Downtown & Brooklyn", 
+            "ADA": 1
+         }, 
          {
             "id": 317, 
             "GTFSID": "127", 
@@ -10850,25 +10771,6 @@
             "ADA": 1
          }, 
          {
-            "id": 163, 
-            "GTFSID": "A27", 
-            "short1": "42 St", 
-            "short2": "PABT", 
-            "stopName": "42 St-Port Authority Bus Terminal", 
-            "weekdayLines": [
-               "A", 
-               "C", 
-               "E"
-            ], 
-            "trunk": "8th Av", 
-            "borough": "M", 
-            "lat": 40.757308, 
-            "long": -73.989735, 
-            "northDir": "Uptown - Queens", 
-            "southDir": "Downtown & Brooklyn", 
-            "ADA": 1
-         }, 
-         {
             "id": 11, 
             "GTFSID": "R16", 
             "short1": "Times Sq", 
@@ -10891,10 +10793,28 @@
       ]
    }, 
    {
-      "id": 275, 
+      "id": 401, 
       "complexName": "51 St", 
-      "searchName": "51 St 53 st lexington av",
+      "searchName": "51 St", 
       "stations": [
+         {
+            "id": 401, 
+            "GTFSID": "630", 
+            "short1": "51 St", 
+            "short2": "", 
+            "stopName": "51 St", 
+            "weekdayLines": [
+               "6", 
+               "6X"
+            ], 
+            "trunk": "Lexington Av", 
+            "borough": "M", 
+            "lat": 40.757107, 
+            "long": -73.97192, 
+            "northDir": "Uptown & The Bronx", 
+            "southDir": "Downtown", 
+            "ADA": 1
+         }, 
          {
             "id": 275, 
             "GTFSID": "F11", 
@@ -10903,8 +10823,8 @@
             "stopName": "Lexington Av/53 St", 
             "weekdayLines": [
                "E", 
-               "F"
-            ],
+               "M"
+            ], 
             "trunk": "Queens Blvd", 
             "borough": "M", 
             "lat": 40.757552, 
@@ -10912,32 +10832,34 @@
             "northDir": "Queens", 
             "southDir": "Downtown & Brooklyn", 
             "ADA": 1
-         },
-         {
-            "id": 401,
-            "GTFSID": "630",
-            "short1": "51 St",
-            "short2": "",
-            "stopName": "51 St",
-            "weekdayLines": [
-               "6",
-               "6X"
-            ],
-            "trunk": "Lexington Av",
-            "borough": "M",
-            "lat": 40.757107,
-            "long": -73.97192,
-            "northDir": "Uptown & The Bronx",
-            "southDir": "Downtown",
-            "ADA": 1
          }
       ]
    }, 
    {
-      "id": 7,
-      "complexName": "59 St",
-      "searchName": "59 St lexington av",
+      "id": 400, 
+      "complexName": "59 St", 
+      "searchName": "59 St", 
       "stations": [
+         {
+            "id": 400, 
+            "GTFSID": "629", 
+            "short1": "59 St", 
+            "short2": "Lexington Av", 
+            "stopName": "59 St", 
+            "weekdayLines": [
+               "4", 
+               "5", 
+               "6", 
+               "6X"
+            ], 
+            "trunk": "Lexington Av", 
+            "borough": "M", 
+            "lat": 40.762526, 
+            "long": -73.967967, 
+            "northDir": "Uptown & The Bronx", 
+            "southDir": "Downtown & Brooklyn", 
+            "ADA": 0
+         }, 
          {
             "id": 7, 
             "GTFSID": "R11", 
@@ -10956,32 +10878,12 @@
             "northDir": "Queens", 
             "southDir": "Downtown & Brooklyn", 
             "ADA": 0
-         },
-         {
-            "id": 400,
-            "GTFSID": "629",
-            "short1": "59 St",
-            "short2": "",
-            "stopName": "59 St",
-            "weekdayLines": [
-               "4",
-               "5",
-               "6",
-               "6X"
-            ],
-            "trunk": "Lexington Av",
-            "borough": "M",
-            "lat": 40.762526,
-            "long": -73.967967,
-            "northDir": "Uptown & The Bronx",
-            "southDir": "Downtown & Brooklyn",
-            "ADA": 0
          }
       ]
    }, 
    {
-      "id": 161,
-      "complexName": "59 St-Columbus Circle",
+      "id": 315, 
+      "complexName": "59 St-Columbus Circle", 
       "searchName": "59 St-Columbus Circle", 
       "stations": [
          {
@@ -11065,9 +10967,9 @@
       ]
    }, 
    {
-      "id": 267, 
-      "complexName": "Jackson Hts-Roosevelt Av", 
-      "searchName": "74 St-Broadway", 
+      "id": 454, 
+      "complexName": "74 St-Broadway", 
+      "searchName": "Jackson Hts-Roosevelt Av", 
       "stations": [
          {
             "id": 454, 
@@ -11096,6 +10998,7 @@
             "weekdayLines": [
                "E", 
                "F", 
+               "M", 
                "R"
             ], 
             "trunk": "Queens Blvd", 
@@ -11109,7 +11012,7 @@
       ]
    }, 
    {
-      "id": 27, 
+      "id": 338, 
       "complexName": "Atlantic Av-Barclays Ctr", 
       "searchName": "Atlantic Av-Barclays Ctr", 
       "stations": [
@@ -11216,8 +11119,8 @@
       ]
    }, 
    {
-      "id": 230, 
-      "complexName": "Broadway-Lafayette St", 
+      "id": 408, 
+      "complexName": "Bleecker St", 
       "searchName": "Broadway-Lafayette St Bleeker St", 
       "stations": [
          {
@@ -11261,8 +11164,8 @@
       ]
    }, 
    {
-      "id": 24, 
-      "complexName": "Court St", 
+      "id": 335, 
+      "complexName": "Borough Hall", 
       "searchName": "Court St Borough Hall", 
       "stations": [
          {
@@ -11321,7 +11224,7 @@
       ]
    }, 
    {
-      "id": 92, 
+      "id": 184, 
       "complexName": "Broadway Junction", 
       "searchName": "Broadway Junction", 
       "stations": [
@@ -11426,7 +11329,7 @@
       ]
    }, 
    {
-      "id": 19, 
+      "id": 104, 
       "complexName": "Canal St", 
       "searchName": "Canal St", 
       "stations": [
@@ -11505,8 +11408,8 @@
       ]
    }, 
    {
-      "id": 331, 
-      "complexName": "Park Pl./Chambers/WTC/Cortlandt", 
+      "id": 170, 
+      "complexName": "Chambers St", 
       "searchName": "Park Place Chambers St WTC World Trade Center Cortlandt", 
       "stations": [
          {
@@ -11566,8 +11469,8 @@
          {
             "id": 171, 
             "GTFSID": "E01", 
-            "short1": "World Trade Ctr",
-            "short2": "",
+            "short1": "World Trade Center", 
+            "short2": "", 
             "stopName": "World Trade Center", 
             "weekdayLines": [
                "E"
@@ -11583,7 +11486,7 @@
       ]
    }, 
    {
-      "id": 102, 
+      "id": 233, 
       "complexName": "Delancey St-Essex St", 
       "searchName": "Delancey St-Essex St", 
       "stations": [
@@ -11626,8 +11529,8 @@
       ]
    }, 
    {
-      "id": 142,
-      "complexName": "Franklin Av",
+      "id": 342, 
+      "complexName": "Franklin Av", 
       "searchName": "Botanic Garden Franklin Avenue", 
       "stations": [
          {
@@ -11711,7 +11614,7 @@
       ]
    }, 
    {
-      "id": 106, 
+      "id": 332, 
       "complexName": "Fulton St", 
       "searchName": "Fulton St", 
       "stations": [
@@ -11790,7 +11693,7 @@
       ]
    }, 
    {
-      "id": 121, 
+      "id": 285, 
       "complexName": "Metropolitan Av-Lorimer St", 
       "searchName": "Lorimer St Metropolitan Av", 
       "stations": [
@@ -11831,7 +11734,7 @@
       ]
    }, 
    {
-      "id": 112, 
+      "id": 128, 
       "complexName": "Myrtle-Wyckoff Avs", 
       "searchName": "Myrtle-Wyckoff Avs", 
       "stations": [
@@ -11872,8 +11775,8 @@
       ]
    }, 
    {
-      "id": 23, 
-      "complexName": "Whitehall St-South Ferry", 
+      "id": 330, 
+      "complexName": "South Ferry", 
       "searchName": "Whitehall St-South Ferry", 
       "stations": [
          {
@@ -11890,7 +11793,7 @@
             "lat": 40.702068, 
             "long": -74.013664, 
             "northDir": "Uptown & The Bronx", 
-            "southDir": "Arrivals", 
+            "southDir": "", 
             "ADA": 1
          }, 
          {
@@ -11953,198 +11856,6 @@
             "northDir": "Manhattan", 
             "southDir": "Bay Ridge - 95 St", 
             "ADA": 1
-         }
-      ]
-   }, 
-   {
-      "id": 639, 
-      "complexName": "Newark", 
-      "searchName": "Newark", 
-      "stations": [
-         {
-            "id": 639, 
-            "GTFSID": "P01", 
-            "short1": "Newark", 
-            "short2": "", 
-            "stopName": "Newark", 
-            "weekdayLines": [
-               "PATH"
-            ], 
-            "trunk": "PATH", 
-            "borough": "NJ", 
-            "lat": 40.73454, 
-            "long": -74.16375, 
-            "northDir": "New York", 
-            "southDir": "Arrivals", 
-            "ADA": 1
-         }
-      ]
-   }, 
-   {
-      "id": 640, 
-      "complexName": "Harrison", 
-      "searchName": "Harrison", 
-      "stations": [
-         {
-            "id": 640, 
-            "GTFSID": "P02", 
-            "short1": "Harrison", 
-            "short2": "", 
-            "stopName": "Harrison", 
-            "weekdayLines": [
-               "PATH"
-            ], 
-            "trunk": "PATH", 
-            "borough": "NJ", 
-            "lat": 40.73942, 
-            "long": -74.15587, 
-            "northDir": "New York", 
-            "southDir": "Newark", 
-            "ADA": 1
-         }
-      ]
-   }, 
-   {
-      "id": 641, 
-      "complexName": "Journal Sq", 
-      "searchName": "Journal Sq", 
-      "stations": [
-         {
-            "id": 641, 
-            "GTFSID": "P03", 
-            "short1": "Journal Sq", 
-            "short2": "", 
-            "stopName": "Journal Sq", 
-            "weekdayLines": [
-               "PATH"
-            ], 
-            "trunk": "PATH", 
-            "borough": "NJ", 
-            "lat": 40.73301, 
-            "long": -74.06289, 
-            "northDir": "New York", 
-            "southDir": "Newark / Arrivals", 
-            "ADA": 1
-         }
-      ]
-   }, 
-   {
-      "id": 642, 
-      "complexName": "Grove St", 
-      "searchName": "Grove St", 
-      "stations": [
-         {
-            "id": 642, 
-            "GTFSID": "P04", 
-            "short1": "Grove St", 
-            "short2": "", 
-            "stopName": "Grove St", 
-            "weekdayLines": [
-               "PATH"
-            ], 
-            "trunk": "PATH", 
-            "borough": "NJ", 
-            "lat": 40.71966, 
-            "long": -74.04245, 
-            "northDir": "New York", 
-            "southDir": "Newark", 
-            "ADA": 1
-         }
-      ]
-   }, 
-   {
-      "id": 643, 
-      "complexName": "Exchange Place", 
-      "searchName": "Exchange Place", 
-      "stations": [
-         {
-            "id": 643, 
-            "GTFSID": "P05", 
-            "short1": "Exchange Place", 
-            "short2": "", 
-            "stopName": "Exchange Place", 
-            "weekdayLines": [
-               "PATH"
-            ], 
-            "trunk": "PATH", 
-            "borough": "NJ", 
-            "lat": 40.71676, 
-            "long": -74.03238, 
-            "northDir": "World Trade Center", 
-            "southDir": "Newark / Hoboken", 
-            "ADA": 1
-         }
-      ]
-   }, 
-   {
-      "id": 645, 
-      "complexName": "Newport", 
-      "searchName": "Newport", 
-      "stations": [
-         {
-            "id": 645, 
-            "GTFSID": "P07", 
-            "short1": "Newport", 
-            "short2": "", 
-            "stopName": "Newport", 
-            "weekdayLines": [
-               "PATH"
-            ], 
-            "trunk": "PATH", 
-            "borough": "NJ", 
-            "lat": 40.72699, 
-            "long": -74.03383, 
-            "northDir": "New York", 
-            "southDir": "Hoboken / Journal Sq", 
-            "ADA": 1
-         }
-      ]
-   }, 
-   {
-      "id": 646, 
-      "complexName": "Hoboken", 
-      "searchName": "Hoboken", 
-      "stations": [
-         {
-            "id": 646, 
-            "GTFSID": "P08", 
-            "short1": "Hoboken", 
-            "short2": "", 
-            "stopName": "Hoboken", 
-            "weekdayLines": [
-               "PATH"
-            ], 
-            "trunk": "PATH", 
-            "borough": "NJ", 
-            "lat": 40.73586, 
-            "long": -74.02922, 
-            "northDir": "New York", 
-            "southDir": "Journal Sq", 
-            "ADA": 1
-         }
-      ]
-   }, 
-   {
-      "id": 647, 
-      "complexName": "Christopher St", 
-      "searchName": "Christopher St", 
-      "stations": [
-         {
-            "id": 647, 
-            "GTFSID": "P09", 
-            "short1": "Christopher St", 
-            "short2": "", 
-            "stopName": "Christopher St", 
-            "weekdayLines": [
-               "PATH"
-            ], 
-            "trunk": "PATH", 
-            "borough": "M", 
-            "lat": 40.73295, 
-            "long": -74.00707, 
-            "northDir": "33 St", 
-            "southDir": "New Jersey", 
-            "ADA": 0
          }
       ]
    }

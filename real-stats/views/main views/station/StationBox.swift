@@ -40,11 +40,19 @@ struct StationBox: View {
                 .padding(.leading, 5)
                 .font(.caption)
             WrappingHStack(allLines(), id: \.self, spacing: .constant(2)) { line in
-                Image(line)
-                    .resizable()
-                    .frame(width: 14, height: 14)
-                    .shadow(radius: 2)
-                    .padding(.bottom, 2.0)
+                if line == "PATH" {
+                    Image(line)
+                        .resizable()
+                        .frame(width: 28, height: 14)
+                        .shadow(radius: 2)
+                        .padding(.bottom, 2.0)
+                } else {
+                    Image(line)
+                        .resizable()
+                        .frame(width: 14, height: 14)
+                        .shadow(radius: 2)
+                        .padding(.bottom, 2.0)
+                }
             }
             .frame(width: 115)
             .padding([.leading,.top],5)

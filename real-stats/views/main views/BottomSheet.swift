@@ -15,8 +15,29 @@ extension UIScreen{
    static let screenSize = UIScreen.main.bounds.size
 }
 
+struct RoundedCorner: Shape {
+
+    var radius: CGFloat = .infinity
+    var corners: UIRectCorner = .allCorners
+
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        return Path(path.cgPath)
+    }
+}
+
+
+extension View {
+    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
+        clipShape( RoundedCorner(radius: radius, corners: corners) )
+    }
+}
+
+
 
 struct BottomSheet: View {
+    
+    @EnvironmentObject var versionCheck: VersionCheck
         
     @State var bottomSheetPosition: BottomSheetPosition = .relative(0.4)
     @State var bottomSheetSize = CGSize()
@@ -48,8 +69,14 @@ struct BottomSheet: View {
     
     @AppStorage("stationTimes", store: UserDefaults(suiteName: "group.Schematica.real-stats")) var timeData: String = ""
     
+    @AppStorage("version") var version: String = "1.0"
+    @State var showWhatsNew = false
+    @State var showNeedsUpdate = false
+
     @State private var duration = 0.2
     @State private var bounce = 0.2
+    
+    let bundleId = Bundle.main.infoDictionary?["CFBundleIdentifier"] as? String
     
     func correctComplex(_ id: Int) -> Complex {
         for station in complexData {
@@ -74,12 +101,28 @@ struct BottomSheet: View {
                 
         return newStations
     }
-
+    
+    func needsUpdate() -> Bool {
+        if versionCheck.isUpdateAvailable {
+            return true
+        }
+        return false
+    }
+    
+    let searchTypes = ["Urban rail", "Regional rail", "Bus"]
+    @State var selectedSearchType = "Urban rail"
+    @State var showTypes = false
     
     var body: some View {
         GeometryReader { geometry in
             ZStack {
                 MapView()
+                    .onAppear {
+                        if version != (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "") {
+                            showWhatsNew = true
+                            version = (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "")
+                        }
+                    }
                     .environment(\.managedObjectContext, CoreDataManager.shared.persistentContainer.viewContext)
                     .environmentObject(locationViewModel)
     //                .ignoresSafeArea()
@@ -127,7 +170,7 @@ struct BottomSheet: View {
                                                 let currentLoc = CLLocation(latitude: coordinate?.latitude ?? 0, longitude: coordinate?.longitude ?? 0)
                                                 
                                                 withAnimation(.spring(blendDuration: 0.25)) {
-                                                    searchStations = complexData.filter { $0.complexName.localizedCaseInsensitiveContains(search)
+                                                    searchStations = complexData.filter { $0.searchName.localizedCaseInsensitiveContains(search)
                                                     }.sorted(by: {
                                                         return $0.location.distance(from: currentLoc) < $1.location.distance(from: currentLoc)
                                                     })
@@ -190,6 +233,48 @@ struct BottomSheet: View {
                     }) {
                         ScrollView {
                             VStack(spacing: 0) {
+//                                TODO: FUTURE
+//                                if showTypes {
+//                                    HStack {
+//                                        ForEach(searchTypes, id: \.self) { type in
+//                                            Button {
+//                                                selectedSearchType = type
+//                                            } label: {
+//                                                VStack {
+//                                                    ZStack {
+//                                                        if selectedSearchType == type {
+//                                                            RoundedRectangle(cornerRadius: 10)
+//                                                                .foregroundColor(Color("cLessDarkGray"))
+//                                                                .frame(height: 40)
+//                                                                .overlay(
+//                                                                    RoundedRectangle(cornerRadius: 13)
+//                                                                        .stroke(.blue,lineWidth: 2)
+//                                                                        .frame(height: 48)
+//                                                                )
+//                                                                .shadow(radius: 2)
+//                                                        } else {
+//                                                            RoundedRectangle(cornerRadius: 10)
+//                                                                .foregroundColor(Color("cLessDarkGray"))
+//                                                                .frame(height: 40)
+//                                                                .shadow(radius: 2)
+//                                                                .overlay(
+//                                                                    RoundedRectangle(cornerRadius: 12)
+//                                                                        .stroke(Color("cDarkGray"),lineWidth: 2)
+//                                                                        .frame(height: 48)
+//                                                                )
+//
+//                                                        }
+//                                                        HStack(spacing: 2.5) {
+//                                                            Text(type)
+//                                                        }
+//                                                    }
+//                                                }
+//                                            }
+//                                            
+//                                        }
+//                                    }
+//
+//                                }
                                 ForEach(searchStations, id: \.self) { station in
                                     Button {
                                         selectedItem = Item(complex: station)
@@ -203,6 +288,12 @@ struct BottomSheet: View {
                                     } label: {
                                         StationRow(complex: station)
                                             .frame(width: geometry.size.width-12)
+                                            .onAppear {
+                                                showTypes = true
+                                            }
+                                            .onDisappear {
+                                                showTypes = false
+                                            }
                                     }
                                     .buttonStyle(CButton())
                                 }
@@ -254,7 +345,6 @@ struct BottomSheet: View {
                                 switch locationViewModel.authorizationStatus {
                                 case .notDetermined:
                                     Text("request permission")
-                                        .onAppear { locationViewModel.requestPermission() }
                                 case .denied:
                                     Text("Location is not shared, please go to Settings to enable it.")
                                 case .authorizedAlways, .authorizedWhenInUse:
@@ -296,13 +386,24 @@ struct BottomSheet: View {
                             }
                         }
                         .sheet(item: $selectedItem) { item in
-                            if fromFavorites {
-                                // chosen station = favoriteStationNumber thing
-                                StationView(complex: item.complex, chosenStation: chosenStation, isFavorited: true)
-                                    .environment(\.managedObjectContext, persistedContainer.viewContext)
+                            if #available(iOS 16.0, *) {
+                                if fromFavorites {
+                                    // chosen station = favoriteStationNumber thing
+                                    StationView(complex: item.complex, chosenStation: chosenStation, isFavorited: true)
+                                        .environment(\.managedObjectContext, persistedContainer.viewContext)
+                                } else {
+                                    StationView(complex: item.complex, chosenStation: 0, isFavorited: false)
+                                        .environment(\.managedObjectContext, persistedContainer.viewContext)
+                                }
                             } else {
-                                StationView(complex: item.complex, chosenStation: 0, isFavorited: false)
-                                    .environment(\.managedObjectContext, persistedContainer.viewContext)
+                                if fromFavorites {
+                                    // chosen station = favoriteStationNumber thing
+                                    StationViewOld(complex: item.complex, chosenStation: chosenStation, isFavorited: true)
+                                        .environment(\.managedObjectContext, persistedContainer.viewContext)
+                                } else {
+                                    StationViewOld(complex: item.complex, chosenStation: 0, isFavorited: false)
+                                        .environment(\.managedObjectContext, persistedContainer.viewContext)
+                                }
                             }
                         }
                     }
@@ -311,7 +412,7 @@ struct BottomSheet: View {
                     .enableBackgroundBlur(false)
                     .customBackground(
                         Color("cDarkGray")
-                            .cornerRadius(20)
+                            .cornerRadius(20, corners: [.topLeft, .topRight])
                             .shadow(color: .gray, radius: 10, x: 0, y: 0)
                     )
                     .frame(width: UIScreen.screenWidth)
@@ -338,6 +439,12 @@ struct BottomSheet: View {
             }
 
         }
+        .sheet(isPresented: $showWhatsNew, onDismiss: {
+            locationViewModel.requestPermission()
+        }, content: WhatsNew.init)
+        .sheet(isPresented: $versionCheck.isUpdateAvailable) {
+            Update()
+        }
     }
 }
 struct BottomSheet_Previews: PreviewProvider {
@@ -346,5 +453,6 @@ struct BottomSheet_Previews: PreviewProvider {
         BottomSheet()
             .environment(\.managedObjectContext, persistedContainer.viewContext)
             .environmentObject(LocationViewModel())
+            .environmentObject(VersionCheck())
     }
 }

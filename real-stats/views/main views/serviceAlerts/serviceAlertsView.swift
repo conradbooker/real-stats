@@ -241,7 +241,8 @@ struct serviceAlertsView: View {
                                             .padding(.leading,5)
                                             .font(.system(size: 30))
                                         VStack(alignment: .leading) {
-                                            Text("**Skipping**: \(getAllStations(stations: alerts.northbound.skippedStations?[alert]?.stations ?? []))")
+                                            Text(String(format: NSLocalizedString("skipping-stations", comment: ""), getAllStations(stations: alerts.northbound.skippedStations?[alert]?.stations ?? [])))
+//                                            Text("**Skipping**: \()")
                                         }
                                         Spacer()
                                     }

@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Service Bandage
+
+  Created by Conrad on 8/27/23.
+  
+*/
+
+"whats-new" = "Whats New: v%@";
+"skipping-stations" = "**Skipping**: %@";
+"no-service" = "No service to %@ at this station";

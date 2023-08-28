@@ -47,14 +47,22 @@ struct StationRow: View {
                 }
                 Spacer()
                 WrappingHStack(allLines(), id: \.self, alignment: .trailing, spacing: .constant(0)) { line in
-                    Image(line)
-                        .resizable()
-                        .frame(width: 20, height: 20)
-                        .padding(1)
-                        .shadow(radius: 2)
+                    if line == "PATH" {
+                        Image(line)
+                            .resizable()
+                            .frame(width: 40, height: 20)
+                            .padding(1)
+                            .shadow(radius: 2)
+                    } else {
+                        Image(line)
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                            .padding(1)
+                            .shadow(radius: 2)
+                    }
                 }
                 .padding()
-                .frame(width: 230)
+                .frame(width: 200)
             }
         }
         .padding(6)
@@ -64,6 +72,6 @@ struct StationRow: View {
 
 struct StationRow_Previews: PreviewProvider {
     static var previews: some View {
-        StationRow(complex: complexData[120])
+        StationRow(complex: complexData[428])
     }
 }

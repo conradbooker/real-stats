@@ -292,13 +292,24 @@ struct Home: View {
                         }
                     }
                     .sheet(item: $selectedItem) { item in
-                        if fromFavorites {
-                            // chosen station = favoriteStationNumber thing
-                            StationView(complex: item.complex, chosenStation: chosenStation, isFavorited: true)
-                                .environment(\.managedObjectContext, persistedContainer.viewContext)
+                        if #available(iOS 16.0, *) {
+                            if fromFavorites {
+                                // chosen station = favoriteStationNumber thing
+                                StationView(complex: item.complex, chosenStation: chosenStation, isFavorited: true)
+                                    .environment(\.managedObjectContext, persistedContainer.viewContext)
+                            } else {
+                                StationView(complex: item.complex, chosenStation: 0, isFavorited: false)
+                                    .environment(\.managedObjectContext, persistedContainer.viewContext)
+                            }
                         } else {
-                            StationView(complex: item.complex, chosenStation: 0, isFavorited: false)
-                                .environment(\.managedObjectContext, persistedContainer.viewContext)
+                            if fromFavorites {
+                                // chosen station = favoriteStationNumber thing
+                                StationViewOld(complex: item.complex, chosenStation: chosenStation, isFavorited: true)
+                                    .environment(\.managedObjectContext, persistedContainer.viewContext)
+                            } else {
+                                StationViewOld(complex: item.complex, chosenStation: 0, isFavorited: false)
+                                    .environment(\.managedObjectContext, persistedContainer.viewContext)
+                            }
                         }
                     }
                 }

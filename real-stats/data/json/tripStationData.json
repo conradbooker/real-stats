@@ -1631,8 +1631,8 @@
     "complexID": 413,
     "isTransfer": false,
     "weekdayLines": [
-      "6",
-      "6X"
+      "4",
+      "5"
     ],
     "short1": "Wall St",
     "short2": "",
@@ -2143,7 +2143,7 @@
       "W"
     ],
     "short1": "59 St",
-    "short2": "Lexington Av",
+    "short2": "",
     "stationName": "59 St",
     "boro": "M",
     "structure": "Subway",
@@ -2179,8 +2179,8 @@
       "7X",
       "GS"
     ],
-    "short1": "Grand Central",
-    "short2": "42 St",
+    "short1": "42 St",
+    "short2": "Grand Central",
     "stationName": "Grand Central-42 St",
     "boro": "M",
     "structure": "Subway",
@@ -2668,8 +2668,8 @@
       "R",
       "W"
     ],
-    "short1": "42 St",
-    "short2": "Times Sq",
+    "short1": "Times Sq",
+    "short2": "",
     "stationName": "Times Sq-42 St",
     "boro": "M",
     "structure": "Subway",
@@ -2703,7 +2703,7 @@
       "7X",
       "GS"
     ],
-    "short1": "42 St",
+    "short1": "Grand Central",
     "short2": "Grand Central",
     "stationName": "Grand Central-42 St",
     "boro": "M",
@@ -2729,7 +2729,7 @@
       "R",
       "W"
     ],
-    "short1": "42 St",
+    "short1": "Grand Central",
     "short2": "Times Sq",
     "stationName": "Times Sq-42 St",
     "boro": "M",
@@ -3162,7 +3162,7 @@
       "Q",
       "FS"
     ],
-    "short1": "Prospect Pk",
+    "short1": "Prospect Park",
     "short2": "",
     "stationName": "Prospect Park",
     "boro": "Bk",
@@ -6097,7 +6097,7 @@
       "J",
       "Z"
     ],
-    "short1": "Jamaica Ctr",
+    "short1": "Jamaica Center",
     "short2": "Parsons Blvd-Archer Av",
     "stationName": "Jamaica Center-Parsons/Archer",
     "boro": "Q",
@@ -6125,7 +6125,9 @@
     "complexID": 280,
     "isTransfer": false,
     "weekdayLines": [
-      "E"
+      "E",
+      "J",
+      "Z"
     ],
     "short1": "Van Wyck",
     "short2": "Jamaica",
@@ -6678,8 +6680,8 @@
       "R",
       "W"
     ],
-    "short1": "14 St",
-    "short2": "Union Sq",
+    "short1": "Union Sq",
+    "short2": "",
     "stationName": "14 St-Union Sq.",
     "boro": "M",
     "structure": "Subway",
@@ -6842,8 +6844,8 @@
       "G",
       "R"
     ],
-    "short1": "9 St",
-    "short2": "4 Av",
+    "short1": "4 Av",
+    "short2": "9 St",
     "stationName": "4 Av-9 St",
     "boro": "Bk",
     "structure": "Subway",
@@ -7095,8 +7097,8 @@
       "E",
       "L"
     ],
-    "short1": "14 St",
-    "short2": "8 Av",
+    "short1": "8 Av",
+    "short2": "",
     "stationName": "8 Av",
     "boro": "M",
     "structure": "Subway",
@@ -7114,7 +7116,7 @@
       "F",
       "M"
     ],
-    "short1": "Broadway",
+    "short1": "Bway-Lafayette St",
     "short2": "Lafayette St",
     "stationName": "Broadway-Lafayette St",
     "boro": "M",
@@ -7530,8 +7532,8 @@
       "R",
       "W"
     ],
-    "short1": "Whitehall St",
-    "short2": "South Ferry",
+    "short1": "South Ferry",
+    "short2": "Whitehall St",
     "stationName": "Whitehall St-South Ferry",
     "boro": "M",
     "structure": "Subway",
@@ -7570,5 +7572,230 @@
     "boro": "Bk",
     "structure": "Subway",
     "ADA": 1
+  },
+  "P10": {
+    "stationID": 167,
+    "complexID": 167,
+    "isTransfer": true,
+    "weekdayLines": [
+      "JSQ_33_HOB",
+      "JSQ_33",
+      "33_HOB",
+      "A",
+      "C",
+      "E",
+      "B",
+      "D",
+      "F",
+      "M"
+    ],
+    "short1": "9 St",
+    "short2": "",
+    "stationName": "9 St",
+    "boro": "M",
+    "structure": "Subway",
+    "ADA": 0
+  },
+  "P12": {
+    "stationID": 228,
+    "complexID": 228,
+    "isTransfer": true,
+    "weekdayLines": [
+      "JSQ_33_HOB",
+      "JSQ_33",
+      "33_HOB",
+      "F",
+      "M"
+    ],
+    "short1": "23 St",
+    "short2": "",
+    "stationName": "23 St",
+    "boro": "M",
+    "structure": "Subway",
+    "ADA": 0
+  },
+  "P11": {
+    "stationID": 601,
+    "complexID": 601,
+    "isTransfer": true,
+    "weekdayLines": [
+      "JSQ_33_HOB",
+      "JSQ_33",
+      "33_HOB",
+      "L",
+      "F",
+      "M",
+      "1",
+      "2",
+      "3"
+    ],
+    "short1": "14 St",
+    "short2": "",
+    "stationName": "14 St",
+    "boro": "M",
+    "structure": "Subway",
+    "ADA": 0
+  },
+  "P13": {
+    "stationID": 607,
+    "complexID": 607,
+    "isTransfer": true,
+    "weekdayLines": [
+      "JSQ_33_HOB",
+      "JSQ_33",
+      "33_HOB",
+      "B",
+      "D",
+      "F",
+      "M",
+      "N",
+      "Q",
+      "R",
+      "W"
+    ],
+    "short1": "33 St",
+    "short2": "",
+    "stationName": "33 St",
+    "boro": "M",
+    "structure": "Subway",
+    "ADA": 1
+  },
+  "P01": {
+    "stationID": 639,
+    "complexID": 639,
+    "isTransfer": false,
+    "weekdayLines": [
+      "NWK_WTC"
+    ],
+    "short1": "Newark",
+    "short2": "",
+    "stationName": "Newark",
+    "boro": "NJ",
+    "structure": "Elevated",
+    "ADA": 1
+  },
+  "P02": {
+    "stationID": 640,
+    "complexID": 640,
+    "isTransfer": false,
+    "weekdayLines": [
+      "NWK_WTC"
+    ],
+    "short1": "Harrison",
+    "short2": "",
+    "stationName": "Harrison",
+    "boro": "NJ",
+    "structure": "Surface",
+    "ADA": 1
+  },
+  "P03": {
+    "stationID": 641,
+    "complexID": 641,
+    "isTransfer": true,
+    "weekdayLines": [
+      "JSQ_33_HOB",
+      "JSQ_33",
+      "NWK_WTC"
+    ],
+    "short1": "Journal Sq",
+    "short2": "",
+    "stationName": "Journal Sq",
+    "boro": "NJ",
+    "structure": "Surface",
+    "ADA": 1
+  },
+  "P04": {
+    "stationID": 642,
+    "complexID": 642,
+    "isTransfer": true,
+    "weekdayLines": [
+      "JSQ_33_HOB",
+      "JSQ_33",
+      "NWK_WTC"
+    ],
+    "short1": "Grove St",
+    "short2": "",
+    "stationName": "Grove St",
+    "boro": "NJ",
+    "structure": "Subway",
+    "ADA": 1
+  },
+  "P05": {
+    "stationID": 643,
+    "complexID": 643,
+    "isTransfer": true,
+    "weekdayLines": [
+      "HOB_WTC",
+      "NWK_WTC"
+    ],
+    "short1": "Exchange Place",
+    "short2": "",
+    "stationName": "Exchange Place",
+    "boro": "NJ",
+    "structure": "Subway",
+    "ADA": 1
+  },
+  "P06": {
+    "stationID": 644,
+    "complexID": 328,
+    "isTransfer": true,
+    "weekdayLines": [
+      "HOB_WTC",
+      "NWK_WTC",
+      "1"
+    ],
+    "short1": "World Trade Ctr",
+    "short2": "",
+    "stationName": "World Trade Center",
+    "boro": "M",
+    "structure": "Subway",
+    "ADA": 1
+  },
+  "P07": {
+    "stationID": 645,
+    "complexID": 645,
+    "isTransfer": true,
+    "weekdayLines": [
+      "HOB_WTC",
+      "JSQ_33_HOB",
+      "JSQ_33"
+    ],
+    "short1": "Newport",
+    "short2": "",
+    "stationName": "Newport",
+    "boro": "NJ",
+    "structure": "Subway",
+    "ADA": 1
+  },
+  "P08": {
+    "stationID": 646,
+    "complexID": 646,
+    "isTransfer": true,
+    "weekdayLines": [
+      "HOB_WTC",
+      "33_HOB"
+    ],
+    "short1": "Hoboken",
+    "short2": "",
+    "stationName": "Hoboken",
+    "boro": "NJ",
+    "structure": "Subway",
+    "ADA": 1
+  },
+  "P09": {
+    "stationID": 647,
+    "complexID": 647,
+    "isTransfer": false,
+    "weekdayLines": [
+      "JSQ_33_HOB",
+      "JSQ_33",
+      "33_HOB"
+    ],
+    "short1": "Christopher St",
+    "short2": "",
+    "stationName": "Christopher St",
+    "boro": "M",
+    "structure": "Subway",
+    "ADA": 0
   }
 }

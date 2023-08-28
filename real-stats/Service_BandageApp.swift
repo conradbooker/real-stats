@@ -11,6 +11,7 @@ import SwiftUI
 struct Service_BandageApp: App {
     let persistentContainer = CoreDataManager.shared.persistentContainer
     @StateObject var locationViewModel = LocationViewModel()
+    @StateObject var versionCheck = VersionCheck()
     
     @AppStorage("darkMode") var darkMode: Int = 2
     @Environment(\.colorScheme) var colorScheme
@@ -31,10 +32,13 @@ struct Service_BandageApp: App {
     
     var body: some Scene {
         WindowGroup {
-            SplashScreen()
+            BottomSheet()
+                .onAppear {
+                    versionCheck.checkVersion()
+                }
                 .environment(\.managedObjectContext, persistentContainer.viewContext)
                 .environmentObject(locationViewModel)
-                .preferredColorScheme(getColorScheme())
+                .environmentObject(versionCheck)
         }
     }
 }
