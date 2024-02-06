@@ -7,6 +7,30 @@
 
 import Foundation
 
+struct BusTrip: Hashable, Codable, Identifiable {
+    var id: UUID {
+        return UUID()
+    }
+    var line: String
+    var stations: [String: BusStop_Time]
+    var destination: String
+    var delay: Int
+}
+
+struct BusStop_Time: Hashable, Codable, Identifiable {
+    var id: UUID {
+        return UUID()
+    }
+    var times: [Int]
+    var scheduledTime: Int
+}
+
+
+
+
+
+
+
 struct Trip: Hashable, Codable, Identifiable {
     var id: UUID {
         return UUID()

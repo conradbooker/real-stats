@@ -1,0 +1,57 @@
+/* 
+  Localizable.strings
+  Service Bandage
+
+  Created by Conrad on 8/27/23.
+  
+*/
+
+"Favorites" = "좋아하는";
+"Nearby" = "인근 기차역";
+"Nearby bus" = "인근 버스 정류장";
+"%@ St" = "%@ 거리";
+"Search for a station or a train" = "역 또는 기차 검색";
+"Flushing" = "플러싱";
+"no-service" = "이 역에서는 %@ 서비스 제공하지 않음";
+"More stations" = "더 많은 역 표시";
+"Fewer stations" = "더 적은 역 표시";
+"%@ mins" = "%@ 분";
+"About" = "앱 정보";
+"Send Feedback" = "피드백 보내기";
+"Sorry for the interruption!" = "중단에 대해 죄송합니다!";
+"Your current app version is not up to date. Please update Transit Bandage!" = "현재 앱 버전이 최신이 아닙니다. Transit Bandage를 업데이트하세요!";
+"(It should take less than 30 seconds)" = "(30초 미만 소요됩니다)";
+"at station" = "역에서";
+"due" = "도착 예정";
+"mins" = "분";
+"Added Staten Island Railway, and PATH Support (BETA)" = "스태튼 아일랜드 철도 및 PATH 지원 추가 (베타)";
+"Added refresh button for stations" = "역 갱신 버튼 추가";
+"Fixed various station naming" = "다양한 역 명칭 수정";
+"Update" = "업데이트";
+"Continue" = "계속";
+"Color Scheme:" = "색상 구성:";
+"Light" = "밝은 모드";
+"Dark" = "어두운 모드";
+"System" = "시스템 모드";
+
+"Region: NYC (More regions coming soon)" = "지역: 뉴욕시 (더 많은 지역이 곧 추가됩니다)";
+"Region:" = "지역:";
+
+"whats-new" = "새로운 기능, %@ 버전";
+"Version: 1.1" = "버전: 1.1";
+"Settings" = "설정";
+"No Email Set Up" = "이메일 설정 없음";
+"Made with ❤️ in NYC 🗽🥨" = "뉴욕시에서 ❤️로 제작 🗽🥨";
+"You do not have an email set up. Go to settings, or send the email to \"transitbandage@gmail.com\"." = "이메일이 설정되어 있지 않습니다. 설정으로 이동하거나 이메일을 \"transitbandage@gmail.com\"로 보내세요.";
+
+"skipping-stations" = "통과하는 역: %@";
+"no-connection" = "오류: 인터넷 연결 없음🧍";
+"loading" = "로딩 중";
+"min" = "분";
+"mins" = "분";
+
+"Subway / PATH" = "지하철 / PATH";
+"Bus" = "버스";
+"Regional Rail" = "지역 철도";
+
+"about-section" = "타임라인:\nLIRR, MetroNorth - 2024년 3월\nNJ Transit Rail + 버스 - 2024년 3월\nCTRail - 2024년 6월\n\n다른 시스템:\n보스턴, 필라델피아, 시카고, 볼티모어/워싱턴 D.C., 몬트리올, 토론토 - 2024년\n로스앤젤레스, 샌프란시스코, 런던, 파리 - 2025년\n\n라이선스:\n노선 표지는 광역교통국의 라이선스를 받아 사용합니다.\n\n주의사항:\nTransit Bandage는 MTA에서 제공한 데이터 소스를 사용합니다. 데이터가 MTA의 것과 차이가 있을 경우, 우리 데이터에 차이가 있습니다.\n\n다음 기술 지원으로 제작되었습니다:\nTransit Bandage API\nMTA GTFS 실시간 데이터 소스\nPATH 실시간 데이터 API\n\n이 앱을 개발하는 데 도움을 주신 Justin Gohde에게 특별히 감사드립니다!\n\n© 2023-2024 Conrad Booker";

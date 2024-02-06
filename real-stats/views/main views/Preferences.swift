@@ -33,7 +33,7 @@ struct ToggleButton: ButtonStyle {
 
 struct Preferences: View {
     @State private var isSheetExpanded = true
-    @State private var showAbout = false
+    @State private var showAbout = true
     @State private var showFeedback = false
     @State private var alertNoMail = false
     @GestureState private var dragOffset: CGFloat = 0
@@ -198,12 +198,14 @@ struct Preferences: View {
                                 Spacer()
                             }
                             HStack {
-                                Text("Timeline:\nPATH - September 2023\nNJ Transit Light Rail - October 2023\nNYC Buses - December 2023\nLIRR, MetroNorth - March 2024\nNJ Transit Rail + Buses - March 2024\nCTRail - June 2024\n\nOther Systems:\nBoston, Philadelphia, Chicago, Baltimore / DC, Montreal, Toronto - 2024\nLA, San Francisco, London, Paris - 2025\n\nLicensing: Route indicators used with permission of the Metropolitan Transportation Agency.\n\n**Please note**: Transit Bandage uses data provided by the MTA's data feed. If there are disrepencies with their data, there are descrepencies with out data")
+                                
+                                Text(String(format: NSLocalizedString("about-section", comment: "")))
                                     .padding()
                                 Spacer()
                             }
                             Spacer()
                         }
+                        .syncLayoutOnDissappear()
                     }
                     .sheet(isPresented: $showFeedback) {
                         MailView(result: self.$result)

@@ -5881,7 +5881,6 @@
     "weekdayLines": [
       "E",
       "F",
-      "M",
       "R"
     ],
     "short1": "Forest Hills",
@@ -5896,7 +5895,6 @@
     "complexID": 262,
     "isTransfer": false,
     "weekdayLines": [
-      "M",
       "R"
     ],
     "short1": "67 Av",
@@ -5911,7 +5909,6 @@
     "complexID": 263,
     "isTransfer": false,
     "weekdayLines": [
-      "M",
       "R"
     ],
     "short1": "63 Dr",
@@ -5926,7 +5923,6 @@
     "complexID": 264,
     "isTransfer": false,
     "weekdayLines": [
-      "M",
       "R"
     ],
     "short1": "Woodhaven Blvd",
@@ -5941,7 +5937,6 @@
     "complexID": 265,
     "isTransfer": false,
     "weekdayLines": [
-      "M",
       "R"
     ],
     "short1": "Grand Av",
@@ -5956,7 +5951,6 @@
     "complexID": 266,
     "isTransfer": false,
     "weekdayLines": [
-      "M",
       "R"
     ],
     "short1": "Elmhurst Av",
@@ -5971,7 +5965,6 @@
     "complexID": 268,
     "isTransfer": false,
     "weekdayLines": [
-      "M",
       "R"
     ],
     "short1": "65 St",
@@ -5986,7 +5979,6 @@
     "complexID": 269,
     "isTransfer": false,
     "weekdayLines": [
-      "M",
       "R"
     ],
     "short1": "Northern Blvd",
@@ -6001,7 +5993,6 @@
     "complexID": 270,
     "isTransfer": false,
     "weekdayLines": [
-      "M",
       "R"
     ],
     "short1": "46 St",
@@ -6016,7 +6007,6 @@
     "complexID": 271,
     "isTransfer": false,
     "weekdayLines": [
-      "M",
       "R"
     ],
     "short1": "Steinway St",
@@ -6031,7 +6021,6 @@
     "complexID": 272,
     "isTransfer": false,
     "weekdayLines": [
-      "M",
       "R"
     ],
     "short1": "36 St",
@@ -6047,7 +6036,7 @@
     "isTransfer": true,
     "weekdayLines": [
       "E",
-      "M",
+      "F",
       "R"
     ],
     "short1": "Queens Plaza",
@@ -6063,7 +6052,7 @@
     "isTransfer": true,
     "weekdayLines": [
       "E",
-      "M"
+      "F"
     ],
     "short1": "5 Av",
     "short2": "53 St",
@@ -6125,9 +6114,7 @@
     "complexID": 280,
     "isTransfer": false,
     "weekdayLines": [
-      "E",
-      "J",
-      "Z"
+      "E"
     ],
     "short1": "Van Wyck",
     "short2": "Jamaica",
@@ -6141,7 +6128,7 @@
     "complexID": 282,
     "isTransfer": false,
     "weekdayLines": [
-      "F"
+      "G"
     ],
     "short1": "21 St",
     "short2": "",
@@ -7516,8 +7503,8 @@
       "L",
       "M"
     ],
-    "short1": "Myrtle Av",
-    "short2": "Wyckoff Av",
+    "short1": "Wyckoff Av",
+    "short2": "Myrtle Av",
     "stationName": "Myrtle-Wyckoff Avs",
     "boro": "Bk",
     "structure": "Elevated",
@@ -7532,8 +7519,8 @@
       "R",
       "W"
     ],
-    "short1": "South Ferry",
-    "short2": "Whitehall St",
+    "short1": "Whitehall St",
+    "short2": "South Ferry",
     "stationName": "Whitehall St-South Ferry",
     "boro": "M",
     "structure": "Subway",

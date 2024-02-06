@@ -101,9 +101,9 @@ struct DisruptionBox: View {
             self.to = suspended[1]
             self.to = stationsDict[to]?.short1 ?? ""
         } else if type == .skipped {
-            stationsArray = trip.serviceDisruptions.skippedStations ?? [String]()
+            stationsArray = trip.serviceDisruptions.skippedStations 
         } else if type == .local {
-            stationsArray = trip.serviceDisruptions.localStations ?? [String]()
+            stationsArray = trip.serviceDisruptions.localStations 
         }
     }
     

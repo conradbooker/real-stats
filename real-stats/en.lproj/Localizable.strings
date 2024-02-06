@@ -7,5 +7,8 @@
 */
 
 "whats-new" = "Whats New: v%@";
-"skipping-stations" = "**Skipping**: %@";
+"skipping-stations" = "Skipping: %@";
 "no-service" = "No service to %@ at this station";
+"no-connection" = "Error: No network connection 🧍";
+"loading" = "Loading...";
+"about-section" = "Timeline:\nLIRR, MetroNorth - March 2024\nNJ Transit Rail + Buses - March 2024\nCTRail - June 2024\n\nOther Systems:\nBoston, Philadelphia, Chicago, Baltimore / DC, Montreal, Toronto - 2024\nLA, San Francisco, London, Paris - 2025\n\nLicensing:\nRoute indicators used with permission of the Metropolitan Transportation Agency.\n\nPlease note:\nTransit Bandage uses data provided by the MTA's data feed. If there are disrepencies with their data, there are descrepencies with out data.\n\nPowered by:\nTransit Bandage API\nMTA GTFS RealTime data feed\nPATH Realtime Data API\n\nA special thank you to Justin Gohde for helping me develop this app!\n\n© 2023-2024 Conrad Booker";

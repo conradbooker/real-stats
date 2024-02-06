@@ -20,18 +20,17 @@ struct WhatsNew: View {
             VStack(alignment: .leading,spacing: 10) {
                 HStack(spacing: 10) {
                     Spacer()
-                    Image("SI")
-                        .resizable()
-                        .frame(width: 50,height: 50)
-                    Image("PATH")
+                    Image("BUS")
                         .resizable()
                         .frame(width: 100,height: 50)
                     Spacer()
                 }
                 .padding()
-                Text("Added Staten Island Railway, and PATH Support (BETA)")
-                Text("Added refresh button for stations")
+                Text("Added Bus Support!!")
+                Text("New and revised UI")
                 Text("Fixed various station naming")
+                Text("Fixed that really annoying offset tap thing")
+                Text("Bug fixes")
             }
             Spacer()
             Button {
@@ -54,6 +53,8 @@ struct WhatsNew: View {
     }
 }
 
-//#Preview {
-//    WhatsNew()
-//}
+struct WhatsNew_Previews: PreviewProvider {
+    static var previews: some View {
+        WhatsNew()
+    }
+}

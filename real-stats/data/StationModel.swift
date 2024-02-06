@@ -95,3 +95,40 @@ struct Station: Hashable, Codable, Identifiable {
 //    var possibleLines: [String]
     var weekdayLines: [String]
 }
+
+struct BusStop: Hashable, Codable, Identifiable {
+    var id: UUID {
+        return UUID()
+    }
+    var name: String
+    var short1: String
+    var short2: String
+//    var lines: [String]
+    
+    var lat: Double
+    var lon: Double
+    var location: CLLocation {
+        CLLocation (
+            latitude: CLLocationDegrees(lat),
+            longitude: CLLocationDegrees(lon)
+            )
+    }
+}
+
+struct BusStop_Array: Hashable, Codable, Identifiable {
+    var id: String
+    var name: String
+    var short1: String
+    var short2: String
+    var lines: [String]?
+    
+    var lat: Double
+    var lon: Double
+    var location: CLLocation {
+        CLLocation (
+            latitude: CLLocationDegrees(lat),
+            longitude: CLLocationDegrees(lon)
+            )
+    }
+}
+

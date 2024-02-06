@@ -32,7 +32,7 @@ struct Service_BandageApp: App {
     
     var body: some Scene {
         WindowGroup {
-            BottomSheet()
+            Home()
                 .onAppear {
                     versionCheck.checkVersion()
                 }

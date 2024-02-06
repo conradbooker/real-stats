@@ -41,7 +41,6 @@ class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
-        print("hi")
     }
     func requestPermission() {
         locationManager.requestWhenInUseAuthorization()

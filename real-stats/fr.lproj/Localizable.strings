@@ -7,6 +7,8 @@
 */
 
 "Favorites" = "Stations préférées";
+"Nearby train" = "Stations de métro à proximité";
+"Nearby bus" = "Arrêts de bus à proximité";
 "Nearby" = "Stations à proximité";
 "%@ St" = "%@ Rue";
 "Search for a station or a train" = "Rechercher une station ou un train";
@@ -44,3 +46,11 @@
 "You do not have an email set up. Go to settings, or send the email to \"transitbandage@gmail.com\"." = "Vous n'avez pas configuré d'adresse e-mail. Accédez aux paramètres ou envoyez un e-mail à « transitbandage@gmail.com ».";
 
 "skipping-stations" = "Stations sautées : %@";
+"no-connection" = "Erreur : Pas de connexion réseau🧍";
+"loading" = "Chargement...";
+
+"Subway / PATH" = "Métro / PATH";
+"Bus" = "Bus";
+"Regional Rail" = "Train Suburbain";
+
+"about-section" = "Chronologie :\nLIRR, MetroNorth - Mars 2024\nNJ Transit Rail + Autobus - Mars 2024\nCTRail - Juin 2024\n\nAutres Systèmes :\nBoston, Philadelphie, Chicago, Baltimore / DC, Montréal, Toronto - 2024\nLA, San Francisco, Londres, Paris - 2025\n\nLicence :\nLes indicateurs de trajet sont utilisés avec la permission de l'Agence de transport métropolitain.\n\nVeuillez noter :\nTransit Bandage utilise les données fournies par le flux de données de la MTA. S'il y a des divergences avec leurs données, il y a des divergences avec nos données.\n\nAlimenté par :\nAPI Transit Bandage\nFlux de données GTFS en temps réel de la MTA\nAPI de données temps réel PATH\n\nUn merci spécial à Justin Gohde pour m'avoir aidé à développer cette application !\n\n© 2023-2024 Conrad Booker";

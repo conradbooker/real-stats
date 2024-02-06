@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		79012DBC2A89660800F0DEEA /* Mail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79012DBB2A89660800F0DEEA /* Mail.swift */; };
+		79018DAF2B70393F0065980E /* bus_stops.json in Resources */ = {isa = PBXBuildFile; fileRef = 79018DAE2B70393F0065980E /* bus_stops.json */; };
+		790D58D22B6F2DF500743CCE /* BusTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D58D12B6F2DF500743CCE /* BusTripView.swift */; };
 		791754BA29D88185007B8F6A /* StationTimeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791754B929D88185007B8F6A /* StationTimeRow.swift */; };
 		791754BC29D89738007B8F6A /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791754BB29D89738007B8F6A /* TimeModel.swift */; };
 		791F5B852A3F5C1000ACCC8D /* SubwayMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791F5B842A3F5C1000ACCC8D /* SubwayMapView.swift */; };
 		791F5B882A3F5C3300ACCC8D /* ScrollableImage in Frameworks */ = {isa = PBXBuildFile; productRef = 791F5B872A3F5C3300ACCC8D /* ScrollableImage */; };
 		79228CE72A33ED6700526CE5 /* TrainDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79228CE62A33ED6700526CE5 /* TrainDot.swift */; };
+		7937251C2B59889100527518 /* sortedBusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937251B2B59889100527518 /* sortedBusStop.swift */; };
+		7937251E2B59915B00527518 /* sortedBusStop_times.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937251D2B59915B00527518 /* sortedBusStop_times.swift */; };
 		793C23A52A7F60B700396636 /* MapViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C23A42A7F60B700396636 /* MapViewNew.swift */; };
 		793C23A82A7F713B00396636 /* Map in Frameworks */ = {isa = PBXBuildFile; productRef = 793C23A72A7F713B00396636 /* Map */; };
 		793EACC629944973002D7332 /* Service_BandageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EACC529944973002D7332 /* Service_BandageApp.swift */; };
@@ -34,6 +38,9 @@
 		79996BD52A20D2A6000E338A /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79996BD42A20D2A6000E338A /* TripView.swift */; };
 		79996BD92A20EF43000E338A /* TripStationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79996BD82A20EF43000E338A /* TripStationDataModel.swift */; };
 		79996BDB2A21142F000E338A /* TripStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79996BDA2A21142F000E338A /* TripStationView.swift */; };
+		799F72742B6F5BAD00F59883 /* BusTrip_Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F72732B6F5BAD00F59883 /* BusTrip_Stop.swift */; };
+		799F72762B6F5D6900F59883 /* defaultBusTrip.json in Resources */ = {isa = PBXBuildFile; fileRef = 799F72752B6F5D6900F59883 /* defaultBusTrip.json */; };
+		799F72782B6F65A200F59883 /* BusDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F72772B6F65A200F59883 /* BusDot.swift */; };
 		79A2D7FA2A9BCC2200DAFFE1 /* WhatsNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2D7F92A9BCC2200DAFFE1 /* WhatsNew.swift */; };
 		79A2D7FF2A9BDBE000DAFFE1 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2D7FE2A9BDBE000DAFFE1 /* Update.swift */; };
 		79A4B8F42A7439950090720F /* apikey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A4B8F32A7439940090720F /* apikey.swift */; };
@@ -48,14 +55,26 @@
 		79BCE8AD29D6343A00042F1F /* StationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCE8AC29D6343A00042F1F /* StationModel.swift */; };
 		79BCE8B129D6386900042F1F /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCE8B029D6386900042F1F /* ModelData.swift */; };
 		79BCE8B429D6531B00042F1F /* extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCE8B329D6531B00042F1F /* extentions.swift */; };
+		79BD01842B5C84DE004FBF32 /* LeadingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BD01832B5C84DD004FBF32 /* LeadingText.swift */; };
+		79BD01862B5C8C71004FBF32 /* BusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BD01852B5C8C71004FBF32 /* BusView.swift */; };
 		79BE780F2A840B5100552142 /* tripAndStationData.json in Resources */ = {isa = PBXBuildFile; fileRef = 79BE780E2A840B5100552142 /* tripAndStationData.json */; };
+		79D044492B70767D007886B0 /* Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D044482B70767D007886B0 /* Sheet.swift */; };
+		79D044542B70A822007886B0 /* bus_stops_array.json in Resources */ = {isa = PBXBuildFile; fileRef = 79D044532B70A822007886B0 /* bus_stops_array.json */; };
 		79D5A8472A336782002CFE3B /* DisruptionBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D5A8462A336782002CFE3B /* DisruptionBox.swift */; };
+		79D61CD12B51B62B007ADBF5 /* BusRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D61CD02B51B62B007ADBF5 /* BusRow.swift */; };
+		79D61CD72B51C067007ADBF5 /* BusStopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D61CD62B51C067007ADBF5 /* BusStopView.swift */; };
+		79D61CD92B5309E4007ADBF5 /* bus_type.json in Resources */ = {isa = PBXBuildFile; fileRef = 79D61CD82B5309E3007ADBF5 /* bus_type.json */; };
+		79D61CDD2B530C40007ADBF5 /* BusSearchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D61CDC2B530C40007ADBF5 /* BusSearchRow.swift */; };
+		79D61CE52B532132007ADBF5 /* busStopTimes.json in Resources */ = {isa = PBXBuildFile; fileRef = 79D61CE42B532132007ADBF5 /* busStopTimes.json */; };
+		79D61CE72B53217E007ADBF5 /* stopTime.json in Resources */ = {isa = PBXBuildFile; fileRef = 79D61CE62B53217E007ADBF5 /* stopTime.json */; };
+		79D61CE92B532217007ADBF5 /* busStopTime.json in Resources */ = {isa = PBXBuildFile; fileRef = 79D61CE82B532217007ADBF5 /* busStopTime.json */; };
+		79DCFD5F2B69910F00977609 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 79DCFD5E2B69910F00977609 /* Reachability */; };
+		79DCFD612B6998D100977609 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DCFD602B6998D100977609 /* ActivityIndicator.swift */; };
 		79DF5E772A119981000E4132 /* TripsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF5E762A119981000E4132 /* TripsModel.swift */; };
 		79DF5E792A119BFF000E4132 /* stopTimes.json in Resources */ = {isa = PBXBuildFile; fileRef = 79DF5E782A119BFF000E4132 /* stopTimes.json */; };
 		79DFBC702A358EA200A5F0DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DFBC6F2A358EA200A5F0DE /* ContentView.swift */; };
 		79DFBC722A364D4300A5F0DE /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DFBC712A364D4300A5F0DE /* BottomSheet.swift */; };
 		79DFBC752A364D8000A5F0DE /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 79DFBC742A364D8000A5F0DE /* BottomSheet */; };
-		79ED5D372A81414200A85781 /* stopTime.json in Resources */ = {isa = PBXBuildFile; fileRef = 79ED5D362A81414200A85781 /* stopTime.json */; };
 		79F78C922A774C140037A013 /* serviceAlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F78C912A774C140037A013 /* serviceAlertsView.swift */; };
 		79F7E78229DA58C6000006C4 /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 79F7E78129DA58C6000006C4 /* WrappingHStack */; };
 		79F7E78429DA7D59000006C4 /* StationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F7E78329DA7D59000006C4 /* StationRow.swift */; };
@@ -76,10 +95,14 @@
 
 /* Begin PBXFileReference section */
 		79012DBB2A89660800F0DEEA /* Mail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mail.swift; sourceTree = "<group>"; };
+		79018DAE2B70393F0065980E /* bus_stops.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bus_stops.json; sourceTree = "<group>"; };
+		790D58D12B6F2DF500743CCE /* BusTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTripView.swift; sourceTree = "<group>"; };
 		791754B929D88185007B8F6A /* StationTimeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTimeRow.swift; sourceTree = "<group>"; };
 		791754BB29D89738007B8F6A /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
 		791F5B842A3F5C1000ACCC8D /* SubwayMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayMapView.swift; sourceTree = "<group>"; };
 		79228CE62A33ED6700526CE5 /* TrainDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainDot.swift; sourceTree = "<group>"; };
+		7937251B2B59889100527518 /* sortedBusStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sortedBusStop.swift; sourceTree = "<group>"; };
+		7937251D2B59915B00527518 /* sortedBusStop_times.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sortedBusStop_times.swift; sourceTree = "<group>"; };
 		793C23A42A7F60B700396636 /* MapViewNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewNew.swift; sourceTree = "<group>"; };
 		793EACC229944973002D7332 /* Service Bandage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Service Bandage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		793EACC529944973002D7332 /* Service_BandageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service_BandageApp.swift; sourceTree = "<group>"; };
@@ -111,6 +134,9 @@
 		79996BD42A20D2A6000E338A /* TripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
 		79996BD82A20EF43000E338A /* TripStationDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripStationDataModel.swift; sourceTree = "<group>"; };
 		79996BDA2A21142F000E338A /* TripStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripStationView.swift; sourceTree = "<group>"; };
+		799F72732B6F5BAD00F59883 /* BusTrip_Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTrip_Stop.swift; sourceTree = "<group>"; };
+		799F72752B6F5D6900F59883 /* defaultBusTrip.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = defaultBusTrip.json; sourceTree = "<group>"; };
+		799F72772B6F65A200F59883 /* BusDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusDot.swift; sourceTree = "<group>"; };
 		79A2D7F92A9BCC2200DAFFE1 /* WhatsNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNew.swift; sourceTree = "<group>"; };
 		79A2D7FE2A9BDBE000DAFFE1 /* Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
 		79A4B8F32A7439940090720F /* apikey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apikey.swift; sourceTree = "<group>"; };
@@ -127,13 +153,33 @@
 		79BCE8AC29D6343A00042F1F /* StationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationModel.swift; sourceTree = "<group>"; };
 		79BCE8B029D6386900042F1F /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		79BCE8B329D6531B00042F1F /* extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extentions.swift; sourceTree = "<group>"; };
+		79BD01832B5C84DD004FBF32 /* LeadingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingText.swift; sourceTree = "<group>"; };
+		79BD01852B5C8C71004FBF32 /* BusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusView.swift; sourceTree = "<group>"; };
 		79BE780E2A840B5100552142 /* tripAndStationData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tripAndStationData.json; sourceTree = "<group>"; };
+		79D044482B70767D007886B0 /* Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheet.swift; sourceTree = "<group>"; };
+		79D0444A2B70855F007886B0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		79D0444B2B708569007886B0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		79D0444C2B70856F007886B0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		79D0444D2B708578007886B0 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		79D0444E2B70857E007886B0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		79D0444F2B70858F007886B0 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		79D044502B7085B6007886B0 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		79D044512B7085BA007886B0 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		79D044522B7085BF007886B0 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		79D044532B70A822007886B0 /* bus_stops_array.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bus_stops_array.json; sourceTree = "<group>"; };
 		79D5A8462A336782002CFE3B /* DisruptionBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisruptionBox.swift; sourceTree = "<group>"; };
+		79D61CD02B51B62B007ADBF5 /* BusRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRow.swift; sourceTree = "<group>"; };
+		79D61CD62B51C067007ADBF5 /* BusStopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopView.swift; sourceTree = "<group>"; };
+		79D61CD82B5309E3007ADBF5 /* bus_type.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bus_type.json; sourceTree = "<group>"; };
+		79D61CDC2B530C40007ADBF5 /* BusSearchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusSearchRow.swift; sourceTree = "<group>"; };
+		79D61CE42B532132007ADBF5 /* busStopTimes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = busStopTimes.json; sourceTree = "<group>"; };
+		79D61CE62B53217E007ADBF5 /* stopTime.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stopTime.json; sourceTree = "<group>"; };
+		79D61CE82B532217007ADBF5 /* busStopTime.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = busStopTime.json; sourceTree = "<group>"; };
+		79DCFD602B6998D100977609 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		79DF5E762A119981000E4132 /* TripsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsModel.swift; sourceTree = "<group>"; };
 		79DF5E782A119BFF000E4132 /* stopTimes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stopTimes.json; sourceTree = "<group>"; };
 		79DFBC6F2A358EA200A5F0DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		79DFBC712A364D4300A5F0DE /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
-		79ED5D362A81414200A85781 /* stopTime.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stopTime.json; sourceTree = "<group>"; };
 		79F78C912A774C140037A013 /* serviceAlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = serviceAlertsView.swift; sourceTree = "<group>"; };
 		79F7E78329DA7D59000006C4 /* StationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +191,7 @@
 			files = (
 				791F5B882A3F5C3300ACCC8D /* ScrollableImage in Frameworks */,
 				793C23A82A7F713B00396636 /* Map in Frameworks */,
+				79DCFD5F2B69910F00977609 /* Reachability in Frameworks */,
 				79DFBC752A364D8000A5F0DE /* BottomSheet in Frameworks */,
 				79F7E78229DA58C6000006C4 /* WrappingHStack in Frameworks */,
 			);
@@ -153,6 +200,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79018DA62B702BDB0065980E /* bus */ = {
+			isa = PBXGroup;
+			children = (
+				79018DAE2B70393F0065980E /* bus_stops.json */,
+				79D61CD82B5309E3007ADBF5 /* bus_type.json */,
+				79D044532B70A822007886B0 /* bus_stops_array.json */,
+				799F72752B6F5D6900F59883 /* defaultBusTrip.json */,
+				79D61CE42B532132007ADBF5 /* busStopTimes.json */,
+				79D61CE82B532217007ADBF5 /* busStopTime.json */,
+			);
+			path = bus;
+			sourceTree = "<group>";
+		};
+		79018DA72B702BF90065980E /* subway */ = {
+			isa = PBXGroup;
+			children = (
+				79018DAB2B702C710065980E /* default */,
+				79018DAA2B702C0F0065980E /* station */,
+				79018DA92B702C090065980E /* trip */,
+			);
+			path = subway;
+			sourceTree = "<group>";
+		};
+		79018DA82B702C020065980E /* other */ = {
+			isa = PBXGroup;
+			children = (
+				79B622C32A916D4A0075F14D /* copy.json */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		79018DA92B702C090065980E /* trip */ = {
+			isa = PBXGroup;
+			children = (
+				79B5AA922A9AA0E70058EE6C /* tripStationData.json */,
+				79B5AA982A9AA5CD0058EE6C /* stationData.json */,
+			);
+			path = trip;
+			sourceTree = "<group>";
+		};
+		79018DAA2B702C0F0065980E /* station */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = station;
+			sourceTree = "<group>";
+		};
+		79018DAB2B702C710065980E /* default */ = {
+			isa = PBXGroup;
+			children = (
+				79D61CE62B53217E007ADBF5 /* stopTime.json */,
+				79DF5E782A119BFF000E4132 /* stopTimes.json */,
+				79670B392A23F94A00AEA0FF /* 608.json */,
+				79A4B8F52A7447AD0090720F /* 601.json */,
+				79BE780E2A840B5100552142 /* tripAndStationData.json */,
+				79A4B8F72A7454380090720F /* exampleServiceDisruptions.json */,
+				79A4B8F92A7456840090720F /* exampleServiceDisruption.json */,
+			);
+			path = default;
+			sourceTree = "<group>";
+		};
 		791754B829D8815D007B8F6A /* station */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,10 +293,11 @@
 		79228CE82A3523DF00526CE5 /* main views */ = {
 			isa = PBXGroup;
 			children = (
+				79711F2129C9055E002EBA6F /* Home.swift */,
+				79D61CCF2B51B5D1007ADBF5 /* bus */,
 				79A2D7FD2A9BDBD600DAFFE1 /* sheets */,
 				79F78C902A774B730037A013 /* serviceAlerts */,
 				791F5B892A3F8D8300ACCC8D /* map */,
-				79711F2129C9055E002EBA6F /* Home.swift */,
 				79DFBC6F2A358EA200A5F0DE /* ContentView.swift */,
 				798DA8682A8932290000CF86 /* SplashScreen.swift */,
 				79DFBC712A364D4300A5F0DE /* BottomSheet.swift */,
@@ -307,6 +416,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		799F72722B6F5AFF00F59883 /* trip */ = {
+			isa = PBXGroup;
+			children = (
+				790D58D12B6F2DF500743CCE /* BusTripView.swift */,
+				799F72772B6F65A200F59883 /* BusDot.swift */,
+				799F72732B6F5BAD00F59883 /* BusTrip_Stop.swift */,
+			);
+			path = trip;
+			sourceTree = "<group>";
+		};
 		79A2D7FD2A9BDBD600DAFFE1 /* sheets */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,16 +438,9 @@
 		79ACA9D62A37883D00B4EB9E /* json */ = {
 			isa = PBXGroup;
 			children = (
-				79B5AA982A9AA5CD0058EE6C /* stationData.json */,
-				79B622C32A916D4A0075F14D /* copy.json */,
-				79DF5E782A119BFF000E4132 /* stopTimes.json */,
-				79ED5D362A81414200A85781 /* stopTime.json */,
-				79B5AA922A9AA0E70058EE6C /* tripStationData.json */,
-				79BE780E2A840B5100552142 /* tripAndStationData.json */,
-				79670B392A23F94A00AEA0FF /* 608.json */,
-				79A4B8F52A7447AD0090720F /* 601.json */,
-				79A4B8F72A7454380090720F /* exampleServiceDisruptions.json */,
-				79A4B8F92A7456840090720F /* exampleServiceDisruption.json */,
+				79018DA82B702C020065980E /* other */,
+				79018DA72B702BF90065980E /* subway */,
+				79018DA62B702BDB0065980E /* bus */,
 			);
 			path = json;
 			sourceTree = "<group>";
@@ -341,8 +453,25 @@
 				7973944B29D766F700D0DDDD /* ButtonStyles.swift */,
 				7975C46029DC758C00A4AA1E /* Location.swift */,
 				79012DBB2A89660800F0DEEA /* Mail.swift */,
+				79BD01832B5C84DD004FBF32 /* LeadingText.swift */,
+				79DCFD602B6998D100977609 /* ActivityIndicator.swift */,
+				79D044482B70767D007886B0 /* Sheet.swift */,
 			);
 			path = extentions;
+			sourceTree = "<group>";
+		};
+		79D61CCF2B51B5D1007ADBF5 /* bus */ = {
+			isa = PBXGroup;
+			children = (
+				799F72722B6F5AFF00F59883 /* trip */,
+				79D61CD02B51B62B007ADBF5 /* BusRow.swift */,
+				79D61CD62B51C067007ADBF5 /* BusStopView.swift */,
+				79D61CDC2B530C40007ADBF5 /* BusSearchRow.swift */,
+				7937251B2B59889100527518 /* sortedBusStop.swift */,
+				7937251D2B59915B00527518 /* sortedBusStop_times.swift */,
+				79BD01852B5C8C71004FBF32 /* BusView.swift */,
+			);
+			path = bus;
 			sourceTree = "<group>";
 		};
 		79F78C902A774B730037A013 /* serviceAlerts */ = {
@@ -376,6 +505,7 @@
 				79DFBC742A364D8000A5F0DE /* BottomSheet */,
 				791F5B872A3F5C3300ACCC8D /* ScrollableImage */,
 				793C23A72A7F713B00396636 /* Map */,
+				79DCFD5E2B69910F00977609 /* Reachability */,
 			);
 			productName = "real-stats";
 			productReference = 793EACC229944973002D7332 /* Service Bandage.app */;
@@ -389,7 +519,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					793EACC129944973002D7332 = {
 						CreatedOnToolsVersion = 14.2;
@@ -405,6 +535,15 @@
 				Base,
 				"zh-Hans",
 				fr,
+				"zh-Hant",
+				de,
+				es,
+				uk,
+				ru,
+				ja,
+				ko,
+				hi,
+				ar,
 			);
 			mainGroup = 793EACB929944973002D7332;
 			packageReferences = (
@@ -412,6 +551,7 @@
 				79DFBC732A364D8000A5F0DE /* XCRemoteSwiftPackageReference "BottomSheet" */,
 				791F5B862A3F5C3300ACCC8D /* XCRemoteSwiftPackageReference "ScrollableImage" */,
 				793C23A62A7F713B00396636 /* XCRemoteSwiftPackageReference "Map" */,
+				79DCFD5D2B69910F00977609 /* XCRemoteSwiftPackageReference "Reachability" */,
 			);
 			productRefGroup = 793EACC329944973002D7332 /* Products */;
 			projectDirPath = "";
@@ -428,17 +568,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				79B5AA932A9AA0E70058EE6C /* tripStationData.json in Resources */,
+				79D61CE92B532217007ADBF5 /* busStopTime.json in Resources */,
+				79D61CD92B5309E4007ADBF5 /* bus_type.json in Resources */,
 				79B622C42A916D4A0075F14D /* copy.json in Resources */,
 				79BE780F2A840B5100552142 /* tripAndStationData.json in Resources */,
+				79D044542B70A822007886B0 /* bus_stops_array.json in Resources */,
 				79A4B8FA2A7456840090720F /* exampleServiceDisruption.json in Resources */,
+				799F72762B6F5D6900F59883 /* defaultBusTrip.json in Resources */,
 				79B5AA992A9AA5CD0058EE6C /* stationData.json in Resources */,
 				793EACCE29944973002D7332 /* Preview Assets.xcassets in Resources */,
 				79DF5E792A119BFF000E4132 /* stopTimes.json in Resources */,
 				79670B3A2A23F94A00AEA0FF /* 608.json in Resources */,
 				79A4B8F62A7447AD0090720F /* 601.json in Resources */,
+				79018DAF2B70393F0065980E /* bus_stops.json in Resources */,
+				79D61CE52B532132007ADBF5 /* busStopTimes.json in Resources */,
 				79B13BED2A9C4C0600EF9C1D /* Localizable.strings in Resources */,
-				79ED5D372A81414200A85781 /* stopTime.json in Resources */,
 				793EACCA29944973002D7332 /* Assets.xcassets in Resources */,
+				79D61CE72B53217E007ADBF5 /* stopTime.json in Resources */,
 				79A4B8F82A7454390090720F /* exampleServiceDisruptions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +603,7 @@
 				79DFBC722A364D4300A5F0DE /* BottomSheet.swift in Sources */,
 				795419AB29BED7E8003FF58F /* MapView.swift in Sources */,
 				79BCE8B129D6386900042F1F /* ModelData.swift in Sources */,
+				7937251C2B59889100527518 /* sortedBusStop.swift in Sources */,
 				793C23A52A7F60B700396636 /* MapViewNew.swift in Sources */,
 				79711F2229C9055E002EBA6F /* Home.swift in Sources */,
 				791754BC29D89738007B8F6A /* TimeModel.swift in Sources */,
@@ -469,22 +616,33 @@
 				79F78C922A774C140037A013 /* serviceAlertsView.swift in Sources */,
 				79BCE8B429D6531B00042F1F /* extentions.swift in Sources */,
 				79A4B8F42A7439950090720F /* apikey.swift in Sources */,
+				79DCFD612B6998D100977609 /* ActivityIndicator.swift in Sources */,
 				79DFBC702A358EA200A5F0DE /* ContentView.swift in Sources */,
+				79BD01862B5C8C71004FBF32 /* BusView.swift in Sources */,
 				7975C46129DC758C00A4AA1E /* Location.swift in Sources */,
 				7975C45F29DB3B3100A4AA1E /* CoreDataManager.swift in Sources */,
 				793EACC629944973002D7332 /* Service_BandageApp.swift in Sources */,
+				79D61CD72B51C067007ADBF5 /* BusStopView.swift in Sources */,
 				791F5B852A3F5C1000ACCC8D /* SubwayMapView.swift in Sources */,
+				79D044492B70767D007886B0 /* Sheet.swift in Sources */,
 				794D71AC29DF3A11002A7C28 /* Widgets.intentdefinition in Sources */,
 				79A2D7FA2A9BCC2200DAFFE1 /* WhatsNew.swift in Sources */,
+				799F72742B6F5BAD00F59883 /* BusTrip_Stop.swift in Sources */,
 				79BCE8AD29D6343A00042F1F /* StationModel.swift in Sources */,
 				798DA8692A8932290000CF86 /* SplashScreen.swift in Sources */,
+				790D58D22B6F2DF500743CCE /* BusTripView.swift in Sources */,
+				79D61CDD2B530C40007ADBF5 /* BusSearchRow.swift in Sources */,
 				7973944C29D766F700D0DDDD /* ButtonStyles.swift in Sources */,
+				799F72782B6F65A200F59883 /* BusDot.swift in Sources */,
+				79D61CD12B51B62B007ADBF5 /* BusRow.swift in Sources */,
 				79F7E78429DA7D59000006C4 /* StationRow.swift in Sources */,
+				7937251E2B59915B00527518 /* sortedBusStop_times.swift in Sources */,
 				791754BA29D88185007B8F6A /* StationTimeRow.swift in Sources */,
 				7975C45D29DB3ACE00A4AA1E /* FavoritesModel.xcdatamodeld in Sources */,
 				795419A729BED7CF003FF58F /* StationView.swift in Sources */,
 				79996BD52A20D2A6000E338A /* TripView.swift in Sources */,
 				79D5A8472A336782002CFE3B /* DisruptionBox.swift in Sources */,
+				79BD01842B5C84DE004FBF32 /* LeadingText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +655,15 @@
 				79B13BEE2A9C4C0600EF9C1D /* en */,
 				79B13BF12A9C4D4500EF9C1D /* zh-Hans */,
 				79B13BF22A9C60E800EF9C1D /* fr */,
+				79D0444A2B70855F007886B0 /* zh-Hant */,
+				79D0444B2B708569007886B0 /* de */,
+				79D0444C2B70856F007886B0 /* es */,
+				79D0444D2B708578007886B0 /* uk */,
+				79D0444E2B70857E007886B0 /* ru */,
+				79D0444F2B70858F007886B0 /* ja */,
+				79D044502B7085B6007886B0 /* ko */,
+				79D044512B7085BA007886B0 /* hi */,
+				79D044522B7085BF007886B0 /* ar */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -508,6 +675,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -537,9 +705,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -567,6 +737,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -596,9 +767,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -625,9 +798,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"real-stats/Preview Content\"";
 				DEVELOPMENT_TEAM = UC94976V75;
-				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "real-stats/Info.plist";
@@ -648,7 +822,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.5;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Lisa-Booker.real-stats";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -672,9 +846,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"real-stats/Preview Content\"";
 				DEVELOPMENT_TEAM = UC94976V75;
-				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "real-stats/Info.plist";
@@ -695,7 +870,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.5;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Lisa-Booker.real-stats";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -749,6 +924,14 @@
 				kind = branch;
 			};
 		};
+		79DCFD5D2B69910F00977609 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		79DFBC732A364D8000A5F0DE /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/lucaszischka/BottomSheet";
@@ -777,6 +960,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 793C23A62A7F713B00396636 /* XCRemoteSwiftPackageReference "Map" */;
 			productName = Map;
+		};
+		79DCFD5E2B69910F00977609 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79DCFD5D2B69910F00977609 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
 		};
 		79DFBC742A364D8000A5F0DE /* BottomSheet */ = {
 			isa = XCSwiftPackageProductDependency;

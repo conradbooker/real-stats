@@ -7,6 +7,20 @@
 
 import Foundation
 
+struct Bus_Times: Hashable, Codable {
+    var service: Bool
+    var times: [String: [String: IndividualBusTime]?]?
+}
+       
+struct IndividualBusTime: Hashable, Codable {
+    var time: String?
+    var line: String?
+    var limited: Bool?
+    var tripID: String
+    var destination: String
+    var next_stops: [String]
+}
+
 struct NewTimes: Hashable, Codable {
     var service: Bool
     var north: [String: [String: NewStationTime]?]?

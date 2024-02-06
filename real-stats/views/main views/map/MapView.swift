@@ -63,6 +63,20 @@ struct MapView: View {
         return .dark
     }
 
+    func lookForNearbyStations() -> [Complex] {
+        let currentLoc = CLLocation(latitude: coordinate?.latitude ?? 0, longitude: coordinate?.longitude ?? 0)
+        let stations = complexData
+            .sorted(by: {
+                return $0.location.distance(from: currentLoc) < $1.location.distance(from: currentLoc)
+            })
+        var newStations = [Complex]()
+        
+        for num in 0...10 {
+            newStations.append(stations[num])
+        }
+                
+        return newStations
+    }
 
 
     var body: some View {
@@ -75,9 +89,9 @@ struct MapView: View {
                   informationVisibility: .default.union(.userLocation),
                   interactionModes: [.pan, .rotate, .zoom],
                   userTrackingMode: $userTrackingMode,
-                  annotationItems: favoriteStations,
+                  annotationItems: lookForNearbyStations(),
                   annotationContent: { station in
-                      ViewMapAnnotation(coordinate: correctComplex(Int(station.complexID)).location.coordinate) {
+                      ViewMapAnnotation(coordinate: correctComplex(Int(station.id)).location.coordinate) {
                           VStack {
                               Spacer()
                                   .frame(height: 40)
@@ -94,17 +108,17 @@ struct MapView: View {
                                           .frame(width: 20,height:30)
                                           .foregroundColor(.black)
                                   }
-                                  Text(correctComplex(Int(station.complexID)).stations[0].short1)
+                                  Text(correctComplex(Int(station.id)).stations[0].short1)
                                       .foregroundColor(Color("whiteblack"))
                                       .frame(width: 1000)
-                                  if correctComplex(Int(station.complexID)).stations[0].short2 != "" {
-                                      Text(correctComplex(Int(station.complexID)).stations[0].short2)
+                                  if correctComplex(Int(station.id)).stations[0].short2 != "" {
+                                      Text(correctComplex(Int(station.id)).stations[0].short2)
                                           .foregroundColor(Color("whiteblack"))
                                           .font(.footnote)
                                           .frame(width: 1000)
                                   }
                                   HStack(spacing: 2) {
-                                      ForEach(correctComplex(Int(station.complexID)).stations, id: \.self) { station in
+                                      ForEach(correctComplex(Int(station.id)).stations, id: \.self) { station in
                                           ForEach(station.weekdayLines, id: \.self) { line in
                                               if ["LIRR","HBLR","NJT","MNR","PATH"].contains(line) {
                                                   Image(line)
@@ -124,9 +138,9 @@ struct MapView: View {
                                   withAnimation(.spring()) {
                                       scale = 0.8
                                   }
-                                  selectedItem = Item(complex: correctComplex(Int(station.complexID)))
+                                  selectedItem = Item(complex: correctComplex(Int(station.id)))
                                   for favoriteStation in favoriteStations {
-                                      if favoriteStation.complexID == correctComplex(Int(station.complexID)).id {
+                                      if favoriteStation.complexID == correctComplex(Int(station.id)).id {
                                           fromFavorites = true
                                           break
                                       }
@@ -140,27 +154,6 @@ struct MapView: View {
                 .ignoresSafeArea()
 
                 VStack {
-                    HStack {
-                        Spacer()
-                        Button {
-                            withAnimation(.linear(duration: 0.4)) {
-                                locationViewModel.region = MKCoordinateRegion(
-                                    center: CLLocationCoordinate2D(latitude: (coordinate?.latitude ?? 40.791642) - 0.005, longitude: coordinate?.longitude ?? -73.964696),
-                                    span: MKCoordinateSpan(latitudeDelta: 0.025, longitudeDelta: 0.025))
-                            }
-                        } label: {
-                            ZStack {
-                                RoundedRectangle(cornerRadius: 10)
-                                    .foregroundColor(Color("cDarkGray"))
-                                    .shadow(radius: 2)
-                                Image(systemName: "location")
-                                    .resizable()
-                                    .frame(width: 20,height:20)
-                            }
-                            .frame(width: 40,height: 40)
-                        }
-                        .padding()
-                    }
                     HStack {
                         Spacer()
                         Button {
@@ -179,30 +172,48 @@ struct MapView: View {
                         .padding(.horizontal)
                         .padding(.top,-10)
                     }
+                    HStack {
+                        Spacer()
+                        Button {
+                            withAnimation(.linear(duration: 0.4)) {
+                                locationViewModel.region = MKCoordinateRegion(
+                                    center: CLLocationCoordinate2D(latitude: (coordinate?.latitude ?? 40.791642) - 0.005, longitude: coordinate?.longitude ?? -73.964696),
+                                    span: MKCoordinateSpan(latitudeDelta: 0.025, longitudeDelta: 0.025))
+                                print(abs((coordinate?.latitude ?? 0) - 0.005) - abs(locationViewModel.region.center.latitude), abs((coordinate?.longitude ?? 0)) - abs(locationViewModel.region.center.longitude) )
+                            }
+                        } label: {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 10)
+                                    .foregroundColor(Color("cDarkGray"))
+                                    .shadow(radius: 2)
+                                if abs((coordinate?.latitude ?? 0) - 0.005) - abs(locationViewModel.region.center.latitude) < 0.00001 && abs((coordinate?.longitude ?? 0)) - abs(locationViewModel.region.center.longitude) < 0.00001 {
+                                    Image(systemName: "location.fill")
+                                        .resizable()
+                                        .frame(width: 20,height:20)
+                                } else {
+                                    Image(systemName: "location")
+                                        .resizable()
+                                        .frame(width: 20,height:20)
+                                }
+                            }
+                            .frame(width: 40,height: 40)
+                        }
+                        .padding()
+                    }
+
                     Spacer()
                 }
             }
             
         }
         .sheet(item: $selectedItem) { item in
-            if #available(iOS 16.0, *) {
-                if fromFavorites {
-                    // chosen station = favoriteStationNumber thing
-                    StationView(complex: item.complex, chosenStation: chosenStation, isFavorited: true)
-                        .environment(\.managedObjectContext, persistedContainer.viewContext)
-                } else {
-                    StationView(complex: item.complex, chosenStation: 0, isFavorited: false)
-                        .environment(\.managedObjectContext, persistedContainer.viewContext)
-                }
+            if fromFavorites {
+                // chosen station = favoriteStationNumber thing
+                StationView(complex: item.complex, chosenStation: chosenStation, isFavorited: true)
+                    .environment(\.managedObjectContext, persistedContainer.viewContext)
             } else {
-                if fromFavorites {
-                    // chosen station = favoriteStationNumber thing
-                    StationViewOld(complex: item.complex, chosenStation: chosenStation, isFavorited: true)
-                        .environment(\.managedObjectContext, persistedContainer.viewContext)
-                } else {
-                    StationViewOld(complex: item.complex, chosenStation: 0, isFavorited: false)
-                        .environment(\.managedObjectContext, persistedContainer.viewContext)
-                }
+                StationView(complex: item.complex, chosenStation: 0, isFavorited: false)
+                    .environment(\.managedObjectContext, persistedContainer.viewContext)
             }
         }
         .sheet(isPresented: $showSettings) {
@@ -338,7 +349,7 @@ struct MapView: View {
                                                 Text("You do not have an email set up. Go to settings, or send the email to \"transitbandage@gmail.com\".")
                                             })
 
-                                            Text("Version: 1.1")
+                                            Text("Version: 2.0")
                                             Text("Made with ❤️ in NYC 🗽🥨")
                                         }
                                         .padding(.leading)
@@ -361,7 +372,7 @@ struct MapView: View {
                                     Spacer()
                                 }
                                 HStack {
-                                    Text("Timeline:\nLIRR / Metro North - September 2023\nNYC Buses - September 2023\nNJ Transit Rail + Buses - March 2024\nCTRail - June 2024\n\nOther Systems:\nBoston, Philadelphia, Chicago, Baltimore / DC, Montreal, Toronto - 2024\nLA, San Francisco, London, Paris - 2025\n\nLicensing: Route indicators used with permission of the Metropolitan Transportation Agency.\n\n**Please note**: Transit Bandage uses data provided by the MTA's data feed. If there are discrepancies with their data, there are discrepancies with out data.")
+                                    Text(String(format: NSLocalizedString("about-section", comment: "")))
                                         .padding()
                                     Spacer()
                                 }
@@ -375,6 +386,7 @@ struct MapView: View {
                 }
             }
             .preferredColorScheme(getColorScheme())
+            .syncLayoutOnDissappear()
         }
     }
 }

@@ -12,7 +12,7 @@ class VersionCheck: ObservableObject {
 
     func checkVersion() {
         guard let bundleId = Bundle.main.infoDictionary?["CFBundleIdentifier"] as? String else { return }
-        guard let url = URL(string: "https://itunes.apple.com/lookup?bundleId=\(bundleId)&country=br") else { return }
+        guard let url = URL(string: "https://itunes.apple.com/lookup?bundleId=\(bundleId)") else { return }
             let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let data = data {
                 do {
@@ -23,11 +23,12 @@ class VersionCheck: ObservableObject {
                     }
                     let results = json["results"] as? [[String: Any]]
                     let firstResult = results?.first
-                    let currentVersion = firstResult?["version"] as? String
-                    
-                    if (currentVersion ?? "") > (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "") {
+                    let mostRecentVersion = Double((firstResult?["version"] as? String ?? "") ?? "") ?? 0
+                    let currentVersion = Double((Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "") ?? "") ?? 0
+
+                    if mostRecentVersion > currentVersion {
                         self.isUpdateAvailable = true
-                        print(self.isUpdateAvailable)
+                        print(self.isUpdateAvailable, mostRecentVersion, currentVersion)
                     }
                     print("currentVersion: ", currentVersion ?? "")
                 } catch let serializationError {

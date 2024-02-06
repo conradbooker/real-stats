@@ -75,6 +75,32 @@ func getLineColor(line: String, time: Int) -> Color {
     }
 }
 
+func getLineColor_Bus(line: String, time: Int) -> Color {
+    let opacityAmmount = 0.5
+    if time < Int(NSDate().timeIntervalSince1970) {
+        if busRouteData[line]?["type"] == "express" {
+            return Color("green").opacity(opacityAmmount)
+        } else if busRouteData[line]?["type"] == "sbs" {
+            return Color("turqoise").opacity(opacityAmmount)
+        } else if busRouteData[line]?["type"] == "limited" {
+            return Color("red").opacity(opacityAmmount)
+        } else {
+            return Color("yellow").opacity(opacityAmmount)
+        }
+    } else {
+        if busRouteData[line]?["type"] == "express" {
+            return Color("green")
+        } else if busRouteData[line]?["type"] == "sbs" {
+            return Color("turqoise")
+        } else if busRouteData[line]?["type"] == "limited" {
+            return Color("red")
+        } else {
+            return Color("yellow")
+        }
+    }
+}
+
+
 func getOpacity(time: Int) -> Double {
     if time < Int(NSDate().timeIntervalSince1970) {
         return 0.5
@@ -198,18 +224,20 @@ struct TripStationView: View {
             }
             Group {
                 Button {
-                    for complex in complexData {
-                        for stat in complex.stations {
-                            if stat.GTFSID == station {
-                                selectedItem = Item(complex: complex)
-                                for favoriteStation in favoriteStations {
-                                    if favoriteStation.complexID == complex.id {
-                                        fromFavorites = true
-                                        chosenStation = Int(favoriteStation.chosenStationNumber)
-                                        break
+                    DispatchQueue.main.async {
+                        for complex in complexData {
+                            for stat in complex.stations {
+                                if stat.GTFSID == station {
+                                    selectedItem = Item(complex: complex)
+                                    for favoriteStation in favoriteStations {
+                                        if favoriteStation.complexID == complex.id {
+                                            fromFavorites = true
+                                            chosenStation = Int(favoriteStation.chosenStationNumber)
+                                            break
+                                        }
+                                        chosenStation = 0
+                                        fromFavorites = false
                                     }
-                                    chosenStation = 0
-                                    fromFavorites = false
                                 }
                             }
                         }
@@ -223,7 +251,7 @@ struct TripStationView: View {
                         }
                         HStack(spacing: 1.5) {
                             ForEach(stationsDict[station]?.weekdayLines ?? [""], id: \.self) { bullet in
-                                if bullet != trip.line ?? "" {
+                                if bullet != trip.line {
                                     Image(bullet)
                                         .resizable()
                                         .frame(width: 16, height: 16)
@@ -256,24 +284,15 @@ struct TripStationView: View {
 
         }
         .sheet(item: $selectedItem) { item in
-            if #available(iOS 16.0, *) {
-                if fromFavorites {
-                    // chosen station = favoriteStationNumber thing
-                    StationView(complex: item.complex, chosenStation: chosenStation, isFavorited: true)
-                        .environment(\.managedObjectContext, persistentContainer.viewContext)
-                } else {
-                    StationView(complex: item.complex, chosenStation: 0, isFavorited: false)
-                        .environment(\.managedObjectContext, persistentContainer.viewContext)
-                }
+            if fromFavorites {
+                // chosen station = favoriteStationNumber thing
+                StationView(complex: item.complex, chosenStation: chosenStation, isFavorited: true)
+                    .environment(\.managedObjectContext, persistentContainer.viewContext)
+                    .syncLayoutOnDissappear()
             } else {
-                if fromFavorites {
-                    // chosen station = favoriteStationNumber thing
-                    StationViewOld(complex: item.complex, chosenStation: chosenStation, isFavorited: true)
-                        .environment(\.managedObjectContext, persistentContainer.viewContext)
-                } else {
-                    StationViewOld(complex: item.complex, chosenStation: 0, isFavorited: false)
-                        .environment(\.managedObjectContext, persistentContainer.viewContext)
-                }
+                StationView(complex: item.complex, chosenStation: 0, isFavorited: false)
+                    .environment(\.managedObjectContext, persistentContainer.viewContext)
+                    .syncLayoutOnDissappear()
             }
         }
         

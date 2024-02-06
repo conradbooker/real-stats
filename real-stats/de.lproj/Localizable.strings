@@ -1,0 +1,57 @@
+/* 
+  Localizable.strings
+  Service Bandage
+
+  Created by Conrad on 8/27/23.
+  
+*/
+
+"Favorites" = "Favoriten";
+"Nearby" = "In der Nähe";
+"Nearby bus" = "Nahverkehrsbus";
+"%@ St" = "%@ Straße";
+"Search for a station or a train" = "Suche nach einer Station oder einem Zug";
+"Flushing" = "Flushing";
+"no-service" = "Kein Service verfügbar für %@";
+"More stations" = "Mehr Stationen anzeigen";
+"Fewer stations" = "Weniger Stationen anzeigen";
+"%@ mins" = "%@ Min";
+"About" = "Über";
+"Send Feedback" = "Feedback senden";
+"Sorry for the interruption!" = "Entschuldigung für die Unterbrechung!";
+"Your current app version is not up to date. Please update Transit Bandage!" = "Ihre aktuelle App-Version ist nicht auf dem neuesten Stand. Bitte aktualisieren Sie Transit Bandage!";
+"(It should take less than 30 seconds)" = "(Es sollte weniger als 30 Sekunden dauern)";
+"at station" = "an der Station";
+"due" = "fällig";
+"mins" = "Min";
+"Added Staten Island Railway, and PATH Support (BETA)" = "Staten Island Railway und PATH-Unterstützung hinzugefügt (BETA)";
+"Added refresh button for stations" = "Aktualisierungsbutton für Stationen hinzugefügt";
+"Fixed various station naming" = "Verschiedene Stationenamen korrigiert";
+"Update" = "Aktualisieren";
+"Continue" = "Fortsetzen";
+"Color Scheme:" = "Farbschema:";
+"Light" = "Hell";
+"Dark" = "Dunkel";
+"System" = "System";
+
+"Region: NYC (More regions coming soon)" = "Region: NYC (Weitere Regionen in Kürze)";
+"Region:" = "Region:";
+
+"whats-new" = "Neuheiten, %@ Version";
+"Version: 1.1" = "Version: 1.1";
+"Settings" = "Einstellungen";
+"No Email Set Up" = "Keine E-Mail eingerichtet";
+"Made with ❤️ in NYC 🗽🥨" = "Hergestellt mit ❤️ in NYC 🗽🥨";
+"You do not have an email set up. Go to settings, or send the email to \"transitbandage@gmail.com\"." = "Sie haben keine E-Mail eingerichtet. Gehen Sie zu den Einstellungen oder senden Sie die E-Mail an „transitbandage@gmail.com“.";
+
+"skipping-stations" = "Stationen werden übersprungen: %@";
+"no-connection" = "Fehler: Keine Netzwerkverbindung 🧍";
+"loading" = "Laden";
+"min" = "Min";
+"mins" = "Min";
+
+"Subway / PATH" = "U-Bahn / PATH";
+"Bus" = "Bus";
+"Regional Rail" = "S bahn";
+
+"about-section" = "Zeitachse:\nLIRR, MetroNorth - März 2024\nNJ Transit Rail + Bus - März 2024\nCTRail - Juni 2024\n\nAndere Systeme:\nBoston, Philadelphia, Chicago, Baltimore/Washington DC, Montreal, Toronto - 2024\nLos Angeles, San Francisco, London, Paris - 2025\n\nLizenz:\nStreckenindikatoren unterliegen der Lizenz des Metropolitan Transportation Authority.\n\nHinweis:\nTransit Bandage verwendet Datenquellen von MTA. Bei Abweichungen zu deren Daten können Unterschiede auftreten.\n\nUnterstützt durch folgende Technologien:\nTransit Bandage API\nMTA GTFS-Echtzeitdatenquelle\nPATH Echtzeitdaten-API\n\nBesonderer Dank an Justin Gohde für seine Hilfe bei der Entwicklung dieser App!\n\n© 2023-2024 Conrad Booker";

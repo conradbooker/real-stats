@@ -1,0 +1,57 @@
+/* 
+  Localizable.strings
+  Service Bandage
+
+  Created by Conrad on 8/27/23.
+  
+*/
+
+"Favorites" = "最喜歡的電台";
+"Nearby" = "附近地鐵站";
+"Nearby bus" = "附近的巴士站";
+"%@ St" = "%@ 街";
+"Search for a station or a train" = "搜索車站或地鐵線路";
+"Flushing" = "法拉盛";
+"no-service" = "該站不提供 %@ 服務";
+"More stations" = "顯示更多的站臺";
+"Fewer stations" = "顯示較少的站臺";
+"%@ mins" = "%@ 分鐘";
+"About" = "關於這個應用程序";
+"Send Feedback" = "發送反饋";
+"Sorry for the interruption!" = "很抱歉打擾了！";
+"Your current app version is not up to date. Please update Transit Bandage!" = "您當前的應用程序版本不是最新的。請更新 'Transit Bandage'！";
+"(It should take less than 30 seconds)" = "（時間應該少於 30 秒）";
+"at station" = "列車在站臺";
+"due" = "列車進站";
+"mins" = "分鐘";
+"Added Staten Island Railway, and PATH Support (BETA)" = "添加了 'Staten Island Railway' 和 'PATH' 支持（測試版）";
+"Added refresh button for stations" = "添加了電臺刷新按鈕";
+"Fixed various station naming" = "修復了各種車站命名";
+"Update" = "更新應用程序";
+"Continue" = "繼續";
+"Color Scheme:" = "色彩方案";
+"Light" = "明亮模式";
+"Dark" = "深色模式";
+"System" = "跟隨系統";
+
+"Region: NYC (More regions coming soon)" = "地區：紐約市（更多地區即將推出）";
+"Region:" = "地區：";
+
+"whats-new" = "新功能，%@ 版";
+"Version: 1.1" = "版本：1.1";
+"Settings" = "設置";
+"No Email Set Up" = "電子郵件未設置";
+"Made with ❤️ in NYC 🗽🥨" = "用愛心製作於紐約市 🗽🥨";
+"You do not have an email set up. Go to settings, or send the email to \"transitbandage@gmail.com\"." = "您尚未設置電子郵件。前往設置，或發送電子郵件至 \"transitbandage@gmail.com\"。";
+
+"skipping-stations" = "不停靠: %@";
+"no-connection" = "錯誤：沒有網絡連接🧍";
+"loading" = "加載";
+"min" = "分鐘";
+"mins" = "分鐘";
+
+"Subway / PATH" = "地鐵 / PATH";
+"Bus" = "公共汽車";
+"Regional Rail" = "區域鐵路";
+
+"about-section" = "時間軸：\nLIRR，MetroNorth - 2024年3月\nNJ Transit Rail + 公共汽車 - 2024年3月\nCTRail - 2024年6月\n\n其他系統：\n波士頓，費城，芝加哥，巴爾的摩/華盛頓特區，蒙特利爾，多倫多 - 2024年\n洛杉磯，舊金山，倫敦，巴黎 - 2025年\n\n許可：\n路線指示符經由都會交通局許可使用。\n\n請注意：\nTransit Bandage 使用由 MTA 提供的數據源。如果與其數據存在差異，則存在我們數據的差異。\n\n由以下技術支持：\nTransit Bandage API\nMTA GTFS 實時數據源\nPATH 實時數據 API\n\n特別感謝 Justin Gohde 協助我開發此應用！\n\n© 2023-2024 Conrad Booker";
