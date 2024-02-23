@@ -358,7 +358,7 @@ struct TripView: View {
                                                 .foregroundColor(Color("cLessDarkGray"))
                                                 .frame(width: 130,height: 74)
                                                 .shadow(radius: 2)
-                                            DisruptionBox(type: .suspended, trip: trip, reroute: (exampleTrips["052900_W..S"]?.serviceDisruptions.reroutes[0])!, suspended: suspendedStationGroup)
+                                            DisruptionBox(type: .suspended, trip: trip, reroute: (exampleTrips["119000_W..S"]?.serviceDisruptions.reroutes[0])!, suspended: suspendedStationGroup)
                                                 .frame(width: 130,height: 74)
                                                 .font(.subheadline)
                                             
@@ -373,7 +373,7 @@ struct TripView: View {
                                         .foregroundColor(Color("cLessDarkGray"))
                                         .frame(width: 130,height: 74)
                                         .shadow(radius: 2)
-                                    DisruptionBox(type: .local, trip: trip, reroute: (exampleTrips["052900_W..S"]?.serviceDisruptions.reroutes[0])!, suspended: ["",""])
+                                    DisruptionBox(type: .local, trip: trip, reroute: (exampleTrips["119000_W..S"]?.serviceDisruptions.reroutes[0])!, suspended: ["",""])
                                         .frame(width: 130,height: 74)
                                         .font(.subheadline)
                                     
@@ -386,7 +386,7 @@ struct TripView: View {
                                         .foregroundColor(Color("cLessDarkGray"))
                                         .frame(width: 130,height: 74)
                                         .shadow(radius: 2)
-                                    DisruptionBox(type: .skipped, trip: trip, reroute: (exampleTrips["052900_W..S"]?.serviceDisruptions.reroutes[0])!, suspended: ["",""])
+                                    DisruptionBox(type: .skipped, trip: trip, reroute: (exampleTrips["119000_W..S"]?.serviceDisruptions.reroutes[0])!, suspended: ["",""])
                                         .frame(width: 130,height: 74)
                                         .font(.subheadline)
                                     

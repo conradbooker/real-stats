@@ -248,8 +248,8 @@ struct Home: View {
                                                 }
                                             } label: {
                                                 ZStack {
-                                                    Color.clear
-                                                        .background(.regularMaterial)
+                                                    bgColor.third.value
+                                                        .background()
                                                         .cornerRadius(10)
                                                         .shadow(radius: 2)
                                                         .frame(width: 130,height: 82)
@@ -299,8 +299,8 @@ struct Home: View {
                                                     }
                                                 } label: {
                                                     ZStack {
-                                                        Color.clear
-                                                            .background(.regularMaterial)
+                                                        bgColor.third.value
+                                                            .background()
                                                             .cornerRadius(10)
                                                             .shadow(radius: 2)
                                                             .frame(width: 130,height: 82)
@@ -358,7 +358,7 @@ struct Home: View {
                     
                     .enableBackgroundBlur(false)
                     .customBackground(
-                        Color.clear
+                        bgColor.first.value
                             .background(.thickMaterial)
                             .environment(\.colorScheme,colorScheme)
                             .cornerRadius(20, corners: [.topLeft, .topRight])
@@ -375,8 +375,7 @@ struct Home: View {
 // MARK: - START Search Type Selector
                             if search.isEmpty {
                                     ZStack {
-                                    Color.clear
-                                        .background(.regularMaterial)
+                                    bgColor.third.value
                                         .environment(\.colorScheme,colorScheme)
                                         .cornerRadius(20, corners: [.topLeft, .topRight])
                                         .shadow(radius: 2)
@@ -400,15 +399,14 @@ struct Home: View {
                                                     if type == selectedSearchType {
                                                         Text(type)
                                                             .padding(.horizontal,5)
+                                                            .padding(.vertical,2)
+                                                            .padding(3)
                                                             .background(
-                                                                Color.clear
-                                                                    .padding()
-                                                                    .padding(.horizontal,5)
-                                                                    .background(.ultraThinMaterial)
+                                                                bgColor.fifth.value
                                                                     .cornerRadius(12)
                                                                     .shadow(radius: 2)
-                                                                
                                                             )
+
                                                     } else {
                                                         Text(type)
                                                             .padding(.horizontal,5)
@@ -431,8 +429,8 @@ struct Home: View {
 
                         VStack {
                             Spacer()
-                            Color.clear
-                                .background(.regularMaterial)
+                            bgColor.third.value
+                                .background()
                                 .environment(\.colorScheme,colorScheme)
                                 .cornerRadius(20, corners: [.topLeft, .topRight])
                                 .shadow(radius: 2)
@@ -444,8 +442,8 @@ struct Home: View {
                             Spacer()
                             HStack {
                                 ZStack {
-                                    Color.clear
-                                        .background(.ultraThinMaterial)
+                                    bgColor.fifth.value
+                                        .background()
                                         .environment(\.colorScheme,colorScheme)
                                         .cornerRadius(10)
                                         .shadow(radius: 2)

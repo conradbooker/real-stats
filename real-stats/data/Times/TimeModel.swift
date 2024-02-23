@@ -30,6 +30,7 @@ struct NewTimes: Hashable, Codable {
 struct NewStationTime: Hashable, Codable {
     var tripID: String
     var destination: String
+    var track: String?
 }
 
 struct Time: Hashable, Codable {

@@ -39,8 +39,7 @@ struct BusRow: View {
             busTripItem = BusTripItem(tripID: tripID)
         } label: {
             ZStack {
-                Color.clear
-                    .background(.ultraThinMaterial)
+                bgColor.fifth.value
                     .cornerRadius(10)
                     .shadow(radius: 2)
                 HStack {
@@ -68,6 +67,7 @@ struct BusRow: View {
         .buttonStyle(CButton())
         .sheet(item: $busTripItem) { item in
             BusTripView(tripID: item.tripID)
+                .syncLayoutOnDissappear()
         }
     }
 }

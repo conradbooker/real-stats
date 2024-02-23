@@ -63,6 +63,7 @@ struct StationTimeRow: View {
     var trip1ID: String = ""
     var trip2ID: String = ""
     var trip3ID: String = ""
+    var track: String = ""
 
     @State private var tripIDs = [String]()
 
@@ -88,6 +89,7 @@ struct StationTimeRow: View {
                 trip2ID = trainTimes.north?[line]??[times[1]]?.tripID ?? ""
             }
             trip1ID = trainTimes.north?[line]??[times[0]]?.tripID ?? ""
+            self.track = trainTimes.north?[line]??[times[0]]?.track ?? ""
         } else {
             if times.count > 2 {
                 trip3ID = trainTimes.south?[line]??[times[2]]?.tripID ?? ""
@@ -96,6 +98,7 @@ struct StationTimeRow: View {
                 trip2ID = trainTimes.south?[line]??[times[1]]?.tripID ?? ""
             }
             trip1ID = trainTimes.south?[line]??[times[0]]?.tripID ?? ""
+            self.track = trainTimes.south?[line]??[times[0]]?.track ?? ""
         }
 
     }
@@ -122,7 +125,7 @@ struct StationTimeRow: View {
                         } label: {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 15)
-                                    .foregroundColor(Color("cLessDarkGray"))
+                                    .foregroundColor(bgColor.second.value)
                                     .shadow(radius: 2)
                                 HStack(spacing: 0) {
                                     Spacer()
@@ -155,7 +158,7 @@ struct StationTimeRow: View {
                         } label: {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 15)
-                                    .foregroundColor(Color("cLessDarkGray"))
+                                    .foregroundColor(bgColor.third.value)
                                     .shadow(radius: 2)
                                 HStack(spacing: 0) {
                                     Spacer()
@@ -178,6 +181,7 @@ struct StationTimeRow: View {
                             DispatchQueue.main.async {
                                 showTrips = true
                                 if direction == "N" {
+                                    print(trip1ID)
                                     selectedTrip = TripItem(trip: trips[trip1ID]!, line: line, tripID: trainTimes.north?[line]??[times[0]]?.tripID ?? "")
                                 } else {
                                     selectedTrip = TripItem(trip: trips[trip1ID]!, line: line, tripID: trainTimes.south?[line]??[times[0]]?.tripID ?? "")
@@ -185,8 +189,9 @@ struct StationTimeRow: View {
                             }
                         } label: {
                             ZStack {
-                                RoundedRectangle(cornerRadius: 15)
-                                    .foregroundColor(Color("cLessDarkGray"))
+                                Rectangle()
+                                    .cornerRadius(15, corners: [.topRight, .bottomRight])
+                                    .foregroundColor(bgColor.fourth.value)
                                     .shadow(radius: 2)
                                 HStack(spacing: 0) {
                                     VStack(alignment: .leading) {
@@ -203,6 +208,8 @@ struct StationTimeRow: View {
                                                 .foregroundColor(Color("red"))
                                                 .font(.footnote)
                                         }
+                                        Text("Track " + track)
+                                            .font(.footnote)
                                     }
                                     Spacer()
                                     individualTime(time: Int(times[0]) ?? 0)
@@ -230,7 +237,7 @@ struct StationTimeRow: View {
                         } label: {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 15)
-                                    .foregroundColor(Color("cMediumGray"))
+                                    .foregroundColor(bgColor.fifth.value)
                                     .shadow(radius: 2)
                                     .frame(width: 55, height: 55)
                                     .padding(.leading, -7.4)

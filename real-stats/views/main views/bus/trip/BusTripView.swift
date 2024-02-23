@@ -154,8 +154,14 @@ struct BusTripView: View {
                 Spacer()
                     .frame(height: 107)
                     .onReceive(timer) { _ in
-                        withAnimation(.spring(response: 0.4)) {
-                            counter += 1
+                        DispatchQueue.global().async {
+                            Thread.sleep(forTimeInterval: 0.1)
+
+                            DispatchQueue.main.async {
+                                withAnimation(.spring(response: 0.4)) {
+                                    counter += 1
+                                }
+                            }
                         }
                     }
                 HStack {

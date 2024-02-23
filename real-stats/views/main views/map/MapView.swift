@@ -32,6 +32,8 @@ struct MapView: View {
     
     @State var fromFavorites = false
     
+    @State var showMap =  false
+    
     @FetchRequest(entity: FavoriteStation.entity(), sortDescriptors: [NSSortDescriptor(key: "dateCreated", ascending: false)]) private var favoriteStations: FetchedResults<FavoriteStation>
     @State private var userTrackingMode = UserTrackingMode.follow
     
@@ -170,7 +172,7 @@ struct MapView: View {
                             .frame(width: 40,height: 40)
                         }
                         .padding(.horizontal)
-                        .padding(.top,-10)
+//                        .padding(.top,-5)
                     }
                     HStack {
                         Spacer()
@@ -197,6 +199,7 @@ struct MapView: View {
                                 }
                             }
                             .frame(width: 40,height: 40)
+                            .padding(.top, -5)
                         }
                         .padding()
                     }
@@ -327,6 +330,11 @@ struct MapView: View {
                                             Button {
                                                 showAbout = true
                                             } label: {
+                                                Text("Map")
+                                            }
+                                            Button {
+                                                showMap = true
+                                            } label: {
                                                 Text("About")
                                             }
                                             Button {
@@ -378,6 +386,9 @@ struct MapView: View {
                                 }
                                 Spacer()
                             }
+                        }
+                        .sheet(isPresented: $showMap) {
+                            Ugh()
                         }
                         .sheet(isPresented: $showFeedback) {
                             MailView(result: self.$result)

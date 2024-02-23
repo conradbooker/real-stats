@@ -25,7 +25,7 @@ enum urls {
 }
 
 
-var base_url: String = urls.production.value
+var base_url: String = urls.local.value
 
 
 let defaultStationTimeData: Data = {

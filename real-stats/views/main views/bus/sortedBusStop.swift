@@ -82,7 +82,6 @@ struct sortedBusStop: View {
                         .foregroundColor(getCorrectColor(route: line)[0])
                         .background(
                             getCorrectColor(route: line)[1]
-                                .background(.regularMaterial)
                                 .cornerRadius(4)
                                 .shadow(radius: 2)
                             

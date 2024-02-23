@@ -123,6 +123,7 @@ struct Reroute: Hashable, Codable {
 
 struct TripStation: Hashable, Codable, Identifiable {
     var id: Int
+    var track: String?
     var times: [Int]
     var scheduledTime: Int
     var scheduleAdherence: Int

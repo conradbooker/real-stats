@@ -5724,10 +5724,8 @@
             "short2": "Jamaica", 
             "stopName": "Jamaica-Van Wyck", 
             "weekdayLines": [
-               "E", 
-               "J", 
-               "Z"
-            ], 
+               "E"
+            ],
             "trunk": "Archer Av", 
             "borough": "Q", 
             "lat": 40.702566, 

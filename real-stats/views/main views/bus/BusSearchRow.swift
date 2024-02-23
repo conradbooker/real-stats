@@ -35,8 +35,7 @@ struct BusSearchRow: View {
             
         } label: {
             ZStack {
-                Color.clear
-                    .background(.thickMaterial)
+                bgColor.third.value
                     .environment(\.colorScheme,colorScheme)
                     .cornerRadius(10)
                     .shadow(radius: 2)

@@ -249,6 +249,8 @@ struct TripStationView: View {
                             Text(stationsDict[station]?.short2 ?? "")
                                 .font(.subheadline)
                         }
+                        Text("Track " + (trip.stations[station]?.track ?? "hi") ?? "hi")
+                            .font(.footnote)
                         HStack(spacing: 1.5) {
                             ForEach(stationsDict[station]?.weekdayLines ?? [""], id: \.self) { bullet in
                                 if bullet != trip.line {

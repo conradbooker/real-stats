@@ -111,8 +111,7 @@ struct sortedBusStop_times: View {
                     VStack {
                         Spacer()
                             .frame(height: 25)
-                        Color.clear
-                            .background(.regularMaterial)
+                        bgColor.third.value
                             .environment(\.colorScheme,colorScheme)
                             .cornerRadius(10, corners: [.bottomLeft, .bottomRight])
                             .shadow(radius: 2)
@@ -191,8 +190,7 @@ struct sortedBusStop_times: View {
                             .frame(height: 40)
                             .padding(.horizontal,6)
                             .background(
-                                Color.clear
-                                    .background(.regularMaterial)
+                                bgColor.third.value
                                     .environment(\.colorScheme,colorScheme)
                                     .cornerRadius(10)
                                     .shadow(radius: 2)

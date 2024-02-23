@@ -131,7 +131,7 @@ struct StationView: View {
             GeometryReader { geometry in
                 ZStack {
                     // MARK: - Main Content
-                    Color("cDarkGray")
+                    bgColor.first.value
                         .ignoresSafeArea()
                         .onAppear {
                             checkInternetConnection()
@@ -152,7 +152,7 @@ struct StationView: View {
                                 if !isInternetConnected {
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 10)
-                                            .foregroundColor(Color("cLessDarkGray"))
+                                            .foregroundColor(bgColor.second.value)
                                             .shadow(radius: 2)
                                             .frame(height: 100)
                                             .padding()
@@ -173,7 +173,7 @@ struct StationView: View {
                                     if loading == 2 {
                                         ZStack {
                                             RoundedRectangle(cornerRadius: 10)
-                                                .foregroundColor(Color("cLessDarkGray"))
+                                                .foregroundColor(bgColor.second.value)
                                                 .shadow(radius: 2)
                                                 .frame(height: 100)
                                                 .padding()
@@ -195,7 +195,7 @@ struct StationView: View {
                                             if loading < 2 {
                                                 ZStack {
                                                     RoundedRectangle(cornerRadius: 10)
-                                                        .foregroundColor(Color("cLessDarkGray"))
+                                                        .foregroundColor(bgColor.second.value)
                                                         .shadow(radius: 2)
                                                         .frame(height: 100)
                                                         .padding()
@@ -243,7 +243,7 @@ struct StationView: View {
                                             if loading < 2 {
                                                 ZStack {
                                                     RoundedRectangle(cornerRadius: 10)
-                                                        .foregroundColor(Color("cLessDarkGray"))
+                                                        .foregroundColor(bgColor.second.value)
                                                         .shadow(radius: 2)
                                                         .frame(height: 100)
                                                         .padding()
@@ -290,7 +290,7 @@ struct StationView: View {
                                     } else {
                                         ZStack {
                                             RoundedRectangle(cornerRadius: 10)
-                                                .foregroundColor(Color("cLessDarkGray"))
+                                                .foregroundColor(bgColor.second.value)
                                                 .shadow(radius: 2)
                                                 .frame(height: 100)
                                                 .padding()
@@ -319,7 +319,7 @@ struct StationView: View {
                         VStack {
                             Rectangle()
                                 .frame(width: geometry.size.width, height: lineSelectorSize.height + short1Size.height + short2Size.height + 30)
-                                .foregroundColor(Color("cDarkGray"))
+                                .foregroundColor(bgColor.second.value)
                                 .shadow(radius: 2)
                             Spacer()
                         }
@@ -412,7 +412,7 @@ struct StationView: View {
                                             ZStack {
                                                 if showBus {
                                                     RoundedRectangle(cornerRadius: 10)
-                                                        .foregroundColor(Color("cLessDarkGray"))
+                                                        .foregroundColor(bgColor.third.value)
                                                         .frame(width: 100, height: 40)
                                                         .overlay(
                                                             RoundedRectangle(cornerRadius: 13)
@@ -422,12 +422,12 @@ struct StationView: View {
                                                         .shadow(radius: 2)
                                                 } else {
                                                     RoundedRectangle(cornerRadius: 10)
-                                                        .foregroundColor(Color("cLessDarkGray"))
+                                                        .foregroundColor(bgColor.third.value)
                                                         .frame(width: 68, height: 40)
                                                         .shadow(radius: 2)
                                                         .overlay(
                                                             RoundedRectangle(cornerRadius: 12)
-                                                                .stroke(Color("cDarkGray"),lineWidth: 2)
+                                                                .stroke(bgColor.second.value,lineWidth: 2)
                                                                 .frame(width: 76, height: 48)
                                                         )
                                                     
@@ -475,7 +475,7 @@ struct StationView: View {
                                             ZStack {
                                                 if chosenStation == index && !showBus {
                                                     RoundedRectangle(cornerRadius: 10)
-                                                        .foregroundColor(Color("cLessDarkGray"))
+                                                        .foregroundColor(bgColor.third.value)
                                                         .frame(width: getWidth(complex.stations[index].weekdayLines) + 30, height: 40)
                                                         .overlay(
                                                             RoundedRectangle(cornerRadius: 13)
@@ -485,12 +485,12 @@ struct StationView: View {
                                                         .shadow(radius: 2)
                                                 } else {
                                                     RoundedRectangle(cornerRadius: 10)
-                                                        .foregroundColor(Color("cLessDarkGray"))
+                                                        .foregroundColor(bgColor.third.value)
                                                         .frame(width: getWidth(complex.stations[index].weekdayLines), height: 40)
                                                         .shadow(radius: 2)
                                                         .overlay(
                                                             RoundedRectangle(cornerRadius: 12)
-                                                                .stroke(Color("cDarkGray"),lineWidth: 2)
+                                                                .stroke(bgColor.second.value,lineWidth: 2)
                                                                 .frame(width: getWidth(complex.stations[index].weekdayLines) + 8, height: 48)
                                                         )
                                                     
