@@ -75,7 +75,6 @@ struct Station: Hashable, Codable, Identifiable {
     var id: Int
     
     var stopName: String
-//    var lines: [String]
     var trunk: String
     var borough: String
     
@@ -92,7 +91,6 @@ struct Station: Hashable, Codable, Identifiable {
     var ADA: Int
     var short1: String
     var short2: String
-//    var possibleLines: [String]
     var weekdayLines: [String]
 }
 

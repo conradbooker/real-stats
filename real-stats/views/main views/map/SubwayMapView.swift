@@ -48,7 +48,7 @@ struct ZoomableScrollView<Content: View>: UIViewRepresentable {
         
         
         scrollView.delegate = context.coordinator  // for viewForZooming(in:)
-        scrollView.maximumZoomScale = 20
+        scrollView.maximumZoomScale = 80
         scrollView.minimumZoomScale = 3
         scrollView.bouncesZoom = true
         scrollView.showsHorizontalScrollIndicator = false
@@ -84,7 +84,7 @@ struct ZoomableScrollView<Content: View>: UIViewRepresentable {
     func updateUIView(_ uiView: UIScrollView, context: Context) {
         // update the hosting controller's SwiftUI content
         context.coordinator.hostingController.rootView = self.content
-        print("UIVIEW x: \(uiView.contentOffset.x), y: \(uiView.contentOffset.y)")
+//        print("UIVIEW x: \(uiView.contentOffset.x), y: \(uiView.contentOffset.y)")
         
 //        if !inited {
 //            uiView.setContentOffset(contentOffset, animated: false)
@@ -113,8 +113,8 @@ struct ZoomableScrollView<Content: View>: UIViewRepresentable {
                 self.parent.settingPosition = false
             }
             
-            print("Relative content offset: x:\(offset.x/scrollView.zoomScale), y:\(offset.y/scrollView.zoomScale)")
-            print("Content offset: x:\(offset.x), y:\(offset.y)")
+//            print("Relative content offset: x:\(offset.x/scrollView.zoomScale), y:\(offset.y/scrollView.zoomScale)")
+//            print("Content offset: x:\(offset.x), y:\(offset.y)")
             parent.xOffset = offset.x
             parent.yOffset = offset.y
         }
@@ -157,14 +157,20 @@ struct Ugh: View {
     @AppStorage("zoom") var zoom: Double = 0
     
     @State private var tappedOffset: CGPoint? = nil
-    @State private var i: Int = 410
-    @State private var j: Int = 0
+    @State var i: Int = 414
+    @AppStorage("j") var j: Int = 0
     // 'i' NEEDS TO BE CHANGED TO @APPSTORAGE
     
+    var shapes = ["circle", "rectangle"]
     @State var currentShape = "circle"
+    
+    var angles = [0, 1, 2, 3]
     @State var rotation = 0
     
+    @State var showSheet = false
+    
     @AppStorage("stationLocations") var stationLocations = ""
+//    @State var stationLocations = ""
 
     var body: some View {
         ZStack {
@@ -187,11 +193,21 @@ struct Ugh: View {
                                         let y = tapLocation.y - geometry.frame(in: .global).minY + 413.4
                                         let tappedPoint = CGPoint(x: x, y: y)
                                         self.tappedOffset = tappedPoint
-                                        print("TAPPED x: \(tappedOffset?.x ?? 0), y: \((tappedOffset?.y ?? 0) - 413.4)")
+//                                        print("TAPPED x: \(tappedOffset?.x ?? 0), y: \((tappedOffset?.y ?? 0) - 413.4)")
                                         
+//                                        complexData[i].stations[j].GTFSID
+//                                        round(10000 * (tappedOffset?.x ?? 0)) / 10000
+//                                        round(10000 * (tappedOffset?.y ?? 0)) / 10000
+//                                        j
+//                                        shapes.index(of: currentShape)
+//                                        angles.index(of: rotation)
+                                        let newEntry = "[\"\(complexData[i].stations[j].GTFSID)\",[\(round(10000 * (tappedOffset?.x ?? 0)) / 10000),\(round(10000 * (tappedOffset?.y ?? 0)) / 10000)],[\(j),\(shapes.index(of: currentShape) ?? 0),\(angles.index(of: rotation) ?? 0)]],"
+                                        // ["G01", [46.6941, 23.1898],[2,1,4]]
+                                        stationLocations += newEntry
+                                        print(stationLocations)
                                         if j < complexData[i].stations.count-1 {
                                             j += 1
-                                        } else {
+                                        } else if i < complexData.count-1 {
                                             i += 1
                                             j = 0
                                         }
@@ -199,17 +215,19 @@ struct Ugh: View {
                                     
                                 
                                 VStack {
-                                    Button {
-                                        contentOffset = CGPoint(x: 0, y: 0)
-                                        settingPosition = true
-                                        print("hi")
-                                    } label: {
-                                        Image(systemName: "trash")
-                                            .resizable()
-                                            .frame(width: 5,height: 5)
+//                                    Button {
+//                                    } label: {
+                                        if currentShape == "circle" {
+                                            Circle()
+                                                .frame(width: 1.2,height: 1.2)
+                                        } else {
+                                            Rectangle()
+                                                .frame(width: 3,height: 1.2)
+                                                .rotationEffect(Angle(degrees: Double(rotation * 45)))
+                                        }
                                     }
                                     .position(x: (tappedOffset?.x ?? 0), y: (tappedOffset?.y ?? 0))
-                                }
+//                                }
                             }
 //                            .border(.red)
                             .padding(.top,-393.4 + geometry.safeAreaInsets.top)
@@ -231,23 +249,70 @@ struct Ugh: View {
             ZStack {
                 VStack {
                     Rectangle()
-                        .frame(height: 100)
+                        .frame(height: 120)
                         .foregroundColor(.white)
-                        .onTapGesture {
+                        .shadow(radius: 2)
+                    Spacer()
+                }
+                HStack {
+                    VStack {
+                        Text("\(i), \(complexData[i].stations[j].GTFSID)")
+                        Text("\(complexData[i].stations[j].short1)")
+                        Text("\(complexData[i].stations[j].short2)")
+                        HStack {
+                            ForEach(complexData[i].stations[j].weekdayLines, id: \.self) { line in
+                                Image(line)
+                                    .resizable()
+                                    .frame(width: 20, height: 20)
+                                    .padding(2)
+                            }
+                        }
+                        Button {
                             if j > 0 {
                                 j -= 1
                             } else {
                                 i -= 1
                             }
+                            tappedOffset = CGPoint(x: (tappedOffset?.x ?? 0) - 20.0, y: (tappedOffset?.y ?? 0) - 20.0)
+                            if stationLocations.count > 50 {
+                                print("BEFORE, \(stationLocations)")
+                                stationLocations = String(stationLocations.dropLast(30))
+                                
+                                while String(stationLocations.suffix(3)) != "]]," {
+                                    stationLocations = String(stationLocations.dropLast(1))
+//                                    print(stationLocations)
+                                }
+                                print("AFTER, \(stationLocations)")
+
+                            } else {
+                                stationLocations = ""
+                            }
+                        } label: {
+                            Text("Undo")
                         }
+                        Spacer()
+                    }
                     Spacer()
-                }
-                VStack {
-                    Text("\(i)")
-                    Text(complexData[i].complexName)
-                    Text(complexData[i].stations[j].GTFSID)
-                    Text(complexData[i].stations[j].stopName)
-                    Spacer()
+                    VStack {
+                        Picker("Flavor", selection: $currentShape) {
+                            ForEach(shapes, id: \.self) { flavor in
+                                Text(flavor)
+                            }
+                        }
+                        Picker("Flavor", selection: $rotation) {
+                            ForEach(angles, id: \.self) { flavor in
+                                Text("\(flavor * 45)")
+                            }
+                        }
+                        Button {
+                            showSheet = true
+                        } label: {
+                            Text("showThings")
+                        }
+                        Spacer()
+                    }
+                    .frame(width: 200)
+                    .pickerStyle(.segmented)
                 }
                 /*
                  Controls here:
@@ -255,15 +320,24 @@ struct Ugh: View {
                     station angle
                     radius / size
                  Iterates through the station data
+                0: sub station #
                 1: circle, 2: rectangle
-                1: 0: 0 deg, 1: 45 deg...
-                 ["G01", [46.6941, 23.1898],[1,4]],
+                2: 0: 0 deg, 1: 45 deg...
+                 
+                 ["G01", [46.6941, 23.1898],[2,1,4]],
                  ["G01", [21.4123, 53.1581]],
                  ["G01", [48.1283, 73.5182]] --> stored in the app defaults
                  IF MADE MISTAKE: remove 29 characters (the ammount to delete the most simple) -- if the 3 characters at end of new string are not ']],' --> removeLast(1)
                  
                 
                  */
+            }
+        }
+        .sheet(isPresented: $showSheet) {
+            ScrollView {
+                VStack {
+                    Text(stationLocations)
+                }
             }
         }
     }

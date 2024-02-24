@@ -32,8 +32,6 @@ struct MapView: View {
     
     @State var fromFavorites = false
     
-    @State var showMap =  false
-    
     @FetchRequest(entity: FavoriteStation.entity(), sortDescriptors: [NSSortDescriptor(key: "dateCreated", ascending: false)]) private var favoriteStations: FetchedResults<FavoriteStation>
     @State private var userTrackingMode = UserTrackingMode.follow
     
@@ -330,11 +328,6 @@ struct MapView: View {
                                             Button {
                                                 showAbout = true
                                             } label: {
-                                                Text("Map")
-                                            }
-                                            Button {
-                                                showMap = true
-                                            } label: {
                                                 Text("About")
                                             }
                                             Button {
@@ -368,7 +361,7 @@ struct MapView: View {
                                 Spacer()
                                     .frame(height: 20)
                             }
-                            .frame(width: geometry.size.width-20)
+                            .frame(width: UIScreen.screenWidth-20)
                             .padding(.top,40)
                         }
                         .navigationTitle("Settings")
@@ -386,9 +379,6 @@ struct MapView: View {
                                 }
                                 Spacer()
                             }
-                        }
-                        .sheet(isPresented: $showMap) {
-                            Ugh()
                         }
                         .sheet(isPresented: $showFeedback) {
                             MailView(result: self.$result)

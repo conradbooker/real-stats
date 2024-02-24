@@ -224,7 +224,6 @@
 			children = (
 				79018DAB2B702C710065980E /* default */,
 				79018DAA2B702C0F0065980E /* station */,
-				79018DA92B702C090065980E /* trip */,
 			);
 			path = subway;
 			sourceTree = "<group>";
@@ -237,18 +236,11 @@
 			path = other;
 			sourceTree = "<group>";
 		};
-		79018DA92B702C090065980E /* trip */ = {
+		79018DAA2B702C0F0065980E /* station */ = {
 			isa = PBXGroup;
 			children = (
 				79B5AA922A9AA0E70058EE6C /* tripStationData.json */,
 				79B5AA982A9AA5CD0058EE6C /* stationData.json */,
-			);
-			path = trip;
-			sourceTree = "<group>";
-		};
-		79018DAA2B702C0F0065980E /* station */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = station;
 			sourceTree = "<group>";

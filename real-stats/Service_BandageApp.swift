@@ -32,13 +32,17 @@ struct Service_BandageApp: App {
     
     var body: some Scene {
         WindowGroup {
-            Home()
-                .onAppear {
-                    versionCheck.checkVersion()
-                }
-                .environment(\.managedObjectContext, persistentContainer.viewContext)
-                .environmentObject(locationViewModel)
-                .environmentObject(versionCheck)
+            if #available(iOS 16.0, *) {
+                Ugh()
+                    .onAppear {
+                        versionCheck.checkVersion()
+                    }
+                    .environment(\.managedObjectContext, persistentContainer.viewContext)
+                    .environmentObject(locationViewModel)
+                    .environmentObject(versionCheck)
+            } else {
+                Text("hi")
+            }
         }
     }
 }
