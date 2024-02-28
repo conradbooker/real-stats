@@ -50,6 +50,11 @@ struct MapView: View {
     
     @Environment(\.colorScheme) var colorScheme
     
+    @AppStorage("selectedMapView") var selectedMapView: Int = 0
+    
+//    func returnMapViewType() ->diddie
+//        if mapViewData[index] == "stationMapLocation" --> return the actual map view
+    
     private func getColorScheme() -> ColorScheme {
         print(colorScheme)
         if (colorScheme == .dark) {
@@ -82,6 +87,7 @@ struct MapView: View {
     var body: some View {
         VStack {
             ZStack {
+//                if selectedMapView ==
                 Map(
                   coordinateRegion:  $locationViewModel.region,
                   type: .standard,

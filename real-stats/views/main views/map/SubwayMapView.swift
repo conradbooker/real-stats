@@ -2,8 +2,10 @@
 //  SubwayMapView.swift
 //  Service Bandage
 //
-//  Created by Conrad on 6/18/23.
+//  Created by Conrad on 2/23/24.
 //
+
+import SwiftUI
 
 import SwiftUI
 import SVGView
@@ -23,18 +25,21 @@ extension UIScreen {
 
 struct ZoomableScrollView<Content: View>: UIViewRepresentable {
     @Binding var inited: Bool
+    @Binding var inited2: Bool
     @Binding var settingPosition: Bool
     var contentOffset: CGPoint
     private var content: Content
     
-    @AppStorage("xOffset") var xOffset: Double = 0
-    @AppStorage("yOffset") var yOffset: Double = 0
-    @AppStorage("zoom") var zoom: Double = 0
+    @AppStorage("xOffset") var xOffset: Double = 1000
+    @AppStorage("yOffset") var yOffset: Double = 1000
+    @AppStorage("zoom") var zoom: Double = 10
+    
 
-    init(inited: Binding<Bool>, contentOffset: CGPoint, settingPosition: Binding<Bool>, @ViewBuilder content: () -> Content) {
+    init(inited: Binding<Bool>, inited2: Binding<Bool>, contentOffset: CGPoint, settingPosition: Binding<Bool>, @ViewBuilder content: () -> Content) {
 
         self.content = content()
         self._inited = inited
+        self._inited2 = inited2
 //        self.xOffset = xOffset
 //        self.yOffset = yOffset
         self.contentOffset = contentOffset
@@ -48,7 +53,7 @@ struct ZoomableScrollView<Content: View>: UIViewRepresentable {
         
         
         scrollView.delegate = context.coordinator  // for viewForZooming(in:)
-        scrollView.maximumZoomScale = 80
+        scrollView.maximumZoomScale = 20
         scrollView.minimumZoomScale = 3
         scrollView.bouncesZoom = true
         scrollView.showsHorizontalScrollIndicator = false
@@ -56,7 +61,7 @@ struct ZoomableScrollView<Content: View>: UIViewRepresentable {
         
         scrollView.contentInsetAdjustmentBehavior = .never
         scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: -1062 /* ends in 95*/, right: 0)
-//        scrollView.setContentOffset(CGPoint(x: 200, y: 200), animated: true)
+//        scrollView.setContentOffset(CGPoint(x: 500, y: 500), animated: true)
 //        scrollView.contentInset = UIEdgeInsets(top: 100, left: 0, bottom: 0, right: 0)
         DispatchQueue.main.async {
             if !inited {
@@ -71,7 +76,8 @@ struct ZoomableScrollView<Content: View>: UIViewRepresentable {
         hostedView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         hostedView.frame = scrollView.bounds
         scrollView.addSubview(hostedView)
-        
+//        scrollView.setContentOffset(CGPoint(x: xOffset, y: yOffset), animated: false)
+        print("CURRENT CONTENT AT \(CGPoint(x: xOffset, y: yOffset))")
 //        scrollView.zoomScale = 8
 
         return scrollView
@@ -80,14 +86,18 @@ struct ZoomableScrollView<Content: View>: UIViewRepresentable {
     func makeCoordinator() -> Coordinator {
         return Coordinator(hostingController: UIHostingController(rootView: self.content), parent: self)
     }
-
+    
     func updateUIView(_ uiView: UIScrollView, context: Context) {
         // update the hosting controller's SwiftUI content
         context.coordinator.hostingController.rootView = self.content
 //        print("UIVIEW x: \(uiView.contentOffset.x), y: \(uiView.contentOffset.y)")
         
-//        if !inited {
-//            uiView.setContentOffset(contentOffset, animated: false)
+//        DispatchQueue.main.async {
+////            if !inited {
+//                print(contentOffset)
+//                uiView.setContentOffset(contentOffset, animated: false)
+////                inited = true
+////            }
 //        }
         
         assert(context.coordinator.hostingController.view.superview == uiView)
@@ -113,242 +123,169 @@ struct ZoomableScrollView<Content: View>: UIViewRepresentable {
                 self.parent.settingPosition = false
             }
             
+            if !parent.inited2 {
+                scrollView.setContentOffset(CGPoint(x: parent.xOffset, y: parent.yOffset), animated: false)
+                parent.inited2 = true
+            }
+            
 //            print("Relative content offset: x:\(offset.x/scrollView.zoomScale), y:\(offset.y/scrollView.zoomScale)")
 //            print("Content offset: x:\(offset.x), y:\(offset.y)")
+//            print("APPSTOR offset: x:\(parent.xOffset), y:\(parent.yOffset)")
             parent.xOffset = offset.x
             parent.yOffset = offset.y
         }
         
         func scrollViewDidZoom(_ scrollView: UIScrollView) {
             parent.zoom = scrollView.zoomScale
-//            print("Zoom: \(scrollView.zoomScale)")
         }
 
         func viewForZooming(in scrollView: UIScrollView) -> UIView? {
             return hostingController.view
         }
+        
+        
     }
 }
 
-struct StationButton: View {
-    var x: CGFloat
-    var y: CGFloat
-    var station: String
-    var body: some View {
-        Button {
-            
-        } label: {
-            Image(systemName: "trash")
-                .resizable()
-                .frame(width: 2,height: 2)
-        }
-        .offset(x: 100, y:100)
-    }
+struct StationItem: Identifiable {
+    let id = UUID()
+    let complex: Complex
+    let station: Int
 }
 
-@available(iOS 16.0, *)
-struct Ugh: View {
+struct DiagramicMapView: View {
     @State var inited = false
+    @State var inited2 = false
     @State var contentOffset = CGPoint(x: 0, y: 0)
     @State var settingPosition = false
     
-    @AppStorage("xOffset") var xOffset: Double = 0
-    @AppStorage("yOffset") var yOffset: Double = 0
-    @AppStorage("zoom") var zoom: Double = 0
+    @AppStorage("xOffset") var xOffset: Double = 1000
+    @AppStorage("yOffset") var yOffset: Double = 1000
+    @AppStorage("zoom") var zoom: Double = 10
     
-    @State private var tappedOffset: CGPoint? = nil
-    @State var i: Int = 414
-    @AppStorage("j") var j: Int = 0
-    // 'i' NEEDS TO BE CHANGED TO @APPSTORAGE
+    @AppStorage("offsetInited") var offsetInited: Bool = false
     
-    var shapes = ["circle", "rectangle"]
-    @State var currentShape = "circle"
+    @State private var showSVG = false
     
-    var angles = [0, 1, 2, 3]
-    @State var rotation = 0
+    @State var selectedStation: StationItem?
     
-    @State var showSheet = false
-    
-    @AppStorage("stationLocations") var stationLocations = ""
-//    @State var stationLocations = ""
+    @State var fromFavorites: Bool = false
+    @FetchRequest(entity: FavoriteStation.entity(), sortDescriptors: [NSSortDescriptor(key: "dateCreated", ascending: false)]) private var favoriteStations: FetchedResults<FavoriteStation>
 
+    @Environment(\.managedObjectContext) private var viewContext
+    let persistedContainer = CoreDataManager.shared.persistentContainer
+    
+    func isWithinBounds(station: Station, geometry: GeometryProxy) -> Bool {
+        let stationPosition = station.mapLocation
+        let inBoundsOfX = stationPosition.x * zoom > xOffset && stationPosition.x * zoom - geometry.size.width < xOffset
+        let inBoundsOfY = stationPosition.y * zoom/(UIScreen.screenHeight/UIScreen.screenWidth) >= yOffset && stationPosition.y * zoom/(UIScreen.screenHeight/UIScreen.screenWidth) - UIScreen.screenHeight < yOffset
+        let isWithinBounds = inBoundsOfX
+        
+        return isWithinBounds
+    }
+    
+    @Environment(\.colorScheme) var colorScheme
+    
+    func returnReverse() -> ColorScheme {
+        if colorScheme == .dark {
+            return .light
+        }
+        return .dark
+    }
+        
     var body: some View {
-        ZStack {
-            VStack {
-                GeometryReader { geometry in
+        GeometryReader { geometry in
+            ZStack {
+                ZoomableScrollView(inited: $inited, inited2: $inited2, contentOffset: CGPoint(x: xOffset, y: yOffset), settingPosition: $settingPosition) {
                     ZStack {
-                        ZoomableScrollView(inited: $inited, contentOffset: contentOffset, settingPosition: $settingPosition) {
-                            ZStack {
-                                Image("myMap")
 //                                SVGView(contentsOf: Bundle.main.url(forResource: "myMap", withExtension: "svg")!)
-                                    .resizable()
-                                    .frame(width: geometry.size.width, height: geometry.size.width * 1.217)
-                                    .onAppear {
-                                        contentOffset = CGPoint(x: xOffset, y: yOffset)
-                                        settingPosition = true
-                                    }
-                                    .onTapGesture { tapLocation in
-                                        // Calculate tap offset relative to the image's coordinate system
-                                        let x = tapLocation.x - geometry.frame(in: .global).minX
-                                        let y = tapLocation.y - geometry.frame(in: .global).minY + 413.4
-                                        let tappedPoint = CGPoint(x: x, y: y)
-                                        self.tappedOffset = tappedPoint
-//                                        print("TAPPED x: \(tappedOffset?.x ?? 0), y: \((tappedOffset?.y ?? 0) - 413.4)")
-                                        
-//                                        complexData[i].stations[j].GTFSID
-//                                        round(10000 * (tappedOffset?.x ?? 0)) / 10000
-//                                        round(10000 * (tappedOffset?.y ?? 0)) / 10000
-//                                        j
-//                                        shapes.index(of: currentShape)
-//                                        angles.index(of: rotation)
-                                        let newEntry = "[\"\(complexData[i].stations[j].GTFSID)\",[\(round(10000 * (tappedOffset?.x ?? 0)) / 10000),\(round(10000 * (tappedOffset?.y ?? 0)) / 10000)],[\(j),\(shapes.index(of: currentShape) ?? 0),\(angles.index(of: rotation) ?? 0)]],"
-                                        // ["G01", [46.6941, 23.1898],[2,1,4]]
-                                        stationLocations += newEntry
-                                        print(stationLocations)
-                                        if j < complexData[i].stations.count-1 {
-                                            j += 1
-                                        } else if i < complexData.count-1 {
-                                            i += 1
-                                            j = 0
+                        if colorScheme == .dark {
+                            Image("nyc_0_dark")
+                                .resizable()
+                                .frame(width: geometry.size.width, height: geometry.size.width * 1.217)
+                                .onAppear {
+                                    contentOffset = CGPoint(x: xOffset, y: yOffset)
+                                    settingPosition = true
+                                }
+                        } else {
+                            Image("nyc_0")
+                                .resizable()
+                                .frame(width: geometry.size.width, height: geometry.size.width * 1.217)
+                                .onAppear {
+                                    contentOffset = CGPoint(x: xOffset, y: yOffset)
+                                    settingPosition = true
+                                }
+                        }
+                        ForEach(0..<complexData.count, id: \.self) { i in
+                            ForEach(complexData[i].stations, id: \.self) { station in
+                                if isWithinBounds(station: station, geometry: geometry) {
+                                    Button {
+                                        selectedStation = StationItem(complex: complexData[i], station: station.mapLocation.station)
+                                        for favoriteStation in favoriteStations {
+                                            if favoriteStation.complexID == station.id {
+                                                fromFavorites = true
+                                                break
+                                            }
+                                            fromFavorites = false
                                         }
-                                    }
-                                    
-                                
-                                VStack {
-//                                    Button {
-//                                    } label: {
-                                        if currentShape == "circle" {
+                                    } label: {
+                                        if station.mapLocation.shape == 0 {
                                             Circle()
-                                                .frame(width: 1.2,height: 1.2)
+                                                .frame(width: 2,height: 2)
                                         } else {
                                             Rectangle()
-                                                .frame(width: 3,height: 1.2)
-                                                .rotationEffect(Angle(degrees: Double(rotation * 45)))
+                                                .frame(width: 4,height: 2)
+                                                .rotationEffect(station.mapLocation.angle_deg)
                                         }
                                     }
-                                    .position(x: (tappedOffset?.x ?? 0), y: (tappedOffset?.y ?? 0))
-//                                }
+                                    .position(x: station.mapLocation.x, y: station.mapLocation.y + 29.2)
+                                    .foregroundColor(Color.clear)
+                                }
                             }
-//                            .border(.red)
-                            .padding(.top,-393.4 + geometry.safeAreaInsets.top)
-                            //                    .padding(.bottom,-500)
                         }
-                        .ignoresSafeArea(.all)
-                        VStack {
-                            Rectangle()
-                                .frame(height: geometry.safeAreaInsets.top)
-                                .background(.ultraThinMaterial)
-                                .environment(\.colorScheme, .dark)
-                            //                        .blur(radius: 0.01)
-                            Spacer()
-                        }
-                        .ignoresSafeArea(.all)
+//                                VStack {
+//                                    Button {
+//                                        contentOffset = CGPoint(x: 0, y: 0)
+//                                        settingPosition = true
+//                                        print("hi")
+//                                    } label: {
+//                                        Image(systemName: "trash")
+//                                            .resizable()
+//                                            .frame(width: 5,height: 5)
+//                                    }
+//                                    .position(x: 120, y: 500)
+//                                }
                     }
+                    .padding(.top,-393.4 + geometry.safeAreaInsets.top)
                 }
-            }
-            ZStack {
+                .ignoresSafeArea(.all)
                 VStack {
                     Rectangle()
-                        .frame(height: 120)
-                        .foregroundColor(.white)
-                        .shadow(radius: 2)
+                        .frame(height: geometry.safeAreaInsets.top)
+                        .background(.ultraThinMaterial)
+                        .environment(\.colorScheme, returnReverse())
                     Spacer()
                 }
-                HStack {
-                    VStack {
-                        Text("\(i), \(complexData[i].stations[j].GTFSID)")
-                        Text("\(complexData[i].stations[j].short1)")
-                        Text("\(complexData[i].stations[j].short2)")
-                        HStack {
-                            ForEach(complexData[i].stations[j].weekdayLines, id: \.self) { line in
-                                Image(line)
-                                    .resizable()
-                                    .frame(width: 20, height: 20)
-                                    .padding(2)
-                            }
-                        }
-                        Button {
-                            if j > 0 {
-                                j -= 1
-                            } else {
-                                i -= 1
-                            }
-                            tappedOffset = CGPoint(x: (tappedOffset?.x ?? 0) - 20.0, y: (tappedOffset?.y ?? 0) - 20.0)
-                            if stationLocations.count > 50 {
-                                print("BEFORE, \(stationLocations)")
-                                stationLocations = String(stationLocations.dropLast(30))
-                                
-                                while String(stationLocations.suffix(3)) != "]]," {
-                                    stationLocations = String(stationLocations.dropLast(1))
-//                                    print(stationLocations)
-                                }
-                                print("AFTER, \(stationLocations)")
-
-                            } else {
-                                stationLocations = ""
-                            }
-                        } label: {
-                            Text("Undo")
-                        }
-                        Spacer()
-                    }
-                    Spacer()
-                    VStack {
-                        Picker("Flavor", selection: $currentShape) {
-                            ForEach(shapes, id: \.self) { flavor in
-                                Text(flavor)
-                            }
-                        }
-                        Picker("Flavor", selection: $rotation) {
-                            ForEach(angles, id: \.self) { flavor in
-                                Text("\(flavor * 45)")
-                            }
-                        }
-                        Button {
-                            showSheet = true
-                        } label: {
-                            Text("showThings")
-                        }
-                        Spacer()
-                    }
-                    .frame(width: 200)
-                    .pickerStyle(.segmented)
-                }
-                /*
-                 Controls here:
-                    station shape -- circle, horizontal
-                    station angle
-                    radius / size
-                 Iterates through the station data
-                0: sub station #
-                1: circle, 2: rectangle
-                2: 0: 0 deg, 1: 45 deg...
-                 
-                 ["G01", [46.6941, 23.1898],[2,1,4]],
-                 ["G01", [21.4123, 53.1581]],
-                 ["G01", [48.1283, 73.5182]] --> stored in the app defaults
-                 IF MADE MISTAKE: remove 29 characters (the ammount to delete the most simple) -- if the 3 characters at end of new string are not ']],' --> removeLast(1)
-                 
-                
-                 */
+                .ignoresSafeArea(.all)
             }
-        }
-        .sheet(isPresented: $showSheet) {
-            ScrollView {
-                VStack {
-                    Text(stationLocations)
+            .sheet(item: $selectedStation) { item in
+                if fromFavorites {
+                    // chosen station = favoriteStationNumber thing
+                    StationView(complex: item.complex, chosenStation: item.station, isFavorited: true)
+                        .environment(\.managedObjectContext, persistedContainer.viewContext)
+                        .syncLayoutOnDissappear()
+                } else {
+                    StationView(complex: item.complex, chosenStation: item.station, isFavorited: false)
+                        .environment(\.managedObjectContext, persistedContainer.viewContext)
+                        .syncLayoutOnDissappear()
                 }
             }
         }
     }
 }
 
-struct Ugh_Previews: PreviewProvider {
+struct DiagramicMapView_Previews: PreviewProvider {
     static var previews: some View {
-        if #available(iOS 16.0, *) {
-            Ugh()
-        } else {
-            Text("hi")
-        }
+        DiagramicMapView()
     }
 }

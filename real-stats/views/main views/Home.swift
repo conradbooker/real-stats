@@ -142,7 +142,7 @@ struct Home: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                MapView()
+                DiagramicMapView()
 //                Text("hiii")
                     .onAppear {
                         if version != (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "") {

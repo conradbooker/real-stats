@@ -7,7 +7,7 @@
 
 import Foundation
 import CoreLocation
-
+import SwiftUI
 
 /*
  {
@@ -57,7 +57,7 @@ import CoreLocation
 
  */
 
-struct Complex: Hashable, Codable, Identifiable {
+struct Complex: Hashable, Codable, Identifiable, Equatable {
     var id: Int
     var complexName: String
     var searchName: String
@@ -70,7 +70,7 @@ struct Complex: Hashable, Codable, Identifiable {
     }
 }
 
-struct Station: Hashable, Codable, Identifiable {
+struct Station: Hashable, Codable, Identifiable, Equatable {
     var GTFSID: String
     var id: Int
     
@@ -92,6 +92,22 @@ struct Station: Hashable, Codable, Identifiable {
     var short1: String
     var short2: String
     var weekdayLines: [String]
+    var mapLocation: MapLocation
+}
+
+struct MapLocation: Hashable, Codable {
+    var x: Double
+    var y: Double
+//    var position: CGPoint {
+//
+//        return CGPoint(x: self.x, y: self.y)
+//    }
+    var station: Int
+    var shape: Int
+    var angle: Int
+    var angle_deg: Angle {
+        return Angle(degrees: Double(self.angle * 45))
+    }
 }
 
 struct BusStop: Hashable, Codable, Identifiable {
@@ -128,5 +144,22 @@ struct BusStop_Array: Hashable, Codable, Identifiable {
             longitude: CLLocationDegrees(lon)
             )
     }
+}
+
+struct MapViewType: Hashable, Codable, Identifiable {
+    var id: Int
+    var country: String
+    var region: String
+    var mapName: String
+    var zoomScales: [Int]
+    var stationLocations: [String: MapStationLocation]
+}
+
+struct MapStationLocation: Hashable, Codable {
+    var x: Double
+    var y: Double
+    var station: Int
+    var shape: Int
+    var angle: Int
 }
 

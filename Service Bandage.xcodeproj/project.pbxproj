@@ -12,7 +12,9 @@
 		790D58D22B6F2DF500743CCE /* BusTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D58D12B6F2DF500743CCE /* BusTripView.swift */; };
 		791754BA29D88185007B8F6A /* StationTimeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791754B929D88185007B8F6A /* StationTimeRow.swift */; };
 		791754BC29D89738007B8F6A /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791754BB29D89738007B8F6A /* TimeModel.swift */; };
-		791F5B852A3F5C1000ACCC8D /* SubwayMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791F5B842A3F5C1000ACCC8D /* SubwayMapView.swift */; };
+		79176DE32B8998B400C8BDF3 /* SubwayMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79176DE22B8998B400C8BDF3 /* SubwayMapView.swift */; };
+		79176DE62B899DF700C8BDF3 /* myMap.svg in Resources */ = {isa = PBXBuildFile; fileRef = 79176DE52B899DF700C8BDF3 /* myMap.svg */; };
+		79176DE82B8A757100C8BDF3 /* myMap_dark.svg in Resources */ = {isa = PBXBuildFile; fileRef = 79176DE72B8A757100C8BDF3 /* myMap_dark.svg */; };
 		791F5B882A3F5C3300ACCC8D /* ScrollableImage in Frameworks */ = {isa = PBXBuildFile; productRef = 791F5B872A3F5C3300ACCC8D /* ScrollableImage */; };
 		79228CE72A33ED6700526CE5 /* TrainDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79228CE62A33ED6700526CE5 /* TrainDot.swift */; };
 		7937251C2B59889100527518 /* sortedBusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937251B2B59889100527518 /* sortedBusStop.swift */; };
@@ -27,6 +29,7 @@
 		795419A729BED7CF003FF58F /* StationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795419A629BED7CF003FF58F /* StationView.swift */; };
 		795419AB29BED7E8003FF58F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795419AA29BED7E8003FF58F /* MapView.swift */; };
 		795419B429BED842003FF58F /* StationBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795419B329BED842003FF58F /* StationBox.swift */; };
+		795E14962B8F8B1C00D9274E /* mapTypes.json in Resources */ = {isa = PBXBuildFile; fileRef = 795E14952B8F8B1C00D9274E /* mapTypes.json */; };
 		79670B3A2A23F94A00AEA0FF /* 608.json in Resources */ = {isa = PBXBuildFile; fileRef = 79670B392A23F94A00AEA0FF /* 608.json */; };
 		79711F2229C9055E002EBA6F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79711F2129C9055E002EBA6F /* Home.swift */; };
 		7973944C29D766F700D0DDDD /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7973944B29D766F700D0DDDD /* ButtonStyles.swift */; };
@@ -102,7 +105,9 @@
 		790D58D12B6F2DF500743CCE /* BusTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTripView.swift; sourceTree = "<group>"; };
 		791754B929D88185007B8F6A /* StationTimeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTimeRow.swift; sourceTree = "<group>"; };
 		791754BB29D89738007B8F6A /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
-		791F5B842A3F5C1000ACCC8D /* SubwayMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayMapView.swift; sourceTree = "<group>"; };
+		79176DE22B8998B400C8BDF3 /* SubwayMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayMapView.swift; sourceTree = "<group>"; };
+		79176DE52B899DF700C8BDF3 /* myMap.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = myMap.svg; sourceTree = "<group>"; };
+		79176DE72B8A757100C8BDF3 /* myMap_dark.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = myMap_dark.svg; sourceTree = "<group>"; };
 		79228CE62A33ED6700526CE5 /* TrainDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainDot.swift; sourceTree = "<group>"; };
 		7937251B2B59889100527518 /* sortedBusStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sortedBusStop.swift; sourceTree = "<group>"; };
 		7937251D2B59915B00527518 /* sortedBusStop_times.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sortedBusStop_times.swift; sourceTree = "<group>"; };
@@ -123,6 +128,7 @@
 		795419A629BED7CF003FF58F /* StationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationView.swift; sourceTree = "<group>"; };
 		795419AA29BED7E8003FF58F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		795419B329BED842003FF58F /* StationBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationBox.swift; sourceTree = "<group>"; };
+		795E14952B8F8B1C00D9274E /* mapTypes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapTypes.json; sourceTree = "<group>"; };
 		79670B392A23F94A00AEA0FF /* 608.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 608.json; sourceTree = "<group>"; };
 		79711F2129C9055E002EBA6F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		7973944B29D766F700D0DDDD /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
@@ -278,13 +284,22 @@
 			path = Times;
 			sourceTree = "<group>";
 		};
+		79176DE42B899DDD00C8BDF3 /* svg */ = {
+			isa = PBXGroup;
+			children = (
+				79176DE52B899DF700C8BDF3 /* myMap.svg */,
+				79176DE72B8A757100C8BDF3 /* myMap_dark.svg */,
+			);
+			path = svg;
+			sourceTree = "<group>";
+		};
 		791F5B892A3F8D8300ACCC8D /* map */ = {
 			isa = PBXGroup;
 			children = (
 				795419AA29BED7E8003FF58F /* MapView.swift */,
 				793C23A42A7F60B700396636 /* MapViewNew.swift */,
-				791F5B842A3F5C1000ACCC8D /* SubwayMapView.swift */,
 				79BF4B822B84EDF700BE5D80 /* MapHelper.swift */,
+				79176DE22B8998B400C8BDF3 /* SubwayMapView.swift */,
 			);
 			path = map;
 			sourceTree = "<group>";
@@ -374,6 +389,7 @@
 		795419A029BEC8AB003FF58F /* data */ = {
 			isa = PBXGroup;
 			children = (
+				79176DE42B899DDD00C8BDF3 /* svg */,
 				79ACA9D62A37883D00B4EB9E /* json */,
 				7975C45A29DB3AAF00A4AA1E /* coredata */,
 				791754C329D89908007B8F6A /* Times */,
@@ -394,6 +410,14 @@
 				7975C48129DDA93200A4AA1E /* WidgetTester.swift */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		795E14942B8F8A6A00D9274E /* map */ = {
+			isa = PBXGroup;
+			children = (
+				795E14952B8F8B1C00D9274E /* mapTypes.json */,
+			);
+			path = map;
 			sourceTree = "<group>";
 		};
 		7975C45A29DB3AAF00A4AA1E /* coredata */ = {
@@ -437,6 +461,7 @@
 		79ACA9D62A37883D00B4EB9E /* json */ = {
 			isa = PBXGroup;
 			children = (
+				795E14942B8F8A6A00D9274E /* map */,
 				79018DA82B702C020065980E /* other */,
 				79018DA72B702BF90065980E /* subway */,
 				79018DA62B702BDB0065980E /* bus */,
@@ -569,9 +594,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79176DE82B8A757100C8BDF3 /* myMap_dark.svg in Resources */,
 				79B5AA932A9AA0E70058EE6C /* tripStationData.json in Resources */,
 				79D61CE92B532217007ADBF5 /* busStopTime.json in Resources */,
 				79D61CD92B5309E4007ADBF5 /* bus_type.json in Resources */,
+				79176DE62B899DF700C8BDF3 /* myMap.svg in Resources */,
 				79B622C42A916D4A0075F14D /* copy.json in Resources */,
 				79BE780F2A840B5100552142 /* tripAndStationData.json in Resources */,
 				79D044542B70A822007886B0 /* bus_stops_array.json in Resources */,
@@ -583,6 +610,7 @@
 				79670B3A2A23F94A00AEA0FF /* 608.json in Resources */,
 				79A4B8F62A7447AD0090720F /* 601.json in Resources */,
 				79018DAF2B70393F0065980E /* bus_stops.json in Resources */,
+				795E14962B8F8B1C00D9274E /* mapTypes.json in Resources */,
 				79D61CE52B532132007ADBF5 /* busStopTimes.json in Resources */,
 				79B13BED2A9C4C0600EF9C1D /* Localizable.strings in Resources */,
 				793EACCA29944973002D7332 /* Assets.xcassets in Resources */,
@@ -602,6 +630,7 @@
 				7975C48229DDA93200A4AA1E /* WidgetTester.swift in Sources */,
 				79A2D7FF2A9BDBE000DAFFE1 /* Update.swift in Sources */,
 				795419B429BED842003FF58F /* StationBox.swift in Sources */,
+				79176DE32B8998B400C8BDF3 /* SubwayMapView.swift in Sources */,
 				79DFBC722A364D4300A5F0DE /* BottomSheet.swift in Sources */,
 				79DBCE9A2B7A703100FF4ED1 /* Color.swift in Sources */,
 				795419AB29BED7E8003FF58F /* MapView.swift in Sources */,
@@ -627,7 +656,6 @@
 				793EACC629944973002D7332 /* Service_BandageApp.swift in Sources */,
 				79BF4B832B84EDF700BE5D80 /* MapHelper.swift in Sources */,
 				79D61CD72B51C067007ADBF5 /* BusStopView.swift in Sources */,
-				791F5B852A3F5C1000ACCC8D /* SubwayMapView.swift in Sources */,
 				79D044492B70767D007886B0 /* Sheet.swift in Sources */,
 				794D71AC29DF3A11002A7C28 /* Widgets.intentdefinition in Sources */,
 				79A2D7FA2A9BCC2200DAFFE1 /* WhatsNew.swift in Sources */,

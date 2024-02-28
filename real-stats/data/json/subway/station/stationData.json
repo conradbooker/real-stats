@@ -5014,7 +5014,7 @@
             "lat": 40.672097,
             "long": -73.835919,
             "northDir": "Manhattan",
-            "southDir": "Rockaways",
+            "southDir": "Rockaways ((A) Never Stops)",
             "ADA": 1,
             "mapLocation": {
                "x": 318.2125,
@@ -8678,30 +8678,6 @@
       "stations": [
          {
             "id": 328,
-            "GTFSID": "P06",
-            "short1": "World Trade Center",
-            "short2": "",
-            "stopName": "World Trade Center",
-            "weekdayLines": [
-               "PATH"
-            ],
-            "trunk": "PATH",
-            "borough": "M",
-            "lat": 40.71271,
-            "long": -74.01193,
-            "northDir": "Arrivals",
-            "southDir": "New Jersey",
-            "ADA": 1,
-            "mapLocation": {
-               "x": 127.7958,
-               "y": 640.1042,
-               "station": 1,
-               "shape": 0,
-               "angle": 0
-            }
-         },
-         {
-            "id": 328,
             "GTFSID": "138",
             "short1": "WTC",
             "short2": "Cortlandt St",
@@ -8720,6 +8696,30 @@
                "x": 125.8208,
                "y": 642.1333,
                "station": 0,
+               "shape": 0,
+               "angle": 0
+            }
+         },
+         {
+            "id": 328,
+            "GTFSID": "P06",
+            "short1": "World Trade Center",
+            "short2": "",
+            "stopName": "World Trade Center",
+            "weekdayLines": [
+               "PATH"
+            ],
+            "trunk": "PATH",
+            "borough": "M",
+            "lat": 40.71271,
+            "long": -74.01193,
+            "northDir": "Arrivals",
+            "southDir": "New Jersey",
+            "ADA": 1,
+            "mapLocation": {
+               "x": 127.7958,
+               "y": 640.1042,
+               "station": 1,
                "shape": 0,
                "angle": 0
             }
@@ -13204,30 +13204,6 @@
       "searchName": "",
       "stations": [
          {
-            "id": 601,
-            "GTFSID": "P11",
-            "short1": "14 St",
-            "short2": "",
-            "stopName": "14 St",
-            "weekdayLines": [
-               "PATH"
-            ],
-            "trunk": "PATH",
-            "borough": "M",
-            "lat": 40.73735,
-            "long": -73.99684,
-            "northDir": "33 St",
-            "southDir": "New Jersey",
-            "ADA": 0,
-            "mapLocation": {
-               "x": 131.7167,
-               "y": 588.5,
-               "station": 3,
-               "shape": 0,
-               "angle": 0
-            }
-         },
-         {
             "id": 322,
             "GTFSID": "132",
             "short1": "14 St",
@@ -13298,6 +13274,30 @@
                "x": 125.8917,
                "y": 590.4292,
                "station": 2,
+               "shape": 0,
+               "angle": 0
+            }
+         },
+         {
+            "id": 601,
+            "GTFSID": "P11",
+            "short1": "14 St",
+            "short2": "",
+            "stopName": "14 St",
+            "weekdayLines": [
+               "PATH"
+            ],
+            "trunk": "PATH",
+            "borough": "M",
+            "lat": 40.73735,
+            "long": -73.99684,
+            "northDir": "33 St",
+            "southDir": "New Jersey",
+            "ADA": 0,
+            "mapLocation": {
+               "x": 131.7167,
+               "y": 588.5,
+               "station": 3,
                "shape": 0,
                "angle": 0
             }
@@ -13644,30 +13644,6 @@
       "searchName": "",
       "stations": [
          {
-            "id": 607,
-            "GTFSID": "P13",
-            "short1": "33 St",
-            "short2": "",
-            "stopName": "33 St",
-            "weekdayLines": [
-               "PATH"
-            ],
-            "trunk": "PATH",
-            "borough": "M",
-            "lat": 40.74912,
-            "long": -73.98827,
-            "northDir": "Arrivals",
-            "southDir": "New Jersey",
-            "ADA": 1,
-            "mapLocation": {
-               "x": 131.6708,
-               "y": 571.65,
-               "station": 2,
-               "shape": 0,
-               "angle": 0
-            }
-         },
-         {
             "id": 227,
             "GTFSID": "D17",
             "short1": "34 St",
@@ -13719,6 +13695,30 @@
                "station": 1,
                "shape": 1,
                "angle": 135
+            }
+         },
+         {
+            "id": 607,
+            "GTFSID": "P13",
+            "short1": "33 St",
+            "short2": "",
+            "stopName": "33 St",
+            "weekdayLines": [
+               "PATH"
+            ],
+            "trunk": "PATH",
+            "borough": "M",
+            "lat": 40.74912,
+            "long": -73.98827,
+            "northDir": "Arrivals",
+            "southDir": "New Jersey",
+            "ADA": 1,
+            "mapLocation": {
+               "x": 131.6708,
+               "y": 571.65,
+               "station": 2,
+               "shape": 0,
+               "angle": 0
             }
          }
       ]
@@ -14062,31 +14062,6 @@
       "searchName": "51 St",
       "stations": [
          {
-            "id": 401,
-            "GTFSID": "630",
-            "short1": "51 St",
-            "short2": "",
-            "stopName": "51 St",
-            "weekdayLines": [
-               "6",
-               "6X"
-            ],
-            "trunk": "Lexington Av",
-            "borough": "M",
-            "lat": 40.757107,
-            "long": -73.97192,
-            "northDir": "Uptown & The Bronx",
-            "southDir": "Downtown",
-            "ADA": 1,
-            "mapLocation": {
-               "x": 149.1917,
-               "y": 557.875,
-               "station": 1,
-               "shape": 0,
-               "angle": 0
-            }
-         },
-         {
             "id": 275,
             "GTFSID": "F11",
             "short1": "Lexington Av",
@@ -14110,6 +14085,31 @@
                "shape": 0,
                "angle": 0
             }
+         },
+         {
+            "id": 401,
+            "GTFSID": "630",
+            "short1": "51 St",
+            "short2": "",
+            "stopName": "51 St",
+            "weekdayLines": [
+               "6",
+               "6X"
+            ],
+            "trunk": "Lexington Av",
+            "borough": "M",
+            "lat": 40.757107,
+            "long": -73.97192,
+            "northDir": "Uptown & The Bronx",
+            "southDir": "Downtown",
+            "ADA": 1,
+            "mapLocation": {
+               "x": 149.1917,
+               "y": 557.875,
+               "station": 1,
+               "shape": 0,
+               "angle": 0
+            }
          }
       ]
    },
@@ -14118,6 +14118,32 @@
       "complexName": "59 St",
       "searchName": "59 St",
       "stations": [
+         {
+            "id": 7,
+            "GTFSID": "R11",
+            "short1": "Lexington Av",
+            "short2": "59 St",
+            "stopName": "Lexington Av/59 St",
+            "weekdayLines": [
+               "N",
+               "R",
+               "W"
+            ],
+            "trunk": "Astoria",
+            "borough": "M",
+            "lat": 40.76266,
+            "long": -73.967258,
+            "northDir": "Queens",
+            "southDir": "Downtown & Brooklyn",
+            "ADA": 0,
+            "mapLocation": {
+               "x": 149.2125,
+               "y": 549.0667,
+               "station": 0,
+               "shape": 0,
+               "angle": 0
+            }
+         },
          {
             "id": 400,
             "GTFSID": "629",
@@ -14142,32 +14168,6 @@
                "y": 551.0208,
                "station": 1,
                "shape": 1,
-               "angle": 0
-            }
-         },
-         {
-            "id": 7,
-            "GTFSID": "R11",
-            "short1": "Lexington Av",
-            "short2": "59 St",
-            "stopName": "Lexington Av/59 St",
-            "weekdayLines": [
-               "N",
-               "R",
-               "W"
-            ],
-            "trunk": "Astoria",
-            "borough": "M",
-            "lat": 40.76266,
-            "long": -73.967258,
-            "northDir": "Queens",
-            "southDir": "Downtown & Brooklyn",
-            "ADA": 0,
-            "mapLocation": {
-               "x": 149.2125,
-               "y": 549.0667,
-               "station": 0,
-               "shape": 0,
                "angle": 0
             }
          }
