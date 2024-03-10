@@ -13,8 +13,6 @@
 		791754BA29D88185007B8F6A /* StationTimeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791754B929D88185007B8F6A /* StationTimeRow.swift */; };
 		791754BC29D89738007B8F6A /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791754BB29D89738007B8F6A /* TimeModel.swift */; };
 		79176DE32B8998B400C8BDF3 /* SubwayMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79176DE22B8998B400C8BDF3 /* SubwayMapView.swift */; };
-		79176DE62B899DF700C8BDF3 /* myMap.svg in Resources */ = {isa = PBXBuildFile; fileRef = 79176DE52B899DF700C8BDF3 /* myMap.svg */; };
-		79176DE82B8A757100C8BDF3 /* myMap_dark.svg in Resources */ = {isa = PBXBuildFile; fileRef = 79176DE72B8A757100C8BDF3 /* myMap_dark.svg */; };
 		791F5B882A3F5C3300ACCC8D /* ScrollableImage in Frameworks */ = {isa = PBXBuildFile; productRef = 791F5B872A3F5C3300ACCC8D /* ScrollableImage */; };
 		79228CE72A33ED6700526CE5 /* TrainDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79228CE62A33ED6700526CE5 /* TrainDot.swift */; };
 		7937251C2B59889100527518 /* sortedBusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937251B2B59889100527518 /* sortedBusStop.swift */; };
@@ -67,7 +65,6 @@
 		79D044542B70A822007886B0 /* bus_stops_array.json in Resources */ = {isa = PBXBuildFile; fileRef = 79D044532B70A822007886B0 /* bus_stops_array.json */; };
 		79D5A8472A336782002CFE3B /* DisruptionBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D5A8462A336782002CFE3B /* DisruptionBox.swift */; };
 		79D61CD12B51B62B007ADBF5 /* BusRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D61CD02B51B62B007ADBF5 /* BusRow.swift */; };
-		79D61CD72B51C067007ADBF5 /* BusStopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D61CD62B51C067007ADBF5 /* BusStopView.swift */; };
 		79D61CD92B5309E4007ADBF5 /* bus_type.json in Resources */ = {isa = PBXBuildFile; fileRef = 79D61CD82B5309E3007ADBF5 /* bus_type.json */; };
 		79D61CDD2B530C40007ADBF5 /* BusSearchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D61CDC2B530C40007ADBF5 /* BusSearchRow.swift */; };
 		79D61CE52B532132007ADBF5 /* busStopTimes.json in Resources */ = {isa = PBXBuildFile; fileRef = 79D61CE42B532132007ADBF5 /* busStopTimes.json */; };
@@ -106,13 +103,11 @@
 		791754B929D88185007B8F6A /* StationTimeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTimeRow.swift; sourceTree = "<group>"; };
 		791754BB29D89738007B8F6A /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
 		79176DE22B8998B400C8BDF3 /* SubwayMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayMapView.swift; sourceTree = "<group>"; };
-		79176DE52B899DF700C8BDF3 /* myMap.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = myMap.svg; sourceTree = "<group>"; };
-		79176DE72B8A757100C8BDF3 /* myMap_dark.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = myMap_dark.svg; sourceTree = "<group>"; };
 		79228CE62A33ED6700526CE5 /* TrainDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainDot.swift; sourceTree = "<group>"; };
 		7937251B2B59889100527518 /* sortedBusStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sortedBusStop.swift; sourceTree = "<group>"; };
 		7937251D2B59915B00527518 /* sortedBusStop_times.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sortedBusStop_times.swift; sourceTree = "<group>"; };
 		793C23A42A7F60B700396636 /* MapViewNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewNew.swift; sourceTree = "<group>"; };
-		793EACC229944973002D7332 /* Service Bandage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Service Bandage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		793EACC229944973002D7332 /* Transit Bandage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Transit Bandage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		793EACC529944973002D7332 /* Service_BandageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service_BandageApp.swift; sourceTree = "<group>"; };
 		793EACC929944973002D7332 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		793EACCB29944973002D7332 /* real_stats.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = real_stats.entitlements; sourceTree = "<group>"; };
@@ -179,7 +174,6 @@
 		79D044532B70A822007886B0 /* bus_stops_array.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bus_stops_array.json; sourceTree = "<group>"; };
 		79D5A8462A336782002CFE3B /* DisruptionBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisruptionBox.swift; sourceTree = "<group>"; };
 		79D61CD02B51B62B007ADBF5 /* BusRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRow.swift; sourceTree = "<group>"; };
-		79D61CD62B51C067007ADBF5 /* BusStopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopView.swift; sourceTree = "<group>"; };
 		79D61CD82B5309E3007ADBF5 /* bus_type.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bus_type.json; sourceTree = "<group>"; };
 		79D61CDC2B530C40007ADBF5 /* BusSearchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusSearchRow.swift; sourceTree = "<group>"; };
 		79D61CE42B532132007ADBF5 /* busStopTimes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = busStopTimes.json; sourceTree = "<group>"; };
@@ -284,15 +278,6 @@
 			path = Times;
 			sourceTree = "<group>";
 		};
-		79176DE42B899DDD00C8BDF3 /* svg */ = {
-			isa = PBXGroup;
-			children = (
-				79176DE52B899DF700C8BDF3 /* myMap.svg */,
-				79176DE72B8A757100C8BDF3 /* myMap_dark.svg */,
-			);
-			path = svg;
-			sourceTree = "<group>";
-		};
 		791F5B892A3F8D8300ACCC8D /* map */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,7 +330,7 @@
 		793EACC329944973002D7332 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				793EACC229944973002D7332 /* Service Bandage.app */,
+				793EACC229944973002D7332 /* Transit Bandage.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -389,7 +374,6 @@
 		795419A029BEC8AB003FF58F /* data */ = {
 			isa = PBXGroup;
 			children = (
-				79176DE42B899DDD00C8BDF3 /* svg */,
 				79ACA9D62A37883D00B4EB9E /* json */,
 				7975C45A29DB3AAF00A4AA1E /* coredata */,
 				791754C329D89908007B8F6A /* Times */,
@@ -490,7 +474,6 @@
 			children = (
 				799F72722B6F5AFF00F59883 /* trip */,
 				79D61CD02B51B62B007ADBF5 /* BusRow.swift */,
-				79D61CD62B51C067007ADBF5 /* BusStopView.swift */,
 				79D61CDC2B530C40007ADBF5 /* BusSearchRow.swift */,
 				7937251B2B59889100527518 /* sortedBusStop.swift */,
 				7937251D2B59915B00527518 /* sortedBusStop_times.swift */,
@@ -511,9 +494,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		793EACC129944973002D7332 /* Service Bandage */ = {
+		793EACC129944973002D7332 /* Transit Bandage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 793EACD129944973002D7332 /* Build configuration list for PBXNativeTarget "Service Bandage" */;
+			buildConfigurationList = 793EACD129944973002D7332 /* Build configuration list for PBXNativeTarget "Transit Bandage" */;
 			buildPhases = (
 				793EACBE29944973002D7332 /* Sources */,
 				793EACBF29944973002D7332 /* Frameworks */,
@@ -524,7 +507,7 @@
 			);
 			dependencies = (
 			);
-			name = "Service Bandage";
+			name = "Transit Bandage";
 			packageProductDependencies = (
 				79F7E78129DA58C6000006C4 /* WrappingHStack */,
 				79DFBC742A364D8000A5F0DE /* BottomSheet */,
@@ -534,7 +517,7 @@
 				799E76062B884927005DE96C /* SVGView */,
 			);
 			productName = "real-stats";
-			productReference = 793EACC229944973002D7332 /* Service Bandage.app */;
+			productReference = 793EACC229944973002D7332 /* Transit Bandage.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -552,7 +535,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 793EACBD29944973002D7332 /* Build configuration list for PBXProject "Service Bandage" */;
+			buildConfigurationList = 793EACBD29944973002D7332 /* Build configuration list for PBXProject "Transit Bandage" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -584,7 +567,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				793EACC129944973002D7332 /* Service Bandage */,
+				793EACC129944973002D7332 /* Transit Bandage */,
 			);
 		};
 /* End PBXProject section */
@@ -594,11 +577,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79176DE82B8A757100C8BDF3 /* myMap_dark.svg in Resources */,
 				79B5AA932A9AA0E70058EE6C /* tripStationData.json in Resources */,
 				79D61CE92B532217007ADBF5 /* busStopTime.json in Resources */,
 				79D61CD92B5309E4007ADBF5 /* bus_type.json in Resources */,
-				79176DE62B899DF700C8BDF3 /* myMap.svg in Resources */,
 				79B622C42A916D4A0075F14D /* copy.json in Resources */,
 				79BE780F2A840B5100552142 /* tripAndStationData.json in Resources */,
 				79D044542B70A822007886B0 /* bus_stops_array.json in Resources */,
@@ -655,7 +636,6 @@
 				7975C45F29DB3B3100A4AA1E /* CoreDataManager.swift in Sources */,
 				793EACC629944973002D7332 /* Service_BandageApp.swift in Sources */,
 				79BF4B832B84EDF700BE5D80 /* MapHelper.swift in Sources */,
-				79D61CD72B51C067007ADBF5 /* BusStopView.swift in Sources */,
 				79D044492B70767D007886B0 /* Sheet.swift in Sources */,
 				794D71AC29DF3A11002A7C28 /* Widgets.intentdefinition in Sources */,
 				79A2D7FA2A9BCC2200DAFFE1 /* WhatsNew.swift in Sources */,
@@ -919,7 +899,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		793EACBD29944973002D7332 /* Build configuration list for PBXProject "Service Bandage" */ = {
+		793EACBD29944973002D7332 /* Build configuration list for PBXProject "Transit Bandage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				793EACCF29944973002D7332 /* Debug */,
@@ -928,7 +908,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		793EACD129944973002D7332 /* Build configuration list for PBXNativeTarget "Service Bandage" */ = {
+		793EACD129944973002D7332 /* Build configuration list for PBXNativeTarget "Transit Bandage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				793EACD229944973002D7332 /* Debug */,

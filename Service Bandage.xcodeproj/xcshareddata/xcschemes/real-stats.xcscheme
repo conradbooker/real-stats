@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "793EACC129944973002D7332"
-               BuildableName = "Service Bandage.app"
-               BlueprintName = "Service Bandage"
-               ReferencedContainer = "container:Service Bandage.xcodeproj">
+               BuildableName = "Transit Bandage.app"
+               BlueprintName = "Transit Bandage"
+               ReferencedContainer = "container:Transit Bandage.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "793EACC129944973002D7332"
-            BuildableName = "Service Bandage.app"
-            BlueprintName = "Service Bandage"
-            ReferencedContainer = "container:Service Bandage.xcodeproj">
+            BuildableName = "Transit Bandage.app"
+            BlueprintName = "Transit Bandage"
+            ReferencedContainer = "container:Transit Bandage.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "793EACC129944973002D7332"
-            BuildableName = "Service Bandage.app"
-            BlueprintName = "Service Bandage"
-            ReferencedContainer = "container:Service Bandage.xcodeproj">
+            BuildableName = "Transit Bandage.app"
+            BlueprintName = "Transit Bandage"
+            ReferencedContainer = "container:Transit Bandage.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

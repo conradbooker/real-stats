@@ -18,7 +18,7 @@
                BlueprintIdentifier = "794D719B29DF3A10002A7C28"
                BuildableName = "WidgetsExtension.appex"
                BlueprintName = "WidgetsExtension"
-               ReferencedContainer = "container:Service Bandage.xcodeproj">
+               ReferencedContainer = "container:Transit Bandage.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "793EACC129944973002D7332"
-               BuildableName = "Service Bandage.app"
-               BlueprintName = "Service Bandage"
-               ReferencedContainer = "container:Service Bandage.xcodeproj">
+               BuildableName = "Transit Bandage.app"
+               BlueprintName = "Transit Bandage"
+               ReferencedContainer = "container:Transit Bandage.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "793EACC129944973002D7332"
-            BuildableName = "Service Bandage.app"
-            BlueprintName = "Service Bandage"
-            ReferencedContainer = "container:Service Bandage.xcodeproj">
+            BuildableName = "Transit Bandage.app"
+            BlueprintName = "Transit Bandage"
+            ReferencedContainer = "container:Transit Bandage.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -98,9 +98,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "793EACC129944973002D7332"
-            BuildableName = "Service Bandage.app"
-            BlueprintName = "Service Bandage"
-            ReferencedContainer = "container:Service Bandage.xcodeproj">
+            BuildableName = "Transit Bandage.app"
+            BlueprintName = "Transit Bandage"
+            ReferencedContainer = "container:Transit Bandage.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
