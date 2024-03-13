@@ -5,14 +5,16 @@
         "region": "nyc",
         "mapName": "station_locations",
         "zoomScales": [],
+        "mapTypes": [],
         "stationLocations": {}
     },
     {
         "id": 1,
         "country": "usa",
         "region": "nyc",
-        "mapName": "nyc_combined",
+        "mapName": "diagramic",
         "zoomScales": [0,1,2],
+        "mapTypes": ["am","pm","week_am","week_pm","night","weekend"],
         "stationLocations": {
             "R01": {
                "x": 194.15, 
@@ -3571,10 +3573,10 @@
                "angle": 0
             }, 
             "P09": {
-               "x": 97.3875, 
-               "y": 601.0625, 
-               "station": 0, 
-               "shape": 0, 
+               "x": 97.3875,
+               "y": 601.0625,
+               "station": 0,
+               "shape": 0,
                "angle": 0
             }
          }

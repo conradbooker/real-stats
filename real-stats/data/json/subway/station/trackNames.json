@@ -1,0 +1,3565 @@
+{
+  "101": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "103": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "104": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "106": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "107": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "108": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "109": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "110": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "111": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "112": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "113": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "114": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "115": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "116": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "117": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "118": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "119": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "120": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Express",
+    "track_3": "Broadway",
+    "track_4": "Lenox Av"
+  },
+  "121": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "122": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "123": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Express",
+    "track_3": "Express",
+    "track_4": "Local"
+  },
+  "124": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "125": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "126": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "127": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Express",
+    "track_3": "Express",
+    "track_4": "Local"
+  },
+  "128": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Express",
+    "track_3": "Express",
+    "track_4": "Local"
+  },
+  "129": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "130": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "131": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "132": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Express",
+    "track_3": "Express",
+    "track_4": "Local"
+  },
+  "133": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "134": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "135": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "136": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "137": {
+    "system": "nyc_subway",
+    "track_1": "South Ferry",
+    "track_2": "Brooklyn",
+    "track_3": "Express",
+    "track_4": "Local"
+  },
+  "138": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "139": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "142": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "201": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "204": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "205": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "206": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "207": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "208": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "209": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "210": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "211": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "212": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "213": {
+    "system": "nyc_subway",
+    "track_1": "Peak Express / Termination Track",
+    "track_2": "Manhattan",
+    "track_3": "Bronx",
+    "track_4": ""
+  },
+  "214": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "215": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "216": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "217": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "218": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "219": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "220": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "221": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "222": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "224": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "225": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "226": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "227": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "228": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "229": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "230": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "231": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "232": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "233": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "234": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Express",
+    "track_3": "Express",
+    "track_4": "Local"
+  },
+  "235": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Express",
+    "track_3": "Express",
+    "track_4": "Local"
+  },
+  "236": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "237": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "238": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "239": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Express",
+    "track_3": "Express",
+    "track_4": "Local"
+  },
+  "241": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "242": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "243": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "244": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "245": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "246": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "247": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "248": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "249": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "250": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Express",
+    "track_3": "Express",
+    "track_4": "Local"
+  },
+  "251": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "252": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "253": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "254": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "255": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "256": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "257": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "301": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "302": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "401": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "402": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "405": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "406": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "407": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "408": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "409": {
+    "system": "nyc_subway",
+    "track_1": "Express",
+    "track_2": "Local",
+    "track_3": "Local",
+    "track_4": ""
+  },
+  "410": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "411": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "412": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "413": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "414": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "415": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "416": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "418": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "419": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "420": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "423": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "501": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "502": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "503": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "504": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "505": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "601": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "602": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "603": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "604": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "606": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "607": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "608": {
+    "system": "nyc_subway",
+    "track_1": "Peak Express",
+    "track_2": "Local",
+    "track_3": "Local",
+    "track_4": ""
+  },
+  "609": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "610": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "611": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "612": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "613": {
+    "system": "nyc_subway",
+    "track_1": "Peak Express",
+    "track_2": "Local",
+    "track_3": "Local",
+    "track_4": ""
+  },
+  "614": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "615": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "616": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "617": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "618": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "619": {
+    "system": "nyc_subway",
+    "track_1": "Peak Express",
+    "track_2": "Local",
+    "track_3": "Local",
+    "track_4": ""
+  },
+  "621": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Express",
+    "track_3": "Express",
+    "track_4": "Local"
+  },
+  "622": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "623": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "624": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "625": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "626": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Express",
+    "track_3": "Express",
+    "track_4": "Local"
+  },
+  "627": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "628": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "629": {
+    "system": "nyc_subway",
+    "track_1": "Local (Upper Level)",
+    "track_2": "Express (Lower Level)",
+    "track_3": "Express (Lower Level)",
+    "track_4": "Local (Upper Level)"
+  },
+  "630": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "631": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Express",
+    "track_3": "Express",
+    "track_4": "Local"
+  },
+  "632": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "633": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "634": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "635": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Express",
+    "track_3": "Express",
+    "track_4": "Local"
+  },
+  "636": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "637": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "638": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "639": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "640": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Express",
+    "track_3": "Express",
+    "track_4": "Local"
+  },
+  "701": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "702": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": ""
+  },
+  "705": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "706": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "707": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": ""
+  },
+  "708": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "709": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "710": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "711": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "712": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": ""
+  },
+  "713": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "714": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "715": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "716": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "718": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "719": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "720": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "721": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "723": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "724": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "725": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "726": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "901": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "902": {
+    "system": "nyc_subway",
+    "track_1": "Track 1",
+    "track_2": "",
+    "track_3": "",
+    "track_4": "Track 4"
+  },
+  "R01": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R03": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R04": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R05": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R06": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R08": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R13": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R14": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "R15": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R18": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R19": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R21": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R22": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R24": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R26": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R30": {
+    "system": "nyc_subway",
+    "track_1": "Via 4 Av",
+    "track_2": "Via Lower Manhattan",
+    "track_3": "Via Brighton",
+    "track_4": "Via Manhattan Bridge"
+  },
+  "R32": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R34": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R35": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R36": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "R39": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R40": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R41": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "R42": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R43": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R44": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R45": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D25": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D26": {
+    "system": "nyc_subway",
+    "track_1": "Track 1 (Rare)",
+    "track_2": "Franklin Shuttle",
+    "track_3": "Brighton Beach & Coney Island",
+    "track_4": "Manhattan"
+  },
+  "D27": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D28": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "D29": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D30": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D31": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "D32": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D33": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D34": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D35": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "D37": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D38": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D39": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "D40": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "D41": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D42": {
+    "system": "nyc_subway",
+    "track_1": "Lower Level",
+    "track_2": "Lower Level",
+    "track_3": "Upper Level",
+    "track_4": "Upper Level"
+  },
+  "D43": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "B12": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Center Track",
+    "track_4": ""
+  },
+  "B13": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "B14": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "B15": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "B17": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "B18": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "B19": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "B20": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "B21": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Center Track",
+    "track_4": ""
+  },
+  "B22": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "B23": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "N02": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "N03": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "N05": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "N06": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "N07": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "N08": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "N09": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "N10": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "J12": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "J13": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "J14": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "J15": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "J16": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "J17": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "J19": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "J20": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "J21": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "J22": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "J23": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "J24": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "J28": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "J29": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "J30": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "J31": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "M11": {
+    "system": "nyc_subway",
+    "track_1": "Track 1",
+    "track_2": "Track 2",
+    "track_3": "Peak Express",
+    "track_4": ""
+  },
+  "M12": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "M13": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "M14": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "M16": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "M19": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "M23": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "M01": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "M04": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "M05": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "M06": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "M09": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "M10": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L05": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L06": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L08": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L11": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L12": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L13": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L14": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L15": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L16": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L19": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L20": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L21": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L24": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L25": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L26": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L27": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L28": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L29": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S03": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A02": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A03": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A05": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A06": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A07": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A10": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A11": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A12": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "D13": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express / Termination",
+    "track_4": ""
+  },
+  "A14": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A15": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "A16": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A17": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A18": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A19": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A20": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A21": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A22": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A25": {
+    "system": "nyc_subway",
+    "track_1": "Downtown (Upper Level)",
+    "track_2": "Downtown (Lower Level)",
+    "track_3": "Uptown (Upper Level)",
+    "track_4": "Queens (Lower Level)"
+  },
+  "A28": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "A30": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A32": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "D20": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "P10": {
+    "system": "nyc_path",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A33": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A34": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "A40": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A42": {
+    "system": "nyc_subway",
+    "track_1": "Church Av",
+    "track_2": "Queens",
+    "track_3": "Euclid Av / Queens",
+    "track_4": "Manhattan via Financial District"
+  },
+  "A43": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A44": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A46": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "A47": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A48": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "A49": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A50": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A52": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A53": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A54": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A55": {
+    "system": "nyc_subway",
+    "track_1": "Termination",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "A57": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A59": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A60": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A61": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A63": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A64": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A65": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "H01": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "H02": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "H03": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "H04": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "H12": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "H13": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "H14": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "H15": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "H06": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "H07": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "H08": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "H09": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "H10": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "H11": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D01": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D03": {
+    "system": "nyc_subway",
+    "track_1": "Local / Express",
+    "track_2": "Norwood - 205 St",
+    "track_3": "Termination",
+    "track_4": ""
+  },
+  "D04": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": ""
+  },
+  "D05": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": ""
+  },
+  "D06": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D07": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": ""
+  },
+  "D08": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D09": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D10": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D12": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "B04": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "B06": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "B08": {
+    "system": "nyc_subway",
+    "track_1": "Downtown via 6 Av",
+    "track_2": "Queens",
+    "track_3": "Downtown via Broadway",
+    "track_4": "96 St"
+  },
+  "B10": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D15": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Queens",
+    "track_3": "Express",
+    "track_4": "Uptown / Bronx"
+  },
+  "D18": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "P12": {
+    "system": "nyc_path",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D22": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F14": {
+    "system": "nyc_subway",
+    "track_1": "Track 1",
+    "track_2": "Track 2",
+    "track_3": "Termination Track",
+    "track_4": "Track 4"
+  },
+  "F16": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F18": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F20": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F21": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F22": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F24": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "F25": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F26": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F27": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "F29": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F30": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Center Track",
+    "track_4": ""
+  },
+  "F31": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F32": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F33": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F34": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F35": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Center Track",
+    "track_4": ""
+  },
+  "F36": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F38": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F39": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F01": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F02": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F03": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Express",
+    "track_3": "Express",
+    "track_4": "Local"
+  },
+  "F04": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F05": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F06": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "F07": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G08": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "G09": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G10": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G11": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G12": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G13": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G15": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G16": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G18": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G19": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G20": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G21": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "F12": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D14": {
+    "system": "nyc_subway",
+    "track_1": "8 Av",
+    "track_2": "Queens",
+    "track_3": "6 Av",
+    "track_4": "Uptown / Bronx"
+  },
+  "G05": {
+    "system": "nyc_subway",
+    "track_1": "Upper Level",
+    "track_2": "Upper Level",
+    "track_3": "Lower Level",
+    "track_4": "Lower Level"
+  },
+  "G06": {
+    "system": "nyc_subway",
+    "track_1": "Upper Level",
+    "track_2": "Upper Level",
+    "track_3": "Lower Level",
+    "track_4": "Lower Level"
+  },
+  "G07": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G24": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G26": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G28": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G30": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G31": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G32": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G33": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G34": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G35": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G36": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "P06": {
+    "system": "nyc_path",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R09": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "Q05": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "Q04": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "Q03": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S31": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S30": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S29": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S28": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S27": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S26": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S25": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S24": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S23": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S22": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S21": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S20": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S19": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S18": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S17": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S16": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S15": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S14": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S13": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S09": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S11": {
+    "system": "nyc_sir",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D19": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L02": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "P11": {
+    "system": "nyc_path",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R20": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "L03": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D11": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A09": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "F09": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G22": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D17": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "R17": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "P13": {
+    "system": "nyc_path",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "F23": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R33": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D16": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "A27": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "R16": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "F11": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R11": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A24": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "B16": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Center Track",
+    "track_4": ""
+  },
+  "N04": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G14": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "R31": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "D24": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A31": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "L01": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "D21": {
+    "system": "nyc_subway",
+    "track_1": "Brooklyn via Lower East Side",
+    "track_2": "Local",
+    "track_3": "Brooklyn via Chinatown",
+    "track_4": "Express"
+  },
+  "R28": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A51": {
+    "system": "nyc_subway",
+    "track_1": "Local",
+    "track_2": "Local",
+    "track_3": "Express",
+    "track_4": "Express"
+  },
+  "J27": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L22": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "M21": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "M20": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "Q01": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R23": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A36": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "E01": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R25": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "M18": {
+    "system": "nyc_subway",
+    "track_1": "Brooklyn Bound Track",
+    "track_2": "Manhattan Bound Track",
+    "track_3": "Center Track",
+    "track_4": ""
+  },
+  "F15": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S04": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A45": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "S01": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A38": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "M22": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "G29": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L10": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "L17": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "M08": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "R27": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "A41": {
+    "system": "nyc_subway",
+    "track_1": "Coney Island",
+    "track_2": "Manhattan via Lower East Side",
+    "track_3": "Euclid Av / Queens",
+    "track_4": "Manhattan via Financial District"
+  },
+  "R29": {
+    "system": "nyc_subway",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "P01": {
+    "system": "nyc_path",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "P02": {
+    "system": "nyc_path",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "P03": {
+    "system": "nyc_path",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "P04": {
+    "system": "nyc_path",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "P05": {
+    "system": "nyc_path",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "P07": {
+    "system": "nyc_path",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "P08": {
+    "system": "nyc_path",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  },
+  "P09": {
+    "system": "nyc_path",
+    "track_1": "",
+    "track_2": "",
+    "track_3": "",
+    "track_4": ""
+  }
+}

@@ -4222,33 +4222,9 @@
    },
    {
       "id": 167,
-      "complexName": "9 St",
-      "searchName": "",
+      "complexName": "W 4 St",
+      "searchName": "W 4 St 9 St Washington Square Sq",
       "stations": [
-         {
-            "id": 167,
-            "GTFSID": "P10",
-            "short1": "9 St",
-            "short2": "",
-            "stopName": "9 St",
-            "weekdayLines": [
-               "PATH"
-            ],
-            "trunk": "PATH",
-            "borough": "M",
-            "lat": 40.73424,
-            "long": -73.9991,
-            "northDir": "33 St",
-            "southDir": "New Jersey",
-            "ADA": 0,
-            "mapLocation": {
-               "x": 131.5883,
-               "y": 597.8807,
-               "station": 2,
-               "shape": 0,
-               "angle": 0
-            }
-         },
          {
             "id": 167,
             "GTFSID": "A32",
@@ -4299,6 +4275,30 @@
                "y": 601.6908,
                "station": 1,
                "shape": 1,
+               "angle": 0
+            }
+         },
+         {
+            "id": 167,
+            "GTFSID": "P10",
+            "short1": "9 St",
+            "short2": "",
+            "stopName": "9 St",
+            "weekdayLines": [
+               "PATH"
+            ],
+            "trunk": "PATH",
+            "borough": "M",
+            "lat": 40.73424,
+            "long": -73.9991,
+            "northDir": "33 St",
+            "southDir": "New Jersey",
+            "ADA": 0,
+            "mapLocation": {
+               "x": 131.5883,
+               "y": 597.8807,
+               "station": 2,
+               "shape": 0,
                "angle": 0
             }
          }
@@ -13742,8 +13742,8 @@
             "borough": "Bk",
             "lat": 40.670272,
             "long": -73.989779,
-            "northDir": "Manhattan - Queens",
-            "southDir": "Church Av - Coney Island",
+            "northDir": "Manhattan / Queens",
+            "southDir": "Church Av / Coney Island",
             "ADA": 0,
             "mapLocation": {
                "x": 198.95,
@@ -15113,8 +15113,8 @@
             "borough": "Bk",
             "lat": 40.680596,
             "long": -73.955827,
-            "northDir": "",
-            "southDir": "Prospect Park",
+            "northDir": "Manhattan",
+            "southDir": "Euclid Av",
             "ADA": 1,
             "mapLocation": {
                "x": 232.275,
@@ -15137,8 +15137,8 @@
             "borough": "Bk",
             "lat": 40.68138,
             "long": -73.956848,
-            "northDir": "Manhattan",
-            "southDir": "Euclid Av",
+            "northDir": "Arrivals",
+            "southDir": "Prospect Park",
             "ADA": 1,
             "mapLocation": {
                "x": 230.0458,
