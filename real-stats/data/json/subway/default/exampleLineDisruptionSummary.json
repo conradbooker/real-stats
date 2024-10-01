@@ -1,0 +1,247 @@
+{
+  "1": {
+    "description": "runs 24h a day.",
+    "disruptions": [
+      "good_service"
+    ],
+    "lines": []
+  },
+  "2": {
+    "description": "runs 24h a day.",
+    "disruptions": [
+      "reroutes",
+      "express",
+      "local",
+      "suspended"
+    ],
+    "lines": []
+  },
+  "3": {
+    "description": "runs 24h a day.",
+    "disruptions": [
+      "suspended",
+      "behind_schedule"
+    ],
+    "lines": [
+      "1",
+      "2"
+    ]
+  },
+  "4": {
+    "description": "runs 24h a day.",
+    "disruptions": [
+      "reroutes",
+      "local"
+    ],
+    "lines": []
+  },
+  "5": {
+    "description": "runs 24h a day.",
+    "disruptions": [
+      "suspended"
+    ],
+    "lines": [
+      "2",
+      "4",
+      "6"
+    ]
+  },
+  "6": {
+    "description": "runs 24h a day.",
+    "disruptions": [
+      "reroutes",
+      "suspended",
+      "express"
+    ],
+    "lines": []
+  },
+  "6X": {
+    "description": "runs 24h a day.",
+    "disruptions": [
+      "no_service"
+    ],
+    "lines": [
+      "6"
+    ]
+  },
+  "7": {
+    "description": "runs 24h a day.",
+    "disruptions": [
+      "suspended"
+    ],
+    "lines": []
+  },
+  "7X": {
+    "description": "runs 24h a day.",
+    "disruptions": [
+      "local"
+    ],
+    "lines": [
+      "7"
+    ]
+  },
+  "A": {
+    "description": "runs 24h a day. If there is no service, there is likely an error. Please check mta.info for more details.",
+    "disruptions": [
+      "reroutes",
+      "local",
+      "suspended"
+    ],
+    "lines": []
+  },
+  "B": {
+    "description": "runs during weekdays.",
+    "disruptions": [
+      "no_service"
+    ],
+    "lines": [
+      "A",
+      "C",
+      "D",
+      "Q"
+    ]
+  },
+  "C": {
+    "description": "runs during the day.",
+    "disruptions": [
+      "no_service"
+    ],
+    "lines": [
+      "A"
+    ]
+  },
+  "D": {
+    "description": "runs 24h a day. If there is no service, there is likely an error. Please check mta.info for more details.",
+    "disruptions": [
+      "local"
+    ],
+    "lines": []
+  },
+  "E": {
+    "description": "runs 24h a day. If there is no service, there is likely an error. Please check mta.info for more details.",
+    "disruptions": [
+      "delays",
+      "local",
+      "suspended",
+      "express"
+    ],
+    "lines": []
+  },
+  "F": {
+    "description": "runs 24h a day. If there is no service, there is likely an error. Please check mta.info for more details.",
+    "disruptions": [
+      "local"
+    ],
+    "lines": []
+  },
+  "FS": {
+    "description": "runs 24h a day.",
+    "disruptions": [
+      "good_service"
+    ],
+    "lines": []
+  },
+  "FX": {
+    "description": "runs during rush hour.",
+    "disruptions": [
+      "no_service"
+    ],
+    "lines": [
+      "F"
+    ]
+  },
+  "G": {
+    "description": "runs 24h a day.",
+    "disruptions": [
+      "suspended",
+      "behind_schedule"
+    ],
+    "lines": []
+  },
+  "GS": {
+    "description": "runs during the day.",
+    "disruptions": [
+      "good_service"
+    ],
+    "lines": [
+      "7"
+    ]
+  },
+  "H": {
+    "description": "runs 24h a day.",
+    "disruptions": [
+      "good_service"
+    ],
+    "lines": []
+  },
+  "J": {
+    "description": "runs 24h a day.",
+    "disruptions": [
+      "express"
+    ],
+    "lines": []
+  },
+  "L": {
+    "description": "runs 24h a day.",
+    "disruptions": [
+      "suspended"
+    ],
+    "lines": []
+  },
+  "M": {
+    "description": "runs 24h a day.",
+    "disruptions": [
+      "express",
+      "suspended"
+    ],
+    "lines": [
+      "J",
+      "F"
+    ]
+  },
+  "N": {
+    "description": "runs 24h a day.",
+    "disruptions": [
+      "reroutes",
+      "delays",
+      "local"
+    ],
+    "lines": []
+  },
+  "Q": {
+    "description": "runs 24h a day.",
+    "disruptions": [
+      "delays",
+      "local"
+    ],
+    "lines": []
+  },
+  "R": {
+    "description": "runs 24h a day.",
+    "disruptions": [
+      "suspended"
+    ],
+    "lines": [
+      "N"
+    ]
+  },
+  "W": {
+    "description": "runs during weekdays.",
+    "disruptions": [
+      "no_service"
+    ],
+    "lines": [
+      "N",
+      "R"
+    ]
+  },
+  "Z": {
+    "description": "runs during weekdays.",
+    "disruptions": [
+      "no_service"
+    ],
+    "lines": [
+      "J"
+    ]
+  }
+}

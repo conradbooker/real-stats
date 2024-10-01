@@ -1,1032 +1,328 @@
 {
-  "L92": {
-    "type": "shuttle"
-  },
-  "M1": {
-    "type": "regular"
-  },
-  "M2": {
-    "type": "regular"
-  },
-  "M3": {
-    "type": "regular"
-  },
-  "M4": {
-    "type": "regular"
-  },
-  "M5": {
-    "type": "regular"
-  },
-  "M7": {
-    "type": "regular"
-  },
-  "M8": {
-    "type": "regular"
-  },
-  "M9": {
-    "type": "regular"
-  },
-  "M10": {
-    "type": "regular"
-  },
-  "M11": {
-    "type": "regular"
-  },
-  "M12": {
-    "type": "regular"
-  },
-  "M14A+": {
-    "type": "sbs"
-  },
-  "M14D+": {
-    "type": "sbs"
-  },
-  "M15": {
-    "type": "regular"
-  },
-  "M15+": {
-    "type": "sbs"
-  },
-  "M20": {
-    "type": "regular"
-  },
-  "M21": {
-    "type": "regular"
-  },
-  "M22": {
-    "type": "regular"
-  },
-  "M23+": {
-    "type": "sbs"
-  },
-  "M31": {
-    "type": "regular"
-  },
-  "M34+": {
-    "type": "sbs"
-  },
-  "M34A+": {
-    "type": "sbs"
-  },
-  "M35": {
-    "type": "regular"
-  },
-  "M42": {
-    "type": "regular"
-  },
-  "M50": {
-    "type": "regular"
-  },
-  "M55": {
-    "type": "regular"
-  },
-  "M57": {
-    "type": "regular"
-  },
-  "M60+": {
-    "type": "sbs"
-  },
-  "M66": {
-    "type": "regular"
-  },
-  "M72": {
-    "type": "regular"
-  },
-  "M79+": {
-    "type": "sbs"
-  },
-  "M86+": {
-    "type": "sbs"
-  },
-  "M96": {
-    "type": "regular"
-  },
-  "M98": {
-    "type": "regular"
-  },
-  "M100": {
-    "type": "regular"
-  },
-  "M101": {
-    "type": "regular"
-  },
-  "M102": {
-    "type": "regular"
-  },
-  "M103": {
-    "type": "regular"
-  },
-  "M104": {
-    "type": "regular"
-  },
-  "M106": {
-    "type": "regular"
-  },
-  "M116": {
-    "type": "regular"
-  },
-  "M125": {
-    "type": "regular"
-  },
-  "BX1": {
-    "type": "regular"
-  },
-  "BX2": {
-    "type": "regular"
-  },
-  "BX3": {
-    "type": "regular"
-  },
-  "BX4": {
-    "type": "regular"
-  },
-  "BX4A": {
-    "type": "regular"
-  },
-  "BX5": {
-    "type": "regular"
-  },
-  "BX6+": {
-    "type": "sbs"
-  },
-  "BX6": {
-    "type": "regular"
-  },
-  "BX7": {
-    "type": "regular"
-  },
-  "BX8": {
-    "type": "regular"
-  },
-  "BX9": {
-    "type": "regular"
-  },
-  "BX10": {
-    "type": "regular"
-  },
-  "BX11": {
-    "type": "regular"
-  },
-  "BX12+": {
-    "type": "sbs"
-  },
-  "BX12": {
-    "type": "regular"
-  },
-  "BX13": {
-    "type": "regular"
-  },
-  "BX15": {
-    "type": "regular"
-  },
-  "BX16": {
-    "type": "regular"
-  },
-  "BX17": {
-    "type": "regular"
-  },
-  "BX18A": {
-    "type": "regular"
-  },
-  "BX18B": {
-    "type": "regular"
-  },
-  "BX19": {
-    "type": "regular"
-  },
-  "BX20": {
-    "type": "regular"
-  },
-  "BX21": {
-    "type": "regular"
-  },
-  "BX22": {
-    "type": "regular"
-  },
-  "BX23": {
-    "type": "regular"
-  },
-  "BX24": {
-    "type": "regular"
-  },
-  "BX25": {
-    "type": "regular"
-  },
-  "BX26": {
-    "type": "regular"
-  },
-  "BX27": {
-    "type": "regular"
-  },
-  "BX28": {
-    "type": "regular"
-  },
-  "BX29": {
-    "type": "regular"
-  },
-  "BX30": {
-    "type": "regular"
-  },
-  "BX31": {
-    "type": "regular"
-  },
-  "BX32": {
-    "type": "regular"
-  },
-  "BX33": {
-    "type": "regular"
-  },
-  "BX34": {
-    "type": "regular"
-  },
-  "BX35": {
-    "type": "regular"
-  },
-  "BX36": {
-    "type": "regular"
-  },
-  "BX38": {
-    "type": "regular"
-  },
-  "BX39": {
-    "type": "regular"
-  },
-  "BX40": {
-    "type": "regular"
-  },
-  "BX41": {
-    "type": "regular"
-  },
-  "BX41+": {
-    "type": "sbs"
-  },
-  "BX42": {
-    "type": "regular"
-  },
-  "BX46": {
-    "type": "regular"
-  },
-  "D90": {
-    "type": "shuttle"
-  },
-  "B1": {
-    "type": "regular"
-  },
-  "B2": {
-    "type": "regular"
-  },
-  "B3": {
-    "type": "regular"
-  },
-  "B4": {
-    "type": "regular"
-  },
-  "B6": {
-    "type": "regular"
-  },
-  "B7": {
-    "type": "regular"
-  },
-  "B8": {
-    "type": "regular"
-  },
-  "B9": {
-    "type": "regular"
-  },
-  "B11": {
-    "type": "regular"
-  },
-  "B12": {
-    "type": "regular"
-  },
-  "B13": {
-    "type": "regular"
-  },
-  "B14": {
-    "type": "regular"
-  },
-  "B15": {
-    "type": "regular"
-  },
-  "B16": {
-    "type": "regular"
-  },
-  "B17": {
-    "type": "regular"
-  },
-  "B20": {
-    "type": "regular"
-  },
-  "B24": {
-    "type": "regular"
-  },
-  "B25": {
-    "type": "regular"
-  },
-  "B26": {
-    "type": "regular"
-  },
-  "B31": {
-    "type": "regular"
-  },
-  "B32": {
-    "type": "regular"
-  },
-  "B35": {
-    "type": "regular"
-  },
-  "B36": {
-    "type": "regular"
-  },
-  "B37": {
-    "type": "regular"
-  },
-  "B38": {
-    "type": "regular"
-  },
-  "B39": {
-    "type": "regular"
-  },
-  "B41": {
-    "type": "regular"
-  },
-  "B42": {
-    "type": "regular"
-  },
-  "B43": {
-    "type": "regular"
-  },
-  "B44": {
-    "type": "regular"
-  },
-  "B44+": {
-    "type": "sbs"
-  },
-  "B45": {
-    "type": "regular"
-  },
-  "B46": {
-    "type": "regular"
-  },
-  "B46+": {
-    "type": "sbs"
-  },
-  "B47": {
-    "type": "regular"
-  },
-  "B48": {
-    "type": "regular"
-  },
-  "B49": {
-    "type": "regular"
-  },
-  "B52": {
-    "type": "regular"
-  },
-  "B54": {
-    "type": "regular"
-  },
-  "B57": {
-    "type": "regular"
-  },
-  "B60": {
-    "type": "regular"
-  },
-  "B61": {
-    "type": "regular"
-  },
-  "B62": {
-    "type": "regular"
-  },
-  "B63": {
-    "type": "regular"
-  },
-  "B64": {
-    "type": "regular"
-  },
-  "B65": {
-    "type": "regular"
-  },
-  "B67": {
-    "type": "regular"
-  },
-  "B68": {
-    "type": "regular"
-  },
-  "B69": {
-    "type": "regular"
-  },
-  "B70": {
-    "type": "regular"
-  },
-  "B74": {
-    "type": "regular"
-  },
-  "B82": {
-    "type": "regular"
-  },
-  "B82+": {
-    "type": "sbs"
-  },
-  "B83": {
-    "type": "regular"
-  },
-  "B84": {
-    "type": "regular"
-  },
-  "B100": {
-    "type": "regular"
-  },
-  "B103": {
-    "type": "regular"
-  },
-  "Q1": {
-    "type": "regular"
-  },
-  "Q2": {
-    "type": "regular"
-  },
-  "Q3": {
-    "type": "regular"
-  },
-  "Q4": {
-    "type": "regular"
-  },
-  "Q5": {
-    "type": "regular"
-  },
-  "Q6": {
-    "type": "regular"
-  },
-  "Q7": {
-    "type": "regular"
-  },
-  "Q8": {
-    "type": "regular"
-  },
-  "Q9": {
-    "type": "regular"
-  },
-  "Q10": {
-    "type": "regular"
-  },
-  "Q11": {
-    "type": "regular"
-  },
-  "Q12": {
-    "type": "regular"
-  },
-  "Q13": {
-    "type": "regular"
-  },
-  "Q15": {
-    "type": "regular"
-  },
-  "Q15A": {
-    "type": "regular"
-  },
-  "Q16": {
-    "type": "regular"
-  },
-  "Q17": {
-    "type": "regular"
-  },
-  "Q18": {
-    "type": "regular"
-  },
-  "Q19": {
-    "type": "regular"
-  },
-  "Q20A": {
-    "type": "regular"
-  },
-  "Q20B": {
-    "type": "regular"
-  },
-  "Q21": {
-    "type": "regular"
-  },
-  "Q22": {
-    "type": "regular"
-  },
-  "Q23": {
-    "type": "regular"
-  },
-  "Q24": {
-    "type": "regular"
-  },
-  "Q25": {
-    "type": "regular"
-  },
-  "Q26": {
-    "type": "regular"
-  },
-  "Q27": {
-    "type": "regular"
-  },
-  "Q28": {
-    "type": "regular"
-  },
-  "Q29": {
-    "type": "regular"
-  },
-  "Q30": {
-    "type": "regular"
-  },
-  "Q31": {
-    "type": "regular"
-  },
-  "Q32": {
-    "type": "regular"
-  },
-  "Q33": {
-    "type": "regular"
-  },
-  "Q34": {
-    "type": "regular"
-  },
-  "Q35": {
-    "type": "regular"
-  },
-  "Q36": {
-    "type": "regular"
-  },
-  "Q37": {
-    "type": "regular"
-  },
-  "Q38": {
-    "type": "regular"
-  },
-  "Q39": {
-    "type": "regular"
-  },
-  "Q40": {
-    "type": "regular"
-  },
-  "Q41": {
-    "type": "regular"
-  },
-  "Q42": {
-    "type": "regular"
-  },
-  "Q43": {
-    "type": "regular"
-  },
-  "Q44+": {
-    "type": "regular"
-  },
-  "Q46": {
-    "type": "regular"
-  },
-  "Q47": {
-    "type": "regular"
-  },
-  "Q48": {
-    "type": "regular"
-  },
-  "Q49": {
-    "type": "regular"
-  },
-  "Q50": {
-    "type": "regular"
-  },
-  "Q52+": {
-    "type": "sbs"
-  },
-  "Q53+": {
-    "type": "sbs"
-  },
-  "Q54": {
-    "type": "regular"
-  },
-  "Q55": {
-    "type": "regular"
-  },
-  "Q56": {
-    "type": "regular"
-  },
-  "Q58": {
-    "type": "regular"
-  },
-  "Q59": {
-    "type": "regular"
-  },
-  "Q60": {
-    "type": "regular"
-  },
-  "Q64": {
-    "type": "regular"
-  },
-  "Q65": {
-    "type": "regular"
-  },
-  "Q66": {
-    "type": "regular"
-  },
-  "Q67": {
-    "type": "regular"
-  },
-  "Q69": {
-    "type": "regular"
-  },
-  "Q70+": {
-    "type": "sbs"
-  },
-  "Q72": {
-    "type": "regular"
-  },
-  "Q76": {
-    "type": "regular"
-  },
-  "Q77": {
-    "type": "regular"
-  },
-  "Q83": {
-    "type": "regular"
-  },
-  "Q84": {
-    "type": "regular"
-  },
-  "Q85": {
-    "type": "regular"
-  },
-  "Q88": {
-    "type": "regular"
-  },
-  "Q93": {
-    "type": "regular"
-  },
-  "Q94": {
-    "type": "regular"
-  },
-  "Q95": {
-    "type": "regular"
-  },
-  "Q100": {
-    "type": "regular"
-  },
-  "Q101": {
-    "type": "regular"
-  },
-  "Q102": {
-    "type": "regular"
-  },
-  "Q103": {
-    "type": "regular"
-  },
-  "Q104": {
-    "type": "regular"
-  },
-  "Q110": {
-    "type": "regular"
-  },
-  "Q111": {
-    "type": "regular"
-  },
-  "Q112": {
-    "type": "regular"
-  },
-  "Q113": {
-    "type": "regular"
-  },
-  "Q114": {
-    "type": "regular"
-  },
-  "BM1": {
-    "type": "express"
-  },
-  "BM2": {
-    "type": "express"
-  },
-  "BM3": {
-    "type": "express"
-  },
-  "BM4": {
-    "type": "express"
-  },
-  "BM5": {
-    "type": "express"
-  },
-  "QM1": {
-    "type": "express"
-  },
-  "QM2": {
-    "type": "express"
-  },
-  "QM3": {
-    "type": "express"
-  },
-  "QM4": {
-    "type": "express"
-  },
-  "QM5": {
-    "type": "express"
-  },
-  "QM6": {
-    "type": "express"
-  },
-  "QM7": {
-    "type": "express"
-  },
-  "QM8": {
-    "type": "express"
-  },
-  "QM10": {
-    "type": "express"
-  },
-  "QM11": {
-    "type": "express"
-  },
-  "QM12": {
-    "type": "express"
-  },
-  "QM15": {
-    "type": "express"
-  },
-  "QM16": {
-    "type": "express"
-  },
-  "QM17": {
-    "type": "express"
-  },
-  "QM18": {
-    "type": "express"
-  },
-  "QM20": {
-    "type": "express"
-  },
-  "QM21": {
-    "type": "express"
-  },
-  "QM24": {
-    "type": "express"
-  },
-  "QM25": {
-    "type": "express"
-  },
-  "QM31": {
-    "type": "express"
-  },
-  "QM32": {
-    "type": "express"
-  },
-  "QM34": {
-    "type": "express"
-  },
-  "QM35": {
-    "type": "express"
-  },
-  "QM36": {
-    "type": "express"
-  },
-  "QM40": {
-    "type": "express"
-  },
-  "QM42": {
-    "type": "express"
-  },
-  "QM44": {
-    "type": "express"
-  },
-  "SIM1": {
-    "type": "express"
-  },
-  "SIM1C": {
-    "type": "express"
-  },
-  "SIM2": {
-    "type": "express"
-  },
-  "SIM3": {
-    "type": "express"
-  },
-  "SIM3C": {
-    "type": "express"
-  },
-  "SIM4": {
-    "type": "express"
-  },
-  "SIM4X": {
-    "type": "express"
-  },
-  "SIM4C": {
-    "type": "express"
-  },
-  "SIM5": {
-    "type": "express"
-  },
-  "SIM6": {
-    "type": "express"
-  },
-  "SIM7": {
-    "type": "express"
-  },
-  "SIM8": {
-    "type": "express"
-  },
-  "SIM8X": {
-    "type": "express"
-  },
-  "SIM9": {
-    "type": "express"
-  },
-  "SIM10": {
-    "type": "express"
-  },
-  "SIM11": {
-    "type": "express"
-  },
-  "SIM15": {
-    "type": "express"
-  },
-  "SIM22": {
-    "type": "express"
-  },
-  "SIM23": {
-    "type": "express"
-  },
-  "SIM24": {
-    "type": "express"
-  },
-  "SIM25": {
-    "type": "express"
-  },
-  "SIM26": {
-    "type": "express"
-  },
-  "SIM30": {
-    "type": "express"
-  },
-  "SIM31": {
-    "type": "express"
-  },
-  "SIM32": {
-    "type": "express"
-  },
-  "SIM33": {
-    "type": "express"
-  },
-  "SIM33C": {
-    "type": "express"
-  },
-  "SIM34": {
-    "type": "express"
-  },
-  "SIM35": {
-    "type": "express"
-  },
-  "X27": {
-    "type": "express"
-  },
-  "X28": {
-    "type": "express"
-  },
-  "X37": {
-    "type": "express"
-  },
-  "X38": {
-    "type": "express"
-  },
-  "X63": {
-    "type": "express"
-  },
-  "X64": {
-    "type": "express"
-  },
-  "X68": {
-    "type": "express"
-  },
-  "BXM1": {
-    "type": "express"
-  },
-  "BXM2": {
-    "type": "express"
-  },
-  "BXM3": {
-    "type": "express"
-  },
-  "BXM4": {
-    "type": "express"
-  },
-  "BXM6": {
-    "type": "express"
-  },
-  "BXM7": {
-    "type": "express"
-  },
-  "BXM8": {
-    "type": "express"
-  },
-  "BXM9": {
-    "type": "express"
-  },
-  "BXM10": {
-    "type": "express"
-  },
-  "BXM11": {
-    "type": "express"
-  },
-  "BXM18": {
-    "type": "express"
-  },
-  "BX15_ltd": {
-    "type": "limited"
-  },
-  "BX1_ltd": {
-    "type": "limited"
-  },
-  "BX36_ltd": {
-    "type": "limited"
-  },
-  "B6_ltd": {
-    "type": "limited"
-  },
-  "B35_ltd": {
-    "type": "limited"
-  },
-  "B38_ltd": {
-    "type": "limited"
-  },
-  "B41_ltd": {
-    "type": "limited"
-  },
-  "Q58_ltd": {
-    "type": "limited"
-  },
-  "B49_ltd": {
-    "type": "limited"
-  },
-  "B103_ltd": {
-    "type": "limited"
-  },
-  "Q50_ltd": {
-    "type": "limited"
-  },
-  "Q65_ltd": {
-    "type": "limited"
-  },
-  "Q25_ltd": {
-    "type": "limited"
-  },
-  "Q114_ltd": {
-    "type": "limited"
-  },
-  "Q113_ltd": {
-    "type": "limited"
-  },
-  "Q100_ltd": {
-    "type": "limited"
-  },
-  "Q06_ltd": {
-    "type": "limited"
-  },
-  "Q10_ltd": {
-    "type": "limited"
-  },
-  "M101_ltd": {
-    "type": "limited"
-  },
-  "M5_ltd": {
-    "type": "limited"
-  },
-  "M2_ltd": {
-    "type": "limited"
-  },
-  "M1_ltd": {
-    "type": "limited"
-  },
-  "M98_ltd": {
-    "type": "limited"
-  },
-  "M4_ltd": {
-    "type": "limited"
-  },
-  "Q27_ltd": {
-    "type": "limited"
-  },
-  "Q4_ltd": {
-    "type": "limited"
-  },
-  "Q83_ltd": {
-    "type": "limited"
-  },
-  "Q36_ltd": {
-    "type": "limited"
-  },
-  "Q43_ltd": {
-    "type": "limited"
-  },
-  "Q17_ltd": {
-    "type": "limited"
-  },
-  "Q46_ltd": {
-    "type": "limited"
-  },
-  "Q5_ltd": {
-    "type": "limited"
-  },
-  "Q85_ltd": {
-    "type": "limited"
+  "value": {
+    "M1": "regular",
+    "M2": "regular",
+    "M3": "regular",
+    "M4": "regular",
+    "M5": "regular",
+    "M7": "regular",
+    "M8": "regular",
+    "M9": "regular",
+    "M10": "regular",
+    "M11": "regular",
+    "M12": "regular",
+    "M14A+": "sbs",
+    "M14D+": "sbs",
+    "M15": "regular",
+    "M15+": "sbs",
+    "M20": "regular",
+    "M21": "regular",
+    "M22": "regular",
+    "M23+": "sbs",
+    "M31": "regular",
+    "M34+": "sbs",
+    "M34A+": "sbs",
+    "M35": "regular",
+    "M42": "regular",
+    "M50": "regular",
+    "M55": "regular",
+    "M57": "regular",
+    "M60+": "sbs",
+    "M66": "regular",
+    "M72": "regular",
+    "M79+": "sbs",
+    "M86+": "sbs",
+    "M96": "regular",
+    "M98": "sbs",
+    "M100": "regular",
+    "M101": "regular",
+    "M102": "regular",
+    "M103": "regular",
+    "M104": "regular",
+    "M106": "regular",
+    "M116": "regular",
+    "M125": "regular",
+    "Bx1": "regular",
+    "Bx2": "regular",
+    "Bx3": "regular",
+    "Bx4": "regular",
+    "Bx4A": "regular",
+    "Bx5": "regular",
+    "Bx6+": "sbs",
+    "Bx6": "regular",
+    "Bx7": "regular",
+    "Bx8": "regular",
+    "Bx9": "regular",
+    "Bx10": "regular",
+    "Bx11": "regular",
+    "Bx12+": "sbs",
+    "Bx12": "regular",
+    "Bx13": "regular",
+    "Bx15": "regular",
+    "Bx16": "regular",
+    "Bx17": "regular",
+    "Bx18A": "regular",
+    "Bx18B": "regular",
+    "Bx19": "regular",
+    "Bx20": "regular",
+    "Bx21": "regular",
+    "Bx22": "regular",
+    "Bx23": "regular",
+    "Bx24": "regular",
+    "Bx25": "regular",
+    "Bx26": "regular",
+    "Bx27": "regular",
+    "Bx28": "regular",
+    "Bx29": "regular",
+    "Bx30": "regular",
+    "Bx31": "regular",
+    "Bx32": "regular",
+    "Bx33": "regular",
+    "Bx34": "regular",
+    "Bx35": "regular",
+    "Bx36": "regular",
+    "Bx38": "regular",
+    "Bx39": "regular",
+    "Bx40": "regular",
+    "Bx41": "regular",
+    "Bx41+": "sbs",
+    "Bx42": "regular",
+    "Bx46": "regular",
+    "B1": "regular",
+    "B2": "regular",
+    "B3": "regular",
+    "B4": "regular",
+    "B6": "regular",
+    "B7": "regular",
+    "B8": "regular",
+    "B9": "regular",
+    "B11": "regular",
+    "B12": "regular",
+    "B13": "regular",
+    "B14": "regular",
+    "B15": "regular",
+    "B16": "regular",
+    "B17": "regular",
+    "B20": "regular",
+    "B24": "regular",
+    "B25": "regular",
+    "B26": "regular",
+    "B31": "regular",
+    "B32": "regular",
+    "B35": "regular",
+    "B36": "regular",
+    "B37": "regular",
+    "B38": "regular",
+    "B39": "regular",
+    "B41": "regular",
+    "B42": "regular",
+    "B43": "regular",
+    "B44": "regular",
+    "B44+": "sbs",
+    "B45": "regular",
+    "B46": "regular",
+    "B46+": "sbs",
+    "B47": "regular",
+    "B48": "regular",
+    "B49": "regular",
+    "B52": "regular",
+    "B54": "regular",
+    "B57": "regular",
+    "B60": "regular",
+    "B61": "regular",
+    "B62": "regular",
+    "B63": "regular",
+    "B64": "regular",
+    "B65": "regular",
+    "B67": "regular",
+    "B68": "regular",
+    "B69": "regular",
+    "B70": "regular",
+    "B74": "regular",
+    "B82": "regular",
+    "B82+": "sbs",
+    "B83": "regular",
+    "B84": "regular",
+    "B100": "regular",
+    "B103": "regular",
+    "Q1": "regular",
+    "Q2": "regular",
+    "Q3": "regular",
+    "Q4": "regular",
+    "Q5": "regular",
+    "Q6": "regular",
+    "Q7": "regular",
+    "Q8": "regular",
+    "Q9": "regular",
+    "Q10": "regular",
+    "Q11": "regular",
+    "Q12": "regular",
+    "Q13": "regular",
+    "Q15": "regular",
+    "Q15A": "regular",
+    "Q16": "regular",
+    "Q17": "regular",
+    "Q18": "regular",
+    "Q19": "regular",
+    "Q20A": "regular",
+    "Q20B": "regular",
+    "Q21": "regular",
+    "Q22": "regular",
+    "Q23": "regular",
+    "Q24": "regular",
+    "Q25": "regular",
+    "Q26": "regular",
+    "Q27": "regular",
+    "Q28": "regular",
+    "Q29": "regular",
+    "Q30": "regular",
+    "Q31": "regular",
+    "Q32": "regular",
+    "Q33": "regular",
+    "Q34": "regular",
+    "Q35": "regular",
+    "Q36": "regular",
+    "Q37": "regular",
+    "Q38": "regular",
+    "Q39": "regular",
+    "Q40": "regular",
+    "Q41": "regular",
+    "Q42": "regular",
+    "Q43": "regular",
+    "Q44+": "sbs",
+    "Q46": "regular",
+    "Q47": "regular",
+    "Q48": "regular",
+    "Q49": "regular",
+    "Q50": "regular",
+    "Q52+": "sbs",
+    "Q53+": "sbs",
+    "Q54": "regular",
+    "Q55": "regular",
+    "Q56": "regular",
+    "Q58": "regular",
+    "Q59": "regular",
+    "Q60": "regular",
+    "Q64": "regular",
+    "Q65": "regular",
+    "Q66": "regular",
+    "Q67": "regular",
+    "Q69": "regular",
+    "Q70+": "sbs",
+    "S53+": "sbs",
+    "Q72": "regular",
+    "Q76": "regular",
+    "Q77": "regular",
+    "Q83": "regular",
+    "Q84": "regular",
+    "Q85": "regular",
+    "Q88": "regular",
+    "Q94": "regular",
+    "Q95": "regular",
+    "Q100": "regular",
+    "Q101": "regular",
+    "Q102": "regular",
+    "Q103": "regular",
+    "Q104": "regular",
+    "Q110": "regular",
+    "Q111": "regular",
+    "Q112": "regular",
+    "Q113": "regular",
+    "Q114": "regular",
+    "BM1": "express",
+    "BM2": "express",
+    "BM3": "express",
+    "BM4": "express",
+    "BM5": "express",
+    "QM1": "express",
+    "QM2": "express",
+    "QM3": "express",
+    "QM4": "express",
+    "QM5": "express",
+    "QM6": "express",
+    "QM7": "express",
+    "QM8": "express",
+    "QM10": "express",
+    "QM11": "express",
+    "QM12": "express",
+    "QM15": "express",
+    "QM16": "express",
+    "QM17": "express",
+    "QM18": "express",
+    "QM20": "express",
+    "QM21": "express",
+    "QM24": "express",
+    "QM25": "express",
+    "QM31": "express",
+    "QM32": "express",
+    "QM34": "express",
+    "QM35": "express",
+    "QM36": "express",
+    "QM40": "express",
+    "QM42": "express",
+    "QM44": "express",
+    "SIM1": "express",
+    "SIM1C": "express",
+    "SIM2": "express",
+    "SIM3": "express",
+    "SIM3C": "express",
+    "SIM4": "express",
+    "SIM4X": "express",
+    "SIM4C": "express",
+    "SIM5": "express",
+    "SIM6": "express",
+    "SIM7": "express",
+    "SIM8": "express",
+    "SIM8X": "express",
+    "SIM9": "express",
+    "SIM10": "express",
+    "SIM11": "express",
+    "SIM15": "express",
+    "SIM22": "express",
+    "SIM23": "express",
+    "SIM24": "express",
+    "SIM25": "express",
+    "SIM26": "express",
+    "SIM30": "express",
+    "SIM31": "express",
+    "SIM32": "express",
+    "SIM33": "express",
+    "SIM33C": "express",
+    "SIM34": "express",
+    "SIM35": "express",
+    "X27": "express",
+    "X28": "express",
+    "X37": "express",
+    "X38": "express",
+    "X63": "express",
+    "X64": "express",
+    "X68": "express",
+    "BxM1": "express",
+    "BxM2": "express",
+    "BxM3": "express",
+    "BxM4": "express",
+    "BxM6": "express",
+    "BxM7": "express",
+    "BxM8": "express",
+    "BxM9": "express",
+    "BxM10": "express",
+    "BxM11": "express",
+    "BxM18": "express",
+    "L92": "L",
+    "Q92": 7,
+    "B90": "F",
+    "B96": 2,
+    "B98": "G",
+    "L90": "L",
+    "L91": "L",
+    "M90": "M",
+    "Q90": "Q",
+    "J90": "J",
+    "Q93": 7,
+    "Q96": "F",
+    "Q107": 7,
+    "Q108": "N",
+    "D90": "D",
+    "Bx90": 5
   }
-
 }
